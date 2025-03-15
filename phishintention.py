@@ -13,7 +13,7 @@ from modules.crp_locator import crp_locator
 from utils.web_utils import driver_loader
 from tqdm import tqdm
 import re
-# from memory_profiler import profile
+from memory_profiler import profile
 
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
@@ -27,6 +27,7 @@ class PhishIntentionWrapper:
     def _load_config(self):
         self.AWL_MODEL, self.CRP_CLASSIFIER, self.CRP_LOCATOR_MODEL, self.SIAMESE_MODEL, self.OCR_MODEL, \
             self.SIAMESE_THRE, self.LOGO_FEATS, self.LOGO_FILES, self.DOMAIN_MAP_PATH = load_config()
+        # ...=load_config(reload_targetlist=True)
         print(f'Length of reference list = {len(self.LOGO_FEATS)}')
 
     '''PhishIntention'''

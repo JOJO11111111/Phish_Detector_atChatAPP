@@ -13,6 +13,12 @@ def initialize_chrome_settings():
     initialize chrome settings
     '''
     options = webdriver.ChromeOptions()
+    options.binary_location = '/usr/bin/chromium-browser'  # Add this line
+    options.add_argument('--user-data-dir=/tmp/chrome-user-data')
+    options.add_argument('--disable-software-rasterizer')
+    options.add_argument('--disable-extensions')
+    options.add_argument('--remote-debugging-port=9222')  # Different port than default
+
 
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
@@ -149,8 +155,12 @@ def driver_loader():
     capabilities["pageLoadStrategy"] = "eager"  # eager mode #FIXME: set eager mode, may load partial webpage
 
     # driver = webdriver.Chrome(ChromeDriverManager().install())
-    service = Service(executable_path=ChromeDriverManager().install())
+    # service = Service(executable_path=ChromeDriverManager().install())
+    
+    service = Service(executable_path='/home/tiffanybao/chrome_driver/chromedriver-linux64/chromedriver')
     driver = webdriver.Chrome(options=options, service=service, seleniumwire_options=seleniumwire_options)
+    # driver = webdriver.Chrome(options=options, service=service, seleniumwire_options=seleniumwire_options)
+    
     driver.set_page_load_timeout(60)  # set timeout to avoid wasting time
     driver.set_script_timeout(60)  # set timeout to avoid wasting time
     helium.set_driver(driver)

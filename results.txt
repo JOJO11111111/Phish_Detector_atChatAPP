@@ -1,0 +1,3 @@
+ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.9677867	0.7181932926177979|0.3339104652404785|0.4239461421966553|1.521996259689331
+www.paypal.com	https://www.paypal.com/hk/home	0	None	None	0.7753108	0.9810354709625244|0.3129899501800537|0|0
+accounts.g.cdcde.com	https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/	1	Google	['google.com', 'appspot.com', 'appspot.com']	0.9679252	0.11012983322143555|0.11627769470214844|0.0212862491607666|0
