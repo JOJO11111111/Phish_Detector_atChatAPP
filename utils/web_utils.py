@@ -125,7 +125,13 @@ def visit_url(driver, orig_url):
     try:
         driver.get(orig_url)
         time.sleep(2)
-        driver.switch_to.alert.dismiss()
+        # Handle alerts manually
+        try:
+            alert = driver.switch_to.alert
+            alert.dismiss()  # Dismiss the alert
+        except:
+            pass  # No alert found
+        
         return True, driver
     except TimeoutException as e:
         print(str(e))
@@ -151,7 +157,7 @@ def driver_loader():
     options = initialize_chrome_settings()
     capabilities = DesiredCapabilities.CHROME
     capabilities["goog:loggingPrefs"] = {"performance": "ALL"}  # chromedriver 75+
-    capabilities["unexpectedAlertBehaviour"] = "dismiss"  # handle alert
+    # capabilities["unexpectedAlertBehaviour"] = "dismiss"  # handle alert
     capabilities["pageLoadStrategy"] = "eager"  # eager mode #FIXME: set eager mode, may load partial webpage
 
     # driver = webdriver.Chrome(ChromeDriverManager().install())

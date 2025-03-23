@@ -14,8 +14,14 @@ from utils.web_utils import driver_loader
 from tqdm import tqdm
 import re
 from memory_profiler import profile
+from modules.dynamic_brand_detection import DynamicBrandDetector
+
 # check
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
+# Set your OpenAI API key here
+your_openai_api_key = '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'
+
 
 class PhishIntentionWrapper:
     _caller_prefix = "PhishIntentionWrapper"
@@ -23,6 +29,7 @@ class PhishIntentionWrapper:
 
     def __init__(self):
         self._load_config()
+        self.dynamic_detector = DynamicBrandDetector(api_key=your_openai_api_key)
 
     def _load_config(self):
         self.AWL_MODEL, self.CRP_CLASSIFIER, self.CRP_LOCATOR_MODEL, self.SIAMESE_MODEL, self.OCR_MODEL, \
@@ -87,10 +94,29 @@ class PhishIntentionWrapper:
             logo_match_time += time.time() - start_time
 
             if pred_target is None:
-                print('Did not match to any brand, report as benign')
-                return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
-                            str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                            pred_boxes, pred_classes
+                # print('Did not match to any brand, report as benign')
+                # return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
+                #             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
+                #             pred_boxes, pred_classes
+                print('Did not match to any brand, trying dynamic detection')
+                
+
+
+                ########### Added dynamic detection ############
+                dynamic_brand = self.dynamic_detector.analyze_logo(screenshot_path)
+                if dynamic_brand:
+                    print(f'Dynamically detected brand: {dynamic_brand}')
+                    pred_target = dynamic_brand
+                    matched_domain = [dynamic_brand]  # Set the matched domain to the dynamically detected brand
+                    phish_category = 1  # Mark as phishing
+
+                else:
+                    print('No brand detected dynamically, report as benign')
+                    return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
+                                str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
+                                pred_boxes, pred_classes
+                
+
 
             ######################## Step3: CRP classifier (if a target is reported) #################################
             print('A target is reported by siamese, enter CRP classifier')

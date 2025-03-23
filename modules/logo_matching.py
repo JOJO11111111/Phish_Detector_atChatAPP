@@ -328,6 +328,3 @@ def check_domain_brand_inconsistency(logo_boxes,
             break  # only look at 1st logo
 
     return brand_converter(matched_target), matched_domain, matched_coord, this_conf
-
-
-
