@@ -5470,35 +5470,35 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$4024407863$-->
+          <!--?lit$499483179$-->
             <p>Check if there is a typo in <span>ru.russianmastercach-republick.xyz</span>.</p>
           
 
-          <!--?lit$4024407863$-->
+          <!--?lit$499483179$-->
 
-          <div class="error-code"><!--?lit$4024407863$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$499483179$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$4024407863$-->
+          <!--?lit$499483179$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$4024407863$-->
+          <!--?lit$499483179$-->
             <button id="reload-button" class="blue-button text-button" data-url="https://ru.russianmastercach-republick.xyz/">
-              <!--?lit$4024407863$-->Reload
+              <!--?lit$499483179$-->Reload
             </button>
           
-          <!--?lit$4024407863$-->
+          <!--?lit$499483179$-->
         </div>
-        <!--?lit$4024407863$-->
+        <!--?lit$499483179$-->
       </div>
-      <!--?lit$4024407863$-->
+      <!--?lit$499483179$-->
         <div id="details">
-          <!--?lit$4024407863$-->
+          <!--?lit$499483179$-->
         </div>
       
     </div>
-    <!--?lit$4024407863$-->
+    <!--?lit$499483179$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->
