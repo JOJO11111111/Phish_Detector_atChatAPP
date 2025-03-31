@@ -1,0 +1,5 @@
+ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.9677866	0.7174983024597168|0.368450403213501|0.42613863945007324|1.256150722503662
+www.paypal.com	https://www.paypal.com/hk/home	0	None	None	0.7753109	0.9917869567871094|0.31360411643981934|0|0
+tiffanyWebsite.app	https://tiffanybao.netlify.app/	0	PayPal	['paypal.com']	0.8731049	0.1439802646636963|0.14218521118164062|0.1373157501220703|0.4450230598449707
+accounts.g.cdcde.com	https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/	1	Google	['google.com', 'appspot.com', 'appspot.com']	0.9679251	0.1317298412322998|0.12116599082946777|0.020711660385131836|0
+kiewguide.com	http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm	1	Absa Group	['absa.com']	0.9387907	0.11977815628051758|0.10674571990966797|0.11544537544250488|0

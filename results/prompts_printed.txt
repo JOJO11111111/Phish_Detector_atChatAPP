@@ -1,0 +1,80 @@
+=== New Run Started at 2025-03-30 20:29:00.604401 ===
+
+
+===== Processing folder: ru.russianmastercach-republick.xyz, URL: https://ru.russianmastercach-republick.xyz/ =====
+Entering PhishIntention
+Analyzing URL: https://ru.russianmastercach-republick.xyz/
+Entering siamese
+Number of logo boxes: 1
+Siamese result: pred_target=Mastercard International, siamese_conf=0.9677866101264954
+A target is reported, enter CRP classifier
+CRP classification result: 1 (0 = CRP, 1 = non-CRP)
+It is a Non-CRP page, enter dynamic analysis
+Finish loading webdriver
+Dynamic analysis cannot find any link redirected to a CRP page, report as benign
+
+
+===== Processing folder: www.paypal.com, URL: https://www.paypal.com/hk/home =====
+Entering PhishIntention
+Analyzing URL: https://www.paypal.com/hk/home
+Entering siamese
+Number of logo boxes: 2
+Siamese result: pred_target=None, siamese_conf=0.7753108739852905
+Did not match to any brand, trying dynamic detection
+Dynamically detected brand using GPT: paypal.com
+Before GPT: pred_target=None, siamese_conf=0.7753108739852905
+Using GPT-detected brand: paypal.com with confidence 0.7753108739852905
+After GPT: pred_target=paypal.com, siamese_conf=0.7753108739852905, phish_category=1
+A target is reported, enter CRP classifier
+CRP classification result: 1 (0 = CRP, 1 = non-CRP)
+It is a Non-CRP page, enter dynamic analysis
+Finish loading webdriver
+Dynamic analysis found a CRP, go back to layout detector
+Entering siamese
+Number of logo boxes: 1
+Siamese result: pred_target=PayPal, siamese_conf=0.873076319694519
+A target is reported, enter CRP classifier
+Phishing is found!
+Adding annotation to visualization: Target: PayPal with confidence 0.873076319694519
+Final results: phish_category=1, pred_target=PayPal, matched_domain=['paypal.com'], siamese_conf=0.873076319694519
+
+
+===== Processing folder: tiffanyWebsite.app, URL: https://tiffanybao.netlify.app/ =====
+Entering PhishIntention
+Analyzing URL: https://tiffanybao.netlify.app/
+Entering siamese
+Number of logo boxes: 3
+Siamese result: pred_target=PayPal, siamese_conf=0.8731048703193665
+A target is reported, enter CRP classifier
+CRP classification result: 1 (0 = CRP, 1 = non-CRP)
+It is a Non-CRP page, enter dynamic analysis
+Finish loading webdriver
+Dynamic analysis cannot find any link redirected to a CRP page, report as benign
+
+
+===== Processing folder: accounts.g.cdcde.com, URL: https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/ =====
+Entering PhishIntention
+Analyzing URL: https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/
+Entering siamese
+Number of logo boxes: 1
+Siamese result: pred_target=Google, siamese_conf=0.9679250717163086
+A target is reported, enter CRP classifier
+CRP classification result: 0 (0 = CRP, 1 = non-CRP)
+Already a CRP, continue
+Phishing is found!
+Adding annotation to visualization: Target: Google with confidence 0.9679250717163086
+Final results: phish_category=1, pred_target=Google, matched_domain=['google.com', 'appspot.com', 'appspot.com'], siamese_conf=0.9679250717163086
+
+
+===== Processing folder: kiewguide.com, URL: http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm =====
+Entering PhishIntention
+Analyzing URL: http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm
+Entering siamese
+Number of logo boxes: 2
+Siamese result: pred_target=Absa Group, siamese_conf=0.9387906789779663
+A target is reported, enter CRP classifier
+CRP classification result: 0 (0 = CRP, 1 = non-CRP)
+Already a CRP, continue
+Phishing is found!
+Adding annotation to visualization: Target: Absa Group with confidence 0.9387906789779663
+Final results: phish_category=1, pred_target=Absa Group, matched_domain=['absa.com'], siamese_conf=0.9387906789779663
