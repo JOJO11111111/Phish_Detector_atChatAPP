@@ -85,6 +85,9 @@ conda activate phishintention
 4. Run
 ```bash
 python phishintention.py --folder <folder you want to test e.g. datasets/test_sites> --output_txt <where you want to save the results e.g. test.txt>
+
+python phishintention.py --folder datasets/test_sites --output_txt results/3.30/updateLLM3.txt 
+
 ```
 The testing folder should be in the structure of:
 
