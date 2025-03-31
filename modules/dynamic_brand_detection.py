@@ -87,7 +87,7 @@ class DynamicBrandDetector:
                         {"type": "text", "text": (
                             "What brand logo is shown in this image? Respond with just the brand name, no explanation. "
                             "For example: 'PayPal', 'Amazon', 'Google', etc. "
-                            "If you can't identify a specific brand, respond with 'Unknown'."
+                            "If you can't identify a specific brand, respond with 'None'."
                         )},
                         {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{img_base64}"}}
                     ]}
@@ -100,7 +100,7 @@ class DynamicBrandDetector:
                 )
                 
                 result = response.choices[0].message.content.strip()
-                return result if result.lower() != "unknown" else None
+                return result if result.lower() != "None" else None
             
             else:
                 # Analyze each logo box
@@ -123,7 +123,7 @@ class DynamicBrandDetector:
                             {"type": "text", "text": (
                                 "Identify this brand logo. Respond with just the brand name, no explanation. "
                                 "For example: 'PayPal', 'Amazon', 'Google', etc. "
-                                "If you can't identify a specific brand, respond with 'Unknown'."
+                                "If you can't identify a specific brand, respond with 'None'."
                             )},
                             {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{img_base64}"}}
                         ]}
@@ -136,7 +136,7 @@ class DynamicBrandDetector:
                     )
                     
                     result = response.choices[0].message.content.strip()
-                    if result.lower() != "unknown":
+                    if result.lower() != "None":
                         return result
                 
                 # If no logo was identified from any box
