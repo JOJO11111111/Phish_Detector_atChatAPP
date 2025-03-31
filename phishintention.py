@@ -1,4 +1,3 @@
-
 import time
 from datetime import datetime
 import argparse
@@ -22,6 +21,27 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'
 # Set your OpenAI API key here
 your_openai_api_key = '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'
 
+# Create a custom print function that logs to file
+log_file_path = '/home/tiffanybao/PhishIntention/results/prompts_printed.txt'
+os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
+
+def log_print(*args, **kwargs):
+    # Get the original print output as a string
+    import sys
+    from io import StringIO
+    
+    # First, print to console as normal
+    print(*args, **kwargs)
+    
+    # Now, capture what would have been printed to a string
+    temp_out = StringIO()
+    print(*args, file=temp_out, **kwargs)
+    output = temp_out.getvalue()
+    
+    # Append to the log file
+    with open(log_file_path, 'a') as f:
+        f.write(output)
+
 
 class PhishIntentionWrapper:
     _caller_prefix = "PhishIntentionWrapper"
@@ -35,7 +55,7 @@ class PhishIntentionWrapper:
         self.AWL_MODEL, self.CRP_CLASSIFIER, self.CRP_LOCATOR_MODEL, self.SIAMESE_MODEL, self.OCR_MODEL, \
             self.SIAMESE_THRE, self.LOGO_FEATS, self.LOGO_FILES, self.DOMAIN_MAP_PATH = load_config()
         # ...=load_config(reload_targetlist=True)
-        print(f'Length of reference list = {len(self.LOGO_FEATS)}')
+        log_print(f'Length of reference list = {len(self.LOGO_FEATS)}')
 
     '''PhishIntention'''
     @profile
@@ -50,7 +70,8 @@ class PhishIntentionWrapper:
         logo_match_time = 0
         crp_class_time = 0
         crp_locator_time = 0
-        print("Entering PhishIntention")
+        log_print("Entering PhishIntention")
+        log_print(f"Analyzing URL: {url}")
 
         while True:
 
@@ -66,19 +87,20 @@ class PhishIntentionWrapper:
 
             # If no element is reported
             if pred_boxes is None or len(pred_boxes) == 0:
-                print('No element is detected, reporte as benign')
+                log_print('No element is detected, reported as benign')
                 return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                             pred_boxes, pred_classes
 
             logo_pred_boxes, _ = find_element_type(pred_boxes, pred_classes, bbox_type='logo')
             if logo_pred_boxes is None or len(logo_pred_boxes) == 0:
-                print('No logo is detected, reporte as benign')
+                log_print('No logo is detected, reported as benign')
                 return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                             pred_boxes, pred_classes
 
-            print('Entering siamese')
+            log_print('Entering siamese')
+            log_print(f'Number of logo boxes: {len(logo_pred_boxes)}')
 
             ######################## Step2: Siamese (Logo matcher) ########################################
             start_time = time.time()
@@ -92,34 +114,39 @@ class PhishIntentionWrapper:
                                                                                       shot_path=screenshot_path,
                                                                                       ts=self.SIAMESE_THRE)
             logo_match_time += time.time() - start_time
+            log_print(f'Siamese result: pred_target={pred_target}, siamese_conf={siamese_conf}')
 
             if pred_target is None:
-                # print('Did not match to any brand, report as benign')
-                # return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
-                #             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                #             pred_boxes, pred_classes
-                print('Did not match to any brand, trying dynamic detection')
-                
-
+                log_print('Did not match to any brand, trying dynamic detection')
+                original_pred_target = pred_target # Store the original pred_target for logging purposes
 
                 ########### Added dynamic detection ############
                 dynamic_brand = self.dynamic_detector.analyze_logo(screenshot_path)
                 if dynamic_brand:
-                    print(f'Dynamically detected brand: {dynamic_brand}')
+                    log_print(f'Dynamically detected brand using GPT: {dynamic_brand}')
+                    log_print(f'Before GPT: pred_target={original_pred_target}, siamese_conf={siamese_conf}')
+
                     pred_target = dynamic_brand
                     matched_domain = [dynamic_brand]  # Set the matched domain to the dynamically detected brand
+                    # Keep the existing siamese_conf, which could explain the 0.77 value
+                    
+                    # Add a flag to indicate this came from GPT
+                    log_print(f'Using GPT-detected brand: {pred_target} with confidence {siamese_conf}')
+                    
+                    if matched_coord is None and len(logo_pred_boxes) > 0:
+                        matched_coord = logo_pred_boxes[0]  # Use first logo box for visualization
+                    
                     phish_category = 1  # Mark as phishing
+                    log_print(f'After GPT: pred_target={pred_target}, siamese_conf={siamese_conf}, phish_category={phish_category}')
 
                 else:
-                    print('No brand detected dynamically, report as benign')
+                    log_print('No brand detected dynamically, report as benign')
                     return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                                 str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                                 pred_boxes, pred_classes
-                
-
 
             ######################## Step3: CRP classifier (if a target is reported) #################################
-            print('A target is reported by siamese, enter CRP classifier')
+            log_print('A target is reported, enter CRP classifier')
             if waive_crp_classifier:  # only run dynamic analysis ONCE
                 break
 
@@ -133,13 +160,14 @@ class PhishIntentionWrapper:
                                                          types=pred_classes,
                                                          model=self.CRP_CLASSIFIER)
             crp_class_time += time.time() - start_time
+            log_print(f'CRP classification result: {cre_pred} (0 = CRP, 1 = non-CRP)')
 
             ######################## Step4: Dynamic analysis #################################
             if cre_pred == 1:
-                print('It is a Non-CRP page, enter dynamic analysis')
+                log_print('It is a Non-CRP page, enter dynamic analysis')
                 # # load driver ONCE!
                 driver = driver_loader()
-                print('Finish loading webdriver')
+                log_print('Finish loading webdriver')
                 # load chromedriver
                 url, screenshot_path, successful, process_time = crp_locator(url=url,
                                                                              screenshot_path=screenshot_path,
@@ -154,42 +182,37 @@ class PhishIntentionWrapper:
 
                 # If dynamic analysis did not reach a CRP
                 if not successful:
-                    print('Dynamic analysis cannot find any link redirected to a CRP page, report as benign')
+                    log_print('Dynamic analysis cannot find any link redirected to a CRP page, report as benign')
                     return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                             pred_boxes, pred_classes
 
                 else:  # dynamic analysis successfully found a CRP
-                    print('Dynamic analysis found a CRP, go back to layout detector')
+                    log_print('Dynamic analysis found a CRP, go back to layout detector')
 
             else:  # already a CRP page
-                print('Already a CRP, continue')
+                log_print('Already a CRP, continue')
                 break
 
         ######################## Step5: Return #################################
         if pred_target is not None:
-            print('Phishing is found!')
+            log_print('Phishing is found!')
             phish_category = 1
             # Visualize, add annotations
-            cv2.putText(plotvis, "Target: {} with confidence {:.4f}".format(pred_target, siamese_conf),
-                        (int(matched_coord[0] + 20), int(matched_coord[1] + 20)),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 0), 2)
+            log_print(f'Adding annotation to visualization: Target: {pred_target} with confidence {siamese_conf}')
+            if matched_coord is not None:
+                cv2.putText(plotvis, "Target: {} with confidence {:.4f}".format(pred_target, siamese_conf),
+                            (int(matched_coord[0] + 20), int(matched_coord[1] + 20)),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 0), 2)
 
+        # Final logging before return
+        log_print(f'Final results: phish_category={phish_category}, pred_target={pred_target}, matched_domain={matched_domain}, siamese_conf={siamese_conf}')
+        
         return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                     str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                     pred_boxes, pred_classes
 
 if __name__ == '__main__':
-
-    '''update domain map'''
-    # with open('./lib/phishpedia/models/domain_map.pkl', "rb") as handle:
-    #     domain_map = pickle.load(handle)
-    #
-    # domain_map['weibo'] = ['sina', 'weibo']
-    #
-    # with open('./lib/phishpedia/models/domain_map.pkl', "wb") as handle:
-    #     pickle.dump(domain_map, handle)
-    # exit()
 
     '''run'''
     today = datetime.now().strftime('%Y%m%d')
@@ -204,6 +227,10 @@ if __name__ == '__main__':
     result_txt = args.output_txt
 
     os.makedirs(request_dir, exist_ok=True)
+    
+    # Clear log file at the start of a new run
+    with open(log_file_path, 'w') as f:
+        f.write(f"=== New Run Started at {datetime.now()} ===\n")
 
     for folder in tqdm(os.listdir(request_dir)):
         html_path = os.path.join(request_dir, folder, "html.txt")
@@ -225,6 +252,10 @@ if __name__ == '__main__':
         if re.search(_forbidden_suffixes, url, re.IGNORECASE):
             continue
 
+        # Log site being processed
+        with open(log_file_path, 'a') as f:
+            f.write(f"\n\n===== Processing folder: {folder}, URL: {url} =====\n")
+
         phish_category, pred_target, matched_domain, \
                 plotvis, siamese_conf, runtime_breakdown, \
                 pred_boxes, pred_classes = phishintention_cls.test_orig_phishintention(url, screenshot_path)
@@ -245,10 +276,9 @@ if __name__ == '__main__':
                 f.write(str(phish_category) + "\t")
                 f.write(str(pred_target) + "\t")  # write top1 prediction only
                 f.write(str(matched_domain) + "\t")
-                f.write(str(siamese_conf) + "\t")
+                f.write(str(siamese_conf) + "\t") 
                 f.write(runtime_breakdown + "\n")
 
         if phish_category:
             os.makedirs(os.path.join(request_dir, folder), exist_ok=True)
             cv2.imwrite(os.path.join(request_dir, folder, "predict.png"), plotvis)
-
