@@ -4,7 +4,7 @@
   <meta name="theme-color" content="#fff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,
                                  maximum-scale=1.0, user-scalable=no">
-  <title>ru.russianmastercach-republick.xyz</title>
+  <title>kiewguide.com</title>
   <style>/* Copyright 2017 The Chromium Authors
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file. */
@@ -5470,40 +5470,81 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$106928949$-->
-            <p>Check if there is a typo in <span>ru.russianmastercach-republick.xyz</span>.</p>
+          <!--?lit$760157536$-->
+            <p><strong>kiewguide.com</strong> took too long to respond.</p>
           
 
-          <!--?lit$106928949$-->
+          <!--?lit$760157536$-->
+            <div id="suggestions-list">
+              <p><!--?lit$760157536$-->Try:</p>
+              <ul class="">
+                <!--?lit$760157536$--><!---->
+                  <li>Checking the connection</li>
+                <!----><!---->
+                  <li><a href="#buttons" onclick="toggleHelpBox()">Checking the proxy and the firewall</a></li>
+                <!---->
+              </ul>
+            </div>
+          
 
-          <div class="error-code"><!--?lit$106928949$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$760157536$-->ERR_TIMED_OUT</div>
 
-          <!--?lit$106928949$-->
+          <!--?lit$760157536$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$106928949$-->
-            <button id="reload-button" class="blue-button text-button" data-url="https://ru.russianmastercach-republick.xyz/">
-              <!--?lit$106928949$-->Reload
+          <!--?lit$760157536$-->
+            <button id="reload-button" class="blue-button text-button" data-url="https://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm">
+              <!--?lit$760157536$-->Reload
             </button>
           
-          <!--?lit$106928949$-->
+          <!--?lit$760157536$-->
         </div>
-        <!--?lit$106928949$-->
+        <!--?lit$760157536$-->
+          <button id="details-button" class="secondary-button text-button
+              small-link ">
+            <!--?lit$760157536$-->Details
+          </button>
+        
       </div>
-      <!--?lit$106928949$-->
+      <!--?lit$760157536$-->
         <div id="details">
-          <!--?lit$106928949$-->
+          <!--?lit$760157536$--><!---->
+            <div class="suggestions">
+              <div class="suggestion-header">Check your Internet connection</div>
+              <div class="suggestion-body">Check any cables and reboot any routers, modems, or other network
+    devices you may be using.</div>
+            </div>
+          <!----><!---->
+            <div class="suggestions">
+              <div class="suggestion-header">Allow Chromium to access the network in your firewall or antivirus
+          settings.</div>
+              <div class="suggestion-body">If it is already listed as a program allowed to access the network, try
+      removing it from the list and adding it again.</div>
+            </div>
+          <!----><!---->
+            <div class="suggestions">
+              <div class="suggestion-header">If you use a proxy server…</div>
+              <div class="suggestion-body">Go to
+          the Chromium menu &gt;
+          <span>Settings</span>
+          &gt;
+          <span>Show advanced settings…</span>
+          &gt;
+          <span>Change proxy settings…</span>
+          and make sure your configuration is set to "no proxy" or "direct."</div>
+            </div>
+          <!---->
         </div>
       
     </div>
-    <!--?lit$106928949$-->
+    <!--?lit$760157536$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->
         <div class="icon "></div>
-        <div id="sub-frame-error-details">Check if there is a typo in <span>ru.russianmastercach-republick.xyz</span>.</div>
+        <div id="sub-frame-error-details"><strong>kiewguide.com</strong> took too long to respond.</div>
       </div>
     
   </div>
@@ -5518,4 +5559,4 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
   </div>
 
 
-<script>var loadTimeDataRaw = {"details":"Details","errorCode":"DNS_PROBE_POSSIBLE","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can’t be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadUrl":"https://ru.russianmastercach-republick.xyz/"},"suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"\u003Cstrong>ru.russianmastercach-republick.xyz\u003C/strong>’s \u003Cabbr id=\"dnsDefinition\">DNS address\u003C/abbr> could not be found. Diagnosing the problem."},"textdirection":"ltr","title":"ru.russianmastercach-republick.xyz"};</script></body></html>
+<script>var loadTimeDataRaw = {"details":"Details","errorCode":"ERR_TIMED_OUT","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can’t be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadUrl":"https://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm"},"suggestionsDetails":[{"body":"Check any cables and reboot any routers, modems, or other network\n    devices you may be using.","header":"Check your Internet connection"},{"body":"If it is already listed as a program allowed to access the network, try\n      removing it from the list and adding it again.","header":"Allow Chromium to access the network in your firewall or antivirus\n          settings."},{"body":"Go to\n          the Chromium menu >\n          \u003Cspan>Settings\u003C/span>\n          >\n          \u003Cspan>Show advanced settings…\u003C/span>\n          >\n          \u003Cspan>Change proxy settings…\u003C/span>\n          and make sure your configuration is set to \"no proxy\" or \"direct.\"","header":"If you use a proxy server…"}],"suggestionsSummaryList":[{"summary":"Checking the connection"},{"summary":"\u003Ca href=\"#buttons\" onclick=\"toggleHelpBox()\">Checking the proxy and the firewall\u003C/a>"}],"suggestionsSummaryListHeader":"Try:","summary":{"msg":"\u003Cstrong>kiewguide.com\u003C/strong> took too long to respond."},"textdirection":"ltr","title":"kiewguide.com"};</script></body></html>

@@ -4,7 +4,7 @@
   <meta name="theme-color" content="#fff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,
                                  maximum-scale=1.0, user-scalable=no">
-  <title>ru.russianmastercach-republick.xyz</title>
+  <title>serv-acamai.com</title>
   <style>/* Copyright 2017 The Chromium Authors
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file. */
@@ -5470,40 +5470,40 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$106928949$-->
-            <p>Check if there is a typo in <span>ru.russianmastercach-republick.xyz</span>.</p>
+          <!--?lit$94673597$-->
+            <p>Check if there is a typo in <span>serv-acamai.com</span>.</p>
           
 
-          <!--?lit$106928949$-->
+          <!--?lit$94673597$-->
 
-          <div class="error-code"><!--?lit$106928949$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$94673597$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$106928949$-->
+          <!--?lit$94673597$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$106928949$-->
-            <button id="reload-button" class="blue-button text-button" data-url="https://ru.russianmastercach-republick.xyz/">
-              <!--?lit$106928949$-->Reload
+          <!--?lit$94673597$-->
+            <button id="reload-button" class="blue-button text-button" data-url="http://serv-acamai.com/1und1/de/index.php">
+              <!--?lit$94673597$-->Reload
             </button>
           
-          <!--?lit$106928949$-->
+          <!--?lit$94673597$-->
         </div>
-        <!--?lit$106928949$-->
+        <!--?lit$94673597$-->
       </div>
-      <!--?lit$106928949$-->
+      <!--?lit$94673597$-->
         <div id="details">
-          <!--?lit$106928949$-->
+          <!--?lit$94673597$-->
         </div>
       
     </div>
-    <!--?lit$106928949$-->
+    <!--?lit$94673597$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->
         <div class="icon "></div>
-        <div id="sub-frame-error-details">Check if there is a typo in <span>ru.russianmastercach-republick.xyz</span>.</div>
+        <div id="sub-frame-error-details">Check if there is a typo in <span>serv-acamai.com</span>.</div>
       </div>
     
   </div>
@@ -5518,4 +5518,4 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
   </div>
 
 
-<script>var loadTimeDataRaw = {"details":"Details","errorCode":"DNS_PROBE_POSSIBLE","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can’t be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadUrl":"https://ru.russianmastercach-republick.xyz/"},"suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"\u003Cstrong>ru.russianmastercach-republick.xyz\u003C/strong>’s \u003Cabbr id=\"dnsDefinition\">DNS address\u003C/abbr> could not be found. Diagnosing the problem."},"textdirection":"ltr","title":"ru.russianmastercach-republick.xyz"};</script></body></html>
+<script>var loadTimeDataRaw = {"details":"Details","errorCode":"DNS_PROBE_POSSIBLE","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can’t be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadUrl":"http://serv-acamai.com/1und1/de/index.php"},"suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"\u003Cstrong>serv-acamai.com\u003C/strong>’s \u003Cabbr id=\"dnsDefinition\">DNS address\u003C/abbr> could not be found. Diagnosing the problem."},"textdirection":"ltr","title":"serv-acamai.com"};</script></body></html>
