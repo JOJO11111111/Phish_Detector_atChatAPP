@@ -153,9 +153,9 @@ def cv_heuristic(driver, orig_url, old_screenshot_path,
             current_url = driver.current_url
             driver.save_screenshot(new_screenshot_path) # save new screenshot
             with open(new_html_path, 'w', encoding='utf-8') as fw:
-                fw.write(driver.page_source)
+                fw.write(driver.page_source) # save new HTML content
             with open(new_info_path, 'w', encoding='utf-8') as fw:
-                fw.write(str(current_url))
+                fw.write(str(current_url)) # save current URL
             time_deduct += time.time() - start_time
 
             # Call CRP classifier
