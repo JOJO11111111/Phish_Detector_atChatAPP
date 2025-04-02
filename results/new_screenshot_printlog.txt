@@ -1,0 +1,197 @@
+=== New Run Started at 2025-04-01 19:20:50.204101 ===
+
+
+
+===== Processing folder: ru.russianmastercach-republick.xyz, URL: https://ru.russianmastercach-republick.xyz/ =====
+Taking fresh screenshot...
+Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=134.0.6998.165)
+Stacktrace:
+#0 0x55fbe994ea2a <unknown>
+#1 0x55fbe9408cf0 <unknown>
+#2 0x55fbe93ffe78 <unknown>
+#3 0x55fbe93f0399 <unknown>
+#4 0x55fbe93f20ad <unknown>
+#5 0x55fbe93f072e <unknown>
+#6 0x55fbe93f00d5 <unknown>
+#7 0x55fbe93efda9 <unknown>
+#8 0x55fbe93edab9 <unknown>
+#9 0x55fbe93ee38a <unknown>
+#10 0x55fbe940c189 <unknown>
+#11 0x55fbe94a7755 <unknown>
+#12 0x55fbe94805f2 <unknown>
+#13 0x55fbe94a6a45 <unknown>
+#14 0x55fbe94803c3 <unknown>
+#15 0x55fbe944c688 <unknown>
+#16 0x55fbe944d7f1 <unknown>
+#17 0x55fbe9914bab <unknown>
+#18 0x55fbe9918a6c <unknown>
+#19 0x55fbe98fbb52 <unknown>
+#20 0x55fbe99195e4 <unknown>
+#21 0x55fbe98dfc5f <unknown>
+#22 0x55fbe993ce38 <unknown>
+#23 0x55fbe993d016 <unknown>
+#24 0x55fbe994d8a6 <unknown>
+#25 0x7fc5baae4ac3 <unknown>
+
+no alert
+Screenshot saved to datasets/test_sites/ru.russianmastercach-republick.xyz/initial_shot.png
+HTML saved to datasets/test_sites/ru.russianmastercach-republick.xyz/html.txt
+Copied screenshot to datasets/test_sites/ru.russianmastercach-republick.xyz/shot.png
+Entering PhishIntention
+Analyzing URL: https://ru.russianmastercach-republick.xyz/
+Entering siamese
+Number of logo boxes: 1
+number of logo boxes: 1
+Siamese result: pred_target=None, siamese_conf=0.7145763039588928
+Did not match to any brand, report as benign
+
+
+===== Processing folder: www.paypal.com, URL: https://www.paypal.com/hk/home =====
+Taking fresh screenshot...
+Screenshot saved to datasets/test_sites/www.paypal.com/initial_shot.png
+HTML saved to datasets/test_sites/www.paypal.com/html.txt
+Copied screenshot to datasets/test_sites/www.paypal.com/shot.png
+Entering PhishIntention
+Analyzing URL: https://www.paypal.com/hk/home
+Entering siamese
+Number of logo boxes: 1
+number of logo boxes: 1
+Siamese result: pred_target=PayPal, siamese_conf=0.8727180361747742
+A target is reported, enter CRP classifier
+CRP classification result: 1 (0 = CRP, 1 = non-CRP)
+It is a Non-CRP page, enter dynamic analysis
+Finish loading webdriver
+Getting url
+Successfully click
+After HTML keyword finder: True
+Dynamic analysis found a CRP, go back to layout detector
+Entering siamese
+Number of logo boxes: 1
+number of logo boxes: 1
+Siamese result: pred_target=PayPal, siamese_conf=0.8730746507644653
+A target is reported, enter CRP classifier
+Phishing is found!
+Adding annotation to visualization: Target: PayPal with confidence 0.8730746507644653
+Final results: phish_category=1, pred_target=PayPal, matched_domain=['paypal.com'], siamese_conf=0.8730746507644653
+
+
+===== Processing folder: apple.com, URL: https://account.apple.com/ =====
+Taking fresh screenshot...
+Screenshot saved to datasets/test_sites/apple.com/initial_shot.png
+HTML saved to datasets/test_sites/apple.com/html.txt
+Copied screenshot to datasets/test_sites/apple.com/shot.png
+Entering PhishIntention
+Analyzing URL: https://account.apple.com/
+Entering siamese
+Number of logo boxes: 2
+number of logo boxes: 2
+Siamese result: pred_target=None, siamese_conf=0.7212288975715637
+Did not match to any brand, report as benign
+
+
+===== Processing folder: tiffanyWebsite.app, URL: https://tiffanybao.netlify.app/ =====
+Taking fresh screenshot...
+Screenshot saved to datasets/test_sites/tiffanyWebsite.app/initial_shot.png
+HTML saved to datasets/test_sites/tiffanyWebsite.app/html.txt
+Copied screenshot to datasets/test_sites/tiffanyWebsite.app/shot.png
+Entering PhishIntention
+Analyzing URL: https://tiffanybao.netlify.app/
+Entering siamese
+Number of logo boxes: 3
+number of logo boxes: 3
+Siamese result: pred_target=None, siamese_conf=0.6755959987640381
+Did not match to any brand, report as benign
+
+
+===== Processing folder: accounts.g.cdcde.com, URL: https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/ =====
+Taking fresh screenshot...
+Message: timeout: Timed out receiving message from renderer: -0.004
+  (Session info: chrome=134.0.6998.165)
+Stacktrace:
+#0 0x564ce72c4a2a <unknown>
+#1 0x564ce6d7ecf0 <unknown>
+#2 0x564ce6d660a7 <unknown>
+#3 0x564ce6d65da9 <unknown>
+#4 0x564ce6d63ab9 <unknown>
+#5 0x564ce6d644ff <unknown>
+#6 0x564ce6d73c4b <unknown>
+#7 0x564ce6d8d13e <unknown>
+#8 0x564ce6d9385b <unknown>
+#9 0x564ce6d64c10 <unknown>
+#10 0x564ce6d8cd90 <unknown>
+#11 0x564ce6e1c916 <unknown>
+#12 0x564ce6df63c3 <unknown>
+#13 0x564ce6dc2688 <unknown>
+#14 0x564ce6dc37f1 <unknown>
+#15 0x564ce728abab <unknown>
+#16 0x564ce728ea6c <unknown>
+#17 0x564ce7271b52 <unknown>
+#18 0x564ce728f5e4 <unknown>
+#19 0x564ce7255c5f <unknown>
+#20 0x564ce72b2e38 <unknown>
+#21 0x564ce72b3016 <unknown>
+#22 0x564ce72c38a6 <unknown>
+#23 0x7f9b8072cac3 <unknown>
+
+Failed to visit URL: https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/
+Failed to take screenshot, skipping
+
+
+===== Processing folder: kiewguide.com, URL: http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm =====
+Taking fresh screenshot...
+Screenshot saved to datasets/test_sites/kiewguide.com/initial_shot.png
+HTML saved to datasets/test_sites/kiewguide.com/html.txt
+Copied screenshot to datasets/test_sites/kiewguide.com/shot.png
+Entering PhishIntention
+Analyzing URL: http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm
+Entering siamese
+Number of logo boxes: 1
+number of logo boxes: 1
+Siamese result: pred_target=None, siamese_conf=0.7270467877388
+Did not match to any brand, report as benign
+
+
+===== Processing folder: 1&1 Ionos+2019-07-28-22`34`40, URL: http://serv-acamai.com/1und1/de/index.php =====
+Taking fresh screenshot...
+Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=134.0.6998.165)
+Stacktrace:
+#0 0x556055e49a2a <unknown>
+#1 0x556055903cf0 <unknown>
+#2 0x5560558fae78 <unknown>
+#3 0x5560558eb399 <unknown>
+#4 0x5560558ed0ad <unknown>
+#5 0x5560558eb72e <unknown>
+#6 0x5560558eb0d5 <unknown>
+#7 0x5560558eada9 <unknown>
+#8 0x5560558e8ab9 <unknown>
+#9 0x5560558e938a <unknown>
+#10 0x556055907189 <unknown>
+#11 0x5560559a2755 <unknown>
+#12 0x55605597b5f2 <unknown>
+#13 0x5560559a1a45 <unknown>
+#14 0x55605597b3c3 <unknown>
+#15 0x556055947688 <unknown>
+#16 0x5560559487f1 <unknown>
+#17 0x556055e0fbab <unknown>
+#18 0x556055e13a6c <unknown>
+#19 0x556055df6b52 <unknown>
+#20 0x556055e145e4 <unknown>
+#21 0x556055ddac5f <unknown>
+#22 0x556055e37e38 <unknown>
+#23 0x556055e38016 <unknown>
+#24 0x556055e488a6 <unknown>
+#25 0x7f845b33dac3 <unknown>
+
+no alert
+Screenshot saved to datasets/test_sites/1&1 Ionos+2019-07-28-22`34`40/initial_shot.png
+HTML saved to datasets/test_sites/1&1 Ionos+2019-07-28-22`34`40/html.txt
+Copied screenshot to datasets/test_sites/1&1 Ionos+2019-07-28-22`34`40/shot.png
+Entering PhishIntention
+Analyzing URL: http://serv-acamai.com/1und1/de/index.php
+Entering siamese
+Number of logo boxes: 1
+number of logo boxes: 1
+Siamese result: pred_target=None, siamese_conf=0.7145763039588928
+Did not match to any brand, report as benign
