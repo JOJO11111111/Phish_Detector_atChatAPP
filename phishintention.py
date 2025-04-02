@@ -105,15 +105,24 @@ class PhishIntentionWrapper:
 
             ######################## Step2: Siamese (Logo matcher) ########################################
             start_time = time.time()
-            pred_target, matched_domain, matched_coord, siamese_conf = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
-                                                                                      domain_map_path=self.DOMAIN_MAP_PATH,
-                                                                                      model = self.SIAMESE_MODEL,
-                                                                                      ocr_model = self.OCR_MODEL,
-                                                                                      logo_feat_list = self.LOGO_FEATS,
-                                                                                      file_name_list = self.LOGO_FILES,
-                                                                                      url=url,
-                                                                                      shot_path=screenshot_path,
-                                                                                      ts=self.SIAMESE_THRE)
+            # pred_target, matched_domain, matched_coord, siamese_conf = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
+            #                                                                           domain_map_path=self.DOMAIN_MAP_PATH,
+            #                                                                           model = self.SIAMESE_MODEL,
+            #                                                                           ocr_model = self.OCR_MODEL,
+            #                                                                           logo_feat_list = self.LOGO_FEATS,
+            #                                                                           file_name_list = self.LOGO_FILES,
+            #                                                                           url=url,
+            #                                                                           shot_path=screenshot_path,
+            #                                                                           ts=self.SIAMESE_THRE)
+            pred_target, matched_domain, matched_coord, siamese_conf, is_phishing = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
+                                                                                  domain_map_path=self.DOMAIN_MAP_PATH,
+                                                                                  model=self.SIAMESE_MODEL,
+                                                                                  ocr_model=self.OCR_MODEL,
+                                                                                  logo_feat_list=self.LOGO_FEATS,
+                                                                                  file_name_list=self.LOGO_FILES,
+                                                                                  url=url,
+                                                                                  shot_path=screenshot_path,
+                                                                                  ts=self.SIAMESE_THRE)
             logo_match_time += time.time() - start_time
             log_print(f'Siamese result: pred_target={pred_target}, siamese_conf={siamese_conf}')
 
@@ -131,6 +140,11 @@ class PhishIntentionWrapper:
                     log_print(f'Before GPT: pred_target={original_pred_target}, siamese_conf={siamese_conf}')
                     log_print(f'Before GPT: now starting to match the domains...')
                     
+                    # Always use the same confidence value for GPT detections
+                    siamese_conf = 0.85  # Consistent confidence for GPT
+
+
+
                     ########## Start matching domain ##########
                     import pickle
                     from tldextract import tldextract
@@ -173,7 +187,7 @@ class PhishIntentionWrapper:
                         log_print(f"Domain matches brand {dynamic_brand}, legitimate site")
                                
                         # Still record the brand detection for reporting purposes but mark as benign
-                        siamese_conf = 0.85  # Default high confidence for GPT-detected brands
+                        # siamese_conf = 0.85  # Default high confidence for GPT-detected brands
                         pred_target = dynamic_brand
                         matched_domain = expected_domains
 
@@ -192,7 +206,7 @@ class PhishIntentionWrapper:
                         log_print(f"Domain inconsistency detected: {dynamic_brand} brand on {current_domain}, potential phishing")
                         
                         # Set confidence and coordinates for further processing/visualization
-                        siamese_conf = 0.85  # Default high confidence for GPT-detected brands
+                        # siamese_conf = 0.85  # Default high confidence for GPT-detected brands
                         if matched_coord is None and len(logo_pred_boxes) > 0:
                             matched_coord = logo_pred_boxes[0]  # Use first logo box for visualization
 
@@ -254,7 +268,11 @@ class PhishIntentionWrapper:
                 break
 
         ######################## Step5: Return #################################
-        if pred_target is not None:
+        if pred_target is not None and  (not is_phishing ):
+            log_print('Matched to a brand but not phishing, report as benign')
+            phish_category = 0
+
+        elif pred_target is not None and is_phishing:
             log_print('Phishing is found!')
             phish_category = 1
             # Visualize, add annotations
@@ -341,6 +359,9 @@ if __name__ == '__main__':
                 f.write(str(used_gpt) + "\n")  # Add GPT usage flag
 
         # Generate predict.png for phishing sites AND for legitimate sites where a brand was detected
-        if phish_category == 1 or pred_target is not None:
+        if phish_category == 1 :
             os.makedirs(os.path.join(request_dir, folder), exist_ok=True)
             cv2.imwrite(os.path.join(request_dir, folder, "predict.png"), plotvis)
+        elif  pred_target is not None:
+            os.makedirs(os.path.join(request_dir, folder), exist_ok=True)
+            cv2.imwrite(os.path.join(request_dir, folder, "Logo_matched_but_benign.png"), plotvis)
