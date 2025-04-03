@@ -71,6 +71,7 @@ class PhishIntentionWrapper:
         crp_class_time = 0
         crp_locator_time = 0
         used_gpt = 0  # Initialize GPT usage tracking
+        is_mismatch = False
         log_print("Entering PhishIntention")
         log_print(f"Analyzing URL: {url}")
 
@@ -114,7 +115,7 @@ class PhishIntentionWrapper:
             #                                                                           url=url,
             #                                                                           shot_path=screenshot_path,
             #                                                                           ts=self.SIAMESE_THRE)
-            pred_target, matched_domain, matched_coord, siamese_conf, is_phishing = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
+            pred_target, matched_domain, matched_coord, siamese_conf, is_mismatch = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
                                                                                   domain_map_path=self.DOMAIN_MAP_PATH,
                                                                                   model=self.SIAMESE_MODEL,
                                                                                   ocr_model=self.OCR_MODEL,
@@ -123,6 +124,7 @@ class PhishIntentionWrapper:
                                                                                   url=url,
                                                                                   shot_path=screenshot_path,
                                                                                   ts=self.SIAMESE_THRE)
+            
             logo_match_time += time.time() - start_time
             log_print(f'Siamese result: pred_target={pred_target}, siamese_conf={siamese_conf}')
 
@@ -133,7 +135,9 @@ class PhishIntentionWrapper:
                 ########### Added dynamic detection ############
                 dynamic_brand = self.dynamic_detector.analyze_logo(screenshot_path)
                 
-                if dynamic_brand:
+                # if dynamic_brand is not None :
+                if dynamic_brand is not None and dynamic_brand.lower() != "none":
+
                     # Mark as using GPT only if it successfully identified a brand
                     used_gpt = 1
                     log_print(f'Dynamically detected brand using GPT: {dynamic_brand}')
@@ -185,7 +189,7 @@ class PhishIntentionWrapper:
                     if domain_match:
                         # We're on a legitimate domain for this brand
                         log_print(f"Domain matches brand {dynamic_brand}, legitimate site")
-                               
+                        is_mismatch = False # Domain matches, not phishing
                         # Still record the brand detection for reporting purposes but mark as benign
                         # siamese_conf = 0.85  # Default high confidence for GPT-detected brands
                         pred_target = dynamic_brand
@@ -204,16 +208,18 @@ class PhishIntentionWrapper:
                         # Domain inconsistency - potential phishing
                         matched_domain = expected_domains  # Keep the expected domains for reporting
                         log_print(f"Domain inconsistency detected: {dynamic_brand} brand on {current_domain}, potential phishing")
-                        
-                        # Set confidence and coordinates for further processing/visualization
-                        # siamese_conf = 0.85  # Default high confidence for GPT-detected brands
+                        is_mismatch = True # Domain mismatch detected
+                   
                         if matched_coord is None and len(logo_pred_boxes) > 0:
                             matched_coord = logo_pred_boxes[0]  # Use first logo box for visualization
 
                     log_print(f'After GPT: pred_target={pred_target}, matched_domain={matched_domain}, siamese_conf={siamese_conf}')
-                            
+                          
+                
+                
                 else: # GPT also says this logo is None 
                     log_print('Even with help of GPT, still did not match to any brand, report as benign')
+                    used_gpt = 1
                     return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                                 str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                                 pred_boxes, pred_classes, used_gpt
@@ -268,19 +274,38 @@ class PhishIntentionWrapper:
                 break
 
         ######################## Step5: Return #################################
-        if pred_target is not None and  (not is_phishing ):
-            log_print('Matched to a brand but not phishing, report as benign')
-            phish_category = 0
+        # if pred_target is not None and  (not is_phishing ):
+        #     log_print('Matched to a brand but not phishing, report as benign') #is phishing is False
+        #     phish_category = 0
 
-        elif pred_target is not None and is_phishing:
-            log_print('Phishing is found!')
-            phish_category = 1
-            # Visualize, add annotations
+        # elif pred_target is not None and is_phishing: # is phishing is True
+        #     log_print('Phishing is found!')
+        #     phish_category = 1
+
+
+        if pred_target is not None: #has logo/brand matched
+            if is_mismatch and cre_pred == 0:  # Brand mismatch and is a CRP page
+                log_print('Phishing detected: Logo doesnt match with its domain')
+                phish_category = 1
+            elif is_mismatch:  # Domain mismatch but no CRP
+                log_print('Domain mismatch but no CRP, benign')
+                phish_category = 0  
+            elif cre_pred == 0:  # Domain matches + CRP
+                log_print('Brand match and has a CRP, Legitimate (e.g., real login page)')
+                phish_category = 0
+            else:  # Domain matches + no CRP
+                log_print('Legitimate brand match')
+                phish_category = 0
+
             log_print(f'Adding annotation to visualization: Target: {pred_target} with confidence {siamese_conf}')
             if matched_coord is not None:
                 cv2.putText(plotvis, "Target: {} with confidence {:.4f}".format(pred_target, siamese_conf),
                             (int(matched_coord[0] + 20), int(matched_coord[1] + 20)),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 0), 2)
+                
+
+
+        
 
         # Final logging before return
         log_print(f'Final results: phish_category={phish_category}, pred_target={pred_target}, matched_domain={matched_domain}, siamese_conf={siamese_conf}, used_gpt={used_gpt}')
@@ -288,6 +313,12 @@ class PhishIntentionWrapper:
         return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                     str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                     pred_boxes, pred_classes, used_gpt
+    
+
+
+
+
+
 
 if __name__ == '__main__':
 
@@ -365,3 +396,4 @@ if __name__ == '__main__':
         elif  pred_target is not None:
             os.makedirs(os.path.join(request_dir, folder), exist_ok=True)
             cv2.imwrite(os.path.join(request_dir, folder, "Logo_matched_but_benign.png"), plotvis)
+
