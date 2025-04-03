@@ -965,7 +965,7 @@ def check_domain_brand_inconsistency(logo_boxes,
                                      shot_path: str,
                                      url: str,
                                      ts: float):
-    is_phishing = False
+    is_mismatch = False
 
     # targetlist domain list
     with open(domain_map_path, 'rb') as handle:
@@ -1004,12 +1004,12 @@ def check_domain_brand_inconsistency(logo_boxes,
                 
                 if domain_match:
                     # Domain matches - legitimate site
-                    is_phishing = False
-                    return matched_target, matched_domain, matched_coord, this_conf,is_phishing
+                    is_mismatch = False
+                    return matched_target, matched_domain, matched_coord, this_conf,is_mismatch
                 else:
                     # Domain mismatch - potential phishing
-                    is_phishing = True
+                    is_mismatch = True
                     break  # Keep the match for further processing
             break  # only look at 1st logo
 
-    return brand_converter(matched_target), matched_domain, matched_coord, this_conf, is_phishing
+    return brand_converter(matched_target), matched_domain, matched_coord, this_conf, is_mismatch
