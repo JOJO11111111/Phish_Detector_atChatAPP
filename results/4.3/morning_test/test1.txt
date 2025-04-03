@@ -1,0 +1,9 @@
+www.purepaypal.com 	https://www.paypal.com/	0	PayPal	['paypal.com']	0.85	1.133573055267334|1.0420081615447998|0.6876299381256104|2.975454330444336	1
+ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.9677862	0.2663259506225586|0.22389459609985352|0.14018630981445312|1.086334466934204	0
+www.paypal.com	https://www.paypal.com/hk/home	0	PayPal	['paypal.com']	0.873081	1.194481372833252|0.5706396102905273|0.17528963088989258|0.20037269592285156	0
+dio'sWebsite	https://tiffanybao.netlify.app/	0	LinkedIn Corporation	['linkedin.com']	0.85	0.20133757591247559|0.7383668422698975|0.31830525398254395|0.6704185009002686	1
+Absa Group+2020-09-14-16`49`20	http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==	0	Absa Group	['absa.com']	0.93226933	0.19815707206726074|0.25821566581726074|0.22895288467407227|0.055939674377441406	0
+apple.com	https://account.apple.com/	0	Apple	['apple.com', 'icloud.com']	0.85	1.127779483795166|0.5840833187103271|0|0	1
+accounts.g.cdcde.com	https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/	1	Google	['google.com', 'appspot.com', 'appspot.com']	0.96792513	0.5419046878814697|0.2249312400817871|0.012738466262817383|0	0
+kiewguide.com	http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm	1	Absa Group	['absa.com']	0.93878925	0.22155094146728516|0.20931243896484375|0.0912480354309082|0	0
+1&1 Ionos+2019-07-28-22`34`40	http://serv-acamai.com/1und1/de/index.php	1	1&1 Ionos	['ionos.com']	0.85	1.4995322227478027|0.4900546073913574|0.10948801040649414|0	1

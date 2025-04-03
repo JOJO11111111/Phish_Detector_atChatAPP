@@ -1,0 +1,11 @@
+folder,url,has_logo,brand_matched,brand_confidence,domain_brand_mismatch,has_login_elements,has_password_field,page_has_security_indicators,image_quality_score,logo_size_proportion,logo_position_typical,used_gpt_detection,gpt_confidence,is_crp,domain_match_score,phish_score
+www.purepaypal.com ,https://www.paypal.com/signin,1.0,1.0,0.8730761408805847,0.0,1.0,1.0,1.0,0.8,0.0009605536763228046,0.0,0.0,0.0,0.0,1.0,0.0
+ru.russianmastercach-republick.xyz,https://ru.russianmastercach-republick.xyz/,1.0,1.0,0.9677866697311401,1.0,0.0,0.0,1.0,0.8,0.014899389717623649,0.0,0.0,0.0,0.0,0.0,0.6
+www.paypal.com,https://www.paypal.com/signin,1.0,1.0,0.8730761408805847,0.0,1.0,1.0,1.0,0.8,0.0009605536763228046,0.0,0.0,0.0,0.0,1.0,0.0
+dio'sWebsite,https://tiffanybao.netlify.app/,1.0,0.0,0.6860458850860596,0.0,0.0,0.0,1.0,0.5,0.0033433596847311973,0.0,1.0,0.0,0.0,0.0,0.0
+Absa Group+2020-09-14-16`49`20,http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==,1.0,1.0,0.9322685599327087,1.0,0.0,0.0,0.0,0.8,0.0024828680061999664,0.0,0.0,0.0,0.0,0.0,0.6
+apple.com,https://account.apple.com/,1.0,1.0,0.85,0.0,0.0,0.0,1.0,0.7,0.003900356615352825,0.0,1.0,0.85,0.0,1.0,0.0
+accounts.g.cdcde.com,https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/,1.0,1.0,0.9679251909255981,1.0,1.0,1.0,1.0,0.8,0.0012462050826461226,0.0,0.0,0.0,1.0,0.0,1.0
+kiewguide.com,http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm,1.0,1.0,0.9387902617454529,1.0,1.0,0.0,0.0,0.8,0.007764126045521205,0.0,0.0,0.0,1.0,0.0,1.0
+faketiffany'sWebsite,https://tiffanybao.netlify.app/#projects,1.0,0.0,0.6860458850860596,0.0,0.0,0.0,1.0,0.5,0.0033433596847311973,0.0,1.0,0.0,0.0,0.0,0.0
+1&1 Ionos+2019-07-28-22`34`40,http://serv-acamai.com/1und1/de/index.php,1.0,1.0,0.85,1.0,1.0,0.0,0.0,0.7,0.00405725651008024,0.0,1.0,0.85,1.0,0.0,1.0
