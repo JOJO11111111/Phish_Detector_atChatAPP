@@ -1,0 +1,295 @@
+<html data-adblockkey="MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANDrp2lz7AOmADaN8tA50LsWcjLFyQFcb/P2Txc58oYOeILb3vBw7J6f4pamkAQVSQuqYsKx3YzdUHCvbVZvFUsCAwEAAQ==_a4qLmYMHbuIkE/VttTtmxqDVDrF6cEGTr2hMTVis6ND8DmxuM0IoE5TSPUJojiGT/LYQOIsRLsKtUweqO83RRQ==" lang="en" style="background: #2B2B2B;"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQI12P4//8/AAX+Av7czFnnAAAAAElFTkSuQmCC">
+    <link rel="preconnect" href="https://www.google.com" crossorigin="">
+<script src="https://www.googletagmanager.com/gtag/js?id=G-PXK3952T2P"></script><title>arandasrestaurant.com</title><meta name="description" content="See relevant content for arandasrestaurant.com"><style>* {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+}
+
+html {
+  background-color: #2B2B2B;
+  height: 100%;
+}
+
+body {
+  min-height: 90%;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1.2px;
+  color: #ccc;
+  text-align: center;
+}
+
+/* App Target - This starts hidden until we apply a class to "activate" it */
+
+#target {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Status Messages - These are displayed when we are not rendering ad blocks or Related Search */
+
+#pk-status-message {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sales Box - Default State */
+
+#sales-box {
+  display: block;
+  width: 100%;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  color: #8EABC0;
+}
+
+#sales-box a {
+  display: block;
+  width: 100%;
+  text-decoration: inherit;
+  color: #8EABC0;
+  cursor: pointer;
+}
+
+/* Sales Box - Highlighted State */
+
+#sales-box.is-highlighted {
+  position: relative;
+  z-index: 1;
+  background: #032438 linear-gradient(to top, #044368 0%, #000 100%);
+  box-shadow: 0 0 15px 0 #000;
+  border-bottom: 3px solid #262626;
+}
+
+#sales-box.is-highlighted a {
+  line-height: 1.3;
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  background: none;
+}
+
+/* Ellipsis Loader */
+
+.pk-loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.pk-loader div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ccc;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.pk-loader div:nth-child(1) {
+  left: 8px;
+  animation: pk-anim-1 0.6s infinite;
+}
+
+.pk-loader div:nth-child(2) {
+  left: 8px;
+  animation: pk-anim-2 0.6s infinite;
+}
+
+.pk-loader div:nth-child(3) {
+  left: 32px;
+  animation: pk-anim-2 0.6s infinite;
+}
+
+.pk-loader div:nth-child(4) {
+  left: 56px;
+  animation: pk-anim-1 0.6s infinite;
+  animation-direction: reverse;
+}
+
+.pk-loader-text {
+  position: fixed;
+  font-size: 12px;
+  right: 20px;
+  bottom: 20px;
+  font-weight: lighter;
+}
+
+/* Utilities */
+
+.pk-message-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.pk-page-ready {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hide-sales-banner > #sales-banner {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .hidden-xs {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Animation */
+
+@keyframes pk-anim-1 {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes pk-anim-2 {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(24px, 0);
+  }
+}
+</style><style>:root {
+  --rswidth: 700px;
+  --sales-banner-height: 0;
+}
+
+body, html {
+    font-family: sans-serif, 'Arial';
+    height: 100%;
+    background-color: #2B2B2B;
+    margin: 0 !important;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#target {
+    position: relative;
+    height: auto;
+    margin: 0 auto !important;
+}
+main {
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+header {
+    text-align: center;
+    padding: 45px 0;
+}
+header h1 {
+    font-size: 29px;
+    color: #ccc;
+    text-transform: uppercase;
+    margin: 0;
+}
+main section {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+section .ad-block {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+
+}
+#rs {
+    width: 100%;
+    max-width: var(--rswidth);
+    min-height: 480px;
+    height: 100%;
+}
+footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0px;
+    width: 100%;
+    color: #555;
+}
+footer a {
+    color: #555;
+}
+
+#sales-banner {
+    height: var(--sales-banner-height);
+} 
+
+#sales-banner.top { 
+    margin-bottom: 8px; 
+} 
+
+#sales-banner.bottom { 
+    margin-top: 8px; 
+}
+:root { --sales-banner-height:40px; }</style></head>
+<body>
+<div id="target" style="opacity: 0" class="pk-page-ready">
+    <div id="sales-banner" class="top">
+        <iframe id="plFrame" data-domain="arandasrestaurant.com" width="100%" height="50px" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+    </div>
+
+
+<main>
+      
+      <div style="padding:4em 0"></div>
+    
+    <section>
+        <div class="ad-block">
+            <div class="ads">
+                <div id="ad-1" style="height: auto;"><iframe frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" width="100%" name="master-a-1|{&quot;name&quot;:&quot;master-1&quot;,&quot;master-a-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:10,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;role&quot;:&quot;s&quot;,&quot;adLoadedCallback&quot;:null,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;},&quot;master-b-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:10,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;role&quot;:&quot;s&quot;,&quot;adLoadedCallback&quot;:null,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;},&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;personalizedAds&quot;:false,&quot;channel&quot;:&quot;pid-bodis-gcontrol47,pid-bodis-gcontrol105,pid-bodis-gcontrol422,pid-bodis-gcontrol152,pid-bodis-gcontrol162&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:3,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;query&quot;:&quot;Restaurant Menu&quot;,&quot;role&quot;:&quot;m&quot;,&quot;sct&quot;:&quot;ID=8a1c82ab74652c66:T=1743658961:RT=1743658961:S=ALNI_Mam13gIFP7sPeNELC9tGKSIVFZZjA&quot;,&quot;sc_status&quot;:6,&quot;hl&quot;:&quot;en&quot;,&quot;ivt&quot;:true,&quot;resultsPageBaseUrl&quot;:&quot;https://arandasrestaurant.com/?caf=1&amp;bpt=345&amp;viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%3D%3D&amp;query=Restaurant+Menu&amp;afdToken=ChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB&amp;pcsa=false&amp;nb=0&amp;nm=2&amp;nx=331&amp;ny=45&amp;is=700x363&amp;clkt=3&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;terms&quot;:&quot;Food Menu,Arandas Mexican Restaurant,Restaurant Menu,Order Food Online,Online Restaurant Menu&quot;,&quot;kw&quot;:&quot;Food Menu&quot;,&quot;afdToken&quot;:&quot;ChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTermLength&quot;:50,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;uiOptimize&quot;:false,&quot;domainRegistrant&quot;:&quot;as-drid-2561634113391178&quot;}}" id="master-a-1" src="https://syndicatedsearch.goog/afs/ads/i/iframe.html" allow="attribution-reporting" style="visibility: hidden; height: 0px; display: block;"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" width="100%" name="{&quot;name&quot;:&quot;master-1&quot;,&quot;master-a-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:10,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;role&quot;:&quot;s&quot;,&quot;adLoadedCallback&quot;:null,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;},&quot;master-b-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:10,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;role&quot;:&quot;s&quot;,&quot;adLoadedCallback&quot;:null,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;},&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;personalizedAds&quot;:false,&quot;channel&quot;:&quot;pid-bodis-gcontrol47,pid-bodis-gcontrol105,pid-bodis-gcontrol422,pid-bodis-gcontrol152,pid-bodis-gcontrol162&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:3,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;query&quot;:&quot;Restaurant Menu&quot;,&quot;role&quot;:&quot;m&quot;,&quot;sct&quot;:&quot;ID=8a1c82ab74652c66:T=1743658961:RT=1743658961:S=ALNI_Mam13gIFP7sPeNELC9tGKSIVFZZjA&quot;,&quot;sc_status&quot;:6,&quot;hl&quot;:&quot;en&quot;,&quot;ivt&quot;:true,&quot;resultsPageBaseUrl&quot;:&quot;https://arandasrestaurant.com/?caf=1&amp;bpt=345&amp;viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%3D%3D&amp;query=Restaurant+Menu&amp;afdToken=ChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB&amp;pcsa=false&amp;nb=0&amp;nm=2&amp;nx=331&amp;ny=45&amp;is=700x363&amp;clkt=3&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;terms&quot;:&quot;Food Menu,Arandas Mexican Restaurant,Restaurant Menu,Order Food Online,Online Restaurant Menu&quot;,&quot;kw&quot;:&quot;Food Menu&quot;,&quot;afdToken&quot;:&quot;ChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTermLength&quot;:50,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;uiOptimize&quot;:false,&quot;domainRegistrant&quot;:&quot;as-drid-2561634113391178&quot;}}" id="master-1" src="https://syndicatedsearch.goog/afs/ads?adtest=off&amp;psid=3113057640&amp;pcsa=false&amp;channel=pid-bodis-gcontrol47%2Cpid-bodis-gcontrol105%2Cpid-bodis-gcontrol422%2Cpid-bodis-gcontrol152%2Cpid-bodis-gcontrol162&amp;client=dp-bodis01_js&amp;r=m&amp;sct=ID%3D8a1c82ab74652c66%3AT%3D1743658961%3ART%3D1743658961%3AS%3DALNI_Mam13gIFP7sPeNELC9tGKSIVFZZjA&amp;sc_status=6&amp;hl=en&amp;ivt=1&amp;rpbu=https%3A%2F%2Farandasrestaurant.com%2F%3Fcaf%3D1%26bpt%3D345%26viks%3Dc3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%253D%253D%26query%3DRestaurant%2BMenu%26afdToken%3DChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB%26pcsa%3Dfalse%26nb%3D0%26nm%3D2%26nx%3D331%26ny%3D45%26is%3D700x363%26clkt%3D3&amp;terms=Food%20Menu%2CArandas%20Mexican%20Restaurant%2CRestaurant%20Menu%2COrder%20Food%20Online%2COnline%20Restaurant%20Menu&amp;kw=Food%20Menu&amp;max_radlink_len=50&amp;type=0&amp;uiopt=false&amp;swp=as-drid-2561634113391178&amp;q=Restaurant%20Menu&amp;afdt=ChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB&amp;oe=UTF-8&amp;ie=UTF-8&amp;fexp=21404%2C17301437%2C17301439%2C17301442%2C17301548%2C17301266%2C72717107&amp;format=n3&amp;ad=n3&amp;nocache=531743658966883&amp;num=0&amp;output=afd_ads&amp;domain_name=arandasrestaurant.com&amp;v=3&amp;bsl=8&amp;pac=0&amp;u_his=6&amp;u_tz=-240&amp;dt=1743658966884&amp;u_w=800&amp;u_h=600&amp;biw=1920&amp;bih=941&amp;psw=1920&amp;psh=847&amp;frm=0&amp;uio=-&amp;cont=ad-1&amp;drt=0&amp;jsid=caf&amp;nfp=1&amp;jsv=740324255&amp;rurl=https%3A%2F%2Farandasrestaurant.com%2F%3Fcaf%3D1%26bpt%3D345%26viks%3Dc3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%253D%253D%26query%3DRestaurant%2BMenu%26afdToken%3DChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB%26pcsa%3Dfalse%26nb%3D0%26nm%3D2%26nx%3D331%26ny%3D45%26is%3D700x363%26clkt%3D3&amp;referer=https%3A%2F%2Fsyndicatedsearch.goog%2F" allow="attribution-reporting" style="visibility: visible; height: 1092px; display: block;" title=""></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" width="100%" name="master-b-1|{&quot;name&quot;:&quot;master-1&quot;,&quot;master-a-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:10,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;role&quot;:&quot;s&quot;,&quot;adLoadedCallback&quot;:null,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;},&quot;master-b-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:10,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;role&quot;:&quot;s&quot;,&quot;adLoadedCallback&quot;:null,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;},&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;https://click-use1.bodis.com/_tr?click=true&amp;session=55ef5e7a-d0fa-48fd-bc03-53d016792258&amp;signature=UxFdVMwNFNwN0wzODEybVeyJhcHBfdmVyc2lvbiI6IjAuNi42IiwiY2FmX2NsaWVudF9pZCI6InBhcnRuZXItZHAtYm9kaXMwMV9qcyIsImNoYW5uZWwiOiJwaWQtYm9kaXMtZ2NvbnRyb2w0NyxwaWQtYm9kaXMtZ2NvbnRyb2wxMDUscGlkLWJvZGlzLWdjb250cm9sNDIyLHBpZC1ib2Rpcy1nY29udHJvbDE1MixwaWQtYm9kaXMtZ2NvbnRyb2wxNjIiLCJkZXNrdG9wIjp0cnVlLCJ0ZXJtcyI6IkZvb2QgTWVudSxBcmFuZGFzIE1leGljYW4gUmVzdGF1cmFudCxSZXN0YXVyYW50IE1lbnUsT3JkZXIgRm9vZCBPbmxpbmUsT25saW5lIFJlc3RhdXJhbnQgTWVudSIsImZkX3NlcnZlcl9kYXRldGltZSI6MTc0MzY1ODk3MSwiZmRfc2VydmVyIjoiaXAtMTAtMjAxLTE2LTgzLmVjMi5pbnRlcm5hbCIsImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTciLCJpdnQiOnRydWUsIm1vYmlsZSI6ZmFsc2UsInBhZ2VfbWV0aG9kIjoiR0VUIiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MSZicHQ9MzQ1JnZpa3M9YzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCZxdWVyeT1SZXN0YXVyYW50K01lbnUmYWZkVG9rZW49Q2hNSW82X3A2NU83akFNVndSWlpCUjFXM0NEX0VvSUJBWlM2cVk5cnVUM3JMUjhJa1B5VFNhdXBMcWhXaG9fWXBSWmM3MWhJdmxzcWd3ZnU5TkRYR2VxcDJSUUU1RjFZeFdhWThYOFFTeElOdGdReE96SUdKbG1ySV9LaU51WHJWQk9FVmNaZWx4V3FhV0E4VkVGbm9nV2tiaTN6R01HdG92S3BuRlNBdWxKNWJzS3Z4N0ptaFpYaEYtZFZCNkxQSGpuVG4yaGhyamRWbWlBQiZwY3NhPWZhbHNlJm5iPTAmbm09MiZueD0zMzEmbnk9NDUmaXM9NzAweDM2MyZjbGt0PTMiLCJ0YWJsZXQiOmZhbHNlLCJ0ZW1wbGF0ZV9pZCI6MzQ1LCJ0eXBlIjoiY2xpY2siLCJ1c2VyX2lkIjo2OTQyNSwidXVpZCI6IjU1ZWY1ZTdhLWQwZmEtNDhmZC1iYzAzLTUzZDAxNjc5MjI1OCIsInRpbWV6b25lX29mZnNldCI6LTQsIndpbmRvd19yZXNvbHV0aW9uIjp7IndpZHRoIjoxOTIwLCJoZWlnaHQiOjk0MX19&quot;,&quot;container&quot;:&quot;ad-1&quot;,&quot;styleId&quot;:&quot;3113057640&quot;,&quot;personalizedAds&quot;:false,&quot;channel&quot;:&quot;pid-bodis-gcontrol47,pid-bodis-gcontrol105,pid-bodis-gcontrol422,pid-bodis-gcontrol152,pid-bodis-gcontrol162&quot;,&quot;domainName&quot;:&quot;arandasrestaurant.com&quot;,&quot;fexp&quot;:&quot;21404,17301437,17301439,17301442,17301548,17301266,72717107&quot;,&quot;masterNumber&quot;:1,&quot;number&quot;:3,&quot;pubId&quot;:&quot;dp-bodis01_js&quot;,&quot;query&quot;:&quot;Restaurant Menu&quot;,&quot;role&quot;:&quot;m&quot;,&quot;sct&quot;:&quot;ID=8a1c82ab74652c66:T=1743658961:RT=1743658961:S=ALNI_Mam13gIFP7sPeNELC9tGKSIVFZZjA&quot;,&quot;sc_status&quot;:6,&quot;hl&quot;:&quot;en&quot;,&quot;ivt&quot;:true,&quot;resultsPageBaseUrl&quot;:&quot;https://arandasrestaurant.com/?caf=1&amp;bpt=345&amp;viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%3D%3D&amp;query=Restaurant+Menu&amp;afdToken=ChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB&amp;pcsa=false&amp;nb=0&amp;nm=2&amp;nx=331&amp;ny=45&amp;is=700x363&amp;clkt=3&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;terms&quot;:&quot;Food Menu,Arandas Mexican Restaurant,Restaurant Menu,Order Food Online,Online Restaurant Menu&quot;,&quot;kw&quot;:&quot;Food Menu&quot;,&quot;afdToken&quot;:&quot;ChMIo6_p65O7jAMVwRZZBR1W3CD_EoIBAZS6qY9ruT3rLR8IkPyTSaupLqhWho_YpRZc71hIvlsqgwfu9NDXGeqp2RQE5F1YxWaY8X8QSxINtgQxOzIGJlmrI_KiNuXrVBOEVcZelxWqaWA8VEFnogWkbi3zGMGtovKpnFSAulJ5bsKvx7JmhZXhF-dVB6LPHjnTn2hhrjdVmiAB&quot;,&quot;ie&quot;:&quot;UTF-8&quot;,&quot;maxTermLength&quot;:50,&quot;maxTop&quot;:null,&quot;minTop&quot;:null,&quot;oe&quot;:&quot;UTF-8&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;uiOptimize&quot;:false,&quot;domainRegistrant&quot;:&quot;as-drid-2561634113391178&quot;}}" id="master-b-1" src="https://syndicatedsearch.goog/afs/ads/i/iframe.html" allow="attribution-reporting" style="visibility: hidden; height: 0px; display: block;"></iframe></div>
+                <div id="ad-2"></div>
+            </div>
+        </div>
+        <div id="rs"></div>
+    </section>
+    <footer>
+        <span>Copyright 2025</span>
+	    <span style="padding:0px 8px;">•</span>
+	    <a href="/privacy" target="_blank">Privacy Policy</a>
+	    <span style="padding:0px 8px;">•</span>
+	    <a href="/legal" target="_blank">Legal</a>
+        <p id="imprint-text"></p>
+    </footer>
+</main>
+
+</div>
+<script>window.park = "eyJ1dWlkIjoiNTVlZjVlN2EtZDBmYS00OGZkLWJjMDMtNTNkMDE2NzkyMjU4IiwicGFnZV90aW1lIjoxNzQzNjU4OTcxLCJwYWdlX3VybCI6Imh0dHBzOi8vYXJhbmRhc3Jlc3RhdXJhbnQuY29tLz9jYWY9MVx1MDAyNmJwdD0zNDVcdTAwMjZ2aWtzPWMzVjZhV1ZBYVdSbFlXVnVaMmx1WldWeWN5NWpieTU2WVElM0QlM0RcdTAwMjZxdWVyeT1SZXN0YXVyYW50K01lbnVcdTAwMjZhZmRUb2tlbj1DaE1JbzZfcDY1TzdqQU1Wd1JaWkJSMVczQ0RfRW9JQkFaUzZxWTlydVQzckxSOElrUHlUU2F1cExxaFdob19ZcFJaYzcxaEl2bHNxZ3dmdTlORFhHZXFwMlJRRTVGMVl4V2FZOFg4UVN4SU50Z1F4T3pJR0psbXJJX0tpTnVYclZCT0VWY1plbHhXcWFXQThWRUZub2dXa2JpM3pHTUd0b3ZLcG5GU0F1bEo1YnNLdng3Sm1oWlhoRi1kVkI2TFBIam5UbjJoaHJqZFZtaUFCXHUwMDI2cGNzYT1mYWxzZVx1MDAyNm5iPTBcdTAwMjZubT0yXHUwMDI2bng9MzMxXHUwMDI2bnk9NDVcdTAwMjZpcz03MDB4MzYzXHUwMDI2Y2xrdD0zIiwicGFnZV9tZXRob2QiOiJHRVQiLCJwYWdlX3JlcXVlc3QiOnsiYWZkVG9rZW4iOiJDaE1JbzZfcDY1TzdqQU1Wd1JaWkJSMVczQ0RfRW9JQkFaUzZxWTlydVQzckxSOElrUHlUU2F1cExxaFdob19ZcFJaYzcxaEl2bHNxZ3dmdTlORFhHZXFwMlJRRTVGMVl4V2FZOFg4UVN4SU50Z1F4T3pJR0psbXJJX0tpTnVYclZCT0VWY1plbHhXcWFXQThWRUZub2dXa2JpM3pHTUd0b3ZLcG5GU0F1bEo1YnNLdng3Sm1oWlhoRi1kVkI2TFBIam5UbjJoaHJqZFZtaUFCIiwiYnB0IjoiMzQ1IiwiY2FmIjoiMSIsImNsa3QiOiIzIiwiaXMiOiI3MDB4MzYzIiwibmIiOiIwIiwibm0iOiIyIiwibngiOiIzMzEiLCJueSI6IjQ1IiwicGNzYSI6ImZhbHNlIiwicXVlcnkiOiJSZXN0YXVyYW50K01lbnUiLCJ2aWtzIjoiYzNWNmFXVkFhV1JsWVdWdVoybHVaV1Z5Y3k1amJ5NTZZUSUzRCUzRCJ9LCJwYWdlX2hlYWRlcnMiOnsicmVmZXJlciI6WyJodHRwczovL3N5bmRpY2F0ZWRzZWFyY2guZ29vZy8iXX0sImhvc3QiOiJhcmFuZGFzcmVzdGF1cmFudC5jb20iLCJpcCI6IjM4LjQyLjEyMS4xNTcifQo=";</script>
+<script src="/bBjhhsmdn.js"></script>
+
+
+<script type="text/javascript" src="https://www.google.com/adsense/domains/caf.js?abp=1&amp;bodis=true"></script></body></html>
