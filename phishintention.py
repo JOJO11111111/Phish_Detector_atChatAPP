@@ -376,6 +376,7 @@ class PhishIntentionWrapper:
             html_path = screenshot_path.replace("shot.png", "html.txt")
             start_time = time.time()
             cre_pred = html_heuristic(html_path)
+            log_print(f'HTML heuristic result: {cre_pred} (0 = CRP, 1 = non-CRP)')
             if cre_pred == 1:  # if HTML heuristic report as nonCRP
                 # CRP classifier
                 cre_pred = credential_classifier_mixed(img=screenshot_path,
@@ -387,7 +388,7 @@ class PhishIntentionWrapper:
 
             ######################## Step4: Dynamic analysis #################################
             if cre_pred == 1:
-                log_print('It is a Non-CRP page, enter dynamic analysis')
+                log_print('After credential_classifier_mixed detailed checking, This firstpage is a Non-CRP page, enter dynamic analysis')
                 # # load driver ONCE!
                 driver = driver_loader()
                 log_print('Finish loading webdriver')
@@ -412,26 +413,43 @@ class PhishIntentionWrapper:
                             pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes
 
                 else:  # dynamic analysis successfully found a CRP
-                    log_print('Dynamic analysis found a CRP, go back to layout detector')
+                    # log_print('Dynamic analysis found a CRP, go back to layout detector')
+                    log_print('Dynamic analysis confirmed CRP, finalizing classification')
+
+                    cre_pred = 0  # Force CRP classification
+                    is_crp = True
+                    break  
 
             else:  # already a CRP page
                 log_print('Already a CRP, continue')
                 break
 
         ######################## Step5: Return #################################
-        if pred_target is not None: #has logo/brand matched
-            if is_mismatch and cre_pred == 0:  # Brand mismatch and is a CRP page
-                log_print('Phishing detected: Logo doesnt match with its domain')
-                phish_category = 1
-            elif is_mismatch:  # Domain mismatch but no CRP
-                log_print('Domain mismatch but no CRP, benign')
-                phish_category = 0  
-            elif cre_pred == 0:  # Domain matches + CRP
-                log_print('Brand match and has a CRP, Legitimate (e.g., real login page)')
-                phish_category = 0
-            else:  # Domain matches + no CRP
-                log_print('Legitimate brand match')
-                phish_category = 0
+        # if pred_target is not None: #has logo/brand matched
+        #     if is_mismatch and cre_pred == 0:  # Brand mismatch and is a CRP page
+        #         log_print('Phishing detected: Logo doesnt match with its domain')
+        #         phish_category = 1
+        #     elif is_mismatch:  # Domain mismatch but no CRP
+        #         log_print('Domain mismatch but no CRP, benign')
+        #         phish_category = 0  
+        #     elif cre_pred == 0:  # Domain matches + CRP
+        #         log_print('Brand match and has a CRP, Legitimate (e.g., real login page)')
+        #         phish_category = 0
+        #     else:  # Domain matches + no CRP
+        #         log_print('Legitimate brand match')
+        #         phish_category = 0
+        
+        # Should be changed to:
+        if pred_target is not None:
+            if is_mismatch:  # Any domain mismatch
+                if cre_pred == 0:  # With CRP
+                    phish_category = 1  # Definite phishing
+                else:  # Mismatch without CRP
+                    phish_category = 0.5  # Suspicious but not confirmed
+            elif cre_pred == 0:  # Matching domain + CRP
+                phish_category = 0  # Legitimate
+            else:  # Matching domain + no CRP
+                phish_category = 0  # Legitimate
 
             log_print(f'Adding annotation to visualization: Target: {pred_target} with confidence {siamese_conf}')
             if matched_coord is not None:
