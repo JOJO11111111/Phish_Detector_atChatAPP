@@ -1,4 +1,4 @@
-=== New Run Started at 2025-04-03 18:45:46.848321 ===
+=== New Run Started at 2025-04-04 00:20:59.323372 ===
 
 
 ===== Processing folder: www.purepaypal.com , URL: https://www.paypal.com/ =====
@@ -6,19 +6,15 @@ Entering PhishIntention
 Analyzing URL: https://www.paypal.com/
 Entering siamese
 Number of logo boxes: 3
-Siamese result: pred_target=PayPal, siamese_conf=0.8731049299240112
+Siamese result: pred_target=PayPal, siamese_conf=0.873104989528656
 A target is reported, enter CRP classifier
+HTML heuristic result: 1 (0 = CRP, 1 = non-CRP)
 CRP classification result: 1 (0 = CRP, 1 = non-CRP)
-It is a Non-CRP page, enter dynamic analysis
+After credential_classifier_mixed detailed checking, This firstpage is a Non-CRP page, enter dynamic analysis
 Finish loading webdriver
-Dynamic analysis found a CRP, go back to layout detector
-Entering siamese
-Number of logo boxes: 1
-Siamese result: pred_target=PayPal, siamese_conf=0.8730761408805847
-A target is reported, enter CRP classifier
-Legitimate brand match
-Adding annotation to visualization: Target: PayPal with confidence 0.8730761408805847
-Final results: phish_category=0, pred_target=PayPal, matched_domain=['paypal.com'], siamese_conf=0.8730761408805847, used_gpt=0
+Dynamic analysis confirmed CRP, finalizing classification
+Adding annotation to visualization: Target: PayPal with confidence 0.873104989528656
+Final results: phish_category=0, pred_target=PayPal, matched_domain=['paypal.com'], siamese_conf=0.873104989528656, used_gpt=0
 
 
 ===== Processing folder: ru.russianmastercach-republick.xyz, URL: https://ru.russianmastercach-republick.xyz/ =====
@@ -26,10 +22,11 @@ Entering PhishIntention
 Analyzing URL: https://ru.russianmastercach-republick.xyz/
 Entering siamese
 Number of logo boxes: 1
-Siamese result: pred_target=Mastercard International, siamese_conf=0.9677866697311401
+Siamese result: pred_target=Mastercard International, siamese_conf=0.9677867293357849
 A target is reported, enter CRP classifier
+HTML heuristic result: 1 (0 = CRP, 1 = non-CRP)
 CRP classification result: 1 (0 = CRP, 1 = non-CRP)
-It is a Non-CRP page, enter dynamic analysis
+After credential_classifier_mixed detailed checking, This firstpage is a Non-CRP page, enter dynamic analysis
 Finish loading webdriver
 Dynamic analysis cannot find any link redirected to a CRP page, report as benign
 
@@ -39,19 +36,15 @@ Entering PhishIntention
 Analyzing URL: https://www.paypal.com/hk/home
 Entering siamese
 Number of logo boxes: 3
-Siamese result: pred_target=PayPal, siamese_conf=0.8731049299240112
+Siamese result: pred_target=PayPal, siamese_conf=0.873104989528656
 A target is reported, enter CRP classifier
+HTML heuristic result: 1 (0 = CRP, 1 = non-CRP)
 CRP classification result: 1 (0 = CRP, 1 = non-CRP)
-It is a Non-CRP page, enter dynamic analysis
+After credential_classifier_mixed detailed checking, This firstpage is a Non-CRP page, enter dynamic analysis
 Finish loading webdriver
-Dynamic analysis found a CRP, go back to layout detector
-Entering siamese
-Number of logo boxes: 1
-Siamese result: pred_target=PayPal, siamese_conf=0.8730761408805847
-A target is reported, enter CRP classifier
-Legitimate brand match
-Adding annotation to visualization: Target: PayPal with confidence 0.8730761408805847
-Final results: phish_category=0, pred_target=PayPal, matched_domain=['paypal.com'], siamese_conf=0.8730761408805847, used_gpt=0
+Dynamic analysis confirmed CRP, finalizing classification
+Adding annotation to visualization: Target: PayPal with confidence 0.873104989528656
+Final results: phish_category=0, pred_target=PayPal, matched_domain=['paypal.com'], siamese_conf=0.873104989528656, used_gpt=0
 
 
 ===== Processing folder: dio'sWebsite, URL: https://tiffanybao.netlify.app/ =====
@@ -59,7 +52,7 @@ Entering PhishIntention
 Analyzing URL: https://tiffanybao.netlify.app/
 Entering siamese
 Number of logo boxes: 1
-Siamese result: pred_target=None, siamese_conf=0.6860458850860596
+Siamese result: pred_target=None, siamese_conf=0.6860458254814148
 Did not match to any brand, trying dynamic detection
 Even with help of GPT, still did not match to any brand, report as benign
 
@@ -69,12 +62,29 @@ Entering PhishIntention
 Analyzing URL: http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==
 Entering siamese
 Number of logo boxes: 1
-Siamese result: pred_target=Absa Group, siamese_conf=0.9322685599327087
+Siamese result: pred_target=Absa Group, siamese_conf=0.9322686195373535
 A target is reported, enter CRP classifier
+HTML heuristic result: 1 (0 = CRP, 1 = non-CRP)
 CRP classification result: 1 (0 = CRP, 1 = non-CRP)
-It is a Non-CRP page, enter dynamic analysis
+After credential_classifier_mixed detailed checking, This firstpage is a Non-CRP page, enter dynamic analysis
 Finish loading webdriver
 Dynamic analysis cannot find any link redirected to a CRP page, report as benign
+
+
+===== Processing folder: tiffanyWebForDynamicTesting, URL: https://tiffanybao.netlify.app/#work =====
+Entering PhishIntention
+Analyzing URL: https://tiffanybao.netlify.app/#work
+Entering siamese
+Number of logo boxes: 3
+Siamese result: pred_target=Absa Group, siamese_conf=0.9378740787506104
+A target is reported, enter CRP classifier
+HTML heuristic result: 1 (0 = CRP, 1 = non-CRP)
+CRP classification result: 1 (0 = CRP, 1 = non-CRP)
+After credential_classifier_mixed detailed checking, This firstpage is a Non-CRP page, enter dynamic analysis
+Finish loading webdriver
+Dynamic analysis confirmed CRP, finalizing classification
+Adding annotation to visualization: Target: Absa Group with confidence 0.9378740787506104
+Final results: phish_category=1, pred_target=Absa Group, matched_domain=['absa.com'], siamese_conf=0.9378740787506104, used_gpt=0
 
 
 ===== Processing folder: apple.com, URL: https://account.apple.com/ =====
@@ -82,10 +92,10 @@ Entering PhishIntention
 Analyzing URL: https://account.apple.com/
 Entering siamese
 Number of logo boxes: 2
-Siamese result: pred_target=None, siamese_conf=0.7289073467254639
+Siamese result: pred_target=None, siamese_conf=0.7303468585014343
 Did not match to any brand, trying dynamic detection
 Dynamically detected brand using GPT: Apple
-Before GPT: pred_target=None, siamese_conf=0.7289073467254639
+Before GPT: pred_target=None, siamese_conf=0.7303468585014343
 Before GPT: now starting to match the domains...
 Domain matches brand Apple, legitimate site
 
@@ -95,13 +105,13 @@ Entering PhishIntention
 Analyzing URL: https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/
 Entering siamese
 Number of logo boxes: 1
-Siamese result: pred_target=Google, siamese_conf=0.9679251909255981
+Siamese result: pred_target=Google, siamese_conf=0.9679251313209534
 A target is reported, enter CRP classifier
+HTML heuristic result: 0 (0 = CRP, 1 = non-CRP)
 CRP classification result: 0 (0 = CRP, 1 = non-CRP)
 Already a CRP, continue
-Phishing detected: Logo doesnt match with its domain
-Adding annotation to visualization: Target: Google with confidence 0.9679251909255981
-Final results: phish_category=1, pred_target=Google, matched_domain=['google.com', 'appspot.com', 'appspot.com'], siamese_conf=0.9679251909255981, used_gpt=0
+Adding annotation to visualization: Target: Google with confidence 0.9679251313209534
+Final results: phish_category=1, pred_target=Google, matched_domain=['google.com', 'appspot.com', 'appspot.com'], siamese_conf=0.9679251313209534, used_gpt=0
 
 
 ===== Processing folder: kiewguide.com, URL: http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm =====
@@ -109,13 +119,13 @@ Entering PhishIntention
 Analyzing URL: http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm
 Entering siamese
 Number of logo boxes: 2
-Siamese result: pred_target=Absa Group, siamese_conf=0.9387902617454529
+Siamese result: pred_target=Absa Group, siamese_conf=0.938790500164032
 A target is reported, enter CRP classifier
+HTML heuristic result: 1 (0 = CRP, 1 = non-CRP)
 CRP classification result: 0 (0 = CRP, 1 = non-CRP)
 Already a CRP, continue
-Phishing detected: Logo doesnt match with its domain
-Adding annotation to visualization: Target: Absa Group with confidence 0.9387902617454529
-Final results: phish_category=1, pred_target=Absa Group, matched_domain=['absa.com'], siamese_conf=0.9387902617454529, used_gpt=0
+Adding annotation to visualization: Target: Absa Group with confidence 0.938790500164032
+Final results: phish_category=1, pred_target=Absa Group, matched_domain=['absa.com'], siamese_conf=0.938790500164032, used_gpt=0
 
 
 ===== Processing folder: faketiffany'sWebsite, URL: https://tiffanybao.netlify.app/#projects =====
@@ -123,7 +133,7 @@ Entering PhishIntention
 Analyzing URL: https://tiffanybao.netlify.app/#projects
 Entering siamese
 Number of logo boxes: 1
-Siamese result: pred_target=None, siamese_conf=0.6860458850860596
+Siamese result: pred_target=None, siamese_conf=0.6860458254814148
 Did not match to any brand, trying dynamic detection
 Even with help of GPT, still did not match to any brand, report as benign
 
@@ -133,16 +143,16 @@ Entering PhishIntention
 Analyzing URL: http://serv-acamai.com/1und1/de/index.php
 Entering siamese
 Number of logo boxes: 1
-Siamese result: pred_target=None, siamese_conf=0.7948026061058044
+Siamese result: pred_target=None, siamese_conf=0.7948025465011597
 Did not match to any brand, trying dynamic detection
 Dynamically detected brand using GPT: 1&1
-Before GPT: pred_target=None, siamese_conf=0.7948026061058044
+Before GPT: pred_target=None, siamese_conf=0.7948025465011597
 Before GPT: now starting to match the domains...
 Domain inconsistency detected: 1&1 brand on serv-acamai, potential phishing
 After GPT: pred_target=1&1 Ionos, matched_domain=['ionos.com'], siamese_conf=0.85
 A target is reported, enter CRP classifier
+HTML heuristic result: 1 (0 = CRP, 1 = non-CRP)
 CRP classification result: 0 (0 = CRP, 1 = non-CRP)
 Already a CRP, continue
-Phishing detected: Logo doesnt match with its domain
 Adding annotation to visualization: Target: 1&1 Ionos with confidence 0.85
 Final results: phish_category=1, pred_target=1&1 Ionos, matched_domain=['ionos.com'], siamese_conf=0.85, used_gpt=1

@@ -1,0 +1,10 @@
+www.purepaypal.com 	https://www.paypal.com/	0	PayPal	['paypal.com']	0.8730762	0
+ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.96776295	0
+www.paypal.com	https://www.paypal.com/hk/home	0	PayPal	['paypal.com']	0.8730762	0
+dio'sWebsite	https://tiffanybao.netlify.app/	0	None	None	0.68604577	1
+Absa Group+2020-09-14-16`49`20	http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==	0	Absa Group	['absa.com']	0.93226856	0
+accounts.g.cdcde.com	https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/	1	Google	['google.com', 'appspot.com', 'appspot.com']	0.9679252	0
+kiewguide.com	http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm	1	Absa Group	['absa.com']	0.93879056	0
+faketiffany'sWebsite	https://tiffanybao.netlify.app/#projects	0	None	None	0.68604577	1
+appleWithWrongLogoForDynamicTest.com 	https://account.apple.com/	0	Apple	['apple.com', 'icloud.com']	0.85	1
+1&1 Ionos+2019-07-28-22`34`40	http://serv-acamai.com/1und1/de/index.php	1	1&1 Ionos	['ionos.com']	0.85	1

@@ -1,0 +1,12 @@
+folder,url,has_logo,brand_matched,brand_confidence,domain_brand_mismatch,has_login_elements,has_password_field,page_has_security_indicators,image_quality_score,logo_size_proportion,logo_position_typical,used_gpt_detection,gpt_confidence,is_crp,domain_match_score,phish_score
+www.purepaypal.com ,https://www.paypal.com/signin,1.0,1.0,0.8730762600898743,0.0,1.0,1.0,1.0,0.8,0.0009605103674147765,0.0,0.0,0.0,0.0,1.0,0.0
+ru.russianmastercach-republick.xyz,https://ru.russianmastercach-republick.xyz/,1.0,1.0,0.9677867293357849,1.0,0.0,0.0,1.0,0.8,0.014894674249122719,0.0,0.0,0.0,0.0,0.0,0.6
+www.paypal.com,https://www.paypal.com/signin,1.0,1.0,0.8730762600898743,0.0,1.0,1.0,1.0,0.8,0.0009605103674147765,0.0,0.0,0.0,0.0,1.0,0.0
+dio'sWebsite,https://tiffanybao.netlify.app/,1.0,0.0,0.6860460042953491,0.0,0.0,0.0,1.0,0.5,0.003343501599896535,0.0,1.0,0.0,0.0,0.0,0.0
+Absa Group+2020-09-14-16`49`20,http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==,1.0,1.0,0.932268500328064,1.0,0.0,0.0,0.0,0.8,0.002849570209153189,0.0,0.0,0.0,0.0,0.0,0.6
+tiffanyWebForDynamicTesting,https://tiffanybao.netlify.app/#work,1.0,0.0,0.6860460042953491,0.0,0.0,0.0,1.0,0.5,0.003343501599896535,0.0,1.0,0.0,0.0,0.0,0.0
+apple.com,https://account.apple.com/,1.0,1.0,0.85,0.0,0.0,0.0,1.0,0.7,0.004023443976629203,0.0,1.0,0.85,0.0,1.0,0.0
+accounts.g.cdcde.com,https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/,1.0,1.0,0.9679250717163086,1.0,1.0,1.0,1.0,0.8,0.0012461599891568408,0.0,0.0,0.0,1.0,0.0,1.0
+kiewguide.com,http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm,1.0,1.0,0.9387905597686768,1.0,1.0,0.0,0.0,0.8,0.007764156764166829,0.0,0.0,0.0,1.0,0.0,1.0
+faketiffany'sWebsite,https://tiffanybao.netlify.app/#projects,1.0,0.0,0.6860460042953491,0.0,0.0,0.0,1.0,0.5,0.003343501599896535,0.0,1.0,0.0,0.0,0.0,0.0
+1&1 Ionos+2019-07-28-22`34`40,http://serv-acamai.com/1und1/de/index.php,1.0,1.0,0.85,1.0,1.0,0.0,0.0,0.7,0.00405725651008024,0.0,1.0,0.85,1.0,0.0,1.0
