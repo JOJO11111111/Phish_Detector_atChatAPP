@@ -5470,35 +5470,35 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
           <h1>
             <span>Your connection was interrupted</span>
           </h1>
-          <!--?lit$26958890733$-->
+          <!--?lit$471197779$-->
             <p>A network change was detected.</p>
           
 
-          <!--?lit$26958890733$-->
+          <!--?lit$471197779$-->
 
-          <div class="error-code"><!--?lit$26958890733$-->ERR_NETWORK_CHANGED</div>
+          <div class="error-code"><!--?lit$471197779$-->ERR_NETWORK_CHANGED</div>
 
-          <!--?lit$26958890733$-->
+          <!--?lit$471197779$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$26958890733$-->
+          <!--?lit$471197779$-->
             <button id="reload-button" class="blue-button text-button" data-url="http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==">
-              <!--?lit$26958890733$-->Reload
+              <!--?lit$471197779$-->Reload
             </button>
           
-          <!--?lit$26958890733$-->
+          <!--?lit$471197779$-->
         </div>
-        <!--?lit$26958890733$-->
+        <!--?lit$471197779$-->
       </div>
-      <!--?lit$26958890733$-->
+      <!--?lit$471197779$-->
         <div id="details">
-          <!--?lit$26958890733$-->
+          <!--?lit$471197779$-->
         </div>
       
     </div>
-    <!--?lit$26958890733$-->
+    <!--?lit$471197779$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->
