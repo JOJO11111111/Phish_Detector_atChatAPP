@@ -332,9 +332,7 @@
 
 
 
-
-
-
+# dynamic_brand_detection.py
 # after fixing the domain matching bug
 from PIL import Image, ImageOps
 from torchvision import transforms

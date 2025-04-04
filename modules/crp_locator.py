@@ -1,3 +1,4 @@
+# crp_locator.py
 from selenium.common.exceptions import TimeoutException, WebDriverException
 from utils.web_utils import click_text, get_page_text, visit_url, click_point
 from modules.crp_classifier import html_heuristic, credential_classifier_mixed
@@ -9,6 +10,7 @@ import time
 def keyword_heuristic(driver, orig_url, page_text,
                       new_screenshot_path, new_html_path, new_info_path,
                       ele_model, cls_model):
+
     '''
     Keyword based login finder
     '''
@@ -246,4 +248,5 @@ def crp_locator(url, screenshot_path, login_model, ele_model, cls_model, driver)
         current_url = orig_url
         current_ss = screenshot_path
 
-    return current_url, current_ss, reach_crp, total_time
+    return current_url, current_ss, reach_crp, total_time  # Add cre_pred to output
+
