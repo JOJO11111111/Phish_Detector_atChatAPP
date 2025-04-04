@@ -11,7 +11,8 @@ def get_absolute_path(relative_path):
     base_path = os.path.dirname(__file__)
     return os.path.abspath(os.path.join(base_path, relative_path))
 
-def load_config(reload_targetlist=True):
+# def load_config(reload_targetlist=True):
+def load_config(reload_targetlist=False):
 
     with open(os.path.join(os.path.dirname(__file__), 'configs/configs.yaml')) as file:
         configs = yaml.load(file, Loader=yaml.FullLoader)
