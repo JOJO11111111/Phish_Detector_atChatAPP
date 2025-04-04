@@ -3,7 +3,94 @@ import json
 import os
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY", "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"))
 from crp_locator import keyword_heuristic
+import requests
+from bs4 import BeautifulSoup
+import re
 
+def detect_crp_and_extract_target(html_content, base_url=None):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    is_crp = False
+    target_url = None
+
+    for form in soup.find_all('form'):
+        input_types = [inp.get('type', '').lower() for inp in form.find_all('input')]
+        if 'password' in input_types:
+            is_crp = True
+            target_url = form.get('action')
+            break
+
+    if not is_crp:
+        if soup.find('input', {'type': 'password'}):
+            is_crp = True
+
+    if not is_crp:
+        text = soup.get_text(separator=' ').lower()
+        keywords = ["login", "sign in", "log in", "enter password", "access your account"]
+        if any(k in text for k in keywords):
+            is_crp = True
+
+    if not target_url:
+        meta = soup.find('meta', attrs={'http-equiv': re.compile("refresh", re.I)})
+        if meta and 'content' in meta.attrs:
+            match = re.search(r'url=(.+)', meta['content'], re.IGNORECASE)
+            if match:
+                target_url = match.group(1).strip()
+
+    if not target_url:
+        scripts = soup.find_all('script')
+        for script in scripts:
+            if script.string:
+                match = re.search(r'window\.location\.href\s*=\s*["\']([^"\']+)["\']', script.string)
+                if match:
+                    target_url = match.group(1).strip()
+                    break
+
+    if base_url and target_url and not re.match(r'^https?://', target_url):
+        from urllib.parse import urljoin
+        target_url = urljoin(base_url, target_url)
+
+    return is_crp, target_url
+
+
+def analyze_html_pipeline(html_path, base_url=None):
+    """
+    :param html_path: Original HTML file path
+    :param base_url: Current URL，used for relative path
+    :return: vector1, vector2
+    """
+    html = load_html_file(html_path)
+
+    print("Analyzing Original HTML...")
+    gpt_result_1 = analyze_html_with_openai(html)
+    vector_1 = convert_to_vector(gpt_result_1)
+    print("Vector1:", vector_1)
+
+    # check whether it is a CRP and try to access the potential URL
+    is_crp, redirect_url = detect_crp_and_extract_target(html, base_url)
+
+    if not is_crp:
+        print("It is not CRP")
+        return vector_1, None
+
+    if not redirect_url:
+        print("It is CRP, but no target URL detected")
+        return vector_1, None
+
+    print(f"It is CRP，trying to access：{redirect_url}")
+
+    # 尝试抓取跳转后的页面
+    try:
+        resp = requests.get(redirect_url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
+        html2 = resp.text
+        print("Analyzing Second HTML...")
+        gpt_result_2 = analyze_html_with_openai(html2)
+        vector_2 = convert_to_vector(gpt_result_2, html2)
+        print("Vector2:", vector_2)
+        return vector_1, vector_2
+
+    except Exception as e:
+        print(f"[ERROR] Fail to access: {e}")
+        return vector_1, None
 
 
 # Open AI API key: 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
@@ -60,7 +147,7 @@ def analyze_html_with_openai(html_content, model="gpt-4"):
 
 def convert_to_vector(gpt_result):
     if not gpt_result:
-        return [0]*12
+        return [0]*6
 
     return [
         int(gpt_result.get("has_login_form", False)),
@@ -68,13 +155,7 @@ def convert_to_vector(gpt_result):
         int(gpt_result.get("uses_obfuscated_script", False)),
         int(gpt_result.get("suspicious_text_patterns", False)),
         0 if gpt_result.get("mentioned_brand", "").lower() == "unknown" else 1,
-        float(gpt_result.get("phishing_score", 0.0)),
-        int(gpt_result.get("potentail_page_has_login_form", False)),
-        int(gpt_result.get("potentail_page_form_action_suspicious", False)),
-        int(gpt_result.get("potentail_page_uses_obfuscated_script", False)),
-        int(gpt_result.get("potentail_page_suspicious_text_patterns", False)),
-        0 if gpt_result.get("potentail_page_mentioned_brand", "").lower() == "unknown" else 1,
-        float(gpt_result.get("potentail_page_phishing_score", 0.0))
+        float(gpt_result.get("phishing_score", 0.0))
     ]
 
 

@@ -8,6 +8,7 @@ from crp_locator import keyword_heuristic, crp_locator
 import os
 import json
 
+from modules.HTML_Analyzer import analyze_html_pipeline
 from modules.crp_classifier import html_heuristic
 
 if __name__ == "__main__":
@@ -20,18 +21,7 @@ if __name__ == "__main__":
         exit()
 
 
-    html = load_html_file(html_path)
-    gpt_result = analyze_html_with_openai(html)
-    cre_pred = html_heuristic(html_path)
-    if cre_pred == 1:
-        
-
-    if not gpt_result:
-        print("[ERROR] Cannot get result from GPT-4")
-        exit()
+    # html = load_html_file(html_path)
+    analyze_html_pipeline(html_path, base_url=url)
 
 
-    text_vector = convert_to_vector(gpt_result)
-    print("\n[GPT-4 JSON OUTPUT]")
-    print(json.dumps(gpt_result, indent=2))
-    print("\n[Text Feature Vector]", text_vector)
