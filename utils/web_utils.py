@@ -17,15 +17,16 @@ def initialize_chrome_settings():
     options.add_argument('--user-data-dir=/tmp/chrome-user-data')
     options.add_argument('--disable-software-rasterizer')
     options.add_argument('--disable-extensions')
-    options.add_argument('--remote-debugging-port=9222')  # Different port than default
+    options.add_argument('--remote-debugging-port=9225')  # Different port than default
 
 
+    options.add_argument("--headless") #: do not disable browser (have some issues: https://github.com/mherrmann/selenium-python-helium/issues/47)
+    options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--disable-gpu')
+
     options.add_argument('--ignore-certificate-errors')  # ignore errors
     options.add_argument('--ignore-ssl-errors')
-    options.add_argument("--headless") # FIXME: do not disable browser (have some issues: https://github.com/mherrmann/selenium-python-helium/issues/47)
     options.add_argument('--no-proxy-server')
     options.add_argument("--proxy-server='direct://'")
     options.add_argument("--proxy-bypass-list=*")
