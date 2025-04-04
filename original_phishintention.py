@@ -13,8 +13,9 @@
 # from utils.web_utils import driver_loader
 # from tqdm import tqdm
 # import re
-# # from memory_profiler import profile
+# from memory_profiler import profile
 
+# # check
 # os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 # class PhishIntentionWrapper:
@@ -27,6 +28,7 @@
 #     def _load_config(self):
 #         self.AWL_MODEL, self.CRP_CLASSIFIER, self.CRP_LOCATOR_MODEL, self.SIAMESE_MODEL, self.OCR_MODEL, \
 #             self.SIAMESE_THRE, self.LOGO_FEATS, self.LOGO_FILES, self.DOMAIN_MAP_PATH = load_config()
+#         # ...=load_config(reload_targetlist=True)
 #         print(f'Length of reference list = {len(self.LOGO_FEATS)}')
 
 #     '''PhishIntention'''
@@ -74,7 +76,7 @@
 
 #             ######################## Step2: Siamese (Logo matcher) ########################################
 #             start_time = time.time()
-#             pred_target, matched_domain, matched_coord, siamese_conf = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
+#             pred_target, matched_domain, matched_coord, siamese_conf, _ = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
 #                                                                                       domain_map_path=self.DOMAIN_MAP_PATH,
 #                                                                                       model = self.SIAMESE_MODEL,
 #                                                                                       ocr_model = self.OCR_MODEL,
@@ -154,16 +156,6 @@
 
 # if __name__ == '__main__':
 
-#     '''update domain map'''
-#     # with open('./lib/phishpedia/models/domain_map.pkl', "rb") as handle:
-#     #     domain_map = pickle.load(handle)
-#     #
-#     # domain_map['weibo'] = ['sina', 'weibo']
-#     #
-#     # with open('./lib/phishpedia/models/domain_map.pkl', "wb") as handle:
-#     #     pickle.dump(domain_map, handle)
-#     # exit()
-
 #     '''run'''
 #     today = datetime.now().strftime('%Y%m%d')
 
@@ -228,6 +220,8 @@
 
 
 
+
+
 import time
 from datetime import datetime
 import argparse
@@ -244,7 +238,6 @@ from tqdm import tqdm
 import re
 from memory_profiler import profile
 
-# check
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 class PhishIntentionWrapper:
@@ -257,7 +250,6 @@ class PhishIntentionWrapper:
     def _load_config(self):
         self.AWL_MODEL, self.CRP_CLASSIFIER, self.CRP_LOCATOR_MODEL, self.SIAMESE_MODEL, self.OCR_MODEL, \
             self.SIAMESE_THRE, self.LOGO_FEATS, self.LOGO_FILES, self.DOMAIN_MAP_PATH = load_config()
-        # ...=load_config(reload_targetlist=True)
         print(f'Length of reference list = {len(self.LOGO_FEATS)}')
 
     '''PhishIntention'''
@@ -384,6 +376,16 @@ class PhishIntentionWrapper:
                     pred_boxes, pred_classes
 
 if __name__ == '__main__':
+
+    '''update domain map'''
+    # with open('./lib/phishpedia/models/domain_map.pkl', "rb") as handle:
+    #     domain_map = pickle.load(handle)
+    #
+    # domain_map['weibo'] = ['sina', 'weibo']
+    #
+    # with open('./lib/phishpedia/models/domain_map.pkl', "wb") as handle:
+    #     pickle.dump(domain_map, handle)
+    # exit()
 
     '''run'''
     today = datetime.now().strftime('%Y%m%d')
