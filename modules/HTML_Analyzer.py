@@ -1,97 +1,160 @@
 from openai import OpenAI
 import json
 import os
+
+from configs import load_config
+from crp_locator import crp_locator
+from Web_Crawling import setup_driver
+from modules import crp_classifier
+
+from modules.HTML_crp_locator import static_crp_locator
+from utils.web_utils import get_page_text, visit_url
+
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY", "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"))
 from crp_locator import keyword_heuristic
 import requests
 from bs4 import BeautifulSoup
 import re
+class HTML_Analyzer:
+    def __init__(self, crp_locator_model=None, awl_model=None, crp_classifier=None):
+        self.CRP_LOCATOR_MODEL = crp_locator_model
+        self.AWL_MODEL = awl_model
+        self.CRP_CLASSIFIER = crp_classifier
 
-def detect_crp_and_extract_target(html_content, base_url=None):
-    soup = BeautifulSoup(html_content, 'html.parser')
-    is_crp = False
-    target_url = None
+    def _load_config(self):
+        self.AWL_MODEL, self.CRP_CLASSIFIER, self.CRP_LOCATOR_MODEL, self.SIAMESE_MODEL, self.OCR_MODEL, \
+            self.SIAMESE_THRE, self.LOGO_FEATS, self.LOGO_FILES, self.DOMAIN_MAP_PATH = load_config()
 
-    for form in soup.find_all('form'):
-        input_types = [inp.get('type', '').lower() for inp in form.find_all('input')]
-        if 'password' in input_types:
-            is_crp = True
-            target_url = form.get('action')
-            break
+    def detect_crp_and_extract_target(html_content, base_url=None):
+        soup = BeautifulSoup(html_content, 'html.parser')
+        is_crp = False
+        target_url = None
 
-    if not is_crp:
-        if soup.find('input', {'type': 'password'}):
-            is_crp = True
+        for form in soup.find_all('form'):
+            input_types = [inp.get('type', '').lower() for inp in form.find_all('input')]
+            if 'password' in input_types:
+                is_crp = True
+                target_url = form.get('action')
+                break
 
-    if not is_crp:
-        text = soup.get_text(separator=' ').lower()
-        keywords = ["login", "sign in", "log in", "enter password", "access your account"]
-        if any(k in text for k in keywords):
-            is_crp = True
+        if not is_crp:
+            if soup.find('input', {'type': 'password'}):
+                is_crp = True
 
-    if not target_url:
-        meta = soup.find('meta', attrs={'http-equiv': re.compile("refresh", re.I)})
-        if meta and 'content' in meta.attrs:
-            match = re.search(r'url=(.+)', meta['content'], re.IGNORECASE)
-            if match:
-                target_url = match.group(1).strip()
+        if not is_crp:
+            text = soup.get_text(separator=' ').lower()
+            keywords = ["login", "sign in", "log in", "enter password", "access your account"]
+            if any(k in text for k in keywords):
+                is_crp = True
 
-    if not target_url:
-        scripts = soup.find_all('script')
-        for script in scripts:
-            if script.string:
-                match = re.search(r'window\.location\.href\s*=\s*["\']([^"\']+)["\']', script.string)
+        if not target_url:
+            meta = soup.find('meta', attrs={'http-equiv': re.compile("refresh", re.I)})
+            if meta and 'content' in meta.attrs:
+                match = re.search(r'url=(.+)', meta['content'], re.IGNORECASE)
                 if match:
                     target_url = match.group(1).strip()
-                    break
 
-    if base_url and target_url and not re.match(r'^https?://', target_url):
-        from urllib.parse import urljoin
-        target_url = urljoin(base_url, target_url)
+        if not target_url:
+            scripts = soup.find_all('script')
+            for script in scripts:
+                if script.string:
+                    match = re.search(r'window\.location\.href\s*=\s*["\']([^"\']+)["\']', script.string)
+                    if match:
+                        target_url = match.group(1).strip()
+                        break
 
-    return is_crp, target_url
+        if base_url and target_url and not re.match(r'^https?://', target_url):
+            from urllib.parse import urljoin
+            target_url = urljoin(base_url, target_url)
+
+        return is_crp, target_url
 
 
-def analyze_html_pipeline(html_path, base_url=None):
-    """
-    :param html_path: Original HTML file path
-    :param base_url: Current URL，used for relative path
-    :return: vector1, vector2
-    """
-    html = load_html_file(html_path)
+    def analyze_html_pipeline(self, html_path, base_url=None, screenshot_path=None):
+        """
+        Main analysis pipeline: analyzes HTML + (optional) redirected CRP page.
+        :param html_path: Path to original HTML file
+        :param base_url: For resolving relative redirect links
+        :return: vector1, vector2
+        """
+        html = load_html_file(html_path)
 
-    print("Analyzing Original HTML...")
-    gpt_result_1 = analyze_html_with_openai(html)
-    vector_1 = convert_to_vector(gpt_result_1)
-    print("Vector1:", vector_1)
+        print("[STEP 1] Analyze original HTML...")
+        gpt_result_1 = analyze_html_with_openai(html)
+        vector_1 = convert_to_vector(gpt_result_1)
+        vector_2 = None
+        print("Vector 1:", vector_1)
 
-    # check whether it is a CRP and try to access the potential URL
-    is_crp, redirect_url = detect_crp_and_extract_target(html, base_url)
+        is_crp, redirect_url = static_crp_locator(html, base_url=base_url)
 
-    if not is_crp:
-        print("It is not CRP")
-        return vector_1, None
+        if not is_crp:
+            print("Not a CRP page.")
+            return vector_1, vector_2
 
-    if not redirect_url:
-        print("It is CRP, but no target URL detected")
-        return vector_1, None
+        if not redirect_url:
+            if not redirect_url:
+                print("Static CRP analysis failed to find redirect.")
+                print("[Trying dynamic analysis with crp_locator()]")
 
-    print(f"It is CRP，trying to access：{redirect_url}")
+                try:
+                    driver = setup_driver()
+                    visit_success, driver = visit_url(driver, base_url)
 
-    # 尝试抓取跳转后的页面
-    try:
-        resp = requests.get(redirect_url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
-        html2 = resp.text
-        print("Analyzing Second HTML...")
-        gpt_result_2 = analyze_html_with_openai(html2)
-        vector_2 = convert_to_vector(gpt_result_2, html2)
-        print("Vector2:", vector_2)
-        return vector_1, vector_2
+                    if not visit_success:
+                        print("[ERROR] Failed to revisit original URL")
+                        return vector_1, vector_2
 
-    except Exception as e:
-        print(f"[ERROR] Fail to access: {e}")
-        return vector_1, None
+                    page_text = get_page_text(driver).split("\n")
 
+
+                    new_html_path = screenshot_path.replace("screenshot.png", "new_page.html")
+                    new_info_path = screenshot_path.replace("screenshot.png", "new_info.txt")
+                    new_screenshot_path = screenshot_path.replace("screenshot.png", "new_screenshot.png")
+
+
+                    current_url, reached = keyword_heuristic(
+                        driver=driver,
+                        orig_url=base_url,
+                        page_text=page_text,
+                        new_screenshot_path=new_screenshot_path,
+                        new_html_path=new_html_path,
+                        new_info_path=new_info_path,
+                        ele_model=self.AWL_MODEL,
+                        cls_model=self.CRP_CLASSIFIER
+                    )
+
+                    print("After keyword_heuristic:", reached)
+
+                    if reached:
+
+                        with open(new_html_path, 'r', encoding='utf-8') as f:
+                            redirected_html = f.read()
+
+                        print("[STEP 2] Detected CRP. Analyzing redirected page...")
+                        gpt_result_2 = analyze_html_with_openai(redirected_html)
+                        vector_2 = convert_to_vector(gpt_result_2)
+                        print("Vector 2:", vector_2)
+                        return vector_1, vector_2
+                    else:
+                        print("Dynamic analysis did not reach CRP.")
+
+                except Exception as e:
+                    print(f"[ERROR] Dynamic analysis failed: {e}")
+
+                return vector_1, vector_2
+
+        print(f"[STEP 3] Detected CRP. Attempting to access: {redirect_url}")
+        try:
+            response = requests.get(redirect_url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
+            html2 = response.text
+            print("Analyzing redirected page...")
+            gpt_result_2 = analyze_html_with_openai(html2)
+            vector_2 = convert_to_vector(gpt_result_2)
+            print("Vector 2:", vector_2)
+            return vector_1, vector_2
+        except Exception as e:
+            print("[ERROR] Could not fetch redirected page:", e)
+            return vector_1, vector_2
 
 # Open AI API key: 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
 

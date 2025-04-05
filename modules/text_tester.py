@@ -8,8 +8,14 @@ from crp_locator import keyword_heuristic, crp_locator
 import os
 import json
 
-from modules.HTML_Analyzer import analyze_html_pipeline
+from HTML_Analyzer import HTML_Analyzer
 from modules.crp_classifier import html_heuristic
+from helium import set_driver
+from Web_Crawling import setup_driver
+
+driver = setup_driver()
+set_driver(driver)
+
 
 if __name__ == "__main__":
     url = input("Please enter the URL you want to test：\n> ").strip()
@@ -19,9 +25,8 @@ if __name__ == "__main__":
     if not html_path:
         print("[ERROR] HTML file not found")
         exit()
-
-
     # html = load_html_file(html_path)
-    analyze_html_pipeline(html_path, base_url=url)
+    analyzer = HTML_Analyzer()
+    analyzer.analyze_html_pipeline(html_path, base_url=url, screenshot_path=screenshot)
 
 
