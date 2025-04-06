@@ -1,3 +1,4 @@
+# modified phishintention model
 import time
 from datetime import datetime
 import argparse
@@ -6,7 +7,7 @@ import torch
 import cv2
 from configs import load_config
 from modules.awl_detector import pred_rcnn, vis, find_element_type
-from modules.logo_matching import check_domain_brand_inconsistency
+from modules.logo_matching import new_check_domain_brand_inconsistency
 from modules.crp_classifier import credential_classifier_mixed, html_heuristic
 from modules.crp_locator import crp_locator
 from utils.web_utils import driver_loader
@@ -223,6 +224,9 @@ class PhishIntentionWrapper:
                 if not file_exists:
                     writer.writerow(feature_names)
                 writer.writerow(csv_row)
+            
+            return numeric_features
+
 
         while True:
 
@@ -239,10 +243,10 @@ class PhishIntentionWrapper:
             # If no element is reported
             if pred_boxes is None or len(pred_boxes) == 0:
                 log_print('No element is detected, reported as benign')
-                save_feature_vector()  # Add vector generation before return
+                image_feature = save_feature_vector()  # Add vector generation before return
                 return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                            pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes
+                            pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes,image_feature
 
             logo_pred_boxes, _ = find_element_type(pred_boxes, pred_classes, bbox_type='logo')
             if logo_pred_boxes is None or len(logo_pred_boxes) == 0:
@@ -250,14 +254,14 @@ class PhishIntentionWrapper:
                 save_feature_vector()  # Add vector generation before return
                 return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                            pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes
+                            pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes,image_feature
 
             log_print('Entering siamese')
             log_print(f'Number of logo boxes: {len(logo_pred_boxes)}')
 
             ######################## Step2: Siamese (Logo matcher) ########################################
             start_time = time.time()
-            pred_target, matched_domain, matched_coord, siamese_conf, is_mismatch = check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
+            pred_target, matched_domain, matched_coord, siamese_conf, is_mismatch = new_check_domain_brand_inconsistency(logo_boxes=logo_pred_boxes,
                                                                                 domain_map_path=self.DOMAIN_MAP_PATH,
                                                                                 model=self.SIAMESE_MODEL,
                                                                                 ocr_model=self.OCR_MODEL,
@@ -342,10 +346,10 @@ class PhishIntentionWrapper:
                             matched_coord = logo_pred_boxes[0]
                             
                         # Return early as benign but with brand identification
-                        save_feature_vector()  # Add vector generation before return
+                        image_feature = save_feature_vector()  # Add vector generation before return
                         return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                                 str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                                pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes
+                                pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes,image_feature
                     
                     else:
                         # Domain inconsistency - potential phishing
@@ -363,10 +367,10 @@ class PhishIntentionWrapper:
                 else: # GPT also says this logo is None 
                     log_print('Even with help of GPT, still did not match to any brand, report as benign')
                     used_gpt = 1
-                    save_feature_vector()  # Add vector generation before return
+                    image_feature = save_feature_vector()  # Add vector generation before return
                     return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                                 str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                                pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes
+                                pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes,image_feature
 
             ######################## Step3: CRP classifier (if a target is reported) #################################
             log_print('A target is reported, enter CRP classifier')
@@ -407,10 +411,10 @@ class PhishIntentionWrapper:
                 # If dynamic analysis did not reach a CRP
                 if not successful:
                     log_print('Dynamic analysis cannot find any link redirected to a CRP page, report as benign')
-                    save_feature_vector()  # Add vector generation before return
+                    image_feature = save_feature_vector()  # Add vector generation before return
                     return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                            pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes
+                            pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes,image_feature
 
                 else:  # dynamic analysis successfully found a CRP
                     # log_print('Dynamic analysis found a CRP, go back to layout detector')
@@ -424,22 +428,7 @@ class PhishIntentionWrapper:
                 log_print('Already a CRP, continue')
                 break
 
-        ######################## Step5: Return #################################
-        # if pred_target is not None: #has logo/brand matched
-        #     if is_mismatch and cre_pred == 0:  # Brand mismatch and is a CRP page
-        #         log_print('Phishing detected: Logo doesnt match with its domain')
-        #         phish_category = 1
-        #     elif is_mismatch:  # Domain mismatch but no CRP
-        #         log_print('Domain mismatch but no CRP, benign')
-        #         phish_category = 0  
-        #     elif cre_pred == 0:  # Domain matches + CRP
-        #         log_print('Brand match and has a CRP, Legitimate (e.g., real login page)')
-        #         phish_category = 0
-        #     else:  # Domain matches + no CRP
-        #         log_print('Legitimate brand match')
-        #         phish_category = 0
-        
-        # Should be changed to:
+        ######################## Step5: Return #################################        
         if pred_target is not None:
             if is_mismatch:  # Any domain mismatch
                 if cre_pred == 0:  # With CRP
@@ -485,11 +474,11 @@ class PhishIntentionWrapper:
                     has_password_field = 'type="password"' in html_content
 
         # Generate and save feature vector before the final return
-        save_feature_vector()
+        image_feature = save_feature_vector()
 
         return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                 str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
-                pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes
+                pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes,image_feature
 
 
 
@@ -550,13 +539,13 @@ if __name__ == '__main__':
 
         phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                 runtime_breakdown, pred_boxes, pred_classes, used_gpt, is_crp, \
-                has_login_elements, has_password_field, logo_pred_boxes = phishintention_cls.test_orig_phishintention(
+                has_login_elements, has_password_field, logo_pred_boxes,img_vec = phishintention_cls.test_orig_phishintention(
                     url, screenshot_path, save_vectors=True, vector_file=vector_file)
         try:
             with open(result_txt, "a+", encoding='ISO-8859-1') as f:
                 f.write(folder + "\t")
                 f.write(url + "\t")
-                f.write(str(phish_category) + "\t")
+                f.write(str(phish_category) + "\t") 
                 f.write(str(pred_target) + "\t")  # write top1 prediction only
                 f.write(str(matched_domain) + "\t")
                 f.write(str(siamese_conf) + "\t")
