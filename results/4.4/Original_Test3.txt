@@ -1,0 +1,11 @@
+www.purepaypal.com 	https://www.paypal.com/	0	None	None	0.87310505	0.952573299407959|0.977165937423706|0|0
+ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.9677867	0.13196134567260742|0.13878607749938965|0.48444294929504395|1.3043150901794434
+www.paypal.com	https://www.paypal.com/hk/home	0	None	None	0.87310505	0.1647167205810547|0.16074872016906738|0|0
+dio'sWebsite	https://tiffanybao.netlify.app/	0	None	None	0.686046	0.17670893669128418|0.3672170639038086|0|0
+Absa Group+2020-09-14-16`49`20	http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==	0	Absa Group	['absa.com']	0.9322685	0.14636731147766113|0.16734910011291504|0.16969752311706543|0.8976569175720215
+tiffanyWebForDynamicTesting	https://tiffanybao.netlify.app/#work	0	None	None	0.7771355	0.42469096183776855|0.48424577713012695|0|0
+apple.com	https://account.apple.com/	0	None	None	0.7303468	0.14108633995056152|0.36307501792907715|0|0
+accounts.g.cdcde.com	https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/	1	Google	['google.com', 'appspot.com', 'appspot.com']	0.9679251	0.11159873008728027|0.17487597465515137|0.010893821716308594|0
+kiewguide.com	http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm	1	Absa Group	['absa.com']	0.93879056	0.1314680576324463|0.15521955490112305|0.08162665367126465|0
+faketiffany'sWebsite	https://tiffanybao.netlify.app/#projects	0	None	None	0.686046	0.13817095756530762|0.3485076427459717|0|0
+1&1 Ionos+2019-07-28-22`34`40	http://serv-acamai.com/1und1/de/index.php	0	None	None	0.79480255	0.8214733600616455|0.3576469421386719|0|0

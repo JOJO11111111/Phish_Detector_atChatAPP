@@ -1,0 +1,49 @@
+folder,url,has_logo,brand_matched,brand_confidence,domain_brand_mismatch,has_login_elements,has_password_field,page_has_security_indicators,image_quality_score,logo_size_proportion,logo_position_typical,used_gpt_detection,gpt_confidence,is_crp,domain_match_score,phish_score
+ru.russianmastercach-republick.xyz,https://ru.russianmastercach-republick.xyz/,1.0,1.0,0.9677866101264954,1.0,0.0,0.0,1.0,0.8,0.014895512050151657,0.0,0.0,0.0,0.0,0.0,0.6
+www.paypal.com,https://www.paypal.com/signin,1.0,1.0,0.8731050491333008,0.0,1.0,1.0,1.0,0.8,0.04167977744199433,0.0,0.0,0.0,1.0,1.0,0.0
+dio'sWebsite,https://tiffanybao.netlify.app/,1.0,0.0,0.6860458850860596,0.0,0.0,0.0,1.0,0.5,0.0033434913474701413,0.0,1.0,0.0,0.0,0.0,0.0
+Absa Group+2020-09-14-16`49`20,http://arandasrestaurant.com/?caf=1&bpt=345&viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%3D%3D&query=Restaurant+Menu&afdToken=ChMIiMK24KrCjAMVIBFZBR3C9wX_EnwBlLqpj3G8qHm5bonvH8oX4Y_1vAhxKEsBUYxFodJfGvQs48C-DPBxNfnUMzZcTHWnlSC2F2IZX8ouesQz_qVHHwxeGFr6XD_htm9hFXX1L4J1w2XYg4wj6aF5HhKGAhNPM29qqXHAv3UgTIZLODR3JwO7WfpeVOwJDSKAIAE&pcsa=false&nb=0&nm=2&nx=331&ny=45&is=700x363&clkt=2,1.0,1.0,0.9322686195373535,1.0,0.0,0.0,0.0,0.8,0.0028496023699023645,0.0,0.0,0.0,0.0,0.0,0.6
+tiffanyWebForDynamicTesting,https://tiffanybao.netlify.app/login,1.0,1.0,0.8731050491333008,1.0,1.0,1.0,1.0,0.8,0.04167977744199433,0.0,0.0,0.0,1.0,0.0,1.0
+apple.com,https://account.apple.com/,1.0,1.0,0.85,0.0,0.0,0.0,1.0,0.7,0.0040235626624313455,0.0,1.0,0.85,0.0,1.0,0.0
+Amazon.com Inc.+2020-07-16-09`43`27,http://sezamplus.com/wp-content/zon/67a75/,1.0,1.0,0.9735682010650635,1.0,1.0,0.0,0.0,0.8,0.0029332634254738135,0.0,0.0,0.0,1.0,0.0,1.0
+accounts.g.cdcde.com,https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/,1.0,1.0,0.9679252505302429,1.0,1.0,1.0,1.0,0.8,0.0012461973119665074,0.0,0.0,0.0,1.0,0.0,1.0
+kiewguide.com,http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm,1.0,1.0,0.9387905597686768,1.0,1.0,0.0,0.0,0.8,0.007764683170048652,0.0,0.0,0.0,1.0,0.0,1.0
+faketiffany'sWebsite,https://tiffanybao.netlify.app/#projects,1.0,0.0,0.6860458850860596,0.0,0.0,0.0,1.0,0.5,0.0033434913474701413,0.0,1.0,0.0,0.0,0.0,0.0
+Apple Inc.+2019-08-18-17`23`17,https://www.domainorder.nl/register/?ref=so&dn=deltaweb.be,1.0,1.0,0.8805832862854004,1.0,1.0,1.0,1.0,0.8,0.00953124935137985,0.0,0.0,0.0,1.0,0.0,1.0
+1&1 Ionos+2019-07-28-22`34`40,http://serv-acamai.com/1und1/de/index.php,1.0,1.0,0.85,1.0,1.0,0.0,0.0,0.7,0.004057436404893827,0.0,1.0,0.85,1.0,0.0,1.0
+ru.russianmastercach-republick.xyz,https://ru.russianmastercach-republick.xyz/,1.0,1.0,0.9677866697311401,1.0,0.0,0.0,1.0,0.8,0.014896186615109148,0.0,0.0,0.0,0.0,0.0,0.6
+www.paypal.com,https://www.paypal.com/signin,1.0,1.0,0.8731049299240112,0.0,1.0,1.0,1.0,0.8,0.041686782539629826,0.0,0.0,0.0,1.0,1.0,0.0
+dio'sWebsite,https://tiffanybao.netlify.app/,1.0,0.0,0.6860458850860596,0.0,0.0,0.0,1.0,0.5,0.0033433278482492396,0.0,1.0,0.0,0.0,0.0,0.0
+Absa Group+2020-09-14-16`49`20,http://arandasrestaurant.com/?caf=1&bpt=345&viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%3D%3D&query=Restaurant+Menu&afdToken=ChMIwZLKiqzCjAMVeBRZBR0uwh3PEoIBAZS6qY8cH0Kgvw04vudHCRulycqWLyZvSBrLMpBo841ql5k6WbTUMNLh9gd_gv-VGVdWQEbj-YFBoTnF8pJ20cpGdlK6sqpzaMFUJyfe5IVXu99nd9kzc6xijOKgfwekU9BXFaQXH8NZ6qzVEBYgxFXH-ogBM0WrW5tUzDKU-5r2bSAB&pcsa=false&nb=0&nm=2&nx=331&ny=45&is=700x363&clkt=5,1.0,1.0,0.9322686195373535,1.0,0.0,0.0,0.0,0.8,0.002849533183752878,0.0,0.0,0.0,0.0,0.0,0.6
+tiffanyWebForDynamicTesting,https://tiffanybao.netlify.app/login,1.0,1.0,0.8731049299240112,1.0,1.0,1.0,1.0,0.8,0.041686782539629826,0.0,0.0,0.0,1.0,0.0,1.0
+apple.com,https://account.apple.com/,1.0,1.0,0.85,0.0,0.0,0.0,1.0,0.7,0.004023160493101791,0.0,1.0,0.85,0.0,1.0,0.0
+Amazon.com Inc.+2020-07-16-09`43`27,http://sezamplus.com/wp-content/zon/67a75/,1.0,1.0,0.9735680818557739,1.0,1.0,0.0,0.0,0.8,0.002933417190740138,0.0,0.0,0.0,1.0,0.0,1.0
+accounts.g.cdcde.com,https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/,1.0,1.0,0.9679253101348877,1.0,1.0,1.0,1.0,0.8,0.0012461619906955295,0.0,0.0,0.0,1.0,0.0,1.0
+kiewguide.com,http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm,1.0,1.0,0.938790500164032,1.0,1.0,0.0,0.0,0.8,0.007763633150889153,0.0,0.0,0.0,1.0,0.0,1.0
+faketiffany'sWebsite,https://tiffanybao.netlify.app/#projects,1.0,0.0,0.6860458850860596,0.0,0.0,0.0,1.0,0.5,0.0033433278482492396,0.0,1.0,0.0,0.0,0.0,0.0
+Apple Inc.+2019-08-18-17`23`17,https://www.domainorder.nl/register/?ref=so&dn=deltaweb.be,1.0,1.0,0.8805834054946899,1.0,1.0,1.0,1.0,0.8,0.00953102125329326,0.0,0.0,0.0,1.0,0.0,1.0
+1&1 Ionos+2019-07-28-22`34`40,http://serv-acamai.com/1und1/de/index.php,1.0,1.0,0.85,1.0,1.0,0.0,0.0,0.7,0.004057201996500366,0.0,1.0,0.85,1.0,0.0,1.0
+ru.russianmastercach-republick.xyz,https://ru.russianmastercach-republick.xyz/,1.0,1.0,0.9677866697311401,1.0,0.0,0.0,1.0,0.8,0.014895841765395303,0.0,0.0,0.0,0.0,0.0,0.6
+www.paypal.com,https://www.paypal.com/signin,1.0,1.0,0.873104989528656,0.0,1.0,1.0,1.0,0.8,0.04168068551020634,0.0,0.0,0.0,1.0,1.0,0.0
+dio'sWebsite,https://tiffanybao.netlify.app/login,1.0,1.0,0.85,1.0,1.0,1.0,1.0,0.7,0.006698010046347801,0.0,1.0,0.85,1.0,0.0,1.0
+Absa Group+2020-09-14-16`49`20,http://arandasrestaurant.com/?caf=1&bpt=345&viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%3D%3D&query=Restaurant+Menu&afdToken=ChMI_Y-phK3CjAMVchRZBR3V2QCxEoIBAZS6qY8pkCYX0CUNPIcZKc4-7PlfkZyqc6kOn8mjoGr0XauVIi4SEzElJ0HqZXXtrmpVHls9Zog2m3ysVPVIAh7U04r4v8UxMHC8xT4OwTPKTeEOD4NOt5TrW4j5-lWTzJ1q2bxS7_n4SNU3WIDwngN5rpzx3lvEKt7jb7CJY8uonSAB&pcsa=false&nb=0&nm=2&nx=331&ny=45&is=700x363&clkt=3,1.0,1.0,0.9322686195373535,1.0,0.0,0.0,0.0,0.8,0.0028496669616591115,0.0,0.0,0.0,0.0,0.0,0.6
+tiffanyWebForDynamicTesting,https://tiffanybao.netlify.app/login,1.0,1.0,0.873104989528656,1.0,1.0,1.0,1.0,0.8,0.04168068551020634,0.0,0.0,0.0,1.0,0.0,1.0
+apple.com,https://account.apple.com/,1.0,1.0,0.85,0.0,0.0,0.0,1.0,0.7,0.0040233493947868775,0.0,1.0,0.85,0.0,1.0,0.0
+Amazon.com Inc.+2020-07-16-09`43`27,http://sezamplus.com/wp-content/zon/67a75/,1.0,1.0,0.9735682010650635,1.0,1.0,0.0,0.0,0.8,0.0029334065943588446,0.0,0.0,0.0,1.0,0.0,1.0
+accounts.g.cdcde.com,https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/,1.0,1.0,0.9679251313209534,1.0,1.0,1.0,1.0,0.8,0.0012461782384801793,0.0,0.0,0.0,1.0,0.0,1.0
+kiewguide.com,http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm,1.0,1.0,0.9387905597686768,1.0,1.0,0.0,0.0,0.8,0.00776435922796753,0.0,0.0,0.0,1.0,0.0,1.0
+faketiffany'sWebsite,https://tiffanybao.netlify.app/#projects,1.0,0.0,0.6860458850860596,0.0,0.0,0.0,1.0,0.5,0.0033433332442631305,0.0,1.0,0.0,0.0,0.0,0.0
+Apple Inc.+2019-08-18-17`23`17,https://www.domainorder.nl/register/?ref=so&dn=deltaweb.be,1.0,1.0,0.8805832862854004,1.0,1.0,1.0,1.0,0.8,0.009530560732985742,0.0,0.0,0.0,1.0,0.0,1.0
+1&1 Ionos+2019-07-28-22`34`40,http://serv-acamai.com/1und1/de/index.php,1.0,1.0,0.85,1.0,1.0,0.0,0.0,0.7,0.0040571856424264025,0.0,1.0,0.85,1.0,0.0,1.0
+ru.russianmastercach-republick.xyz,https://ru.russianmastercach-republick.xyz/,1.0,1.0,0.9677858948707581,1.0,0.0,0.0,1.0,0.8,0.014899389717623649,0.0,0.0,0.0,0.0,0.0,0.6
+www.paypal.com,https://www.paypal.com/signin,1.0,1.0,0.8731020092964172,0.0,1.0,1.0,1.0,0.8,0.04167901207021564,0.0,0.0,0.0,1.0,1.0,0.0
+dio'sWebsite,https://tiffanybao.netlify.app/,1.0,0.0,0.6860477924346924,0.0,0.0,0.0,1.0,0.5,0.003343412295866636,0.0,1.0,0.0,0.0,0.0,0.0
+Absa Group+2020-09-14-16`49`20,http://arandasrestaurant.com/?caf=1&bpt=345&viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ%3D%3D&query=Restaurant+Menu&afdToken=ChMI8r3v6q3CjAMVlitZBR2Bug9MEnwBlLqpj8Kyc3ckvWV6Xe5HQguCoiQlOTaXLSaTCBSPgZ2q3gIfIyC0fUa9Oy_BhmPrUcide_0RDySjpYtzZJNg30brWWuZcAj5zXAAo9bYs5LGbNuZbVIi5AUslp9IS9ZgouOUHuM7VqTUdEnyn7XShHu7KbK7-RwUcpyjIAE&pcsa=false&nb=0&nm=2&nx=341&ny=54&is=700x363&clkt=3,1.0,1.0,0.9322753548622131,1.0,0.0,0.0,0.0,0.8,0.002849613180238222,0.0,0.0,0.0,0.0,0.0,0.6
+tiffanyWebForDynamicTesting,https://tiffanybao.netlify.app/login,1.0,1.0,0.8731020092964172,1.0,1.0,1.0,1.0,0.8,0.04167901207021564,0.0,0.0,0.0,1.0,0.0,1.0
+apple.com,https://account.apple.com/,1.0,1.0,0.85,0.0,0.0,0.0,1.0,0.7,0.004023267388923587,0.0,1.0,0.85,0.0,1.0,0.0
+Amazon.com Inc.+2020-07-16-09`43`27,http://sezamplus.com/wp-content/zon/67a75/,1.0,1.0,0.9735684990882874,1.0,1.0,0.0,0.0,0.8,0.002933464050292969,0.0,0.0,0.0,1.0,0.0,1.0
+accounts.g.cdcde.com,https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/,1.0,1.0,0.9679265022277832,1.0,1.0,1.0,1.0,0.8,0.0012461999021930459,0.0,0.0,0.0,1.0,0.0,1.0
+kiewguide.com,http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm,1.0,1.0,0.9387911558151245,1.0,1.0,0.0,0.0,0.8,0.007764365744043874,0.0,0.0,0.0,1.0,0.0,1.0
+faketiffany'sWebsite,https://tiffanybao.netlify.app/#projects,1.0,0.0,0.6860477924346924,0.0,0.0,0.0,1.0,0.5,0.003343412295866636,0.0,1.0,0.0,0.0,0.0,0.0
+Apple Inc.+2019-08-18-17`23`17,https://www.domainorder.nl/register/?ref=so&dn=deltaweb.be,1.0,1.0,0.8805801272392273,1.0,1.0,1.0,1.0,0.8,0.009531322861663678,0.0,0.0,0.0,1.0,0.0,1.0
+1&1 Ionos+2019-07-28-22`34`40,http://serv-acamai.com/1und1/de/index.php,1.0,1.0,0.85,1.0,1.0,0.0,0.0,0.7,0.004057221076253321,0.0,1.0,0.85,1.0,0.0,1.0

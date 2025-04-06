@@ -1,0 +1,12 @@
+ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.9677867	1.108205795288086|1.0524632930755615|0.45180773735046387|1.6265594959259033
+www.paypal.com	https://www.paypal.com/hk/home	0	None	None	0.8731049	0.14730000495910645|0.1698002815246582|0|0
+dio'sWebsite	https://tiffanybao.netlify.app/	0	None	None	0.6860459	0.17844223976135254|0.3835475444793701|0|0
+Absa Group+2020-09-14-16`49`20	http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==	0	Absa Group	['absa.com']	0.9322688	0.1614542007446289|0.17289352416992188|0.17981624603271484|0
+tiffanyWebForDynamicTesting	https://tiffanybao.netlify.app/#work	0	None	None	0.77713555	0.49236607551574707|0.6345479488372803|0|0
+apple.com	https://account.apple.com/	0	None	None	0.73034686	0.14787626266479492|0.4312312602996826|0|0
+Amazon.com Inc.+2020-07-16-09`43`27	http://sezamplus.com/wp-content/zon/67a75/	1	Amazon	['amazon.com', 'amazon.se', 'amazon.fr']	0.973568	0.1263587474822998|0.14952969551086426|0.10301661491394043|0
+accounts.g.cdcde.com	https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/	1	Google	['google.com', 'appspot.com', 'appspot.com']	0.96792525	0.1159052848815918|0.26464223861694336|0.020119667053222656|0
+kiewguide.com	http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm	1	Absa Group	['absa.com']	0.9387906	0.12692713737487793|0.16006922721862793|0.10071349143981934|0
+faketiffany'sWebsite	https://tiffanybao.netlify.app/#projects	0	None	None	0.6860459	0.15133976936340332|0.35628437995910645|0|0
+Apple Inc.+2019-08-18-17`23`17	https://deltaweb.be/wp-content/plugins/cherry-plugin/admin/import-export/account/	0	None	None	0.69276005	1.51973557472229|0.5426900386810303|0.11984896659851074|0.4777536392211914
+1&1 Ionos+2019-07-28-22`34`40	http://serv-acamai.com/1und1/de/index.php	0	None	None	0.79480255	0.7988791465759277|0.3684554100036621|0|0
