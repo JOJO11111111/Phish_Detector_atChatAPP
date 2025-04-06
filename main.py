@@ -31,6 +31,23 @@ def make_decision(fused_vector, image_phish_score):
     """
     Make final phishing/benign decision
     """
+
+# basic idea after updating txt score
+    # """Combine scores with modality weighting"""
+    # combined = (img_score * img_weight) + (txt_score * txt_weight)
+    
+    # # Decision thresholds
+    # if combined >= 0.8:
+    #     return 1  # Definite phishing
+    # elif combined >= 0.6:
+    #     return 0.7  # Highly suspicious
+    # elif combined >= 0.4:
+    #     return 0.5  # Suspicious
+    # return 0  # Benign
+
+
+    # 
+
     if image_phish_score >= 0.9:
         return 1
     
@@ -148,7 +165,7 @@ def process_site(site_folder):
         return None
     
 
-    
+
 
 def save_single_result(result):
     """Save a single site's results to CSV"""
