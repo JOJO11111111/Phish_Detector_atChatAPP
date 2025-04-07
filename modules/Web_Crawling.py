@@ -1,6 +1,9 @@
 import os
 import re
 import time
+from io import BytesIO
+
+from PIL import Image
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -32,7 +35,7 @@ def crawl_url(url, base_dir='datasets/test_sites'):
     try:
         print(f"[INFO] Crawling URL: {url}")
         driver.get(url)
-        time.sleep(3)
+        time.sleep(5)
 
         html_content = driver.page_source
         domain_folder = extract_domain(url)
