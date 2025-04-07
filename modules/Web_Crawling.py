@@ -1,13 +1,12 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-import time
 import os
 import re
+import time
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 
-
-# Set up the headless Chrome driver
+# Set up headless Chrome driver
 def setup_driver():
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -16,53 +15,50 @@ def setup_driver():
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
 
-    # Create ChromeDriver service using WebDriver Manager
     service = Service(ChromeDriverManager().install())
-
-    # Initialize the WebDriver with service and options
     driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 
+# Extract domain to use as folder name
+def extract_domain(url):
+    from urllib.parse import urlparse
+    domain = urlparse(url).netloc
+    return domain
 
-# Sanitize a URL to create a safe folder name
-def sanitize_url(url):
-    # Remove http(s) and replace all non-alphanumeric characters with underscores
-    return re.sub(r'[^a-zA-Z0-9]', '_', url.replace('http://', '').replace('https://', ''))
-
-
-# Crawl the given URL and save HTML + screenshot
-def crawl_url(url, output_dir='outputs'):
+# Crawl the given URL and save into datasets/test_sites/domain/
+def crawl_url(url, base_dir='datasets/test_sites'):
     driver = setup_driver()
 
     try:
         print(f"[INFO] Crawling URL: {url}")
-        # Load the webpage
         driver.get(url)
         time.sleep(3)
 
         html_content = driver.page_source
-
-        # Create a folder to save the output files
-        folder_name = sanitize_url(url)
-        save_dir = os.path.join(output_dir, folder_name)
+        domain_folder = extract_domain(url)
+        save_dir = os.path.join(base_dir, domain_folder)
         os.makedirs(save_dir, exist_ok=True)
 
-        # Save the HTML file
-        html_path = os.path.join(save_dir, 'page.html')
+        # Save HTML as html.txt
+        html_path = os.path.join(save_dir, 'html.txt')
         with open(html_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
 
-        # Take and save a full-page screenshot
-        screenshot_path = os.path.join(save_dir, 'screenshot.png')
+        # Save screenshot as shot.png
+        screenshot_path = os.path.join(save_dir, 'shot.png')
         driver.save_screenshot(screenshot_path)
 
-        print(f"[SUCCESS] Saved to {save_dir}")
+        # Also save the current URL as info.txt
+        info_path = os.path.join(save_dir, 'info.txt')
+        with open(info_path, 'w', encoding='utf-8') as f:
+            f.write(driver.current_url)
+
+        print(f"[SUCCESS] Saved HTML and screenshot to {save_dir}")
         return html_path, screenshot_path
 
     except Exception as e:
         print(f"[ERROR] Failed to crawl URL: {e}")
         return None, None
-        exit()
 
     finally:
         driver.quit()
