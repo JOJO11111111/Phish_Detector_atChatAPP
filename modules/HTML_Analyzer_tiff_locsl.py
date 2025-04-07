@@ -1,49 +1,30 @@
-from datetime import datetime
-
 from openai import OpenAI
-
 import json
 import os
+import numpy as np
 
-import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# from configs import load_config
+import os
+import sys
+# Add the parent directory to the path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from configs import load_config
 
+from modules.crp_locator import crp_locator
+from modules.crp_locator import keyword_heuristic
 
-from crp_locator import crp_locator
-from Web_Crawling import setup_driver
+# from crp_locator import crp_locator
+from modules.Web_Crawling_tiff_local import setup_driver
 from modules import crp_classifier
 
 from modules.HTML_crp_locator import static_crp_locator
 from utils.web_utils import get_page_text, visit_url
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY", "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"))
-from crp_locator import keyword_heuristic
+# from crp_locator import keyword_heuristic
 import requests
 from bs4 import BeautifulSoup
 import re
-
-log_file_path = '/Users/tang/TANG/xb/PhishIntention_CyberTest-main/PhishIntention/results/prompts_printed1.txt'
-os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
-
-
-def log_print(*args, **kwargs):
-    # Get the original print output as a string
-    import sys
-    from io import StringIO
-
-    # First, print to console as normal
-    print(*args, **kwargs)
-
-    # Now, capture what would have been printed to a string
-    temp_out = StringIO()
-    print(*args, file=temp_out, **kwargs)
-    output = temp_out.getvalue()
-
-    # Append to the log file
-    with open(log_file_path, 'a') as f:
-        f.write(output)
-
 class HTML_Analyzer:
     def __init__(self, crp_locator_model=None, awl_model=None, crp_classifier=None):
         self.CRP_LOCATOR_MODEL = crp_locator_model
@@ -106,8 +87,6 @@ class HTML_Analyzer:
         :param base_url: For resolving relative redirect links
         :return: vector1, vector2
         """
-        with open(log_file_path, 'w') as f:
-            f.write(f"=== New Run Started at {datetime.now()} ===\n")
         html = load_html_file(html_path)
 
         print("[STEP 1] Analyze original HTML...")
@@ -120,7 +99,7 @@ class HTML_Analyzer:
 
         if not is_crp:
             print("Not a CRP page.")
-
+            return vector_1, vector_2
 
         if not redirect_url:
             if not redirect_url:
@@ -154,8 +133,6 @@ class HTML_Analyzer:
                         cls_model=self.CRP_CLASSIFIER
                     )
 
-                    redirect_url = driver.current_url
-
                     print("After keyword_heuristic:", reached)
 
                     if reached:
@@ -167,14 +144,14 @@ class HTML_Analyzer:
                         gpt_result_2 = analyze_html_with_openai(redirected_html)
                         vector_2 = convert_to_vector(gpt_result_2)
                         print("Vector 2:", vector_2)
-
+                        return vector_1, vector_2
                     else:
                         print("Dynamic analysis did not reach CRP.")
 
                 except Exception as e:
                     print(f"[ERROR] Dynamic analysis failed: {e}")
 
-
+                return vector_1, vector_2
 
         print(f"[STEP 3] Detected CRP. Attempting to access: {redirect_url}")
         try:
@@ -184,15 +161,12 @@ class HTML_Analyzer:
             gpt_result_2 = analyze_html_with_openai(html2)
             vector_2 = convert_to_vector(gpt_result_2)
             print("Vector 2:", vector_2)
-
+            return vector_1, vector_2
         except Exception as e:
             print("[ERROR] Could not fetch redirected page:", e)
+            return vector_1, vector_2
 
-
-        text_score = compute_text_score(vector_1, vector_2)
-        print("[FINAL TEXT SCORE]:", text_score)
-        return vector_1, vector_2, text_score
-
+    
 # Open AI API key: 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
 
 def analyze_html_with_openai(html_content, model="gpt-4"):
@@ -212,6 +186,7 @@ def analyze_html_with_openai(html_content, model="gpt-4"):
     - "uses_obfuscated_script": true/false (does the page contain suspicious encoded JavaScript or delay-loaded content?)
     - "suspicious_text_patterns": true/false (such as urgency, misleading instructions, or brand inconsistency)
     - "mentioned_brand": string (e.g., 'PayPal', 'Apple', or 'Unknown')
+    - "phishing_score": float between 0.0 and 1.0 (likelihood it's phishing)
 
     Rules:
     - Consider the structure and logic of forms (e.g., where they submit to).
@@ -253,38 +228,11 @@ def convert_to_vector(gpt_result):
         int(gpt_result.get("form_action_suspicious", False)),
         int(gpt_result.get("uses_obfuscated_script", False)),
         int(gpt_result.get("suspicious_text_patterns", False)),
-        0 if gpt_result.get("mentioned_brand", "").lower() == "unknown" else 1
-        
+        0 if gpt_result.get("mentioned_brand", "").lower() == "unknown" else 1,
+        float(gpt_result.get("phishing_score", 0.0))
     ]
 
 
 def load_html_file(path):
     with open(path, 'r', encoding='utf-8') as f:
         return f.read()
-
-def compute_text_score(vector_1, vector_2=None):
-    """
-    Compute phishing-related text score from GPT output vectors.
-
-    :param vector_1: List of binary features from original HTML
-    :param vector_2: List of binary features from redirected HTML (optional)
-    :return: float score between 0.0 - 1.0
-    """
-    def score_vector(v):
-        if not v:
-            return 0.0
-
-        weights = [0.4, 0.15, 0.2, 0.15, 0.1]
-        weighted_sum = sum(w * x for w, x in zip(weights, v))
-        return weighted_sum
-
-    score1 = score_vector(vector_1)
-    score2 = score_vector(vector_2) if vector_2 else 0.0
-
-    # If both exist, average with more weight on CRP (redirected)
-    if vector_2:
-        final_score = (0.3 * score1 + 0.7 * score2)
-    else:
-        final_score = score1
-
-    return round(final_score, 3)

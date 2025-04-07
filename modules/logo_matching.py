@@ -548,7 +548,7 @@ def cache_reference_list(model, ocr_model, targetlist_path: str, grayscale=False
 
     return np.asarray(logo_feat_list), np.asarray(file_name_list)
 
-
+ 
 def new_check_domain_brand_inconsistency(logo_boxes,
                                      domain_map_path: str,
                                      model,
