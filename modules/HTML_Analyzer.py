@@ -1,14 +1,10 @@
 from datetime import datetime
-
 from openai import OpenAI
-
 import json
-import os
 
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from configs import load_config
-
 
 from crp_locator import crp_locator
 from Web_Crawling import setup_driver
@@ -138,9 +134,9 @@ class HTML_Analyzer:
                     page_text = get_page_text(driver).split("\n")
 
 
-                    new_html_path = screenshot_path.replace("screenshot.png", "new_page.html")
-                    new_info_path = screenshot_path.replace("screenshot.png", "new_info.txt")
-                    new_screenshot_path = screenshot_path.replace("screenshot.png", "new_screenshot.png")
+                    new_html_path = screenshot_path.replace("shot.png", "new_page.html")
+                    new_info_path = screenshot_path.replace("shot.png", "new_info.txt")
+                    new_screenshot_path = screenshot_path.replace("shot.png", "new_shot.png")
 
 
                     current_url, reached = keyword_heuristic(
@@ -191,7 +187,18 @@ class HTML_Analyzer:
 
         text_score = compute_text_score(vector_1, vector_2)
         print("[FINAL TEXT SCORE]:", text_score)
-        return vector_1, vector_2, text_score
+
+        if not vector_2:
+            vector_2 = [0, 0, 0, 0, 0, 0.0]
+
+        text_vector = vector_1 + vector_2
+        text_vector.append(text_score)
+
+        print("[FINAL TEXT VECTOR]:", text_vector)
+
+        return text_vector
+
+        return text_vector
 
 # Open AI API key: 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
 
@@ -253,8 +260,7 @@ def convert_to_vector(gpt_result):
         int(gpt_result.get("form_action_suspicious", False)),
         int(gpt_result.get("uses_obfuscated_script", False)),
         int(gpt_result.get("suspicious_text_patterns", False)),
-        0 if gpt_result.get("mentioned_brand", "").lower() == "unknown" else 1
-        
+        0 if gpt_result.get("mentioned_brand", "").lower() == "unknown" else 1,
     ]
 
 
