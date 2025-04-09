@@ -68,8 +68,8 @@ class HTML_Analyzer:
 
         if not is_crp:
             text = soup.get_text(separator=' ').lower()
-            keywords = ["login", "sign in", "log in", "enter password", "access your account"]
-            if any(k in text for k in keywords):
+            keywords = ["login", "sign in", "signin", "log in", "log on", "sign up", "signup", "register", "registration", "create.*account", "open an account", "get free.*now", "join now", "new user", "my account", "come in", "become a member", "customer centre", "登入","登錄", "登録", "注册", "Anmeldung", "iniciar sesión", "identifier", "ログインする", "サインアップ", "ログイン", "로그인", "가입하기", "시작하기", "регистрация", "войти", "вход", "accedered", "gabung", "daftar", "masuk", "girişi", "Giriş", "สมัครสม", "وارد", "regístrate", "acceso", "acessar", "entrar", "ingresa","new account", "join us", "new", "enter password", "access your account", "create account", "登陆"]
+        if any(k in text for k in keywords):
                 is_crp = True
 
         if not target_url:
@@ -188,17 +188,23 @@ class HTML_Analyzer:
         text_score = compute_text_score(vector_1, vector_2)
         print("[FINAL TEXT SCORE]:", text_score)
 
-        if not vector_2:
-            vector_2 = [0, 0, 0, 0, 0, 0.0]
+        if vector_2 is None:
+            vector_2 = [0] * len(vector_1)
 
         text_vector = vector_1 + vector_2
         text_vector.append(text_score)
 
+        if text_score >= 0.6:
+            verdict = "Phishing"
+        else:
+            verdict = "Benign"
+
+        print(f"[FINAL VERDICT]: {verdict}")
+
         print("[FINAL TEXT VECTOR]:", text_vector)
 
-        return text_vector
+        return text_vector, verdict
 
-        return text_vector
 
 # Open AI API key: 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
 
@@ -253,7 +259,7 @@ def analyze_html_with_openai(html_content, model="gpt-4"):
 
 def convert_to_vector(gpt_result):
     if not gpt_result:
-        return [0]*6
+        return [0]*5
 
     return [
         int(gpt_result.get("has_login_form", False)),
