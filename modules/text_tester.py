@@ -3,7 +3,7 @@ from HTML_Analyzer import (
     analyze_html_with_openai,
     convert_to_vector,
 )
-from Web_Crawling_tiff_local import crawl_url,sanitize_url
+from Web_Crawling import crawl_url,sanitize_url
 from crp_locator import keyword_heuristic, crp_locator
 import os
 import json
