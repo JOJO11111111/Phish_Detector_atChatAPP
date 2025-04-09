@@ -1,0 +1,565 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+	
+<!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-11440425443&amp;l=dataLayer&amp;cx=c&amp;gtm=45je5421v9177761308za200zb9118266874&amp;tag_exp=102788824~102803279~102813109~102887800~102926062~102975949~103016951~103021830~103027016"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-XJJZ2J4QFB&amp;l=dataLayer&amp;cx=c&amp;gtm=45He5421v9118266874za200&amp;tag_exp=102788824~102803279~102813109~102887799~102926062~102975949~103016951~103021830~103027016"></script><script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/hbAq-YhJxOnlU-7cpgBoAJHb/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-0uUcqAX/lKvnfFMvCM7U5wcjfgBvv/1q+xxZKV6ZhBH4ikGcgTDEC4vEZPTt3l8O"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PVLSVCR"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PVLSVCR');</script>
+<!-- End Google Tag Manager -->
+	
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Op deze pagina kun je je registreren voor de diensten van DomainOrder.nl">
+<meta name="keywords" content="registreren, inschrijven, aanmelden, schrijf in, meld aan, registreer, klant, worden">
+<title>DomainOrder.nl - Registreren</title>
+<!--v3-->
+<link rel="stylesheet" href="/admin/css/v3-normalize.css?1742988423">
+<link rel="stylesheet" href="/admin/css/v3-main-frontend.css?1742988423">
+<link rel="stylesheet" href="/admin/fonts/webfonts/stylesheet.css?1742988423">
+<!-- end v3-->
+<link rel="stylesheet" href="/admin/css/sidebar.css"><script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11440425443/?random=1743920160487&amp;cv=11&amp;fst=1743920160487&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be5421v9213596078z89118266874za201zb9177761308&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102788824~102803279~102813109~102887800~102926062~102975949~103016951~103021830~103027016&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.domainorder.nl%2Fregister%2F%3Fref%3Dso%26dn%3Ddeltaweb.be&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=DomainOrder.nl%20-%20Registreren&amp;npa=0&amp;pscdl=noapi&amp;auid=271330812.1743810317&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=Linux&amp;uapv=&amp;uaw=0&amp;fledge=1&amp;_tu=Cg&amp;rfmt=3&amp;fmt=4"></script></head>
+<body>
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVLSVCR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+	<header>
+  	<div id="logo"><a href="/"><img src="/admin/images/v3/logo-domainorder-nl.png" width="340" height="51" alt="DomainOrder"></a><br>
+  		<h1 style="font-size:120%">Vangt quarantaine namen</h1></div>
+  	<div id="tagline"><h3 style:font-weight:="" normal;="">.nl&nbsp;&nbsp;&nbsp;.be&nbsp;&nbsp;&nbsp;.eu&nbsp;&nbsp;&nbsp;.fr&nbsp;&nbsp;&nbsp;.it</h3>
+  	<p>Pre-order vanaf 50 Euro</p><h3>no catch, no pay</h3></div>
+  	<div id="login">
+  		<a href="/login/" class="login"></a>
+			<form method="post" action="https://www.domainorder.nl/auction/login.php?t=s" name="login">
+			<ul>
+				<li>
+					<div class="inputBg first"><input type="text" name="username" title="Vul hier je gebruikersnaam in (= e-mailadres)"></div>
+					<div class="inputBg"><input type="password" name="password" title="Vul hier je wachtwoord in"></div>			
+				</li>
+				<li>
+									<a href="/register/passwordrequest.php">Wachtwoord vergeten?</a>
+										<input type="submit" class="btn orange" value="Inloggen">
+				</li>
+			</ul>
+			</form>	
+  	</div>
+  	<div id="languages"><a href="https://www.domainorder.nl/"><img src="/admin/images/v3/language-nl.png" alt="NL" width="16" height="14"></a>
+  		<a href="https://www.domainorder.com/"><img src="/admin/images/v3/language-en.png" alt="EN" width="16" height="14"></a>
+  		<a href="https://www.domainorder.de/"><img src="/admin/images/v3/language-de.png" alt="DE" width="16" height="14"></a>
+  		<a href="https://www.domainorder.fr/"><img src="/admin/images/v3/language-fr.png" alt="DE" width="16" height="14"></a></div>
+  	<div id="pijl"></div>
+  	<nav>
+  		<ul>
+				<li class=""><a href="/">Home</a></li>
+				<li class="active"><a href="/register/">Registreren</a></li>
+				<li class=""><a href="/faq/">FAQ</a></li>
+				<li class=""><a href="/contact/">Contact</a></li>
+  		</ul>
+  	</nav>
+  </header>
+
+
+		<div class="bottom">
+			<div id="content">
+			
+
+
+
+	<h2>Registreren als bedrijf of particulier</h2>
+  <br>
+	<p>Nieuwe registraties worden geverifieerd voordat het account geactiveerd wordt.</p>
+
+
+
+        <form method="post" action="">
+
+            	<p><strong>Alleen invullen bij een inschrijving als bedrijf:</strong></p>
+            	
+					<ul class="registreren">
+
+            	<li>
+            	<label for="companyname">Bedrijfsnaam</label>
+              <div class="invoer"><input type="text" size="45" name="companyname" value=""></div>
+              </li>
+              
+              <li>
+            	<label for="kvknumber">Kvk nummer</label>
+              <div class="invoer"><input type="text" size="45" name="kvknumber" value=""></div>
+              </li>
+ 
+              <li>
+	            	<label for="vatnumber">BTW nummer</label>
+              <div class="invoer"><input type="text" size="45" name="vatnumber" value=""></div>
+              </li>
+
+							<li></li>
+							
+					</ul>
+
+							<p>&nbsp;</p>
+            	<p><strong>In te vullen bij inschrijving als particulier en bedrijf:</strong></p>
+
+					<ul class="registreren">
+ 
+              <li>
+            	<label for="firstname">Voornaam *</label>
+              <div class="invoer"><input type="text" size="45" name="firstname" value=""></div>
+              </li>
+ 
+              <li>
+            	<label for="prefix">Tussenvoegsels</label>
+              <div class="invoer"><input type="text" size="45" name="prefix" value=""></div>
+              </li>
+ 
+              <li>
+            	<label for="lastname">Achternaam *</label>
+              <div class="invoer"><input type="text" size="45" name="lastname" value=""></div>
+              </li>
+ 
+              <li>
+            	<label for="street_nr">Straat + huisnr. (geen postbus) *</label>
+              <div class="invoer"><input type="text" size="45" name="street_nr" value=""></div>
+              </li>
+ 
+              <li>
+            	<label for="zipcode">Postcode *</label>
+              <div class="invoer"><input style="text-transform: uppercase;" type="text" size="6" name="zipcode" value=""></div>
+              </li>
+              <li>
+            	<label for="city">Plaatsnaam *</label>
+              <div class="invoer"><input type="text" size="18" name="city" value=""></div>
+              </li>
+ 
+              <li>
+            	<label for="country">Land *</label>
+              <div class="invoer">
+              		<select name="countrycc">
+<option value="NL" selected="">Nederland</option>
+<option value="BE">België</option>
+<option value="-"></option>
+<option value="AF">Afghanistan</option>
+<option value="AL">Albanië</option>
+<option value="DZ">Algerije</option>
+<option value="VI">Amerikaanse Maagdeneilanden</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua en Barbuda</option>
+<option value="AR">Argentinië</option>
+<option value="AM">Armenië</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australië</option>
+<option value="AZ">Azerbeidzjan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrein</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus (Wit Rusland)</option>
+<option value="BE">België</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivië</option>
+<option value="BQ">Bonaire, Sint Eustatius en Saba</option>
+<option value="BA">Bosnië-Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazilië</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="VG">Britse Maagdeneilanden</option>
+<option value="BN">Brunei</option>
+<option value="BG">Bulgarije</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodja</option>
+<option value="CA">Canada</option>
+<option value="CF">Centraal Afrikaanse Republiek</option>
+<option value="CL">Chili</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+<option value="CC">Cocos-eilanden</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoren</option>
+<option value="CG">Congo</option>
+<option value="CK">Cook-eilanden</option>
+<option value="CR">Costa Rica</option>
+<option value="CU">Cuba</option>
+<option value="CW">Curaçao</option>
+<option value="CY">Cyprus</option>
+<option value="CD">Democratische Republiek Congo </option>
+<option value="DK">Denemarken</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominicaanse Republiek</option>
+<option value="DE">Duitsland</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypte</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatoriaal Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estland</option>
+<option value="ET">Ethiopië</option>
+<option value="FO">Faeröer-eilanden</option>
+<option value="FK">Falkland-eilanden</option>
+<option value="FJ">Fiji</option>
+<option value="PH">Filipijnen</option>
+<option value="FI">Finland</option>
+<option value="FR">Frankrijk</option>
+<option value="GF">Frans Guyana</option>
+<option value="PF">Frans Polynesië</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgië</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GD">Grenada</option>
+<option value="GR">Griekenland</option>
+<option value="GL">Groenland</option>
+<option value="GP">Guadaloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haïti</option>
+<option value="HM">Heard and McDonald Islands</option>
+<option value="HN">Honduras</option>
+<option value="HU">Hongarije</option>
+<option value="HK">Hongkong</option>
+<option value="IS">IJsland</option>
+<option value="IE">Ierland, Republiek</option>
+<option value="IN">India</option>
+<option value="ID">Indonesië</option>
+<option value="IQ">Irak</option>
+<option value="IR">Iran</option>
+<option value="IM">Isle of Man</option>
+<option value="IL">Israël</option>
+<option value="IT">Italië</option>
+<option value="CI">Ivoorkust</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="YE">Jemen, Republiek</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordanië</option>
+<option value="KY">Kaaimaneilanden</option>
+<option value="CV">Kaapverdische eilanden</option>
+<option value="CM">Kameroen</option>
+<option value="KZ">Kazachstan</option>
+<option value="KE">Kenia</option>
+<option value="KI">Kiribati</option>
+<option value="KW">Koeweit</option>
+<option value="HR">Kroatië</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Laos</option>
+<option value="LS">Lesotho</option>
+<option value="LV">Letland</option>
+<option value="LB">Libanon</option>
+<option value="LR">Liberië</option>
+<option value="LY">Libyan Arab Jamahiriya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Litouwen</option>
+<option value="LU">Luxemburg</option>
+<option value="MO">Macau</option>
+<option value="MK">Macedonië</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MV">Malediven</option>
+<option value="MY">Maleisië</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MA">Marokko</option>
+<option value="MH">Marshall-eilanden</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauretanië</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesië, Federale Staten van</option>
+<option value="MD">Moldova (Moldavië)</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolië</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibië</option>
+<option value="NR">Nauru</option>
+<option value="NL">Nederland</option>
+<option value="NP">Nepal</option>
+<option value="KN">Nevis (St. Kitts)</option>
+<option value="NI">Nicaragua</option>
+<option value="NC">Nieuw-Caledonië</option>
+<option value="NZ">Nieuw-Zeeland</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="KP">Noord-Korea</option>
+<option value="MP">Noordelijke Marianen eilanden</option>
+<option value="NO">Noorwegen</option>
+<option value="NF">Norfolk Island</option>
+<option value="UG">Oeganda</option>
+<option value="UA">Oekraïne</option>
+<option value="OM">Oman</option>
+<option value="TL">Oost-Timor</option>
+<option value="AT">Oostenrijk</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territory</option>
+<option value="PA">Panama</option>
+<option value="PG">Papoea Nieuw-Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PN">Pitcairn Island</option>
+<option value="PL">Polen</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="RE">Reunion</option>
+<option value="RO">Roemenië</option>
+<option value="RU">Rusland</option>
+<option value="RW">Rwanda</option>
+<option value="WS">Samoa</option>
+<option value="AS">Samoa (VS)</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome en Principe</option>
+<option value="SA">Saoedi-Arabië</option>
+<option value="SN">Senegal</option>
+<option value="RS">Servië</option>
+<option value="SC">Seychellen</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SX">Sint Maarten</option>
+<option value="SK">Slovaakse Republiek</option>
+<option value="SI">Slovenië</option>
+<option value="SD">Soedan</option>
+<option value="SB">Solomon-eilanden</option>
+<option value="SO">Somalië</option>
+<option value="GS">South Georgia and the South Sandwich Islands</option>
+<option value="ES">Spanje</option>
+<option value="LK">Sri Lanka</option>
+<option value="BL">St. Barthélemy</option>
+<option value="SH">St. Helena</option>
+<option value="LC">St. Lucia</option>
+<option value="MF">St. Maarten</option>
+<option value="PM">St. Pierre and Miquelon</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard &amp; Jan Mayen eilanden</option>
+<option value="SZ">Swaziland</option>
+<option value="SY">Syrië</option>
+<option value="TJ">Tadzjikistan</option>
+<option value="TW">Taiwan</option>
+<option value="TZ">Tanzania</option>
+<option value="TH">Thailand</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad en Tobago</option>
+<option value="TD">Tsjaad</option>
+<option value="CZ">Tsjechische Republiek</option>
+<option value="TN">Tunesië</option>
+<option value="TR">Turkije</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="VC">Union-eiland (St. Vincent en de Grenadinen)</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VA">Vaticaanstad</option>
+<option value="VE">Venezuela</option>
+<option value="GB">Verenigd Koninkrijk</option>
+<option value="AE">Verenigde Arabische Emiraten</option>
+<option value="US">Verenigde Staten</option>
+<option value="VN">Vietnam</option>
+<option value="WF">Wallis and Futuna Islands</option>
+<option value="EH">Westelijke Sahara</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+<option value="ZA">Zuid-Afrika</option>
+<option value="KR">Zuid-Korea</option>
+<option value="SS">Zuid-Soedan</option>
+<option value="SE">Zweden</option>
+<option value="CH">Zwitserland</option>
+<option value="AX">Ålandseilanden</option>
+              		</select>
+              	</div>
+              </li>
+ 
+              <li>
+            	<label for="user">E-mail adres *</label>
+              <div class="invoer"><input type="text" size="45" name="user" value=""></div>
+              </li>
+ 
+              <li>
+            	<label for="phonenumber">Telefoonnr. *</label>
+              <div class="invoer"><input type="text" size="45" name="phonenumber" value=""></div>
+              </li>
+ 
+ 
+              <li>
+            	<label for="cellphonenumber">Mobiele telefoon</label>
+              <div class="invoer"><input type="text" size="45" name="cellphonenumber" value=""></div>
+              </li>
+ 
+              <li>
+            	<label for="viavia">Hoe heb je ons leren kennen?</label>
+              <div class="invoer"><input type="text" size="45" name="viavia" value=""></div>
+              <input type="hidden" name="viaviaref" value="so">
+              </li>
+ 
+
+						</ul>
+							
+							<div style="clear:both"></div>
+							
+            	<p>* velden zijn verplicht</p>
+
+            	<p>
+            	<label for="newsletter">Wil je onze nieuwsbrief ontvangen?</label>&nbsp;&nbsp;&nbsp;
+            	<input class="checkbox" type="radio" name="newsletter" value="yes" checked="">&nbsp;ja &nbsp;&nbsp;
+				<input class="checkbox" type="radio" name="newsletter" value="no">&nbsp;nee 
+				</p>
+						
+            	<p>
+            	<label for="newsletter">Wil je onze veilingmails (start en stop) ontvangen?</label>&nbsp;&nbsp;&nbsp;
+            	<input class="checkbox" type="radio" name="auctionstartend" value="yes" checked="">&nbsp;ja &nbsp;&nbsp;
+				<input class="checkbox" type="radio" name="auctionstartend" value="no">&nbsp;nee 
+				</p>
+							
+				<p>Bij het versturen van dit formulier ga je akkoord met onze <a href="/legal/" target="_blank"> algemene DomainOrder.nl voorwaarden</a>.</p>
+                    <div class="g-recaptcha" data-sitekey="6LfmGVkUAAAAAC97C077Vu092_VFDeHpecU8j24c"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-ge4ohl6fnhip" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfmGVkUAAAAAC97C077Vu092_VFDeHpecU8j24c&amp;co=aHR0cHM6Ly93d3cuZG9tYWlub3JkZXIubmw6NDQz&amp;hl=en&amp;v=hbAq-YhJxOnlU-7cpgBoAJHb&amp;size=normal&amp;cb=hrkd6zvalom6"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+
+             <div id="registreren-button">
+              <input type="submit" name="action" value="Formulier versturen" class="btn medium orange sansserif transition padding10-20 margin15 floatright" style="border:none;">
+             </div>
+
+        </form>
+			
+			</div><!--/#content-->
+			
+			<div id="sidebar">
+			
+				<div class="widget">
+				
+								
+		
+
+
+			<h2>Volgende veiling</h2>
+			
+			<table id="kalender" cellpadding="4" height="150">
+				<tbody><tr>
+				<td width="155" valign="top"><br>
+					Iedere maandagochtend om 9:00u uur start er een nieuwe veiling. De veiling eindigt de dinsdag erna om 14:00u.</td>
+				<td align="center" width="140" background="/admin/images/kalender.png">
+				<div style="font-size:14px;	line-height:12px; text-align:center; color:#fff;">maandag</div>
+				<div style="font-size:60px;	line-height:60px; text-align:center; font-weight: bold; color:#fff;">7</div>
+				<div style="font-size:14px;	line-height:12px; text-align:center; color:#fff;">april 2025</div></td>
+				</tr>
+			</tbody></table>
+			
+			
+	
+				
+					
+				</div><!--/.widget-->
+				
+				
+				<div class="widget">
+				
+					<h2>Infographic</h2>
+			
+					<p><a href="/infographic/"><img src="/admin/images/v3/domain-order-infographic-icon.png" alt=""></a><br>
+						<span style="font-style:italic;color:grey;">Bekijk onze infographic</span></p>	
+				
+				</div><!--/.widget-->
+				
+				
+				
+				
+				<div class="widget">
+				
+					<h2>Contact informatie</h2>
+					
+					<p><strong>DomeinGURU B.V.</strong><br>
+					Lireweg 32<br>
+					2153PH &nbsp;Nieuw-Vennep<br>
+					Nederland</p>
+					
+					<p>(+31) (0) 252 - 622 153<br>
+					<a href="/contact/">Neem contact met ons op</a></p>
+				
+				</div><!--/.widget-->
+				
+							
+			</div><!--/#sidebar-->
+			
+		</div><!--/.bottom-->
+	
+	<!--/#container-->
+	
+<div class="clear"></div>
+
+	<div id="footer">
+		
+				<ul>
+
+			<li class="first" style="margin-right:30px;">
+				<img src="/admin/images/footer-logo.png" alt="DomainOrder" title="DomainOrder"><br>
+				<br>
+			</li>
+			
+			<li>
+				<h2>Algemeen</h2>
+				<ul>
+					<li><a href="http://www.domainorder.nl/">Home</a></li>
+					<li><a href="http://www.domainorder.nl/register/">Registreren</a></li>
+					<li><a href="http://www.domainorder.nl/faq">F.A.Q.</a></li>
+					<li><a href="http://www.domainorder.nl/infographic/">Infographic</a></li>
+					<li><a href="http://www.domainorder.nl/legal/" target="_blank">Voorwaarden</a></li>
+					<li><a href="http://www.domainorder.nl/legal/" target="_blank">Privacybeleid</a></li>
+					<li><a href="http://www.domainorder.nl/contact/">Contact</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<h2>Voor wie?</h2>
+				<ul>
+					<li><a href="http://www.domainorder.nl/voordelen/domainers.php">Domainers</a></li>
+					<li><a href="http://www.domainorder.nl/voordelen/reclamebureaus.php">Reclamebureau's</a></li>
+					<li><a href="http://www.domainorder.nl/voordelen/webdevelopers.php">Webdevelopment bureau's</a></li>
+					<li><a href="http://www.domainorder.nl/voordelen/seo-sea-bedrijven.php">SEO / SEA bedrijven</a></li>
+					<li><a href="http://www.domainorder.nl/voordelen/webshop-eigenaren.php">Webshop-ontwikkelaars</a></li>
+					<li><a href="http://www.domainorder.nl/voordelen/startende-ondernemer.php">Startende ondernemers</a></li>
+					<li><a href="http://www.domainorder.nl/voordelen/end-users.php">Particulieren</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<h2>Vragen over DomainOrder</h2>
+				<ul>
+					<li><a href="http://www.domainorder.nl/faq/?cat=Algemeen">Hoe kan ik de lijst inzien?</a></li>
+					<li><a href="http://www.domainorder.nl/faq/?cat=Veilingen">Wanneer kan ik bieden?</a></li>
+					<li><a href="http://www.domainorder.nl/faq/?cat=Veilingen">Hoe weet ik dat ik gewonnen heb?</a></li>
+					<li><a href="http://www.domainorder.nl/faq/?cat=Veilingen">Wat gebeurt er na de veiling?</a></li>
+					<li><a href="http://www.domainorder.nl/faq/?cat=Algemeen">Ik ben m'n login-gegevens vergeten</a></li>
+					<li class="readmore"><a href="http://www.domainorder.nl/faq/">Meer vragen...</a></li>
+				</ul>
+			</li>
+		</ul>
+
+	</div><!--/#footer--><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="AW-11440425443" data-load-time="1743920160509" height="0" width="0" src="https://td.doubleclick.net/td/rul/11440425443?random=1743920160487&amp;cv=11&amp;fst=1743920160487&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be5421v9213596078z89118266874za201zb9177761308&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=102788824~102803279~102813109~102887800~102926062~102975949~103016951~103021830~103027016&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.domainorder.nl%2Fregister%2F%3Fref%3Dso%26dn%3Ddeltaweb.be&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=DomainOrder.nl%20-%20Registreren&amp;npa=0&amp;pscdl=noapi&amp;auid=271330812.1743810317&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=Linux&amp;uapv=&amp;uaw=0&amp;fledge=1&amp;_tu=Cg" style="display: none; visibility: hidden;"></iframe>
+
+
+
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" name="c-ge4ohl6fnhip" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=hbAq-YhJxOnlU-7cpgBoAJHb&amp;k=6LfmGVkUAAAAAC97C077Vu092_VFDeHpecU8j24c" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
