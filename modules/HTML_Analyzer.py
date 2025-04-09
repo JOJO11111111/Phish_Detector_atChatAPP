@@ -159,7 +159,7 @@ class HTML_Analyzer:
                         with open(new_html_path, 'r', encoding='utf-8') as f:
                             redirected_html = f.read()
 
-                        print("[STEP 2] Detected CRP. Analyzing redirected page...")
+                        print("[STEP 2] Detected CRP. Analyzing redirected page:" + redirect_url)
                         gpt_result_2 = analyze_html_with_openai(redirected_html)
                         vector_2 = convert_to_vector(gpt_result_2)
                         print("Vector 2:", vector_2)
@@ -172,17 +172,17 @@ class HTML_Analyzer:
 
 
 
-        print(f"[STEP 3] Detected CRP. Attempting to access: {redirect_url}")
-        try:
-            response = requests.get(redirect_url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
-            html2 = response.text
-            print("Analyzing redirected page...")
-            gpt_result_2 = analyze_html_with_openai(html2)
-            vector_2 = convert_to_vector(gpt_result_2)
-            print("Vector 2:", vector_2)
+        # print(f"[STEP 3] Detected CRP. Attempting to access: {redirect_url}")
+        # try:
+        #     response = requests.get(redirect_url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
+        #     html2 = response.text
+        #     print("Analyzing redirected page...")
+        #     gpt_result_2 = analyze_html_with_openai(html2)
+        #     vector_2 = convert_to_vector(gpt_result_2)
+        #     print("Vector 2:", vector_2)
 
-        except Exception as e:
-            print("[ERROR] Could not fetch redirected page:", e)
+        # except Exception as e:
+        #     print("[ERROR] Could not fetch redirected page:", e)
 
 
         text_score = compute_text_score(vector_1, vector_2)
