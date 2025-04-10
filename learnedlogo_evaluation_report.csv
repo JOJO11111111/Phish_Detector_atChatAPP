@@ -1,0 +1,73 @@
+,0
+accuracy,0.7625
+precision,1.0
+recall,0.7625
+f1,0.8652482269503545
+confusion_matrix,"[[  0   0]
+ [ 57 183]]"
+total_samples,240
+phishing_samples,240
+benign_samples,0
+false_positives,"Empty DataFrame
+Columns: [website, url, prediction, pred_target, matched_domain, confidence, runtime, New Folder Name, URL, label]
+Index: []"
+false_negatives,"                                               website  ... label
+1                                 ebay.com.m.1itnn.com  ...     1
+6    inc-word-view.officeapps.live.com.office.o365v...  ...     1
+9      login.live.com.office.flagstarbancorp.myshn.net  ...     1
+10                                           bsfga.net  ...     1
+13   www.fbkrelatormarketplace.realtorpoperrtys.us_...  ...     1
+18      ebaymotors.de.ekauferschutz-session37106094.de  ...     1
+30                                           eyudt.top  ...     1
+31                                 bestuniqueblogz.com  ...     1
+34                             www.swidnicajaracza.top  ...     1
+37                             www.argumentculture.com  ...     1
+42                            www.communityreview.info  ...     1
+46                                       canblog.co.za  ...     1
+47                                           truluv.ca  ...     1
+49                                       upgd.ddns.net  ...     1
+50                          wildcard.mls-d2-f4-sdd.com  ...     1
+52                               elmerfortreasurer.org  ...     1
+55                     www.churrascariameinhaus.com.br  ...     1
+67                                          hunckir.tk  ...     1
+71                                    indataxistnd.com  ...     1
+75                              www.out365officeit.com  ...     1
+82                                         m.g2234.com  ...     1
+86                     elmerfortreasurer.org_duplicate  ...     1
+88                               dresdenrestaurant.xyz  ...     1
+91   fbkrelamarketplace.reealtorpropeertys.us_dupli...  ...     1
+96                                    www.sta-group.ir  ...     1
+100                                   m.4everproxy.com  ...     1
+105  office.com.office365.psfc-o365.skyhigh8831.mys...  ...     1
+107                                   krim-transfer.ru  ...     1
+112                                    serv-acamai.com  ...     1
+114                                         zhw.aba.vg  ...     1
+121                             ardillaproducciones.cl  ...     1
+125                               www.stonesparks.live  ...     1
+136                       u449222428.ha003.t.justns.ru  ...     1
+139                             www.studiolansekap.com  ...     1
+140                      app-eventdisable.serveirc.com  ...     1
+142                                       sbexports.uk  ...     1
+143                                     meljackson.net  ...     1
+151                           dmy.360degreehosting.com  ...     1
+153                                  lamarzocco.com.pk  ...     1
+158                                   raymondreich.com  ...     1
+162       fbkrelatormarketplace.realtomarkrpopertys.us  ...     1
+173                               track-au.newmagz.com  ...     1
+185                                     siffjeddah.com  ...     1
+186                                  adobe.com.uhat.tk  ...     1
+188                fbkmarketplace.realtorpropertysl.us  ...     1
+192              smartcloudfiles-2020.nw.r.appspot.com  ...     1
+193                             www.localize-apple.com  ...     1
+194                               www.indataxistnd.com  ...     1
+199                                     czystek.net.pl  ...     1
+216                           mustafayedikardes.com.tr  ...     1
+218                 www.communityreview.info_duplicate  ...     1
+226  login.live.com.office.flagstarbancorp.myshn.ne...  ...     1
+232                                     cms.bosna-s.ba  ...     1
+233                                sopes.dns-cloud.net  ...     1
+236                                   eprajournals.org  ...     1
+237                            junkremovalheroestn.com  ...     1
+239                                         archii.org  ...     1
+
+[57 rows x 10 columns]"
