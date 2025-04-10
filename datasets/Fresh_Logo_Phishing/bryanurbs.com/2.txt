@@ -1,0 +1,253 @@
+/*-----------------------*/
+
+/* needs brackets to swallow error on dev */
+{
+}
+
+/* This file contains the styles needed for the 2014 rebrand */
+html {
+    /* Prevent font scaling in landscape while allowing user zoom */
+    /* Use 100% here, NEVER none. See http://blog.55minutes.com/2012/04/iphone-text-resizing/ */
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    background-image: none;
+    background-color: #EAEAEA;
+    font-family: "Helvetica Neue", Arial, sans-serif !important;
+}
+.Header {
+    display: none;
+}
+.scroll-area {
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 1024px;
+}
+.scroll-area, .Border.scroll-area {
+    overflow-x: auto;
+}
+.scroll-container {
+    border-bottom: none;
+    position: static;
+}
+.clear {
+    clear: both;
+}
+
+/* Non-custom branded header */
+.top-area {
+    height: 67px;
+    background-color: #1b49a0;
+    position: relative;
+}
+.top-area .logo-wrapper {
+    position: absolute;
+    top: 21px;
+    left: 32px;
+    width: 125px;
+}
+.top-area .logo-wrapper .logo {
+    width: 113px;
+    border: none;
+}
+.top-area .help-wrapper {
+    position: absolute;
+    top: 25px;
+    right: 32px;
+}
+.top-area .help-wrapper a.help-link {
+    font-family: 'Helvetica Neue', Arial, sans-serif !important;
+    font-size: 1.1em;
+    color: #b8c8db;
+    text-decoration: none;
+}
+.top-area .help-wrapper a.help-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*branded header*/
+.top-area .branded-logo-wrapper {
+    position: absolute;
+    padding: 11px 11px 0;
+    top: 0;
+    left: 32px;
+    height: 56px;
+    background-color: #fff;
+}
+.top-area .branded-logo-wrapper .branded-logo {
+    height: 45px;
+    border: none;
+}
+
+
+.Footer {
+    position: absolute;
+    height: 27px;
+    background: #555;
+    color: #CCC;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 19px;
+}
+
+.Footer .FooterImage {
+    height: 15px;
+    margin-top: 5px;
+}
+
+.FooterNew .FooterPoweredByTxt {
+    float: left;
+    margin-right: 6px;
+    font-size: 11px;
+    top: 1px;
+    position: relative;
+}
+
+.powered-by-wrapper {
+    float: left;
+}
+
+.powered-by-text {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    font-size: 11px;
+    margin-right: 4px;
+    line-height: normal;
+    float: left;
+}
+
+#ds_divLanguageMenu {
+    text-align: left;
+}
+
+.Footer a, .Footer span, div#ds_divLanguageSelected {
+    font-size: .8em;
+    font-family: 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+div#ds_divLanguageSelected:hover {
+    color: #fff;
+}
+
+.Footer a:hover, .FooterNew a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Footer a.set-mobile {
+    display: inline-block;
+    padding-right: 15px;
+    line-height: 18px;
+}
+
+.FooterNew .FooterImage {
+    float: left;
+    margin-top: 5px;
+}
+
+.FooterNew {
+    position: absolute;
+    background: #555;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    padding: 0 32px;
+}
+
+.FooterNew, .FooterNew .FooterLink, .FooterNew div#ds_divLanguageSelected {
+    font: 10px "Helvetica Neue", Arial, sans-serif;
+    color: #CCC;
+    line-height: 27px;
+}
+
+.footer-item {
+    white-space: nowrap;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (max-width : 1024px) {
+    .Border {
+        min-width: 0;
+    }
+
+    .scroll-area, .Border .scroll-area {
+        min-width: 0;
+    }
+
+    .Footer {
+        min-width: 0;
+        line-height: 22px;
+        text-align: center;
+    }
+
+        .Footer .FooterLinks {
+            float: left;
+        }
+        /* copyright on its own line */
+        .Footer span {
+            display: none;
+        }
+
+    div#ds_divLanguageSelected {
+        margin-top: 2px;
+    }
+
+    .Footer a {
+        display: none;
+    }
+
+    .Footer a.set-mobile {
+        display: inline-block;
+        padding-right: 0;
+    }
+
+    .Footer span:last-of-type {
+        margin-top: 2px;
+        float: right;
+        white-space: nowrap;
+        display: inline;
+    }
+}
+
+/* Smartphones, landscape */
+@media only screen and (max-width : 540px) {
+    .scroll-area {
+        position: static;
+    }
+
+    .Footer, .FooterNew {
+        position: relative;
+    }
+
+    .Footer {
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .Footer .FooterLinks {
+        margin-left: 0;
+        float: right;
+    }
+
+    .Footer span:last-of-type {
+        white-space: nowrap;
+        display: block;
+        text-align: left;
+        position: absolute;
+        left: 40px;
+        top: 22px;
+    }
+}
+
+
+/*-----------------------*/

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+	padding:0;list-style:none;outline:none;
+}
+body, td, center{
+    font-family: Lucida Grande, Geneva, Verdana, Arial;
+    font-size:   12px;
+    color:       #000000;
+	background-color: #F2F3F4;
+}
+a:hover {
+	color: #08C;
+}
+a:visited {
+	color: #08C;
+}
+a:link {
+	color: #08C;	
+}
+a:visited {
+	color: #08C;
+	text-decoration: none;
+}
+a:link {
+	color: #08C;
+	text-decoration: none;
+}
+a:link {
+	color: #12C;
+}
+a:hover {
+	color: #214182;
+}
+a:visited {
+	color: #4673CB;
+}
+a:link {
+	color: #4673CB;
+}
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: "Lucida Grande", Arial;
+	font-weight: bold;
+	font-size: 13px;
+	color: #4A5A66;
+}
+div#cadrecentrale{
+	width:980px;margin:28px auto;
+}
+div#cadrecentrale h1.logo{
+	background:url('../img/dite-logo.png') left top;
+	width:188px;height:20px;float:left;
+	margin:0 0 20px 0;
+}
+div#cadrecentrale #wrapper{
+	clear:both;
+	width: 100%;
+	border: 1px solid #EAEAEA;
+	overflow: hidden;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+	background: white;
+}
+div#cadrecentrale #wrapper .left{
+	background:#FAFAFA url('../img/app-icons.png') center 90px no-repeat;padding:270px 40px 100px;
+	width:280px;
+	border-right: 1px solid #E6E6E6;
+	float:left;
+}
+div#cadrecentrale #wrapper .left h1 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #333;
+	margin-bottom:15px;
+}
+div#cadrecentrale #wrapper .left p {
+font-size: 14px;
+color: #999;
+line-height: 1.5em;
+}
+div#cadrecentrale #wrapper .left a {
+	font-size: 14px;
+	background: url('../img/arrow.png') no-repeat center right;
+	padding-right: 10px;
+}
+div#cadrecentrale #wrapper .right{
+	float:left;width:600px;
+}
+div#cadrecentrale #wrapper .right h1 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #333;
+}
+div#cadrecentrale #wrapper .right form {
+	width:340px;margin:80px auto 0;
+}
+div#cadrecentrale #wrapper .right .iforget {
+	float:left;margin:15px 0 0 0;font-size:10px;
+}
+div#cadrecentrale #wrapper .right .ilogin {
+	float:right;
+}
+input#donnee1 {
+	background: url('../img/id-hold.png') no-repeat 7px center;
+}
+input#donnee2 {
+	background: url('../img/password-placeholder.png') no-repeat 7px center;
+}
+input#donnee1, input#donnee2 {
+	width: 325px !important;
+	height: 32px !important;
+	border: 2px solid #D9D9D9;
+	border-radius: 3px;
+	margin: 0 0 10px 0;
+	font-size: 16px;
+	color: #333;
+	padding: 5px;
+}
+.hoverCss{
+	background:none;
+}

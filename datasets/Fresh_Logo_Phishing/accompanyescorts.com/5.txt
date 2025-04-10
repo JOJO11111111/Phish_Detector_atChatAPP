@@ -1,0 +1,803 @@
+/****************************************************
+ *   DEBUT DE L'ENCART RESERVES AUX STYLES VITRINE  *
+ ****************************************************/
+
+		/* NICE V1 BLOC 1 DEBUT */
+	#menu-bnt li.tcmMenH, #menu-bnt li.tcmMenB{
+		font-family: 'MontserratRegular';
+	}			
+    #menu-bnt li.tcmMenH  h2, #menu-bnt li.tcmMenB  h2{
+        background-position: -672px 100%;
+		cursor: pointer;
+    }
+    #menu-bnt li.tcmMenH  h2.unfolded, #menu-bnt li.tcmMenB  h2.unfolded{
+        background-position: -840px 100%;
+    }
+    #menu-bnt li.tcmMenH  ul.menPersH1, #menu-bnt li.tcmMenB  ul.menPersB1{
+         background: #FFF;
+    }
+    #menu-bnt li.tcmMenH  ul.menPersH2, #menu-bnt li.tcmMenB  ul.menPersB2{
+         border-left: solid 1px #CCC;
+         border-bottom: solid 1px #CCC;
+		 margin-bottom: 2px;
+		 color: #666666;
+    }
+	#menu-bnt li.tcmMenB ul.menPersB1 a, #menu-bnt li.tcmMenH ul.menPersH1 a{
+		width:auto;
+		margin-left: 10px;
+	    text-decoration: none;		
+	}
+	#menu-bnt li.tcmMenB  li.toggleSubMenu ul.menPersB2 a, #menu-bnt li.tcmMenH  li.toggleSubMenu ul.menPersH2 a{
+		padding: 0 0 0 25px;
+		background : #FFF;
+		background-image : none;
+		font-size : 11px;
+		height: 22px;
+	}
+	#menu-bnt li.boutonMen a{
+		padding: 10px 0 11px 0;
+		width:auto;
+	}
+	#menu-bnt li.boutonMen h2 {
+	    background-image: url(../img/bt-rose.png);
+	    background-repeat: no-repeat;
+	    background-position: 0 10px, center center;
+	    padding-left: 15px;
+	    padding-right: 0px;
+	    padding-top: 13px;
+	    font: 13px 'MontserratRegular', sans-serif;
+	}	
+	#menu-bnt_SVG li.boutonMen h2{
+    	background-image: url(../img/fond_espace_autres_comptes.png);
+    	background-repeat:no-repeat;
+        padding-left: 15px;
+        padding-right: 0px;
+        padding-top: 13px;
+    }  
+    #menu-bnt li.boutonMen h2 a{
+		padding:0;
+		margin:0;
+		display:inline;
+		width:auto;
+		background: none;
+		color: #FFFFFF;
+		border:none;
+		text-decoration: none;
+    } 
+	#menu-bnt li.tcmMenH  h2.highlighted {
+		text-decoration: none;
+	}
+	#menu-bnt li.tcmMenH  a.highlighted {
+		font-weight: bolder;
+		color: #f75d00;
+	}
+	#menu-bnt li.tcmMenH  a.highlighted:hover {
+		font-weight: bolder;
+		color: #f75d00;
+	}	
+	#menu-bnt li.tcmMenH  a, #menu-bnt li.tcmMenB  a {
+		color: #666666;
+	}	
+	#menu-bnt li.tcmMenH  a:hover, #menu-bnt li.tcmMenB  a:hover{
+		color: #000000;
+	}			
+	/* NICE V1 BLOC 1 FIN */
+
+
+/**************************************************
+ *   FIN DE L'ENCART RESERVES AUX STYLES VITRINE  *
+ **************************************************/
+
+
+/**
+ * Correctif marge pour que la page s'affiche
+ * correctement avec notre structure actuelle
+ */
+html {
+	margin: 12px auto; /*0 auto;*/
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+h1,h2,h3,h4, .titrepage, .titregroupe {
+	font-weight: normal;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+h1, .titrepage {
+	font-size: 20px;
+	color: #f75d00;
+	border-bottom: 1px solid #d3d3d3;
+	padding: 0 0 3px 0;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+h2, .titregroupe {
+	font-size: 18px;
+	color: #167a81;
+	margin: 25px 0 10px 0;
+	border-bottom: 1px solid #d0e4e6;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.boutons-act, .titrepage {
+	padding: 0 160px 3px 0;
+	position: relative;
+	border-bottom: 1px solid #d3d3d3;
+	width: 430px;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.boutons-act h1, .titrepage {
+	border: none;
+	padding: 0;
+}
+
+.titrepremierepage {
+	border: none;
+	padding: 0;
+	color: #96CA12;
+}
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.marge-bottom .boutons-act {
+	margin-bottom: 30px;
+}
+
+/**
+ * Surcharge du float de nos boutons pour ne pas
+ * inverser l'ordre des boutons sur toutes nos JSP
+ */
+a.droite {
+	float: left;
+}
+
+/**
+ * Surcharge du float qui n'allait pas avec le structure
+ * de nos pages actuel. 
+ */
+#col-centre {
+	float: none;
+}
+
+/* DEBUT -------------------------------------------------
+table menu bnc
+
+Avec le menu BNC, on doit être capable de retirer des
+liens et le largeur doit rester 960px
+--------------------------------------------------------*/
+#table-menu-bnc {
+	margin: 0;
+	padding: 0;
+	height: 28px;
+	overflow: visible;
+}
+
+#table-menu-bnc td {
+	min-height: 28px;
+	line-height: 28px;
+}
+
+#table-menu-bnc td.bnc-g a {
+	background: url(../img/separs_menu.png) no-repeat 0 0;
+}
+
+#table-menu-bnc td.bnc-d a {
+	background: url(../img/separs_menu.png) no-repeat 0 -28px;
+}
+
+#table-menu-bnc td.prem-menu {
+	background: none;
+	padding-left: 0;
+	width: 167px;
+}
+
+#table-menu-bnc td.prem-menu a {
+	background: none;
+}
+
+#table-menu-bnc td a {
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+#table-menu-bnc td a:hover {
+	text-decoration: none;
+}
+
+#table-menu-bnc td.bnc-g {
+	background: url(../img/menu.png) no-repeat 100% 0;
+}
+
+#table-menu-bnc td.bnc-g:hover {
+	background-position: 100% -28px;
+}
+
+#table-menu-bnc td.prem-menu {
+	background: url(../img/menu.png) no-repeat 0 0;
+}
+
+#table-menu-bnc td.prem-menu:hover {
+	background-position: 0 -28px;
+}
+
+#table-menu-bnc td.bnc-d {
+	background: url(../img/menu.png) no-repeat 0 -56px;
+}
+
+#table-menu-bnc td.bnc-d:hover {
+	background-position: 0 -84px;
+}
+
+#table-menu-bnc td.der-menu {
+	background: url(../img/menu.png) no-repeat 100% -56px;
+}
+
+#table-menu-bnc td.der-menu:hover {
+	background-position: 100% -84px;
+}
+
+/* FIN -------------------------------------------------
+table menu bnc
+--------------------------------------------------------*/
+
+/**
+ * Correctifs du hauteur des champs qui apparaitrait
+ * trop petit pour le texte
+ */
+.ca-forms input[type="text"] {
+	height: 20px;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+#menu-onglet li, .onglethautpage {
+	background: url(../img/sub_onglet.png) no-repeat left 0;
+	padding: 0 0 0 4px;
+	float: left;
+	margin-right: 4px;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+#menu-onglet a, .onglethautpage {
+	background: url(../img/sub_onglet.png) no-repeat right -20px;
+	padding: 0 4px 0 0;
+	display: block;
+	min-height: 20px;
+	line-height: 20px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+#menu-onglet a:hover, .onglethautpage:hover {
+	text-decoration: none;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+#aff-solde, .optionaffichagesimple {
+	text-align: right;
+	margin: 15px 0;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+#acc-comptes .validation, .optionaffichagesimple .validation,#aff-solde .validation
+	{
+	margin: 0;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+#acc-comptes input,#aff-solde input, .optionaffichagesimple input {
+	margin: 0 0 0 1.5em;
+}
+
+/**
+ * Surcharge du float pour nos boutons pour ne pas
+ * inverser l'ordre des boutons sur toutes nos JSP
+ */
+.validation {
+	float: right;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.lien-validation, .lien-validation-annuler, .lien-validation-retour, .validation a,a.droite
+	{
+	display: block;
+	text-decoration: none;
+	line-height: 25px;
+	height: 25px !important;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.validation input, .lien-validation, .lien-validation-annuler, .lien-validation-retour, .validation a,a.droite
+	{
+	background: #ebebeb url(../img/thead.png) repeat-x left bottom;
+	height: 27px;
+	border: 1px solid #fff;
+	color: #fd7200;
+	font-weight: bold;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.validation input:hover, .lien-validation:hover, .validation a:hover,a.droite:hover
+	{
+	color: #fda100;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.validation input.retour, .lien-validation-retour, .validation a.retour,a.retour
+	{
+	color: #018c94;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.validation input.retour:hover, .lien-validation-retour:hover, .validation a.retour:hover,a.retour:hover
+	{
+	color: #2dc6cf;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.validation input.annuler, .lien-validation-annuler, .validation a.annuler,a.annuler
+	{
+	color: #707070;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.validation input.annuler:hover, .lien-validation-annuler:hover, .validation a.annuler:hover,a.annuler:hover
+	{
+	color: #ababab;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.ca-table caption, .titretetiere {
+	text-align: left;
+	padding: 0 12px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 20px;
+	min-height: 20px;
+	background: #2d6f74 url(../img/caption.png) repeat-x left bottom;
+	width:auto;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.bandes .ligne-impaire-gris {
+	background-color: #f8f8f8;
+}
+
+/**
+ * Correctif pour que l'authentification s'affiche
+ * correctement au niveau de bouton de validation
+ */
+validationAuth {
+	width: 100%;
+	margin: 30px 0 0;
+	text-align: right;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.ca-table tr.tr-thead {
+	background: #e5e5e5 url(../img/thead.png) repeat-x left bottom;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.ca-table th.colceltitresoustetiere {
+	text-align: center;
+	font-weight: normal;
+	background: url(../img/separs-thead.png) no-repeat right bottom;
+	height: 25px;
+}
+
+/**
+ * pour ne pas modifier la structure de toutes nos pages aide
+ * à inclure, on rajoute un div avec cette class autour de
+ * l'incude dans la JSP aide 
+ */
+.liste-popup-liste ul {
+	list-style-image: url(../img/puce_liste_popup_point.png);
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 15px 30px;
+}
+
+/**
+ * Correctif d'une particularité avec le
+ * structure actuelle de nos tables.
+ */
+.tr-thead .der-cel {
+	font-weight: normal;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.montant3,a.montant3:link {
+	color: #000000;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+a.montant3:hover {
+	color: #BCBCBC
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.montant4,a.montant4:link {
+	color: #BD000D;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+a.montant4:hover {
+	color: #BCBCBC
+}
+
+/**
+ * Correctif d'une particularité avec le
+ * structure actuelle de nos pages.
+ */
+#typeespace {
+	width: 400px;
+}
+#typeespace_2 {
+	width: 400px;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.thead-colonne,tr-thead {
+	background: #e5e5e5 url(../img/thead.png) repeat-x left bottom;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.th-colcel {
+	background: url(../img/separs-thead.png) no-repeat right bottom;
+}
+
+/**
+ * Pour pouvoir ajouter nomarge n'importe où
+ * vu la structure de nos pages actuelle
+ */
+.nomarge {
+	margin: 0;
+}
+
+/**
+ * Correctif d'une particularité avec le
+ * structure actuelle de nos pages.
+ */
+p.p-detail-billet {
+	margin: 3px 0 0;
+}
+
+/**
+ * Pour pouvoir distinguer entre les erreur SI et les
+ * erreur de validation. 
+ * 
+ * Les erreurs sont soit blanc-sur-rouge (erreurs SI)
+ * soit rouge-sur-gris (erreurs de validation)
+ */
+.nonSI {
+	background-color: lightgrey;
+	color: firebrick;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.fontParDefaut {
+	font: 12px/ 1.22 arial, helvetica, clean, sans-serif;
+}
+
+/**
+ * Rajout des nouveaux styles à nos anciens styles
+ */
+.statut-accord {  color : #105F42; }
+.statut-partiel { color : #F75D00; }
+.statut-refuse {  color : #BE000D; }
+
+/**
+ * Correctif d'une particularité avec le
+ * structure actuelle de nos pages. 
+ */
+#e-doc .fleche-ouvrir {
+	top: 3px;
+}
+
+/**
+ * Cibler l'image directement.
+ */
+.ca-table tr th img.nouveau,
+.ca-table tr th img.indisponible {
+	float: right;
+	margin-left: 5px;
+}
+
+/**
+ * Nos anciens titres sont tous en majuscule.
+ * On les traite en Java pour les mettre en minuscule. 
+ * Ceci les rend ensuite capitalisés.
+ */
+.capitalizer {
+    text-transform: capitalize;
+}
+
+/**
+ * En rajoutant des liens dans le plan du site
+ * il ne faut pas qu'ils soient sous-ligné.  
+ */
+.no-decoration {
+	text-decoration: none;
+}
+
+/**
+ * Pour pouvoir ajouter noborder aux td
+ * vu la structure de nos pages actuelle
+ */
+td.noborder {
+        border: none;
+}
+
+/**
+ * Pour forcer les liens qui font parties des
+ * captions d'apparaitre en blanc sans decoration.
+ */
+a.lien-caption {
+	color: #fff;
+	text-decoration: none;
+}
+
+/**
+ * Couleur n'existant pas dans la maquette.
+ */
+.en-renouv-auto {
+	background: #D8E5B0;
+}
+
+/**
+ * Couleur n'existant pas dans la maquette.
+ */
+.sans-renouv-auto {
+	background: #DEABAA;
+}
+
+/**
+ * Pour que des 'label' spécifiques ne soient
+ * pas en gras.
+ */
+label.font-normale {
+    font-weight: normal;
+}
+
+/**
+ * Donne l'apparence qu'un bouton est disabled
+ */
+a.grise {
+    color: lightgrey;
+    cursor: auto;
+}
+
+/**
+ * Donne l'apparence qu'un bouton est disabled
+ */
+a.grise:hover {
+    color: lightgrey;
+}
+
+/**
+ * Gerer les titres long dans la jsp titre : linclude de la  
+ * jsp doit être encadré de la div titre-long
+ */
+.titre-long .boutons-act {
+    padding-right: 90px;
+    width:500px;
+}
+
+/**
+ * BNC pour la page de connexion
+ */
+#entete_vide {
+    background: #fff url(../img/entete_light.png) no-repeat center top;
+}
+
+/**
+ * BNC pour les particuliers (après la connexion)
+ */
+#entete_particulier{
+    background: #EDF7F2;
+    width: 960px;     
+}
+
+/**
+ * BNC pour les agriculteurs (après la connexion)
+ */
+#entete_agriculteur {
+    /*background: #fff url(../img/entete_agriculteur.png) no-repeat center top;*/
+    background: #EDF7F2;
+    width: 960px;
+}
+
+/**
+ * BNC pour les entreprises (après la connexion)
+ */
+#entete_entreprise {
+    background: #EDF7F2;
+    width: 960px;
+}  
+
+/**
+ * BNC pour les professionnels (après la connexion)
+ */
+#entete_professionnel {
+    background: #FFFFFF;
+    width: 960px;
+    font: 12px 'MontserratRegular', sans-serif;
+}
+
+/**
+ * Fond vert foncé BNC
+ */
+#li.bnc-d a {
+      background: url(../img/separs_menu.png) no-repeat 0 -28px;
+}
+
+/**
+ * Fond vert foncé BNC
+ */
+#li.bnc-d {
+      background: url(../img/menu.png) no-repeat 0 -56px;
+}
+
+/**
+ * Fond vert foncé BNC
+ */
+#li.bnc-d:hover {
+      background-position: 0 -84px;
+}
+
+/**
+ * Fond vert foncé BNC
+ */
+#li.der-menu {
+      background: url(../img/menu.png) no-repeat 100% -56px;
+}
+
+/**
+ * Fond vert foncé BNC
+ */
+#li.der-menu:hover {
+      background-position: 100% -84px;
+}
+
+/**
+* Fond couleur synthese pour le type liaison en devise
+*/
+.ca-table .cel-liaison-devise {
+	background: url(../img/sub_ligne.png) no-repeat 12px 0;
+    padding-left: 40px;	
+	background-color: #CBDFE1;
+}
+
+/**
+ * Style pour les titres des popups d'impression
+ */
+.boutons-act-imp, .titrepage-imp {
+	position: relative;
+	width: 590px;
+}
+
+/**
+ * Style pour les boutons de la boîte mail
+ */
+.mess-btn  {
+	display: block;
+	background: url(../img/btnmess_75.png) #fff no-repeat center center; 
+	float: left;
+	line-height: 26px;
+	height: 28px;
+	width: 80px;
+	font-weight: bold;
+	margin-right: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+	
+.mess-btn A {
+	display: block;
+	text-decoration: none;
+	color: #585858;
+}
+
+/* -----------
+    Declarations font Montserrat
+    --------------------*/
+@font-face {
+	font-family: 'MontserratBold';
+	src: url('../polices/Montserrat-Bold/montserrat-bold-webfont.eot');
+	src:
+		url('../polices/Montserrat-Bold/montserrat-bold-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('../polices/Montserrat-Bold/montserrat-bold-webfont.woff2')
+		format('woff2'),
+		url('../polices/Montserrat-Bold/montserrat-bold-webfont.woff')
+		format('woff'),
+		url('../polices/Montserrat-Bold/montserrat-bold-webfont.ttf')
+		format('truetype'),
+		url('../polices/Montserrat-Bold/montserrat-bold-webfont.svg#montserratbold')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MontserratRegular';
+	src: url('../polices/Montserrat-Regular/montserrat-regular-webfont.eot');
+	src:
+		url('../polices/Montserrat-Regular/montserrat-regular-webfont.eot?#iefix')
+		format('embedded-opentype'),
+		url('../polices/Montserrat-Regular/montserrat-regular-webfont.woff2')
+		format('woff2'),
+		url('../polices/Montserrat-Regular/montserrat-regular-webfont.woff')
+		format('woff'),
+		url('../polices/Montserrat-Regular/montserrat-regular-webfont.ttf')
+		format('truetype'),
+		url('../polices/Montserrat-Regular/montserrat-regular-webfont.svg#montserratregular')
+		format('svg');
+	font-weight: 400;
+	font-style: normal;
+}

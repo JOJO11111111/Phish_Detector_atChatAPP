@@ -1,0 +1,1 @@
+http://azurefetcherstorage.blob.core.windows.net/contentfreshnesshourlyslapiclick/snapshot-ec1cd585a6b303e8aef3ca65c63e077520200610222656

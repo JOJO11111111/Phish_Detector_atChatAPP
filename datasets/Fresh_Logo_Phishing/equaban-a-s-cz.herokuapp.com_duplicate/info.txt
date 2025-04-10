@@ -1,0 +1,1 @@
+http://equaban-a-s-cz.herokuapp.com/otp.php

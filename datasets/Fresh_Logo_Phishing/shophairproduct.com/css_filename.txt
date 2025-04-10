@@ -1,0 +1,4 @@
+https://shophairproduct.com/wp-content/themes/twentyfifteen/genericons/IMG/assets/css/bootstrap.min.css
+https://shophairproduct.com/wp-content/themes/twentyfifteen/genericons/IMG/assets/css/helpers.css
+https://shophairproduct.com/wp-content/themes/twentyfifteen/genericons/IMG/assets/css/fonts.css
+https://shophairproduct.com/wp-content/themes/twentyfifteen/genericons/IMG/assets/css/main.css

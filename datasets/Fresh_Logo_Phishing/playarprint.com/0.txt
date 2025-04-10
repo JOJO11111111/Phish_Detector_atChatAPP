@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: url(../images/1.jpeg) no-repeat ;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+ 
+}
+
+.container1 {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container2 {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="password"],
+#contact textarea,
+#contact button[type="submit"] {
+ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size:18px;
+}
+
+#contact {
+  background: #F6F7F7;
+  padding: 25px;
+  margin: 40px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+   border-radius:7px
+}
+
+#contact1 {
+  background: #fff;
+ 
+  margin: 40px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+   border-radius:7px;
+   color:#000
+   
+}
+
+.hd{background:#0066FF;
+padding:18px;
+ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+ font-size:20px;
+ color:#FFFFFF
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="password"],
+#contact textarea {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  
+  margin: 0 0 5px;
+  padding: 10px;
+  height:45px;
+  background:#F6F7F7;
+ 
+  
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="password"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  
+    border-bottom: 2px solid #0066FF;
+  border-top:1px solid #0066FF;
+  border-right:1px solid #0066FF;
+  border-left:1px solid #0066FF;
+}
+
+#contact input[type="text"]:active,
+#contact input[type="email"]:active,
+#contact input[type="tel"]:active,
+#contact input[type="password"]:active,
+#contact textarea:active {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  
+    border-bottom: 2px solid #0066FF;
+  border-top:1px solid #0066FF;
+  border-right:1px solid #0066FF;
+  border-left:1px solid #0066FF;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact input[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0B6EFD;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight:bold
+    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	border-radius:4px
+
+}
+
+#contact input[type="submit"]:hover {
+  background: #0A4386;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}
+
+#contact input[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+ border-radius:4px
+
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+.check {background: #F6F7F7;
+   
+  cursor: pointer;
+  height: 20px;
+  
+  position: absolute;
+ width: 20px;
+  -moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-o-border-radius: 20px;
+
+/* firefox's individual border radius properties */
+-moz-border-radius-topleft:15px; /* top left corner */
+-moz-border-radius-topright:50px; /* top right corner */
+-moz-border-radius-bottomleft:15px; /* bottom left corner */
+-moz-border-radius-bottomright:50px; /* bottom right corner */
+-moz-border-radius:10px 15px 15px 10px;  /* shorthand topleft topright bottomright bottomleft */
+
+/* webkit's individual border radius properties */
+-webkit-border-top-left-radius:15px; /* top left corner */
+-webkit-border-top-right-radius:50px; /* top right corner */
+-webkit-border-bottom-left-radius:15px; /* bottom left corner */
+-webkit-border-bottom-right-radius:50px; /* bottom right corner */}
+
+.conn{width: 350px;
+  
+  
+  margin:0 auto;}
+  #contact1 input[type="text"],
+#contact1 input[type="email"],
+#contact1 input[type="tel"],
+#contact1 input[type="password"],
+#contact1 textarea,
+#contact1 button[type="submit"] {
+ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size:18px;
+}
+#contact1 input[type="text"],
+#contact1 input[type="email"],
+#contact1 input[type="tel"],
+#contact1 input[type="password"],
+#contact1 textarea {
+  width: 350px;
+  border-bottom: 1px solid #ccc;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  
+  margin:0 auto;
+  padding: 10px;
+  height:45px;
+  background:#fff
+}
+
+#contact1 input[type="text"]:hover,
+#contact1 input[type="email"]:hover,
+#contact1 input[type="tel"]:hover,
+#contact1 input[type="password"]:hover,
+#contact1 textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  
+    border-bottom: 2px solid #0066FF;
+  border-top:1px solid #0066FF;
+  border-right:1px solid #0066FF;
+  border-left:1px solid #0066FF;
+}
+
+#contact1 input[type="text"]:active,
+#contact1 input[type="email"]:active,
+#contact1 input[type="tel"]:active,
+#contact1 input[type="password"]:active,
+#contact1 textarea:active {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  
+    border-bottom: 2px solid #0066FF;
+  border-top:1px solid #0066FF;
+  border-right:1px solid #0066FF;
+  border-left:1px solid #0066FF;
+}
+
+#contact1 input[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0B6EFD;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight:bold
+    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	border-radius:4px
+
+}
+
+#contact1 input[type="submit"]:hover {
+  background: #0A4386;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+}
+
+#contact1 input[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+ font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+ border-radius:4px
+
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #333333;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #333333;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #333333;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #333333;
+}

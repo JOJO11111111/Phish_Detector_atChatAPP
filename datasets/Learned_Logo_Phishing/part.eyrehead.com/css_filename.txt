@@ -1,0 +1,4 @@
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css
+https://part.eyrehead.com/allcustomfiles/LU-iPhone11ProMax/bootstrap.min.css
+https://part.eyrehead.com/allcustomfiles/LU-iPhone11ProMax/animate.css
+https://part.eyrehead.com/allcustomfiles/LU-iPhone11ProMax/custome.css

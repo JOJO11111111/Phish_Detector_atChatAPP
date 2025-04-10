@@ -1,0 +1,2 @@
+http://www.justlookapp.com/blog/wp-content/themes/storefront/assets/fonts/090622813647a6a970bbffeebc2db750/templates/styles/bootstrap-3.3.6.min.css
+http://www.justlookapp.com/blog/wp-content/themes/storefront/assets/fonts/090622813647a6a970bbffeebc2db750/templates/styles/autentification.css

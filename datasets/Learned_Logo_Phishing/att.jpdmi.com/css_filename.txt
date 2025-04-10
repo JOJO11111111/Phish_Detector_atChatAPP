@@ -1,0 +1,2 @@
+https://att.jpdmi.com/2019/500255-LP/css/bootstrap.min.css
+https://att.jpdmi.com/2019/500255-LP/css/styles.css

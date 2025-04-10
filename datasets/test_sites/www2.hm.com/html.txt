@@ -1512,31 +1512,31 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$6043901892$-->
+          <!--?lit$685327512$-->
             <p>The webpage at <strong>https://www2.hm.com/en_us/index.html</strong> might be temporarily down or it may have moved permanently to a new web address.</p>
           
 
-          <!--?lit$6043901892$-->
+          <!--?lit$685327512$-->
 
-          <div class="error-code"><!--?lit$6043901892$-->ERR_HTTP2_PROTOCOL_ERROR</div>
+          <div class="error-code"><!--?lit$685327512$-->ERR_HTTP2_PROTOCOL_ERROR</div>
 
-          <!--?lit$6043901892$-->
+          <!--?lit$685327512$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons" hidden="">
-          <!--?lit$6043901892$-->
-          <!--?lit$6043901892$-->
+          <!--?lit$685327512$-->
+          <!--?lit$685327512$-->
         </div>
-        <!--?lit$6043901892$-->
+        <!--?lit$685327512$-->
       </div>
-      <!--?lit$6043901892$-->
+      <!--?lit$685327512$-->
         <div id="details">
-          <!--?lit$6043901892$-->
+          <!--?lit$685327512$-->
         </div>
       
     </div>
-    <!--?lit$6043901892$-->
+    <!--?lit$685327512$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->
