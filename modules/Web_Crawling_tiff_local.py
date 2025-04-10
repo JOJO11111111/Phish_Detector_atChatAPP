@@ -24,10 +24,7 @@ def setup_driver():
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument('--remote-debugging-port=9222')
 
-    # # Create ChromeDriver service using WebDriver Manager
-    # service = Service(ChromeDriverManager().install())
-    # # Initialize the WebDriver with service and options
-    # driver = webdriver.Chrome(service=service, options=chrome_options)
+ 
 
     # Use the same ChromeDriver path as my local working version
     service = Service(executable_path='/home/tiffanybao/chrome_driver/chromedriver-linux64/chromedriver')
