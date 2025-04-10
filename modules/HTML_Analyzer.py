@@ -194,7 +194,7 @@ class HTML_Analyzer:
         text_vector = vector_1 + vector_2
         text_vector.append(text_score)
 
-        if text_score >= 0.6:
+        if text_score >= 0.4:
             verdict = "Phishing"
         else:
             verdict = "Benign"
@@ -286,7 +286,7 @@ def compute_text_score(vector_1, vector_2=None):
         if not v:
             return 0.0
 
-        weights = [0.4, 0.15, 0.2, 0.15, 0.1]
+        weights = [0.2, 0.05, 0.4, 0.05, 0.3]
         weighted_sum = sum(w * x for w, x in zip(weights, v))
         return weighted_sum
 
@@ -295,7 +295,7 @@ def compute_text_score(vector_1, vector_2=None):
 
     # If both exist, average with more weight on CRP (redirected)
     if vector_2:
-        final_score = (0.3 * score1 + 0.7 * score2)
+        final_score = (0.6 * score1 + 0.4 * score2)
     else:
         final_score = score1
 
