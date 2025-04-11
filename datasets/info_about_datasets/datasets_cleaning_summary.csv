@@ -1,0 +1,7 @@
+Dataset,Total Folders Before,Folders Removed,Folders Remaining
+datasets/No_Logo_Phishing,250,0,250
+datasets/Fresh_Logo_Phishing,250,0,250
+datasets/Learned_Logo_Phishing,250,0,250
+datasets/benign_with_logo,400,0,400
+datasets/benign_without_logo,100,0,100
+here the without logo case is we simply replace the shot.png with a blank white page

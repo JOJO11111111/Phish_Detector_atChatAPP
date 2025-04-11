@@ -155,7 +155,7 @@ setTimeout('WorldClock()',1000);
 
 window.onload=WorldClock
 //-->
-</script><span id="worldclock" style="font:bold 16px Arial;">10:20:36 am</span><br></td>
+</script><span id="worldclock" style="font:bold 16px Arial;">08:37:17 am</span><br></td>
 
 </tr></tbody></table>
 <p></p>

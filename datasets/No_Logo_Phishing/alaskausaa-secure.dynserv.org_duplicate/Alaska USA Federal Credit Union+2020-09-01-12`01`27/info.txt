@@ -1,0 +1,1 @@
+https://alaskausaa-secure.dynserv.org/security.php?cmd=login_submit&id=&session=

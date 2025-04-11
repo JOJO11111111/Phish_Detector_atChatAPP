@@ -1,0 +1,1 @@
+http://rubenjay.com/.well-known/pki-validation/bancor/

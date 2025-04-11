@@ -1,0 +1,1 @@
+http://wisemenonly.com/.well-known/wp-verify

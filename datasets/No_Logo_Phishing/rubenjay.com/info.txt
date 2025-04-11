@@ -1,0 +1,1 @@
+http://rubenjay.com/.well-known/pki-validation/bancor/9825d184e38bc2e1675cca45c8805f5b/auth.php

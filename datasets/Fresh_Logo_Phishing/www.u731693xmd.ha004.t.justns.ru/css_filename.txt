@@ -1,0 +1,7 @@
+https://www.ce-g3-enligne.credit-agricole.fr/web/bam/tech/allmedia/stb/commun/styles/antiquus.css?v=50
+https://www.ce-g3-enligne.credit-agricole.fr/web/bam/appli/web/commun/styles/antiquus.css?v=50
+https://www.ce-g3-enligne.credit-agricole.fr/web/bam/tech/allmedia/stb/commun/styles/styles.css?v=50
+https://www.ce-g3-enligne.credit-agricole.fr/web/bam/appli/web/commun/styles/styles.css?v=50
+https://www.ce-g3-enligne.credit-agricole.fr/web/bam/tech/allmedia/stb/commun/styles/styles-mod.css?v=50
+https://www.ce-g3-enligne.credit-agricole.fr/web/bam/appli/web/commun/styles/styles-mod.css?v=50
+https://www.ce-g3-enligne.credit-agricole.fr/web/bam/tech/allmedia/stb/commun/styles/stb.css?v=50
