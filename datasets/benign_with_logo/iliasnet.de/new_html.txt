@@ -1,0 +1,858 @@
+<html lang="de"><head><style type="text/css">body { font-size: 16px !important; } a { line-height: 28px; } img, svg { max-width: 100%; object-fit: contain; } .owl-carousel, .rev_slider_wrapper { display: none; max-width: 100%; overflow: hidden; }</style>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2025 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+<link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+<title>Suche</title>
+<meta name="generator" content="TYPO3 CMS">
+<meta name="description" content="Suche">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+<meta name="robots" content="7 days">
+<meta name="twitter:card" content="summary">
+<meta name="revisit-after" content="index,follow">
+<meta name="last-modified" content="2025-04-08T20:37:25+02:00">
+
+<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-4176dc973da6034e788499bcfbeb1d08-ae8993d8a99be71b8319d2628066c638.css.gz?1724836485" media="all">
+
+<link rel="stylesheet" href="/typo3temp/assets/compressed/merged-d844d636d2bbf059fd89df020878ec1f-d7a086de378235d5fb308b74074e0607.css.gz?1738057532" media="all">
+
+
+
+<script src="/fileadmin/site/js/constants.js?1633441920"></script>
+<script src="/fileadmin/site/js/bootstrap.min.js?1633441920"></script>
+<script src="/typo3conf/ext/dbay_container/Resources/Public/Js/owl.carousel.min.js?1633441920" defer="defer"></script>
+<script src="/typo3conf/ext/dbay_cookieselect/Resources/Public/JavaScript/jquery-3.5.1.js?1680088440"></script>
+<script src="/typo3conf/ext/dbay_cookieselect/Resources/Public/JavaScript/CookieSelect.js?1683194940" defer="defer"></script>
+<script src="/typo3conf/ext/dbay_cookieselect/Resources/Public/JavaScript/CookieSelectFrontend.js?1683194940" defer="defer"></script>
+<script src="/typo3conf/ext/dbay_cookieselect/Resources/Public/JavaScript/CookieSelectHelper.js?1680088440" defer="defer"></script>
+<script src="/fileadmin/site/js/jQuerySpeedFix.js?1633441920"></script>
+
+<script src="/typo3conf/ext/dbay_helper/Resources/Public/JavaScript/Loader/loaderRegister.js?1680087900"></script>
+<script src="/typo3conf/ext/dbay_helper/Resources/Public/JavaScript/Loader/loader.js?1680087900"></script>
+<script src="/typo3conf/ext/dbay_helper/Resources/Public/JavaScript/Rating/rating.js?1680087900"></script>
+<script src="/typo3conf/ext/dbay_content/Resources/Public/Js/colorFilter.js?1704378547"></script>
+<script src="/typo3conf/ext/dbay_content/Resources/Public/Js/content.js?1741787039"></script>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+<link rel="preload" as="font" type="font/otf" crossorigin="" href="/fileadmin/site/fonts/HelveticaNeueLTStd-Cn.otf">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fileadmin/site/fonts/PT_Sans/PTSans-Regular.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fileadmin/site/fonts/PT_Sans/PTSans-Bold.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fileadmin/site/css/fontawesome/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="/fileadmin/site/css/fontawesome/webfonts/fa-brands-400.woff2"><link rel="apple-touch-icon" sizes="180x180" href="/fileadmin/site/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/fileadmin/site/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="194x194" href="/fileadmin/site/img/favicon/favicon-194x194.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/fileadmin/site/img/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/fileadmin/site/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/fileadmin/site/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="/fileadmin/site/img/favicon/safari-pinned-tab.svg" color="#c40005">
+<meta name="apple-mobile-web-app-title" content="Databay">
+<meta name="application-name" content="Databay">
+<meta name="msapplication-TileColor" content="#c40005">
+<meta name="msapplication-TileImage" content="/fileadmin/site/img/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff"><script>
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var css = "body { font-size: 16px !important; } a { line-height: 28px; } img, svg { max-width: 100%; object-fit: contain; } .owl-carousel, .rev_slider_wrapper { display: none; max-width: 100%; overflow: hidden; }";
+            var head = document.head || document.getElementsByTagName('head')[0];
+            var style = document.createElement('style');
+
+            head.prepend(style);
+
+            style.type = 'text/css';
+            if (style.styleSheet){
+              style.styleSheet.cssText = css;
+            } else {
+              style.appendChild(document.createTextNode(css));
+            }
+        });
+</script>
+<link rel="canonical" href="https://www.databay.de/suche">
+
+</head>
+<body class="databay">
+
+
+        <nav class="navbar navbar-expand-lg navbar-default bg-white fixed-top py-2" id="topnavigationNavbar">
+    <div class="container container-fluid">
+        <a class="navbar-brand" href="/#">
+            <img src="/fileadmin/site/img/db_logo.svg" width="190" height="50" alt="Databay AG">
+        </a>
+        <div class="contactboxWrapper">
+            
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerHamburger" aria-controls="headerHamburger" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="headerHamburger">
+            <ul class="nav navbar-nav d-flex flex-column justify-content-end">
+                <li class="ms-0 px-2 order-2 order-lg-1">
+                    <ul class="flex-column flex-lg-row mb-2 mb-lg-0 topMenu">
+    
+        <li class="d-flex py-1 py-lg-2 m-0 me-lg-3 menu-226 ">
+            <a title="Karriere" href="/karriere">Karriere</a>
+        </li>
+    
+        <li class="d-flex py-1 py-lg-2 m-0 me-lg-3 menu-342 ">
+            <a title="Ausbildung" href="/unternehmen/ausbildung">Ausbildung</a>
+        </li>
+    
+        <li class="d-flex py-1 py-lg-2 m-0 me-lg-3 menu-9 ">
+            <a title="Unternehmen" href="/unternehmen">Unternehmen</a>
+        </li>
+    
+        <li class="d-flex py-1 py-lg-2 m-0 me-lg-3 menu-11 ">
+            <a title="Aktuelles" href="/aktuelles">Aktuelles</a>
+        </li>
+    
+        <li class="d-flex py-1 py-lg-2 m-0 me-lg-3 menu-12 ">
+            <a title="Kontakt" href="/kontakt">Kontakt</a>
+        </li>
+    
+    <li class="nav-item d-flex w-100 py-2 ms-0 ms-lg-2">
+        <div class="searchbar"><form action="/suche?tx_indexedsearch_pi2%5Baction%5D=search&amp;tx_indexedsearch_pi2%5Bcontroller%5D=Search&amp;cHash=a5de76f5b877c1eb9f283a844fa33bcd" method="post"><div class="input-group"><input type="text" class="form-control searchbox-sword" name="tx_indexedsearch_pi2[search][sword]" value="" placeholder="Suche nach"><span class="input-group-btn">                    <div class="tx-indexedsearch-hidden-fields">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][_freeIndexUid]" value="_">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][pointer]" value="0">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][ext]" value="">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][searchType]" value="1">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][defaultOperand]" value="0">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][mediaType]" value="-1">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][sortOrder]" value="rank_flag">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][group]" value="">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][languageUid]" value="-1">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][desc]" value="">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][numberOfResults]" value="10">
+                    <input type="hidden" name="tx_indexedsearch_pi2[search][extendedSearch]" value="">
+                    </div><input type="hidden" name="tx_indexedsearch_pi2[search][submitButton]" value="Search"><button type="submit" class="btn btn-primary mb-0">Suchen</button></span></div></form></div>
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+                </li>
+                <li class="ms-0 px-2 order-1 order-lg-2">
+                    
+	<ul class="flex-column flex-lg-row mainMenu my-2 mb-lg-2 mb-0">
+		
+			<li class="m-0 me-lg-4 py-1 py-lg-2 menu-35  dropdown position-static ">
+				
+						<a href="/ilias-e-learning" id="menuLink-35" aria-expanded="false" data-bs-toggle="dropdown" class=" dropdown-toggle">
+							ILIAS E-Learning
+						</a>
+						<ul class="dropdown-menu w-100" aria-labelledby="menuLink-35">
+							<li class="dropdown-item">
+								<div class="dropdown-item menu-start-page">
+									<a title="ILIAS E-Learning" href="/ilias-e-learning">Startseite ILIAS E-Learning <i class="fa fa-chevron-right"></i></a>
+								</div>
+								<div class="dropdown-item">
+									<div class="row">
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">ILIAS-Betrieb</li>
+														
+															<li class="">
+																<a title="ILIAS Hosting" href="/ilias-betrieb/ilias-hosting">ILIAS Hosting</a>
+															</li>
+														
+															<li class="">
+																<a title="ILIAS On-Premises" href="/ilias-betrieb/ilias-on-premises">ILIAS On-Premises</a>
+															</li>
+														
+															<li class="">
+																<a title="ILIAS Anwendersupport" href="/ilias-betrieb/ilias-anwendersupport">ILIAS Anwendersupport</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">ILIAS-Implementierung</li>
+														
+															<li class="">
+																<a title="ILIAS Design" href="/ilias-implementierung/ilias-design">ILIAS Design</a>
+															</li>
+														
+															<li class="">
+																<a title="ILIAS Beratung" href="/ilias-implementierung/ilias-beratung">ILIAS Beratung</a>
+															</li>
+														
+															<li class="">
+																<a title="ILIAS Entwicklung" href="/ilias-implementierung/ilias-entwicklung">ILIAS Entwicklung</a>
+															</li>
+														
+															<li class="">
+																<a title="ILIAS Business Add-ons" href="/ilias-implementierung/ilias-business-add-ons">ILIAS Business Add-ons</a>
+															</li>
+														
+															<li class="">
+																<a title="ILIAS Schulungen" href="/ilias-implementierung/ilias-schulungen">ILIAS Schulungen</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">ILIAS-Lösungen</li>
+														
+															<li class="">
+																<a title="Fachhandelsportal" href="/ilias-implementierung/ilias-entwicklung/produktschulungsportal-fuer-vertriebspartner">Fachhandelsportal</a>
+															</li>
+														
+															<li class="">
+																<a title="Seminarmanagement" href="/ilias-loesungen/seminarmanagement">Seminarmanagement</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">E-Learning Content</li>
+														
+															<li class="">
+																<a title="Content Produktion" href="/e-learning-content/content-produktion">Content Produktion</a>
+															</li>
+														
+													</ul>
+												
+										
+										
+									</div>
+								</div>
+							</li>
+						</ul>
+					
+			</li>
+		
+			<li class="m-0 me-lg-4 py-1 py-lg-2 menu-387  dropdown position-static ">
+				
+						<a href="/typo3-website" id="menuLink-387" aria-expanded="false" data-bs-toggle="dropdown" class=" dropdown-toggle">
+							TYPO3 Website
+						</a>
+						<ul class="dropdown-menu w-100" aria-labelledby="menuLink-387">
+							<li class="dropdown-item">
+								<div class="dropdown-item menu-start-page">
+									<a title="TYPO3 Website" href="/typo3-website">Startseite TYPO3 Website <i class="fa fa-chevron-right"></i></a>
+								</div>
+								<div class="dropdown-item">
+									<div class="row">
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Unsere Dienstleistungen</li>
+														
+															<li class="">
+																<a title="Webdesign &amp; Konzept" href="/typo3-website/umsetzung/webdesign-konzept">Webdesign &amp; Konzept</a>
+															</li>
+														
+															<li class="">
+																<a title="Entwicklung" href="/typo3-website/umsetzung/entwicklung">Entwicklung</a>
+															</li>
+														
+															<li class="">
+																<a title="Newsletter" href="/typo3-website/umsetzung/newsletter">Newsletter</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Technik</li>
+														
+															<li class="">
+																<a title="Hosting" href="/typo3-website/technik/hosting">Hosting</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Referenzen</li>
+														
+															<li class="">
+																<a title="Zufriedene Kunden" href="/typo3-website/referenzen/zufriedene-kunden">Zufriedene Kunden</a>
+															</li>
+														
+													</ul>
+												
+										
+										
+									</div>
+								</div>
+							</li>
+						</ul>
+					
+			</li>
+		
+			<li class="m-0 me-lg-4 py-1 py-lg-2 menu-93  dropdown position-static ">
+				
+						<a href="/individuelle-softwareentwicklung" id="menuLink-93" aria-expanded="false" data-bs-toggle="dropdown" class=" dropdown-toggle">
+							Individuelle Softwareentwicklung
+						</a>
+						<ul class="dropdown-menu w-100" aria-labelledby="menuLink-93">
+							<li class="dropdown-item">
+								<div class="dropdown-item menu-start-page">
+									<a title="Individuelle Softwareentwicklung" href="/individuelle-softwareentwicklung">Startseite Individuelle Softwareentwicklung <i class="fa fa-chevron-right"></i></a>
+								</div>
+								<div class="dropdown-item">
+									<div class="row">
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Service</li>
+														
+															<li class="">
+																<a title="App-Entwicklung" href="/individuelle-softwareentwicklung/service/app-entwicklung">App-Entwicklung</a>
+															</li>
+														
+															<li class="">
+																<a title="Digitalisierung von Geschäftsprozessen" href="/individuelle-softwareentwicklung/service/digitalisierung-von-geschaeftsprozessen">Digitalisierung von Geschäftsprozessen</a>
+															</li>
+														
+															<li class="">
+																<a title="Schnittstellen" href="/individuelle-softwareentwicklung/service/schnittstellen">Schnittstellen</a>
+															</li>
+														
+															<li class="">
+																<a title="Excel Migration" href="/individuelle-softwareentwicklung/service/excel-migration">Excel Migration</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Framework</li>
+														
+															<li class="">
+																<a title="Symfony" href="/individuelle-softwareentwicklung/framework/symfony">Symfony</a>
+															</li>
+														
+															<li class="">
+																<a title="FastFW" href="/individuelle-softwareentwicklung/framework/fastfw">FastFW</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Standardlösungen</li>
+														
+															<li class="">
+																<a title="Datendrehscheibe" href="/individuelle-softwareentwicklung/standardloesungen/datendrehscheibe">Datendrehscheibe</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Referenzprojekte</li>
+														
+															<li class="">
+																<a title="Trapmaster" href="/individuelle-softwareentwicklung/referenzprojekte/trapmaster">Trapmaster</a>
+															</li>
+														
+															<li class="">
+																<a title="Standflächenvermarktung" href="/individuelle-softwareentwicklung/referenzprojekte/grafisch-unterstuetzte-standflaechenvermarktung">Standflächenvermarktung</a>
+															</li>
+														
+															<li class="">
+																<a title="AYGOnet" href="/individuelle-softwareentwicklung/referenzprojekte/aygonet">AYGOnet</a>
+															</li>
+														
+													</ul>
+												
+										
+										
+									</div>
+								</div>
+							</li>
+						</ul>
+					
+			</li>
+		
+			<li class="m-0  py-1 py-lg-2 menu-108  dropdown position-static ">
+				
+						<a href="/it-services" id="menuLink-108" aria-expanded="false" data-bs-toggle="dropdown" class=" dropdown-toggle">
+							IT-Services
+						</a>
+						<ul class="dropdown-menu w-100" aria-labelledby="menuLink-108">
+							<li class="dropdown-item">
+								<div class="dropdown-item menu-start-page">
+									<a title="IT-Services" href="/it-services">Startseite IT-Services <i class="fa fa-chevron-right"></i></a>
+								</div>
+								<div class="dropdown-item">
+									<div class="row">
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Infrastruktur</li>
+														
+															<li class="">
+																<a title="Netzwerktechnik" href="/it-services/infrastruktur/netzwerktechnik">Netzwerktechnik</a>
+															</li>
+														
+															<li class="">
+																<a title="Server &amp; Storage" href="/it-services/infrastruktur/server-storage">Server &amp; Storage</a>
+															</li>
+														
+															<li class="">
+																<a title="Client-Management" href="/it-services/infrastruktur/client-management">Client-Management</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Hosting</li>
+														
+															<li class="">
+																<a title="TYPO3-Hosting" href="/typo3-website/technik/hosting">TYPO3-Hosting</a>
+															</li>
+														
+															<li class="">
+																<a title="BigBlueButton Hosting" href="/it-services/hosting/bigbluebutton-hosting">BigBlueButton Hosting</a>
+															</li>
+														
+															<li class="">
+																<a title="Applikations-Hosting" href="/it-services/hosting/applikations-hosting">Applikations-Hosting</a>
+															</li>
+														
+															<li class="">
+																<a title="Mailserver Enterprise" href="/it-services/hosting/mailserver-enterprise">Mailserver Enterprise</a>
+															</li>
+														
+													</ul>
+												
+										
+											
+													<ul class="col-12 col-lg-3">
+														<li class="dropdown-header menu-title">Externer Support</li>
+														
+															<li class="">
+																<a title="ILIAS on-premise" href="/ilias-betrieb/ilias-on-premises">ILIAS on-premise</a>
+															</li>
+														
+													</ul>
+												
+										
+										
+											<ul class="col-12 col-lg-3">
+												<li class="m-0 ms-lg-3 py-1">
+													<a href="/it-services/anydesk/" style="text-align: center; height: auto; border: 2px solid; padding: 5px; margin: -5px 0;" class="btn-primary btn-square">
+														<span style="font-size: 14px!important;">Any Desk - Fernwartung starten!</span>
+													</a>
+												</li>
+											</ul>
+										
+									</div>
+								</div>
+							</li>
+						</ul>
+					
+			</li>
+		
+		
+	</ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        
+    <!--TYPO3SEARCH_begin-->
+    <section id="main" role="main">
+        <div class="header">
+            
+                    
+                
+        </div>
+
+        
+                <div class="container">
+                    
+    <ul class="breadcrumb"><li class="active sub"><a href="/" target="_self" title="Databay AG">Home</a></li><li>/</li><li class="active sub">Suche</li></ul>
+
+                </div>
+            
+        
+<div class="container"><div id="c2319" class="frame frame-Boxed frame-type-list frame-layout-0">
+	
+		
+    <div class="tx-indexedsearch-searchbox">
+        <form method="post" id="tx_indexedsearch" action="/suche?tx_indexedsearch_pi2%5Baction%5D=search&amp;tx_indexedsearch_pi2%5Bcontroller%5D=Search&amp;cHash=a5de76f5b877c1eb9f283a844fa33bcd">
+<div>
+<input type="hidden" name="tx_indexedsearch_pi2[__referrer][@extension]" value="IndexedSearch">
+<input type="hidden" name="tx_indexedsearch_pi2[__referrer][@controller]" value="Search">
+<input type="hidden" name="tx_indexedsearch_pi2[__referrer][@action]" value="search">
+<input type="hidden" name="tx_indexedsearch_pi2[__referrer][arguments]" value="YTozOntzOjY6ImFjdGlvbiI7czo2OiJzZWFyY2giO3M6MTA6ImNvbnRyb2xsZXIiO3M6NjoiU2VhcmNoIjtzOjY6InNlYXJjaCI7YToxNTp7czo1OiJzd29yZCI7czowOiIiO3M6OToiX3NlY3Rpb25zIjtzOjE6IjAiO3M6MTM6Il9mcmVlSW5kZXhVaWQiO3M6MToiXyI7czo3OiJwb2ludGVyIjtzOjE6IjAiO3M6MzoiZXh0IjtzOjA6IiI7czoxMDoic2VhcmNoVHlwZSI7czoxOiIxIjtzOjE0OiJkZWZhdWx0T3BlcmFuZCI7czoxOiIwIjtzOjk6Im1lZGlhVHlwZSI7czoyOiItMSI7czo5OiJzb3J0T3JkZXIiO3M6OToicmFua19mbGFnIjtzOjU6Imdyb3VwIjtzOjA6IiI7czoxMToibGFuZ3VhZ2VVaWQiO3M6MjoiLTEiO3M6NDoiZGVzYyI7czowOiIiO3M6MTU6Im51bWJlck9mUmVzdWx0cyI7czoyOiIxMCI7czoxNDoiZXh0ZW5kZWRTZWFyY2giO3M6MDoiIjtzOjEyOiJzdWJtaXRCdXR0b24iO3M6NjoiU2VhcmNoIjt9fQ==441a04c5d3150ef1241c9e2e4a5ff8ff4bc9d271">
+<input type="hidden" name="tx_indexedsearch_pi2[__referrer][@request]" value="{&quot;@extension&quot;:&quot;IndexedSearch&quot;,&quot;@controller&quot;:&quot;Search&quot;,&quot;@action&quot;:&quot;search&quot;}b85d1a9ab3f40b3cc6e686fd5c9371d212dd2b97">
+<input type="hidden" name="tx_indexedsearch_pi2[__trustedProperties]" value="{&quot;search&quot;:{&quot;_sections&quot;:1,&quot;_freeIndexUid&quot;:1,&quot;pointer&quot;:1,&quot;ext&quot;:1,&quot;searchType&quot;:1,&quot;defaultOperand&quot;:1,&quot;mediaType&quot;:1,&quot;sortOrder&quot;:1,&quot;group&quot;:1,&quot;languageUid&quot;:1,&quot;desc&quot;:1,&quot;numberOfResults&quot;:1,&quot;extendedSearch&quot;:1,&quot;sword&quot;:1,&quot;submitButton&quot;:1}}a7c186de2e971fa9e606ed2dc3cc77995af24ade">
+</div>
+
+            <div class="tx-indexedsearch-hidden-fields">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0">
+                <input id="tx_indexedsearch_freeIndexUid" type="hidden" name="tx_indexedsearch_pi2[search][_freeIndexUid]" value="_">
+                <input id="tx_indexedsearch_pointer" type="hidden" name="tx_indexedsearch_pi2[search][pointer]" value="0">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][ext]" value="">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][searchType]" value="1">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][defaultOperand]" value="0">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][mediaType]" value="-1">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][sortOrder]" value="rank_flag">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][group]" value="">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][languageUid]" value="-1">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][desc]" value="">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][numberOfResults]" value="10">
+                <input type="hidden" name="tx_indexedsearch_pi2[search][extendedSearch]" value="">
+            </div>
+            <fieldset class="row align-items-center w-100 g-0">
+                <legend>
+                    Suchformular
+                </legend>
+
+                <div class="col-12 col-lg-10">
+                    <div class="input-group tx-indexedsearch-form">
+                        <input placeholder="Suche nach" class="form-control searchbox-sword tx-indexedsearch-searchbox-sword mb-1 mb-lg-0 me-lg-1" id="tx-indexedsearch-searchbox-sword" type="text" name="tx_indexedsearch_pi2[search][sword]" value="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 text-end">
+                    <input class="btn btn-primary tx-indexedsearch-searchbox-button w-100 m-0 mt-1 mt-lg-0 ms-lg-1" id="tx-indexedsearch-searchbox-button-submit" type="submit" value="Suchen" name="tx_indexedsearch_pi2[search][submitButton]">
+                </div>
+
+                
+	
+
+
+
+                
+
+                
+            </fieldset>
+        </form>
+    </div>
+
+
+	
+	
+		
+
+		
+
+		
+				Keine Ergebnisse gefunden.
+			
+	
+
+</div></div>
+
+
+    </section>
+    <!--TYPO3SEARCH_end-->
+
+        <footer class="footer">
+    <div class="footer-widget-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="footer-widget widget-about">
+    <h3 class="widget-title">Kontakt</h3>
+
+    <p>Databay AG <br> Jens-Otto-Krag-Straße 11 <br> D-52146 Würselen</p>
+
+    <div class="group-col">
+        <div class="contact-info">
+            <a class="phone" href="tel:+492405408370"><i class="fa fa-phone-flip" aria-hidden="true"></i>02405 - 40 83 70</a>
+            <span class="email"><a href="#" data-mailto-token="kygjrm8gldmYbyryzyw,bc" data-mailto-vector="-2">info(at)databay(dot)de</a></span>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2">
+                    <div class="footer-widget">
+    <h3 class="widget-title">Unternehmen</h3>
+
+    <ul class="footer-list-menu">
+        
+            <li>
+                <a title="Karriere" href="/karriere">Karriere</a>
+            </li>
+        
+            <li>
+                <a title="Ausbildung" href="/unternehmen/ausbildung">Ausbildung</a>
+            </li>
+        
+            <li>
+                <a title="Unternehmen" href="/unternehmen">Unternehmen</a>
+            </li>
+        
+            <li>
+                <a title="Aktuelles" href="/aktuelles">Aktuelles</a>
+            </li>
+        
+            <li>
+                <a title="Kontakt" href="/kontakt">Kontakt</a>
+            </li>
+        
+
+        <li>
+            <a title="Sitemap" href="/sitemap">Sitemap</a>
+        </li>
+        <li>
+            <a title="Datenschutz" href="/datenschutz">Datenschutz</a>
+        </li>
+        
+        <li>
+            <a title="Impressum" href="/impressum">Impressum</a>
+        </li>
+
+    </ul>
+</div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footer-widget">
+    <h3 class="widget-title">Dienstleistungen</h3>
+    <ul class="footer-list-menu">
+        <li><a href="/ilias-betrieb/ilias-hosting">ILIAS Hosting</a></li>
+        <li><a href="/ilias-implementierung/ilias-beratung">ILIAS Beratung</a></li>
+        <li><a href="/individuelle-softwareentwicklung/service/app-entwicklung">App-Entwicklung</a></li>
+        <li><a href="/individuelle-softwareentwicklung">Individuelle Software</a></li>
+        <li><a href="/it-services">IT-Netzwerke</a></li>
+        <li><a href="/typo3-website">TYPO3 Website</a></li>
+    </ul>
+</div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footer-widget">
+    <h3 class="widget-title">
+        <label for="newsletterEmail" style="display: inherit; max-width: inherit; margin-bottom: inherit; font-weight: inherit;">
+            Newsletter
+        </label>
+    </h3>
+
+    <div class="widget-subscribe">
+        <form action="https://newslettertools.databay.de/3/3050/b4d6ac3e2b/subscribe/form.html" method="post">
+            <div class="form-group email">
+                <div style="position:absolute; z-index: -100; left:-6000px;" aria-hidden="true">
+                    <input type="text" class="form_field" name="f_vVib-ikVMfMkbJFwrNB" value="" tabindex="-1">
+                </div>
+                <input type="email" class="form_field form-control" name="email" id="newsletterEmail" required="required" placeholder="E-Mail Adresse">
+                <button type="submit" class="btn btn-default"><strong>Newsletter abonnieren</strong></button>
+            </div>
+            <div class="checkbox datasecurity">
+                <label class="checkboxContainer" for="chk_datasecurity">
+                    Ich habe die <a class="datasecurityLink" target="_blank" href="/datenschutz">Datenschutzerklärung </a> gelesen und akzeptiert
+                    <input type="checkbox" id="chk_datasecurity" name="consent_text" required="required" value="yes">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </form>
+        <script>
+            $('label.checkboxContainer').on('click', function(e){
+                e.preventDefault();
+                toggleCheckedNewsletter();
+            });
+
+            $('.datasecurityLink').on('click', function(e){
+                e.stopPropagation();
+            });
+
+            function toggleCheckedNewsletter() {
+                var datasecurity = $('#chk_datasecurity').is(':checked');
+
+                if(!datasecurity) {
+                    $('input#chk_datasecurity').attr('checked', 'checked');
+                } else {
+                    $('input#chk_datasecurity').removeAttr('checked');
+                }
+            }
+        </script>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-widget">
+    <ul class="social-links">
+      <li>
+        <a href="https://de-de.facebook.com/databay.ag/" aria-label="Facebook Link">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/databay_ag/" aria-label="Instagram Link">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+       <li>
+        <a href="https://twitter.com/DatabayAG" aria-label="Twitter Link">
+          <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+       <li>
+        <a href="https://www.linkedin.com/company/databay-ag/" aria-label="LinkedIn Link">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="copyright-section">
+    <div class="container clearfix">
+        <span class="copytext">© Databay AG 2025</span>
+    </div>
+ </div>
+</footer>
+
+    
+<div id="totop" style="display: none"><i class="fa fa-angle-up"></i></div>
+
+
+    <div class="dbayCookieSelect">
+        
+    <div class="card cookieConsentMessage">
+        <h5 class="card-header cookieConsentMessageText">Diese Webseite verwendet Cookies</h5>
+        <div class="card-body p-0">
+            <p class="card-text cookieConsentText">
+                Diese Website verwendet Cookies – nähere Informationen dazu und zu Ihren Rechten als Benutzer finden Sie in unserer Datenschutzerklärung am Ende der Seite. Klicken Sie auf „Ich stimme zu“, um Cookies zu akzeptieren und direkt unsere Website besuchen zu können.
+                <br>
+                <a href="https://www.databay.de/datenschutz" title="Zur Datenschutzerklärung">Zur Datenschutzerklärung</a>
+            </p>
+            <div class="cookieConsentButtonSwitches">
+                <div class="border-1 w-100">
+                    <form id="cookieSelectForm" class="cookieSelectForm row">
+                        
+                            <div class="formElement col-12 col-md-6 m-0 my-1">
+                                <div class="checkbox checkbox-type-toggle position-relative">
+                                    <input type="checkbox" id="checkboxEssential" class="cookieCheckbox" name="essential" value="" checked="true" disabled="disabled">
+                                    <label class="cookieCheckbox-label" for="checkboxEssential">
+                                        <span class="checkbox-label-text">&nbsp;</span>
+                                    </label>
+                                    <label for="checkboxEssential" class="checkboxTextLabel">Funktionale Cookies (erforderlich)</label>
+                                    <label>
+                                        <u>
+                                            
+                                                <a href="https://www.databay.de/datenschutz#essentialDetails" title="Details">Details</a>
+                                            
+                                        </u>
+                                    </label>
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="formElement col-12 col-md-6 m-0 my-1">
+                                <div class="checkbox checkbox-type-toggle position-relative">
+                                    <input type="checkbox" id="checkboxMedia" class="cookieCheckbox" name="media" value="true">
+                                    <label class="cookieCheckbox-label" for="checkboxMedia">
+                                        <span class="checkbox-label-text">&nbsp;</span>
+                                    </label>
+                                    <label for="checkboxMedia" class="checkboxTextLabel">Medien Cookies</label>
+                                    <label>
+                                        <u>
+                                            
+                                                <a href="https://www.databay.de/datenschutz#mediaDetails" title="Details">Details</a>
+                                            
+                                        </u>
+                                    </label>
+                                </div>
+                            </div>
+                        
+                        
+                        
+                            <div class="formElement col-12 col-md-6 m-0 my-1">
+                                <div class="checkbox checkbox-type-toggle position-relative">
+                                    <input type="checkbox" id="checkboxAnalytics" class="cookieCheckbox" name="analytics" value="true">
+                                    <label class="cookieCheckbox-label" for="checkboxAnalytics">
+                                        <span class="checkbox-label-text">&nbsp;</span>
+                                    </label>
+                                    <label for="checkboxAnalytics" class="checkboxTextLabel">Analyse-Cookies</label>
+                                    <label>
+                                        <u>
+                                            
+                                                <a href="https://www.databay.de/datenschutz#analyticsDetails" title="Details">Details</a>
+                                            
+                                        </u>
+                                    </label>
+                                </div>
+
+                            </div>
+                        
+                        
+                        
+                            <div class="formElement col-12 col-md-6 m-0 my-1">
+                                <div class="checkbox checkbox-type-toggle position-relative">
+                                    <input type="checkbox" id="checkboxMaps" class="cookieCheckbox" name="maps" value="true">
+                                    <label class="cookieCheckbox-label" for="checkboxMaps">
+                                        <span class="checkbox-label-text">&nbsp;</span>
+                                    </label>
+                                    <label for="checkboxTranslate" class="checkboxTextLabel">Karten-Cookies</label>
+                                    <label>
+                                        <u>
+                                            
+                                                <a href="https://www.databay.de/datenschutz#mapsDetails" title="Details">Details</a>
+                                            
+                                        </u>
+                                    </label>
+                                </div>
+
+                            </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="cookieConsentSubmitButton m-0 row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="#" class="btn btn-default w-100 cookieSelectAccept">Auswahl akzeptieren</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <a href="#" class="btn btn-default w-100 cookieSelectAcceptAll">Alle akzeptieren</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+<script src="/typo3conf/ext/dbay_navigation/Resources/Public/Js/navigation.js?1680088740" type="text/javascript"></script>
+<script src="/typo3conf/ext/dbay_container/Resources/Public/Js/references.js?1742403657" defer="defer"></script>
+<script src="/typo3conf/ext/dbay_ecf/Resources/Public/JavaScript/ecf.js?1695911340"></script>
+<script src="/fileadmin/site/js/owl.carousel.min.js?1633441920"></script>
+<script src="/fileadmin/site/js/cleanedUpJs.js?1718714468"></script>
+<script async="async" src="/typo3temp/assets/js/ba19e614c16923a947df5b199324c770.js?1724836726"></script>
+
+
+
+</body></html>

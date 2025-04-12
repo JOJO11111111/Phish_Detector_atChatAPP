@@ -1,0 +1,2285 @@
+<html lang="de" class="no-touch js"><head>
+<title>Internet-Filiale - Sparkasse Jena-Saale-Holzland</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="language" content="de">
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<meta name="description" content="Ihr Finanzpartner im Internet. Mit sicherem Online-Banking, vielen Angeboten und Services für Privat- und Firmenkunden.">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://www.s-jena.de/de/home.html">
+<link rel="shortcut icon" href="/content/dam/myif/sk-jena-saale-holzland/work/bilder/icons/favicon1x.ico">
+<link rel="apple-touch-icon" href="/content/dam/myif/sk-jena-saale-holzland/work/bilder/icons/apple-touch-icon-180x180px.png" sizes="180x180">
+<link rel="icon" href="/content/dam/myif/sk-jena-saale-holzland/work/bilder/icons/favicon2x.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/content/dam/myif/sk-jena-saale-holzland/work/bilder/icons/favicon1x.png" sizes="16x16" type="image/png">
+
+<link rel="stylesheet" href="/etc/clientlibs/myif/master/base/internetfiliale.min.0e4b487caf8d9401bcac9f57d1e22a2b.css" type="text/css">
+
+
+<script src="/etc/clientlibs/myif/master/base/internetfiliale.min.354bc161dd0f6d8794ab6d9a8ac0b59f.js"></script>
+
+
+<style>.wp_kursleiste ._baseButton_esnrk_15,.wp_kursleiste ._linkButton--tertiary_esnrk_15,.wp_kursleiste ._linkButton--secondary_esnrk_15,.wp_kursleiste ._linkButton--primary_esnrk_15,.wp_kursleiste ._button--tertiary_esnrk_15,.wp_kursleiste ._button--secondary_esnrk_15,.wp_kursleiste ._button--primary_esnrk_15{outline:none;position:relative;box-sizing:border-box;display:flex;flex-direction:row;justify-content:center;align-items:center;padding:.875rem 2rem;min-width:11.25rem;border-radius:6.25rem;cursor:pointer;height:3rem;transition:color .3s ease-out,background-color .3s ease-out;font-family:sparkassewebmedium,helvetica,arial,sans-serif;font-size:1rem;line-height:1.25rem;font-weight:400}@media only screen and (min-width: 1080px){.wp_kursleiste ._baseButton_esnrk_15,.wp_kursleiste ._linkButton--tertiary_esnrk_15,.wp_kursleiste ._linkButton--secondary_esnrk_15,.wp_kursleiste ._linkButton--primary_esnrk_15,.wp_kursleiste ._button--tertiary_esnrk_15,.wp_kursleiste ._button--secondary_esnrk_15,.wp_kursleiste ._button--primary_esnrk_15{max-width:17.5rem}}.wp_kursleiste ._button--iconRight_esnrk_40 svg{margin-left:.25rem}.wp_kursleiste ._button--iconLeft_esnrk_43 svg{margin-right:.25rem}.wp_kursleiste ._button--primary_esnrk_15{background-color:var(--primary-01, #e00);color:var(--primary-01-contrast, #fff);border:.125rem solid var(--primary-01, #e00)}.wp_kursleiste ._button--primary_esnrk_15 svg{fill:var(--primary-01-contrast, #fff)}.wp_kursleiste ._button--primary_esnrk_15[data-hovered]{background-color:var(--primary-01-hover, #d40000);border:.125rem solid var(--primary-01-hover, #d40000)}.wp_kursleiste ._button--primary_esnrk_15[data-pressed]{background-color:var(--primary-01-active, #a00);border-color:var(--primary-01-active, #a00)}.wp_kursleiste ._button--primary_esnrk_15[data-focus-visible]{background-color:var(--primary-01-focus, #d40000);border-color:var(--transparent-01, transparent);outline:.125rem solid var(--focus-01, #0071d4);outline-offset:.063rem}.wp_kursleiste ._button--secondary_esnrk_15{color:var(--readable-02, #565656);background:var(--transparent-01, transparent);border:.125rem solid var(--secondary-01, #565656)}.wp_kursleiste ._button--secondary_esnrk_15 svg{fill:var(--secondary-01, #565656)}.wp_kursleiste ._button--secondary_esnrk_15[data-hovered]{background-color:var(--secondary-01-hover, #444);border:.125rem solid var(--secondary-01-hover, #444);color:var(--readable-03, #fff)}.wp_kursleiste ._button--secondary_esnrk_15[data-hovered] svg{fill:var(--readable-03, #fff)}.wp_kursleiste ._button--secondary_esnrk_15[data-pressed]{background-color:var(--secondary-01-active, #292929);border-color:var(--secondary-01-active, #292929);color:var(--readable-03, #fff)}.wp_kursleiste ._button--secondary_esnrk_15[data-pressed] svg{fill:var(--readable-03, #fff)}.wp_kursleiste ._button--secondary_esnrk_15[data-focus-visible]{background-color:var(--secondary-01-focus, #444);outline:.125rem solid var(--focus-01, #0071d4);outline-offset:.063rem;color:var(--readable-03, #fff);border-color:var(--transparent-01, transparent)}.wp_kursleiste ._button--secondary_esnrk_15[data-focus-visible] svg{fill:var(--readable-03, #fff)}.wp_kursleiste ._button--tertiary_esnrk_15{color:var(--readable-02, #565656);background-color:var(--transparent-01, transparent);border:none;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:.063rem}.wp_kursleiste ._button--tertiary_esnrk_15 svg{fill:var(--readable-02, #565656)}.wp_kursleiste ._button--tertiary_esnrk_15[data-hovered]{color:var(--secondary-01-hover, #444)}.wp_kursleiste ._button--tertiary_esnrk_15[data-hovered] svg{fill:var(--secondary-01-hover, #444)}.wp_kursleiste ._button--tertiary_esnrk_15[data-pressed]{color:var(--secondary-01-active, #292929)}.wp_kursleiste ._button--tertiary_esnrk_15[data-pressed] svg{fill:var(--secondary-01-active, #292929)}.wp_kursleiste ._button--tertiary_esnrk_15[data-focus-visible]{color:var(--focus-01, #0071d4);text-decoration-style:double;outline:none}.wp_kursleiste ._button--tertiary_esnrk_15[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._linkButton_esnrk_15{text-decoration:none;outline:none}.wp_kursleiste ._linkButton--iconRight_esnrk_138 svg{margin-left:.25rem}.wp_kursleiste ._linkButton--iconLeft_esnrk_141 svg{margin-right:.25rem}.wp_kursleiste ._linkButton--square_esnrk_144{border-radius:6px}.wp_kursleiste ._linkButton--primary_esnrk_15{background-color:var(--primary-01, #e00);border:2px solid var(--primary-01, #e00);color:var(--primary-01-contrast, #fff)}.wp_kursleiste ._linkButton--primary_esnrk_15 svg{fill:var(--primary-01-contrast, #fff)}.wp_kursleiste ._linkButton--primary_esnrk_15[data-hovered]{background-color:var(--primary-01-hover, #d40000);border:2px solid var(--primary-01-hover, #d40000)}.wp_kursleiste ._linkButton--primary_esnrk_15[data-pressed]{background-color:var(--primary-01-active, #a00);border-color:var(--primary-01-active, #a00)}.wp_kursleiste ._linkButton--primary_esnrk_15[data-focus-visible]{background-color:var(--primary-01-focus, #d40000);border-color:var(--transparent-01, transparent);outline:2px solid var(--focus-01, #0071d4);outline-offset:1px}.wp_kursleiste ._linkButton--secondary_esnrk_15{background:var(--transparent-01, transparent);border:2px solid var(--secondary-01, #565656);color:var(--readable-02, #565656)}.wp_kursleiste ._linkButton--secondary_esnrk_15 svg{fill:var(--secondary-01, #565656)}.wp_kursleiste ._linkButton--secondary_esnrk_15[data-hovered]{background-color:var(--secondary-01-hover, #444);border:2px solid var(--secondary-01-hover, #444);color:var(--readable-03, #fff)}.wp_kursleiste ._linkButton--secondary_esnrk_15[data-hovered] svg{fill:var(--readable-03, #fff)}.wp_kursleiste ._linkButton--secondary_esnrk_15[data-pressed]{background-color:var(--secondary-01-active, #292929);border-color:var(--secondary-01-active, #292929);color:var(--readable-03, #fff)}.wp_kursleiste ._linkButton--secondary_esnrk_15[data-pressed] svg{fill:var(--readable-03, #fff)}.wp_kursleiste ._linkButton--secondary_esnrk_15[data-focus-visible]{background-color:var(--secondary-01-focus, #444);outline:2px solid var(--focus-01, #0071d4);outline-offset:1px;color:var(--readable-03, #fff);border-color:var(--transparent-01, transparent)}.wp_kursleiste ._linkButton--secondary_esnrk_15[data-focus-visible] svg{fill:var(--readable-03, #fff)}.wp_kursleiste ._linkButton--tertiary_esnrk_15{background-color:var(--transparent-01, transparent);border:none;color:var(--readable-02, #565656);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.wp_kursleiste ._linkButton--tertiary_esnrk_15 svg{fill:var(--readable-02, #565656)}.wp_kursleiste ._linkButton--tertiary_esnrk_15[data-hovered]{color:var(--secondary-01-hover, #444)}.wp_kursleiste ._linkButton--tertiary_esnrk_15[data-hovered] svg{fill:var(--secondary-01-hover, #444)}.wp_kursleiste ._linkButton--tertiary_esnrk_15[data-pressed]{color:var(--secondary-01-active, #292929)}.wp_kursleiste ._linkButton--tertiary_esnrk_15[data-pressed] svg{fill:var(--secondary-01-active, #292929)}.wp_kursleiste ._linkButton--tertiary_esnrk_15[data-focus-visible]{color:var(--focus-01, #0071d4);text-decoration-style:double;outline:none}.wp_kursleiste ._linkButton--tertiary_esnrk_15[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._typography_wcpxa_8{color:var(--readable-01, #292929)}.wp_kursleiste ._typography--headline1_wcpxa_11{font-family:sparkasseheadweb,helvetica,arial,sans-serif;font-size:2.25rem;line-height:2.5rem;font-weight:700}.wp_kursleiste ._typography--headline2_wcpxa_17{font-family:sparkasseheadweb,helvetica,arial,sans-serif;font-size:1.5rem;line-height:2rem;font-weight:700}.wp_kursleiste ._typography--headline3_wcpxa_23{font-family:sparkassewebmedium,helvetica,arial,sans-serif;font-size:1.25rem;line-height:1.5rem;font-weight:400}.wp_kursleiste ._typography--headline4_wcpxa_29{font-family:sparkassewebmedium,helvetica,arial,sans-serif;font-size:1.125rem;line-height:1.25rem;font-weight:400}.wp_kursleiste ._typography--headline5_wcpxa_35{font-family:sparkassewebmedium,helvetica,arial,sans-serif;font-size:1rem;line-height:1.25rem;font-weight:400}.wp_kursleiste ._typography--headline6_wcpxa_41{font-family:sparkassewebmedium,helvetica,arial,sans-serif;font-size:.875rem;line-height:1rem;font-weight:400}.wp_kursleiste ._typography--multiline1_wcpxa_47{font-family:sparkasseweb,helvetica,arial,sans-serif;font-size:1rem;line-height:1.5rem;font-weight:400}.wp_kursleiste ._typography--multiline2_wcpxa_53{font-family:sparkasseweb,helvetica,arial,sans-serif;font-size:.875rem;line-height:1.25rem;font-weight:400}.wp_kursleiste ._typography--link1_wcpxa_59{font-family:sparkasseweb,helvetica,arial,sans-serif;font-size:1rem;line-height:1.25rem;font-weight:400;text-decoration:underline;text-underline-position:under}.wp_kursleiste ._typography--link2_wcpxa_67{font-family:sparkassewebmedium,helvetica,arial,sans-serif;font-size:.875rem;line-height:1.125rem;font-weight:400;text-decoration:underline;text-underline-position:under}.wp_kursleiste ._typography--light_wcpxa_75{font-family:sparkasseweblight,helvetica,arial,sans-serif;font-weight:400}.wp_kursleiste ._typography--bold_wcpxa_79{font-family:sparkassewebmedium,helvetica,arial,sans-serif;font-weight:700}.wp_kursleiste ._notification_6fuba_8{width:100%;border-radius:.5rem;display:flex;flex-direction:row;gap:.75rem}.wp_kursleiste ._notification__content_6fuba_15{display:flex;flex-direction:column}.wp_kursleiste ._notification__action_6fuba_19{padding:0;height:auto;justify-content:flex-start;font-family:sparkasseweb,helvetica,arial,sans-serif}.wp_kursleiste ._notification__action_6fuba_19[data-focus-visible]{color:var(--focus-01, #0071d4)}.wp_kursleiste ._notification__action_6fuba_19[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--small_6fuba_31{padding:.75rem}.wp_kursleiste ._notification--small_6fuba_31 ._notification__content_6fuba_15{gap:.75rem}.wp_kursleiste ._notification--small_6fuba_31>svg{width:1.5rem;height:1.5rem}.wp_kursleiste ._notification--large_6fuba_41{padding:.75rem 1.25rem}.wp_kursleiste ._notification--large_6fuba_41 ._notification__content_6fuba_15{gap:1rem;padding:.25rem 0}.wp_kursleiste ._notification--large_6fuba_41>svg{width:2rem;height:2rem}.wp_kursleiste ._notification--success_6fuba_52{background-color:var(--success-02, #e4eddb)}.wp_kursleiste ._notification--success_6fuba_52 span,.wp_kursleiste ._notification--success_6fuba_52 ._notification__action_6fuba_19{color:var(--success-01, #2b5500)}.wp_kursleiste ._notification--success_6fuba_52 ._notification__action_6fuba_19 svg{fill:var(--success-01, #2b5500)}.wp_kursleiste ._notification--success_6fuba_52 ._notification__action_6fuba_19[data-focus-visible]{color:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--success_6fuba_52 ._notification__action_6fuba_19[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--success_6fuba_52>svg{fill:var(--success-01, #2b5500)}.wp_kursleiste ._notification--error_6fuba_73{background-color:var(--error-02, #F9DBDB)}.wp_kursleiste ._notification--error_6fuba_73 span,.wp_kursleiste ._notification--error_6fuba_73 ._notification__action_6fuba_19{color:var(--error-01, #8d0000)}.wp_kursleiste ._notification--error_6fuba_73 ._notification__action_6fuba_19 svg{fill:var(--error-01, #8d0000)}.wp_kursleiste ._notification--error_6fuba_73 ._notification__action_6fuba_19[data-focus-visible]{color:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--error_6fuba_73 ._notification__action_6fuba_19[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--error_6fuba_73>svg{fill:var(--error-01, #8d0000)}.wp_kursleiste ._notification--warning_6fuba_94{background-color:var(--warning-02, #fff3ed)}.wp_kursleiste ._notification--warning_6fuba_94 span,.wp_kursleiste ._notification--warning_6fuba_94 ._notification__action_6fuba_19{color:var(--warning-01, #821001)}.wp_kursleiste ._notification--warning_6fuba_94 ._notification__action_6fuba_19 svg{fill:var(--warning-01, #821001)}.wp_kursleiste ._notification--warning_6fuba_94 ._notification__action_6fuba_19[data-focus-visible]{color:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--warning_6fuba_94 ._notification__action_6fuba_19[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--warning_6fuba_94>svg{fill:var(--warning-01, #821001)}.wp_kursleiste ._notification--information_6fuba_115{background-color:var(--information-02, #F5F5F5)}.wp_kursleiste ._notification--information_6fuba_115 span,.wp_kursleiste ._notification--information_6fuba_115 ._notification__action_6fuba_19{color:var(--information-01, #444)}.wp_kursleiste ._notification--information_6fuba_115 ._notification__action_6fuba_19 svg{fill:var(--information-01, #444)}.wp_kursleiste ._notification--information_6fuba_115 ._notification__action_6fuba_19[data-focus-visible]{color:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--information_6fuba_115 ._notification__action_6fuba_19[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--information_6fuba_115>svg{fill:var(--information-01, #444)}.wp_kursleiste ._notification--attention_6fuba_136{background-color:var(--attention-02, #dbeeff)}.wp_kursleiste ._notification--attention_6fuba_136 span,.wp_kursleiste ._notification--attention_6fuba_136 ._notification__action_6fuba_19{color:var(--attention-01, #004480)}.wp_kursleiste ._notification--attention_6fuba_136 ._notification__action_6fuba_19 svg{fill:var(--attention-01, #004480)}.wp_kursleiste ._notification--attention_6fuba_136 ._notification__action_6fuba_19[data-focus-visible]{color:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--attention_6fuba_136 ._notification__action_6fuba_19[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--attention_6fuba_136>svg{fill:var(--attention-01, #004480);rotate:180deg}.wp_kursleiste ._notification--special_6fuba_158{background-color:var(--ui-background-02, #fff);border:1px solid var(--ui-01, #e3e3e3);box-shadow:0 2px 3px #5656561a}@media (prefers-color-scheme: dark){.wp_kursleiste ._notification--special_6fuba_158{box-shadow:0 2px 4px #00000029}}.wp_kursleiste ._notification--special_6fuba_158 span,.wp_kursleiste ._notification--special_6fuba_158 ._notification__action_6fuba_19{color:var(--readable-02, #565656)}.wp_kursleiste ._notification--special_6fuba_158 ._notification__action_6fuba_19 svg{fill:var(--readable-02, #565656)}.wp_kursleiste ._notification--special_6fuba_158 ._notification__action_6fuba_19[data-focus-visible]{color:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--special_6fuba_158 ._notification__action_6fuba_19[data-focus-visible] svg{fill:var(--focus-01, #0071d4)}.wp_kursleiste ._notification--special_6fuba_158>svg{fill:var(--success-01, #2b5500)}.wp_kursleiste__marketDataVisualization{display:grid;gap:.625rem 2rem}@media only screen and (max-width: 768px){.wp_kursleiste__marketDataVisualization{display:flex;flex-direction:column;width:100%;gap:1.25rem}}.wp_kursleiste__marketDataVisualization__item{display:flex;justify-content:space-between;align-items:center;position:relative}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item{flex-direction:column;align-items:flex-start;gap:.375rem}}.wp_kursleiste__marketDataVisualization__item:after{content:"";position:absolute;background-color:var(--settings-services-02, #e3e3e3);z-index:1;width:1px;height:calc(100% + .625rem);right:-1rem}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:after{height:calc(100% + .375rem)}}@media only screen and (max-width: 768px){.wp_kursleiste__marketDataVisualization__item:after{width:100%;height:1px;right:0;bottom:-.6125rem}}.wp_kursleiste__marketDataVisualization__item__stock{text-decoration:none}.wp_kursleiste__marketDataVisualization__item__stock:hover span{color:var(--primary-01-hover, #d40000)}.wp_kursleiste__marketDataVisualization__item__stock span{font-size:bold}.wp_kursleiste__marketDataVisualization__item__data{display:flex;gap:1rem}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item__data{flex-direction:column;align-items:flex-start;gap:0}}@media only screen and (max-width: 768px){.wp_kursleiste__marketDataVisualization__item__data{flex-direction:row;align-items:center;justify-content:space-between;width:100%}}.wp_kursleiste__marketDataVisualization__item__diffRel--pos{color:var(--success-01-contrast, #408000)!important}.wp_kursleiste__marketDataVisualization__item__diffRel--neg{color:var(--error-01-contrast, #b10000)!important}.wp_kursleiste__marketDataVisualization__item__price{color:var(--secondary-01, #565656)!important}.wp_kursleiste__marketDataVisualization__item h3{margin:0}.wp_kursleiste__marketDataVisualization__item p+p{margin:0}.wp_kursleiste__marketDataVisualization__item:nth-child(1){grid-column:1;grid-row:1}.wp_kursleiste__marketDataVisualization__item:nth-child(2){grid-column:1;grid-row:2}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:nth-child(2){display:none}}.wp_kursleiste__marketDataVisualization__item:nth-child(3){grid-column:1;grid-row:3}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:nth-child(3){display:none}}.wp_kursleiste__marketDataVisualization__item:nth-child(4){grid-column:2;grid-row:1}.wp_kursleiste__marketDataVisualization__item:nth-child(5){grid-column:2;grid-row:2}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:nth-child(5){grid-column:3;grid-row:1}}.wp_kursleiste__marketDataVisualization__item:nth-child(6){grid-column:2;grid-row:3}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:nth-child(6){display:none}}.wp_kursleiste__marketDataVisualization__item:nth-child(7){grid-column:3;grid-row:1}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:nth-child(7){grid-column:4;grid-row:1}}.wp_kursleiste__marketDataVisualization__item:nth-child(8){grid-column:3;grid-row:2}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:nth-child(8){display:none}}.wp_kursleiste__marketDataVisualization__item:nth-child(9){grid-column:3;grid-row:3}@media only screen and (max-width: 1079px){.wp_kursleiste__marketDataVisualization__item:nth-child(9){display:none}}.wp_kursleiste__marketDataVisualization__item:nth-child(7):after,.wp_kursleiste__marketDataVisualization__item:nth-child(8):after,.wp_kursleiste__marketDataVisualization__item:nth-child(9):after{display:none}.wp_kursleiste__spinner{width:100%;height:100%;box-sizing:border-box;text-align:center;position:relative}.wp_kursleiste__spinner .wp_kursleiste__spinnerImage{width:2.5rem;height:2.5rem;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.wp_kursleiste__viewContainer__actions{display:flex;justify-content:flex-end;margin-top:.5rem}.wp_kursleiste__viewContainer__actions__summaryLink{margin-right:-2rem;max-width:unset!important}.wp_kursleiste__spinnerContainer{min-height:4.75rem;display:flex;align-items:center;justify-content:center}@media only screen and (max-width: 768px){.wp_kursleiste__spinnerContainer{min-height:16.75rem}}.wp_kursleiste__errorContainer{min-height:4.75rem;display:flex;align-items:center}@media only screen and (max-width: 768px){.wp_kursleiste__errorContainer{min-height:16.75rem}}.wp_kursleiste__errorNotification{max-width:32rem}
+</style><style type="text/css">.chatbot_linda_link__container {
+  padding: 0 0 0 0;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 2501;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.chatbot_linda_link__container a {
+  text-decoration: none;
+  outline: none;
+}
+.chatbot_linda_link__close {
+  position: absolute;
+  right: 0;
+  bottom: 98px;
+  z-index: 2;
+  cursor: pointer;
+}
+.chatbot_linda_link__bubble {
+  background-color: #ffffff;
+  border-radius: 0.4em 0.4em 0em 0.4em;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  min-height: 35px;
+  margin-right: 16px;
+  margin-bottom: 64px;
+  animation-name: fadein;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  opacity: 0;
+}
+.chatbot_linda_link__button {
+  cursor: pointer;
+  animation-name: fadein;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.chatbot_linda_link__text {
+  padding: 8px 20px;
+  user-select: none;
+  font-family: SparkasseWeb, Helvetica, Arial, sans-serif;
+  color: #666;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  75% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+</style></head>
+        
+
+
+<body class="if6 nbf templ-homepage nav-main default-design lightbox_visible sidenav-enter-anim-none is_no_apple_device" data-statistics-url="https://www.s-jena.de/de/home/misc/break.html" data-cp_salt="AD0JGSr0Uw" data-cp_proof="-1186244089" data-cp_redirect="/content/myif/sk-jena-saale-holzland/work/filiale/de/home/nonexistent.html" data-cp_statistik="/content/myif/sk-jena-saale-holzland/work/filiale/de/home/misc/break.html" data-current_level="0" data-current_navigation="de">
+<div class="if6_main">
+	
+
+
+
+
+    <div class="if6_outer if6_siteselect" aria-hidden="true">
+    <div class="if6_inner">
+        <ul class="siteselect">
+            <li class="active"><a href="/de/home.html?stref=fkp-desktop" title="Startseite für Privatkunden" data-target_level="0" data-target_navigation="de">Privatkunden</a>
+            </li>
+            <li><a href="/fi/home.html?stref=fkp-desktop" title="Startseite für Firmenkunden" data-target_level="0" data-target_navigation="fi">Firmenkunden</a>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+
+    <div class="if6_outer if6_header" aria-hidden="false">
+        <div class="if6_inner">
+            <div class="logo parbase">
+    <a href="/de/home.html?n=true&amp;stref=logo" title="Sparkasse Jena-Saale-Holzland" data-target_level="0" data-target_navigation="de">
+        
+        
+            <img src="/content/dam/myif/sk-jena-saale-holzland/work/bilder/nbf-logos/logo_weiss_jena.svg" alt="Logo der Sparkasse Jena-Saale-Holzland">
+        
+    </a>
+    <img src="/content/dam/myif/sk-jena-saale-holzland/work/bilder/logos/spk-logo-druck.png" alt="Logo der Sparkasse Jena-Saale-Holzland" title="Sparkasse Jena-Saale-Holzland" class="only-print">
+</div>
+
+            
+    <div class="if6_nav">
+        
+    <div class="nav-top" aria-hidden="true">
+        <ul>
+            
+            
+                
+    <li>
+        
+        <a href="/de/home/digitale-beratung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Digitale Beratung</span></a>
+    </li>
+
+            
+                
+    <li>
+        <a href="#"><span>Produkte</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/junge-kunden1.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Junge Kunden</span></a>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/private-banking.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Private Banking</span></a>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/karriere.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Karriere</span></a>
+    </li>
+
+            
+                
+    <li>
+        <a href="#"><span>Ihre Sparkasse</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/vorteilswelt.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Vorteilswelt</span></a>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/service.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Service-Center</span></a>
+    </li>
+
+            
+        </ul>
+        <div aria-hidden="true" class="nav-top-less"><a href="#" tabindex="-1">Zurück</a></div>
+        <div aria-hidden="true" class="nav-top-more"><a href="#" tabindex="-1">Mehr</a></div>
+    </div>
+
+
+        <div class="nav-pageoverlay"></div>
+        <div class="nav-background" style="padding-left: 300px; width: 1035.34px;">
+            <a href="#" class="close-icon nav-close">Schließen</a>
+        </div>
+        <div class="nav-full-container" data-waypoint-name="tour-nav-full-container-waypoint">
+            <div class="logo parbase">
+    <a href="/de/home.html?n=true&amp;stref=logo" title="Sparkasse Jena-Saale-Holzland" data-target_level="0" data-target_navigation="de">
+        
+        
+            
+            
+            
+                
+                <picture>
+                    <source srcset="/content/dam/myif/sk-jena-saale-holzland/work/bilder/nbf-logos/logo_weiss_jena.svg" media="(prefers-color-scheme: dark)">
+                    <img src="/content/dam/myif/sk-jena-saale-holzland/work/bilder/nbf-logos/logo_rot_jena.svg" alt="Logo der Sparkasse Jena-Saale-Holzland">
+                </picture>
+            
+            
+            
+                
+                <picture>
+                    <source srcset="/content/dam/myif/sk-jena-saale-holzland/work/bilder/nbf-logos/mobile_logo_SK_72px_dark.svg" media="(prefers-color-scheme: dark)">
+                    <img src="/content/dam/myif/sk-jena-saale-holzland/work/bilder/nbf-logos/Bildmarke_S-Sparkasse_72px.svg" alt="Logo der Sparkasse Jena-Saale-Holzland" class="symbol">
+                </picture>
+            
+            
+        
+        
+        
+    </a>
+	<img src="/content/dam/myif/sk-jena-saale-holzland/work/bilder/logos/spk-logo-druck.png" alt="Logo der Sparkasse Jena-Saale-Holzland" title="Sparkasse Jena-Saale-Holzland" class="only-print">
+</div>
+
+            
+                <div class="nav-misc">
+                    <a href="#" class="nav-search">Suche</a>
+					<a href="#" class="nav-close">Schließen</a>
+                </div>
+            
+            <div class="nav-full-content">
+                <nav class="nav-full scroll-container contains-h2" style="width: 1035.34px;">
+                    <p class="h2">Alle Themen</p>
+                    
+                    
+                        <ul>
+                            
+	
+
+
+                            
+    
+        
+    <li>
+        
+        <a href="/de/home/digitale-beratung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Digitale Beratung</span></a>
+        
+    </li>
+
+    
+        
+    <li>
+        <a href="#"><span>Produkte</span></a>
+        
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Produkte">Zurück</a>
+            <p class="h2">Produkte</p>
+            <ul>
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/online-produkte.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Online-Produkte</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/girokonto.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Girokonto</span></a>
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Girokonto">Zurück</a>
+            <p class="h2">Girokonto</p>
+            <ul>
+                
+    <li class="overview">
+        
+        <a href="/de/home/privatkunden/girokonto.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Übersicht</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/girokonto/girokonto-classic.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Giro Klassik</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/girokonto/girokonto-komfort.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Giro Komfort Plus</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/girokonto/giro-digital.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Giro Digital</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/girokonto/girokonto-start.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Konto mit Zukunft</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/girokonto/sparkassencard.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Sparkassen-Card (Debitkarte)</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/online-banking.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Online-Banking</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kreditkarte.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Kartenprodukte</span></a>
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Kartenprodukte">Zurück</a>
+            <p class="h2">Kartenprodukte</p>
+            <ul>
+                
+    <li class="overview">
+        
+        <a href="/de/home/privatkunden/kreditkarte.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Übersicht</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kreditkarte/Digitaler-Kartenkompass.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Digitaler Kartenkompass</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kreditkarte/visa-card.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Visa Card Standard (Kreditkarte)</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kreditkarte/visa-card-gold.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Visa Gold (Kreditkarte)</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kreditkarte/visa-basis.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Visa Basis (Debitkarte)</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Kredite und Finanzierungen</span></a>
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Kredite und Finanzierungen">Zurück</a>
+            <p class="h2">Kredite und Finanzierungen</p>
+            <ul>
+                
+    <li class="overview">
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Übersicht</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/dispositionskredit.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Dispositionskredit</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/sparkassen-autokredit.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Autokredit</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/sparkassen-privatkredit.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Privatkredit</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/privatkredit.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Privatkredit Nachhaltigkeit</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/baufinanzierung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Baufinanzierung</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/modernisierungskredit.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Modernisierungs­kredit</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/kfw-foerderkredite.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>KfW-Förderkredite</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/kreditoptimierung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Kreditoptimierung</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/kredite-und-finanzierungen/ratenkredit-aus-kontoumsaetzen-skp.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Ratenkredit aus Kontoumsätzen</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Sparen und Anlegen</span></a>
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Sparen und Anlegen">Zurück</a>
+            <p class="h2">Sparen und Anlegen</p>
+            <ul>
+                
+    <li class="overview">
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Übersicht</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/sparkassenbuch.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Sparbuch Digital</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/festgeld.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Festgeld</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/tagesgeld.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Tagesgeld</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/vl-sparen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>VL-Sparen</span></a>
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: VL-Sparen">Zurück</a>
+            <p class="h2">VL-Sparen</p>
+            <ul>
+                
+    <li class="overview">
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/vl-sparen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Übersicht</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/vl-sparen/deka-investmentfonds.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Deka</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/vl-sparen/lbs-bausparen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>LBS-Bausparen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/vl-sparen/betriebliche-altersversorgung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Betriebliche Altersversorgung</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/zuwachssparen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Zuwachssparen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/sparkassenbrief.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Sparkassenbrief</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/ps-los-sparen-thueringen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>PS-Los-Sparen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/deka-investment-einsprung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Deka-Investments</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/edelmetalle-einsprung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Edelmetalle</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparen-und-anlegen/indexgarant-einsprung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>IndexGarant</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Wertpapiere und Börse</span></a>
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Wertpapiere und Börse">Zurück</a>
+            <p class="h2">Wertpapiere und Börse</p>
+            <ul>
+                
+    <li class="overview">
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Übersicht</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse/wertpapier-depot.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Sparkassen­depot</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse/deka-investments.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Deka-Investments</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse/boerseninformationen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Börseninformationen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse/bevestor.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>bevestor</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse/zertifikate-der-dekabank.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Zertifikate-Angebot der DekaBank</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse/fonds-finder.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Fonds-Finder</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/wertpapiere-und-boerse/deka-etfs.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Deka ETFs</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/altersvorsorge.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Sparkassen-Altersvorsorge</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/versicherungen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Versicherungen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Immobilien</span></a>
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Immobilien">Zurück</a>
+            <p class="h2">Immobilien</p>
+            <ul>
+                
+    <li class="overview">
+        
+        <a href="/de/home/privatkunden/immobilien.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Übersicht</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien/immobilie-verkaufen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Immobilie verkaufen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien/immobilienangebote.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Immobilienangebote</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien/immobilie-finanzieren.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Immobilie finanzieren</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien/immobilie-modernisieren.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Immobilie modernisieren</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien/immobilie-schuetzen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Immobilie schützen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien/wissenswertes.html?n=true&amp;stref=hnav" target="_blank" data-target_level="0" data-target_navigation="de"><span>Wissenswertes</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/immobilien/ihr-beraterteam.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Ihr Beraterteam</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/lbs-bausparen.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>LBS-Bausparen</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/sparkassen-finanzkonzept.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Sparkassen-Finanzkonzept</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/vereine.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Vereine</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/privatkunden/private-banking.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Private Banking</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+    
+        
+    <li>
+        
+        <a href="/de/home/junge-kunden1.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Junge Kunden</span></a>
+        
+    </li>
+
+    
+        
+    <li>
+        
+        <a href="/de/home/private-banking.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Private Banking</span></a>
+        
+    </li>
+
+    
+        
+    <li>
+        
+        <a href="/de/home/karriere.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Karriere</span></a>
+        
+    </li>
+
+    
+        
+    <li>
+        <a href="#"><span>Ihre Sparkasse</span></a>
+        
+        <div class="scroll-container contains-h2">
+            <a href="#" class="nav-up" title="Zurück zu: Ihre Sparkasse">Zurück</a>
+            <p class="h2">Ihre Sparkasse</p>
+            <ul>
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/ihre-sparkasse-vor-ort.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Ihre Sparkasse vor Ort</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/karriere.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Karriere bei der Sparkasse</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/stiftung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Stiftung</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/presse-center.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Presse-Center</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/sparkassen-schulservice.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Sparkassen-SchulService</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/social_media_vorstellung.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Social Media</span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/weil-es-um-mehr-als-geld-geht.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Weil’s um mehr als Geld geht </span></a>
+        
+    </li>
+
+            
+                
+    <li>
+        
+        <a href="/de/home/ihre-sparkasse/nachhaltigkeit-ueberblick.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Nachhaltigkeit</span></a>
+        
+    </li>
+
+            </ul>
+        </div>
+    </li>
+
+    
+        
+    <li>
+        
+        <a href="/de/home/vorteilswelt.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>S-Vorteilswelt</span></a>
+        
+    </li>
+
+    
+        
+    <li>
+        
+        <a href="/de/home/service.html?n=true&amp;stref=hnav" data-target_level="0" data-target_navigation="de"><span>Service-Center</span></a>
+        
+    </li>
+
+    
+
+
+                        </ul>
+                    
+                    
+                <div class="nav-concierge">
+                    <ul>
+	 <li>
+	
+	
+	
+	
+    	<a href="#" class="nav-contact" title="Hilfe und Kontakt">
+			Hilfe und Kontakt
+			
+			
+		</a>
+    	
+	
+</li>
+
+	
+	
+    <li><a class="nav-siteselect" href="/fi/home.html?stref=siteswitch" title="Startseite für Firmenkunden" data-target_level="0" data-target_navigation="fi">zu Firmenkunden wechseln</a>
+    </li>
+    
+
+
+</ul>
+
+                </div></nav>
+                <div class="nav-concierge">
+                    <ul>
+	 <li>
+	
+	
+	
+	
+    	<a href="#" class="nav-contact" title="Hilfe und Kontakt">
+			Hilfe und Kontakt
+			
+			
+		</a>
+    	
+	
+</li>
+
+	
+	
+    <li><a class="nav-siteselect" href="/fi/home.html?stref=siteswitch" title="Startseite für Firmenkunden" data-target_level="0" data-target_navigation="fi">zu Firmenkunden wechseln</a>
+    </li>
+    
+
+
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            
+
+            
+<div class="search" role="search">
+    <div class="search-pageoverlay" onclick="$('body').removeClass('search_visible');"></div>
+
+    <form id="head_ftsearch" target="_top" method="GET" action="/de/home/misc/suche.html" data-autosuggest_count="10" data-instantresults_count="3" data-instantresults_resultsheadline="Top-Suchtreffer" data-instantresults_showallresults="Alle Suchergebnisse anzeigen" data-instantresults_didyoumean="Meinten Sie" data-sinvestor_instid="0004180" data-sinvestor_instantresults_count="0" data-sinvestor_link_deka_fonds="/content/myif/sk-jena-saale-holzland/work/filiale/de/home/privatkunden/deka-investments/deka-fondsprofil.html" data-sinvestor_link_deka_zertifikate="/content/myif/sk-jena-saale-holzland/work/filiale/de/home/privatkunden/deka-investments/deka-zertifikatsprofil.html" data-sinvestor_url="/content/myif/sk-jena-saale-holzland/work/filiale/de/home/misc/vps/gate/_jcr_content.bin/sinvestor_search/search" data-sinvestor_name_shares="Aktien" data-sinvestor_name_bonds="Anleihen" data-sinvestor_name_funds="Fonds" data-sinvestor_name_certs="Zertifikate" data-sinvestor_title="Wertpapiere" data-sinvestor_showallresults="Alle Wertpapiere anzeigen">
+        <input type="hidden" name="_charset_" value="UTF-8">
+        <label for="search">Wonach möchten Sie suchen?</label><input id="search" type="text" value="" name="q" class="" autocomplete="off">
+
+        <div class="sayt-display-detect"></div>
+<div class="sayt-container" id="sayt-container" style="display: none;">
+    <div class="autocomplete-suggestions-wrapper" style="display: none;"><div class="autocomplete-suggestions-title-wrapper"><div class="h3 autocomplete-suggestions-title">Meinten Sie</div></div><div class="autocomplete-suggestions" style="display: none;"></div></div>
+    
+    <div class="sayt-results" style="display: none;"></div>
+    <div class="sinvestor-results" style="display: none;"></div>
+</div>
+
+    </form>
+    <a id="head_search_button" onclick="$('body').toggleClass('search_visible').removeClass('login_visible');if ($('body').hasClass('search_visible')){$('#search').focus();}else{if ($('#search').get(0).value.length > 0){$('#head_ftsearch').submit();}return false;}" href="#" title="Suche" data-waypoint-name="tour-searchbutton-waypoint">Suche</a>
+
+</div>
+
+            <div class="header-misc" data-waypoint-name="tour-header-misc-waypoint">
+                
+                
+				
+                
+                
+                
+                
+                    
+    <form class="nav-login" action="/de/home/login-online-banking.html" method="get">
+        
+    
+        
+            <input type="hidden" name="stref" value="login">
+        
+    
+        
+            <input type="hidden" name="n" value="true">
+        
+    
+
+        <button aria-label="Melden Sie sich an" title="Melden Sie sich an" tabindex="1">Anmelden
+        </button>
+    </form>
+
+
+                    
+                
+                
+                <a href="#" class="nav-main nbf-guided-tour-navigation_main" data-waypoint-name="tour-header-navigation_main">Hauptnavigation</a>
+            </div>
+        </div>
+    </div>
+
+
+<div class="if6_outer if6_iconbar" aria-hidden="true">
+    <div class="if6_inner">
+        <div class="iconbar_overlay"></div>
+        <div class="iconbar"></div>
+        <div class="if6_contact m-m-c-c-p-contact" role="complementary" aria-label="Kontaktbereich"><a href="#" title="Kontaktbereich" aria-expanded="false">Kontaktbereich</a><a href="#" title="Kontaktbereich" aria-expanded="false">Kontaktbereich</a>
+    <a href="#" title="Kontaktbereich" aria-expanded="false">Kontaktbereich</a>
+    
+    <div style="display: none;"><a href="#" class="close-icon" title="Schließen"></a>
+        <div class="contactiparsys m-m-c-c-p-contact_iparsys"><div class="m-m-c-c-a-c-buttonarea c_block section">
+
+<div>    
+        
+            
+        
+            
+        
+            
+        <div class="c_button special section">
+
+
+
+
+
+<a class="icon-phone" href="/de/home/toolbar/kontakt.html?n=true&amp;stref=buttonspecial" data-target_level="0" data-target_navigation="de"><span>Kunden-Service-Center<br></span>03641-679 0</a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button special section">
+
+
+
+
+
+<a class="icon-phone" href="/de/home/toolbar/kontakt.html?n=true&amp;stref=buttonspecial" data-target_level="0" data-target_navigation="de"><span>Telefon-Banking<br></span>03641-679 88 77 </a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+<a class="icon-chat chatlink" target="Beraterchat">Sparkassen-Chat</a>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+
+
+
+
+<a class="icon-whatsapp" href="/de/home/service/formulare/rueckruf-anfordern.html?n=true&amp;stref=buttonstandard" data-target_level="0" data-target_navigation="de">Rückrufwunsch</a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+
+
+
+
+<a class="icon-location1" href="/de/home/service/filiale-finden.html?n=true&amp;stref=buttonstandard" data-target_level="0" data-target_navigation="de">Filiale finden</a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+
+
+
+
+<a class="icon-mail" href="/de/home/onlinebanking/e_postfach/Nachricht-schreiben/einsprung_nachricht_schreiben_technisch.html?n=true&amp;stref=buttonstandard" data-target_level="0" data-target_navigation="de">Nachricht schreiben</a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+
+
+
+
+<a class="icon-calendar" href="/de/home/kontakt-neo/terminvereinbarung.html?n=true&amp;stref=buttonstandard" data-target_level="0" data-target_navigation="de">Termin vereinbaren</a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+
+
+
+
+<a class="icon-phone" href="/de/home/service/kartenverlust.html?n=true&amp;stref=buttonstandard" target="_top" data-target_level="0" data-target_navigation="de">Notrufnummern</a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+
+
+
+
+<a class="icon-facebook" href="https://www.facebook.com/sparkassejena" target="_blank" rel="noopener">facebook</a>
+
+
+
+
+
+
+</div>
+
+            
+        <div class="c_button standard section">
+
+
+
+
+
+<a class="icon-instagram" href="https://www.instagram.com/sparkasse_jena/" target="_blank" rel="noopener">Instagram</a>
+
+
+
+
+
+
+</div>
+
+            </div>
+</div>
+<div class="m-m-c-c-a-c-buttonarea c_block section">
+
+<div>    
+        
+            
+        
+            
+        
+            </div>
+</div>
+<div class="c_block section contains-h3">
+<div class="c_block_heading h3">Unsere BLZ &amp; BIC</div>
+<table>
+	<tbody><tr><th>BLZ</th><td>83053030</td></tr>
+	<tr><th>BIC</th><td>HELADEF1JEN</td></tr>
+</tbody></table>
+
+</div>
+<div class="iparys_inherited"><div class="contactiparsys iparsys parsys "></div>
+</div>
+</div>
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+
+	
+
+
+
+<div class="if6_outer if6_openerstage swipe-horizontal" aria-hidden="true"><div class="if6_inner" style="height: 833.438px;">
+
+	<div class="if6_opener" style="left: 0px; height: 833.438px;"><div class="ref"><div class="ty1"><div class="overlay-top">
+	<p class="contains-h1"><span class="h1">Sparkassen-Osterwochen</span></p>
+<h2>Hase schon gehört?<br>
+</h2>
+
+</div>
+
+<div class="opener_image" data-imgalt="Osterhase sitzt auf einem Tisch neben einem gefüllten Osternest" data-imgsrc="https://www.s-jena.de/de/home/_jcr_content/opener/openerref1.epimgref.jpg/1743414517578.jpg" style="height: auto;"><img onload="this.loaded=true;$(window).resize();" src="https://www.s-jena.de/de/home/_jcr_content/opener/openerref1.epimgref.res1920.jpg/1743414517578.jpg" alt="Osterhase sitzt auf einem Tisch neben einem gefüllten Osternest" title=""></div>
+
+	<div class="opener_inner">
+		<div>
+			<div class="overlay">
+				<a title="Jetzt mitmachen bei den Sparkassen-Osterwochen" href="/de/home/aktionen/sparkassen-osterwoche.html?n=true&amp;stref=opener" data-target_level="0" data-target_navigation="de">
+					<div class="overlay-top">
+						<p class="contains-h1"><span class="h1">Sparkassen-Osterwochen</span></p>
+<h2>Hase schon gehört?<br>
+</h2>
+
+					</div>
+					<p>Jeden Tag die Chance auf versteckte Oster-Gewinne im Gesamt­wert von 25.000&nbsp;Euro sichern. Ihre Sparkasse wünscht Ihnen eine frohe und bunte Osterzeit.<br>
+</p>
+
+				</a>
+				<a class="linktext" href="/de/home/aktionen/sparkassen-osterwoche.html?n=true&amp;stref=opener" title="Jetzt mitmachen bei den Sparkassen-Osterwochen" data-target_level="0" data-target_navigation="de">Jetzt mitmachen</a>
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div></div>
+
+
+
+	<div class="if6_opener" style="left: 1905px; margin-top: -833.438px; height: 833.438px;"><div class="ref"><div class="ty1"><div class="overlay-top">
+	<h1>S-Privatkredit</h1>
+<h2>Freiheit auf zwei Rädern&nbsp;– Finanzierung sichern</h2>
+
+</div>
+
+<div class="opener_image" data-imgalt="Rennradfahrer in schwarzer Sportkleidung" data-imgsrc="https://www.s-jena.de/de/home/_jcr_content/opener/openerref2.epimgref.jpg/1740396652892.jpg" style="height: auto;"><img onload="this.loaded=true;$(window).resize();" src="https://www.s-jena.de/de/home/_jcr_content/opener/openerref2.epimgref.res1920.jpg/1740396652892.jpg" alt="Rennradfahrer in schwarzer Sportkleidung" title=""></div>
+
+	<div class="opener_inner">
+		<div>
+			<div class="overlay">
+				<a title="Mehr zum S-Privatkredit" href="/de/home/privatkunden/kredite-und-finanzierungen/sparkassen-privatkredit.html?n=true&amp;stref=opener" data-target_level="0" data-target_navigation="de">
+					<div class="overlay-top">
+						<h1>S-Privatkredit</h1>
+<h2>Freiheit auf zwei Rädern&nbsp;– Finanzierung sichern</h2>
+
+					</div>
+					<p>Für mehr Mobilität: Finanzieren Sie Ihr neues Rennrad oder E-Bike sicher und flexibel mit dem S-Privatkredit.</p>
+
+				</a>
+				<a class="linktext" href="/de/home/privatkunden/kredite-und-finanzierungen/sparkassen-privatkredit.html?n=true&amp;stref=opener" title="Mehr zum S-Privatkredit" data-target_level="0" data-target_navigation="de">Mehr erfahren</a>
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div></div>
+
+
+
+	<div class="if6_opener" style="left: 3810px; margin-top: -833.438px; height: 833.438px;"><div class="ref"><div class="ty1"><div class="overlay-top">
+	<p class="contains-h1"><span class="h1">Online shoppen, 2&nbsp;Prozent Cashback sichern.</span><br>
+</p>
+
+</div>
+
+<div class="opener_image" data-imgalt="Frau hält Handy mit VISA-App nach vorne" data-imgsrc="https://www.s-jena.de/de/home/_jcr_content/opener/openerref3.epimgref.jpg/1740396610281.jpg" style="height: auto;"><img onload="this.loaded=true;$(window).resize();" src="https://www.s-jena.de/de/home/_jcr_content/opener/openerref3.epimgref.res1920.jpg/1740396610281.jpg" alt="Frau hält Handy mit VISA-App nach vorne" title=""></div>
+
+	<div class="opener_inner">
+		<div>
+			<div class="overlay">
+				<a title="Hier anmelden" href="https://visa.de/campaign/clp-spring-25/?utm_source=spayment&amp;utm_medium=banner&amp;utm_campaign=spring-clp-25" target="_blank" rel="noopener">
+					<div class="overlay-top">
+						<p class="contains-h1"><span class="h1">Online shoppen, 2&nbsp;Prozent Cashback sichern.</span><br>
+</p>
+
+					</div>
+					<p>Mit Visa sicher online shoppen und bis zu 25&nbsp;Euro Cashback* erhalten.</p>
+
+				</a>
+				<a class="linktext" href="https://visa.de/campaign/clp-spring-25/?utm_source=spayment&amp;utm_medium=banner&amp;utm_campaign=spring-clp-25" target="_blank" title="Hier anmelden" rel="noopener">Hier anmelden</a>
+				
+				<div class="footnote">
+					<p>*18.03. - 15.04.2025: 2&nbsp;Prozent Cashback auf Online-Zahlungen bis zu 50&nbsp;Euro mit Visa Debit-/Kreditkarten (max. 25&nbsp;Euro je Karte / 500.000&nbsp;Euro für alle Teilnehmenden insgesamt). Teilnahme ab 18. Vorzeitiges Ende möglich. Es gelten Teilnahmebedingungen.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div></div>
+
+
+
+	<div class="if6_opener" style="left: 5715px; margin-top: -833.438px; height: 833.438px;"><div class="ref"><div class="ty1"><div class="overlay-top">
+	<h1>Wir investieren in moderne SB-Geräte.</h1>
+<h2>Jetzt auf elektronische Auszugserstellung wechseln!</h2>
+
+</div>
+
+<div class="opener_image" data-imgsrc="https://www.s-jena.de/de/home/_jcr_content/opener/openerref4.epimgref.jpg/1733393062408.jpg" style="height: auto;"><img onload="this.loaded=true;$(window).resize();" src="https://www.s-jena.de/de/home/_jcr_content/opener/openerref4.epimgref.res1920.jpg/1733393062408.jpg" alt="" title=""></div>
+
+	<div class="opener_inner">
+		<div>
+			<div class="overlay">
+				<a title="Jetzt Postfach freischalten" href="/de/home/service/elektronisches-postfach.html?n=true&amp;stref=opener" data-target_level="0" data-target_navigation="de">
+					<div class="overlay-top">
+						<h1>Wir investieren in moderne SB-Geräte.</h1>
+<h2>Jetzt auf elektronische Auszugserstellung wechseln!</h2>
+
+					</div>
+					<p>Für nachhaltige und bedarfsgerechte Services modernisieren wir unsere SB-Technik und reduzieren dabei schrittweise die Kontoauszugsdrucker. Der digitale Kontoauszug ist eine bequeme und umweltfreundliche Alternative zum Papierauszug.</p>
+
+				</a>
+				<a class="linktext" href="/de/home/service/elektronisches-postfach.html?n=true&amp;stref=opener" title="Jetzt Postfach freischalten" data-target_level="0" data-target_navigation="de">Jetzt Postfach freischalten</a>
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div></div>
+
+
+
+	<div class="if6_opener" style="left: 7620px; margin-top: -833.438px; height: 833.438px;"><div class="ref"><div class="ty1"><div class="overlay-top">
+	<h1>Optimal geschützt: mit Versicherungen für jede Lebenslage.</h1>
+<h2>Vertrauen Sie bei Ihrer Absicherung dem regionalen Marktführer für Versicherungsleistungen.</h2>
+
+</div>
+
+<div class="opener_image" data-imgsrc="https://www.s-jena.de/de/home/_jcr_content/opener/openerref5.epimgref.jpg/1738835584808.jpg" style="height: auto;"><img onload="this.loaded=true;$(window).resize();" src="https://www.s-jena.de/de/home/_jcr_content/opener/openerref5.epimgref.res1920.jpg/1738835584808.jpg" alt="" title=""></div>
+
+	<div class="opener_inner">
+		<div>
+			<div class="overlay">
+				<a title="Mehr erfahren" href="/de/home/privatkunden/versicherungen.html?n=true&amp;stref=opener" data-target_level="0" data-target_navigation="de">
+					<div class="overlay-top">
+						<h1>Optimal geschützt: mit Versicherungen für jede Lebenslage.</h1>
+<h2>Vertrauen Sie bei Ihrer Absicherung dem regionalen Marktführer für Versicherungsleistungen.</h2>
+
+					</div>
+					<p>Die Sparkasse ist der größte Versicherungsanbieter in Jena und dem Saale-Holzland. Mit dem S-Versicherungsmanager und der individuellen Beratung unserer Experten bieten wir Ihnen maßgeschneiderte Lösungen für Ihren Schutz.</p>
+
+				</a>
+				<a class="linktext" href="/de/home/privatkunden/versicherungen.html?n=true&amp;stref=opener" title="Mehr erfahren" data-target_level="0" data-target_navigation="de">Mehr erfahren</a>
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div></div><div class="carousel_play" style="top: auto;"><div><span class="left" onclick="$(this).trigger('carousel-prev',false);"></span><ul><li class="active" onclick="$(this).trigger('carousel-select',0);"></li><li onclick="$(this).trigger('carousel-select',1);"></li><li onclick="$(this).trigger('carousel-select',2);"></li><li onclick="$(this).trigger('carousel-select',3);"></li><li onclick="$(this).trigger('carousel-select',4);"></li></ul><span class="right" onclick="$(this).trigger('carousel-next',false);"></span></div></div>
+
+</div></div>
+
+<div class="if6_outer if6_homepagearea" aria-hidden="true"><div class="if6_inner">
+	<div class="parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="servicetiles section">
+<div class="parsys">    
+        
+            
+        
+            
+        
+            </div></div>
+
+            
+        <div class="servicetiles section">
+<div class="parsys">    
+        
+            
+        
+            
+        
+            </div></div>
+
+            
+        <div class="if6_teaserarea section">
+<div class="if6_teaser" style="height: 2px;"><div class="ref"></div></div><!--
+--><div class="if6_teaser" style="height: 2px;"><div class="ref"></div></div><!--
+--><div class="if6_teaser" style="height: 2px;"><div class="ref"></div></div></div>
+
+            
+        <div class="servicetiles section">
+<div class="parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="serviceelement parbase section">
+
+
+
+
+<a class="icon icon-smartphone" href="/de/home/service/sparkassen-app.html?n=true&amp;stref=product_tiles" title="Sparkassen-App" data-target_level="0" data-target_navigation="de">Sparkassen-App</a>
+
+
+</div>
+
+            
+        <div class="serviceelement parbase section">
+
+
+
+
+<a class="icon icon-card-magnetic-strip" href="/de/home/privatkunden/kreditkarte.html?n=true&amp;stref=product_tiles" title="Sparkassen-Kreditkarte" data-target_level="0" data-target_navigation="de">Sparkassen-Kreditkarte</a>
+
+
+</div>
+
+            
+        <div class="serviceelement parbase section">
+
+
+
+
+<a class="icon icon-car-palm" href="/de/home/privatkunden/kredite-und-finanzierungen/sparkassen-privatkredit.html?n=true&amp;stref=product_tiles" title="S-Privatkredit" data-target_level="0" data-target_navigation="de">S-Privatkredit</a>
+
+
+</div>
+
+            
+        <div class="serviceelement parbase section">
+
+
+
+
+<a class="icon icon-emblem" href="/de/home/privatkunden/versicherungen.html?n=true&amp;stref=product_tiles" title="Versicherungen" data-target_level="0" data-target_navigation="de">Versicherungen</a>
+
+
+</div>
+
+            
+        <div class="serviceelement parbase section">
+
+
+
+
+<a class="icon icon-homenav" href="/de/home/privatkunden/immobilien.html?n=true&amp;stref=product_tiles" title="Immobilien " data-target_level="0" data-target_navigation="de">Immobilien </a>
+
+
+</div>
+
+            
+        <div class="serviceelement parbase section">
+
+
+
+
+<a class="icon icon-handshake" href="/de/home/ihre-sparkasse/karriere.html?n=true&amp;stref=product_tiles" title="Jobbörse" data-target_level="0" data-target_navigation="de">Jobbörse</a>
+
+
+</div>
+
+            </div></div>
+
+            
+        <div class="if6_teaserarea section">
+<div class="if6_teaser" style="height: 261px;"><div class="ref"><div class="ty1"><a href="/de/home/service/sparkassen-app.html?n=true&amp;stref=teaser" title="Mehr zur Sparkassen-App" data-target_level="0" data-target_navigation="de"><!--
+--><div class="cont"><!--
+--><h2>Sparkassen-App</h2>
+<h3>Ausgezeichnetes Banking von überall. Mein Konto kann das.<br>
+</h3>
+<p>Lernen Sie die vielen hilf­reichen Funktionen der Sparkassen-App Ihres Girokontos kennen.<br>
+</p>
+<!--
+--></div><!--
+--><div class="bgimg"><img src="https://www.s-jena.de/de/home/_jcr_content/homepagearea/parsys/teaserarea_70d9/teaserref1.epimgref.jpg/1742458842488.jpg" alt="Person nutzt Mobile-Banking-App der Sparkasse auf dem Smartphone in einem Zug"></div><!--
+--><div class="textbutton"><span class="linktext"><span>Mehr erfahren</span></span></div><!--
+--></a><!--
+--></div>
+</div></div><!--
+--><div class="if6_teaser" style="height: 261px;"><div class="ref"><div class="ty1"><a href="/de/home/privatkunden/lbs-bausparen/lbs-bausparen-mit-staatlicher-foerderung.html?n=true&amp;stref=teaser" title="Mehr zum LBS-Bausparen mit staatlicher Förderung" data-target_level="0" data-target_navigation="de"><!--
+--><div class="cont"><!--
+--><h2>LBS-Bausparen mit staatlicher Förderung</h2>
+<h3>Schneller ins eigene Zuhause<br>
+</h3>
+<p>Mit LBS-Bausparen profitieren Sie gleich mehrfach von staatlichen Förderungen¹.</p>
+<!--
+--></div><!--
+--><div class="bgimg"><img src="https://www.s-jena.de/de/home/_jcr_content/homepagearea/parsys/teaserarea_70d9/teaserref2.epimgref.jpg/1738658428837.jpg" alt="Junge Frau mit Kaffeetasse und Handy in jeweils einer Hand"></div><!--
+--><div class="textbutton"><span class="linktext"><span>Mehr erfahren</span></span></div><!--
+--></a><!--
+--></div>
+</div></div><!--
+--><div class="if6_teaser" style="height: 261px;"><div class="ref"><div class="ty1"><a href="/de/home/service/edelmetalle-helaba.html?n=true&amp;stref=teaser" title="Mehr zu Edelmetalle" data-target_level="0" data-target_navigation="de"><!--
+--><div class="cont"><!--
+--><h2>Edelmetalle</h2>
+<h3>Zeitlos und sicher</h3>
+<p>Finden Sie bei Ihrer Sparkasse ein großes Angebot an Edelmetallen.</p>
+<!--
+--></div><!--
+--><div class="bgimg"><img src="https://www.s-jena.de/de/home/_jcr_content/homepagearea/parsys/teaserarea_70d9/teaserref3.epimgref.jpg/1669037193149.jpg" alt=""></div><!--
+--><div class="textbutton"><span class="linktext"><span>Mehr erfahren</span></span></div><!--
+--></a><!--
+--></div>
+</div></div></div>
+
+            
+        
+            
+        <div class="cbox cbox-large section" style="height: auto;">
+
+
+    
+<link rel="stylesheet" href="/etc/clientlibs/myif/sk-jena-saale-holzland/sfp/wp_kursleiste.min.980e2ba0061b6165086fba1c3ab31da4.css" type="text/css">
+<script src="/etc/clientlibs/myif/sk-jena-saale-holzland/sfp/wp_kursleiste.min.991ad2dabd8acab880dcfd26d03c8961.js"></script>
+
+
+
+
+<div id="wp_kursleiste_wp_kursleiste_e499" class="wp_kursleiste"><div><h2><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline2_wcpxa_17" data-testid="typography">Marktinformationen</span></h2><div class="wp_kursleiste__marketDataVisualization"><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=.GDAXI" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">DAX</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">20.374,10</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--neg ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">-0,92%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=.MDAXI" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">MDAX</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">25.774,26</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--pos ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">0,27%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=.TECDAX" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">TecDAX</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">3.297,43</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--neg ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">-0,43%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=.DJI" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">DJ Indikativ</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">40.212,00</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--pos ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">1,56%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=.IXIC" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">NASDAQ C.</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">16.724,46</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--pos ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">2,06%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=.STOXX50E" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">E-STOXX 50</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">4.787,23</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--neg ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">-0,66%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=EUR=X" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">EUR/USD</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">1,1360</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--pos ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">1,46%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=XAU=X" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">Gold</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">3.236,2124</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--pos ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">1,96%</span></p></div></div><div class="wp_kursleiste__marketDataVisualization__item"><a target="_blank" rel="noopener noreferrer" href="https://web.s-investor.de/app/detail.htm?INST_ID=0004180&amp;sym=BFO-" class="wp_kursleiste__marketDataVisualization__item__stock"><span class="ifaTypography__root _typography_wcpxa_8 _typography--headline5_wcpxa_35" data-testid="typography">Öl/Brent</span></a><div class="wp_kursleiste__marketDataVisualization__item__data"><p><span class="wp_kursleiste__marketDataVisualization__item__price ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">66,830</span></p><p><span class="wp_kursleiste__marketDataVisualization__item__diffRel--pos ifaTypography__root _typography_wcpxa_8 _typography--multiline1_wcpxa_47" data-testid="typography">2,09%</span></p></div></div></div><div class="wp_kursleiste__viewContainer__actions"><a class="wp_kursleiste__viewContainer__actions__summaryLink ifaLinkButton__root _linkButton_esnrk_15 _linkButton--tertiary_esnrk_15 _linkButton--iconRight_esnrk_138" data-rac="" data-testid="link-button" href="https://web.s-investor.de/app/markt.htm?INST_ID=0004180" target="_blank">Weitere Marktinformationen<svg width="1rem" height="1rem" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" data-testid="link-button-icon" class="ifaLinkButton__icon"><path d="M7.9714,22a1.028,1.028,0,0,0,.7276-.3008l9-9.0078a1.03,1.03,0,0,0,0-1.4551l-9-9.0078A1.0289,1.0289,0,0,0,7.2439,3.6836l8.2734,8.28-8.2734,8.28A1.0284,1.0284,0,0,0,7.9714,22Z"></path></svg></a></div></div></div>
+<script>
+
+	wp_kursleiste.create({
+		container: "wp_kursleiste_wp_kursleiste_e499",
+  		url: "\/content\/myif\/sk\u002Djena\u002Dsaale\u002Dholzland\/work\/filiale\/de\/home\/misc\/vps\/gate\/_jcr_content.bin/wp_infos/kursleiste?INST_ID=0004180",
+        strings: {
+			Marktinformationen: "Marktinformationen",
+			'Weitere Marktinformationen': "Weitere Marktinformationen"
+        }
+	});
+</script></div>
+
+            
+        <div class="parbase section">
+
+    
+<link rel="stylesheet" href="/etc/clientlibs/myif/sk-jena-saale-holzland/sfp/s_app_info.min.9de96b1d86e28372e5ae30e36d2e185b.css" type="text/css">
+<script src="/etc/clientlibs/myif/sk-jena-saale-holzland/sfp/s_app_info.min.4102b8bd530d02a6f2859830e2ec2d69.js"></script>
+
+
+
+
+
+
+<div id="s_app_info-container_s_app_info_85cd" class="s_app_info"><div class="overlayContainer" style="display:none;" data-reactid=".0"><a class="close" data-reactid=".0.0"></a><div class="contentContainer" data-reactid=".0.1"><h1 data-reactid=".0.1.0">Die Sparkassen-App</h1><p data-reactid=".0.1.1">Deutschlands meistgenutzte Banking-App</p><a class="link" href="" data-reactid=".0.1.2"></a><div class="options no-if6-changes" style="display:inherit;" data-reactid=".0.1.3"><div style="position:relative;display:inline-block;" class="no-if6-changes" data-reactid=".0.1.3.0"><input style="visibility:hidden;-webkit-appearance:none;-moz-appearance:none;appearance:none;" name="test" type="checkbox" data-reactid=".0.1.3.0.0"><span tabindex="0" style="width:18px;height:18px;font:18px/90% Pictos-IF;text-align:center;color:#FFFFFF;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);cursor:pointer;background-color:#FFFFFF;border:2px solid #666666;border-radius:5px;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;-user-select:none;" data-reactid=".0.1.3.0.1"></span></div><label class="m30-checkbox-label small optionsLabel" data-reactid=".0.1.3.1"><span data-reactid=".0.1.3.1.0">Nicht mehr anzeigen</span><span data-reactid=".0.1.3.1.1"> </span></label></div></div></div></div>
+
+<script>
+
+    SAppInfo.create('s_app_info-container_s_app_info_85cd', {
+        headline : 'Die Sparkassen\u002DApp',
+        subline : 'Deutschlands meistgenutzte Banking\u002DApp',
+		optionText: 'Nicht mehr anzeigen',
+		optionBoolean: 'true',
+        platform : {
+            ios : {
+                label : 'Jetzt installieren',
+                href : 'https:\/\/apps.apple.com\/de\/app\/s\u002Dfinanzstatus\u002Dmobile\u002Dbanking\/id320599923'
+            },
+            android : {
+                label : 'Jetzt installieren',
+                href : 'https:\/\/play.google.com\/store\/apps\/details?id=com.starfinanz.smob.android.sfinanzstatus\x26hl=de'
+            }
+        },
+        cookie : { 
+            name  : window.location.pathname.startsWith("/fi") ? 's_app_fi_info_shown' : 's_app_info_shown',
+            value : 'true',
+            path  : '/',
+            expires : '',
+            secure : 'true'
+        },
+		cookieTwo : {
+			name  : window.location.pathname.startsWith("/fi") ? 's_app_fi_info_visibility' : 's_app_info_visibility',
+			value : 'true',
+			path  : '/',
+			expires : '21',
+			secure : 'true'
+        }
+
+    });
+			
+</script>
+</div>
+
+            
+        <div class="chatbot_linda_link parbase section">
+
+    
+<script src="/etc/clientlibs/myif/sk-jena-saale-holzland/sfp/chatbot_linda_link.min.cb457f530615dd27e05a6e3b63979378.js"></script>
+
+
+
+
+
+
+<div id="chatbot_linda_link_chatbot_linda_link_fd1b" class="chatbot_linda_link"><div class="chatbot_linda_link__container" style="display: none;"><svg class="chatbot_linda_link__close" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path fill="rgb(125, 125, 125)" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path><path fill="rgb( 255, 255, 255 )" d="M 12 2 z m 5 13.59 L 15.59 17 L 12 13.41 L 8.41 17 L 7 15.59 L 10.59 12 L 7 8.41 L 8.41 7 L 12 10.59 L 15.59 7 L 17 8.41 L 13.41 12 L 17 15.59 z"></path></svg><a href="https://redirector.webservices.sparkasse.de/?tu_key=chatbotlinda&amp;tu_bez=bot&amp;blz=83053030" target="_blank" rel="noreferrer noopener" class="chatbot_linda_link__button"><img src="/etc/clientlibs/myif/sk-jena-saale-holzland/sfp/chatbot_linda_link/images/linda.svg" style="width: 100px; height: 100px;"></a><a href="https://redirector.webservices.sparkasse.de/?tu_key=chatbotlinda&amp;tu_bez=bot&amp;blz=83053030" target="_blank" rel="noreferrer noopener" class="chatbot_linda_link__bubble"><p class="chatbot_linda_link__text">Hallo, ich bin Linda, Ihre virtuelle Assistentin.</p></a></div></div>
+
+<script>
+
+		(function(){
+			
+    chatbot_linda_link.create({
+		container: 'chatbot_linda_link_chatbot_linda_link_fd1b',
+        text : 'Hallo, ich bin Linda, Ihre virtuelle Assistentin.',
+		link: "https://redirector.webservices.sparkasse.de/?tu_key=chatbotlinda&tu_bez=bot&blz=83053030",
+		delay: '10000',
+		path:  '/etc/clientlibs/myif/sk\u002Djena\u002Dsaale\u002Dholzland/sfp/chatbot_linda_link',
+     
+    });
+		
+			
+		})();
+</script>
+</div>
+
+            </div>	
+</div></div>
+
+	
+
+
+
+
+    
+
+
+
+
+
+<div class="if6_outer if6_contactstage hide100" aria-hidden="true">
+    
+
+    <div class="if6_inner">
+            <div class="cshead">Immer in Ihrer Nähe</div>
+
+            <div class="phoneparsys parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="cs-phone cs-main section"><a href="tel:03641-679 0"><span class="cs-title">Persönlicher Kontakt</span><span class="cs-number">03641-679 0</span></a></div>
+
+            
+        <div class="cs-phone section"><a href="tel:116116"><span class="cs-title">24h Sperr-Notruf</span><span class="cs-number">116 116</span></a></div>
+
+            </div>
+            <div class="cs-link"><a href="/de/home/toolbar/kontakt.html" data-target_level="0" data-target_navigation="de">Alle Kontaktmöglichkeiten</a>
+
+</div>
+
+            <div class="buttonparsys parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+
+
+
+<a class="icon-calendar" href="/de/home/kontakt-neo/terminvereinbarung.html?n=true&amp;stref=kontakt_footer" title="Termin vereinbaren" data-target_level="0" data-target_navigation="de"><span>Termin vereinbaren</span></a>
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+<a class="icon-chat chatlink" target="Beraterchat" title="Chat starten"><span>Chat starten</span></a>
+
+
+
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+
+
+
+<a class="icon-mail" href="/de/home/onlinebanking/e_postfach/Nachricht-schreiben/einsprung_nachricht_schreiben_technisch.html?n=true&amp;stref=kontakt_footer" title="Nachricht schreiben" data-target_level="0" data-target_navigation="de"><span>Nachricht schreiben</span></a>
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+
+
+
+<a class="icon-locations" href="/de/home/service/filiale-finden.html?n=true&amp;stref=kontakt_footer" title="Filiale finden" data-target_level="0" data-target_navigation="de"><span>Filiale finden</span></a>
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+<div>
+	
+
+
+
+
+<a class="icon-facebook" href="https://www.facebook.com/sparkassejena" target="_blank" title="Facebook" rel="noopener"><span>Facebook</span></a>
+
+
+<br>
+	
+
+
+
+
+<a class="icon-instagram" href="https://www.instagram.com/sparkasse_jena/" target="_blank" title="Instagram" rel="noopener"><span>Instagram</span></a>
+
+
+<br>
+	
+
+
+
+
+
+
+
+        
+</div>
+
+
+</div>
+
+            </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="if6_outer if6_service" role="navigation" aria-label="Service-Bereich" aria-hidden="true">
+	<div class="if6_inner"><div class="parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="servicelink section">
+
+
+
+
+<a class="icon-page-pen" href="/de/home/service/freistellungsauftrag.html?n=true&amp;stref=service_links" title="Freistellungsauftrag beantragen" data-target_level="0" data-target_navigation="de"><span>Freistellungsauftrag beantragen</span></a>
+
+
+</div>
+
+            
+        <div class="servicelink section">
+
+
+
+
+<a class="icon-calculator" href="/de/home/service/iban-rechner.html?n=true&amp;stref=service_links" title="IBAN &amp; BIC berechnen" data-target_level="0" data-target_navigation="de"><span>IBAN &amp; BIC berechnen</span></a>
+
+
+</div>
+
+            
+        <div class="servicelink section">
+
+
+
+
+<a class="icon-laptop-euro" href="/de/home/service/online-mobile-banking.html?n=true&amp;stref=service_links" title="Online-Banking beantragen" data-target_level="0" data-target_navigation="de"><span>Online-Banking beantragen</span></a>
+
+
+</div>
+
+            </div><div class="parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="servicelink section">
+
+
+
+
+<a class="icon-person-tie" href="/de/home/kontakt-neo/terminvereinbarung.html?n=true&amp;stref=service_links" title="Termin vereinbaren" data-target_level="0" data-target_navigation="de"><span>Termin vereinbaren</span></a>
+
+
+</div>
+
+            
+        <div class="servicelink section">
+
+
+
+
+<a class="icon-app" href="/de/home/service/sparkassen-app.html?n=true&amp;stref=service_links" title="Sparkassen-App downloaden" data-target_level="0" data-target_navigation="de"><span>Sparkassen-App downloaden</span></a>
+
+
+</div>
+
+            
+        <div class="servicelink section">
+
+
+
+
+<a class="icon-health" href="/de/home/service.html?n=true&amp;stref=service_links" title="Alle Services und Formulare" data-target_level="0" data-target_navigation="de"><span>Alle Services und Formulare</span></a>
+
+
+</div>
+
+            </div></div>
+</div>
+
+
+<div class="if6_outer if6_contactstage hide500 hide900" aria-hidden="true">
+    
+
+    <div class="if6_inner">
+            <div class="cshead">Immer in Ihrer Nähe</div>
+
+            <div class="phoneparsys parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="cs-phone cs-main section"><a href="tel:03641-679 0"><span class="cs-title">Persönlicher Kontakt</span><span class="cs-number">03641-679 0</span></a></div>
+
+            
+        <div class="cs-phone section"><a href="tel:116116"><span class="cs-title">24h Sperr-Notruf</span><span class="cs-number">116 116</span></a></div>
+
+            </div>
+            <div class="buttonparsys parsys">    
+        
+            
+        
+            
+        
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+
+
+
+<a class="icon-calendar" href="/de/home/kontakt-neo/terminvereinbarung.html?n=true&amp;stref=kontakt_footer" title="Termin vereinbaren" data-target_level="0" data-target_navigation="de"><span>Termin vereinbaren</span></a>
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+<a class="icon-chat chatlink" target="Beraterchat" title="Chat starten"><span>Chat starten</span></a>
+
+
+
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+
+
+
+<a class="icon-mail" href="/de/home/onlinebanking/e_postfach/Nachricht-schreiben/einsprung_nachricht_schreiben_technisch.html?n=true&amp;stref=kontakt_footer" title="Nachricht schreiben" data-target_level="0" data-target_navigation="de"><span>Nachricht schreiben</span></a>
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+
+
+
+
+
+
+<a class="icon-locations" href="/de/home/service/filiale-finden.html?n=true&amp;stref=kontakt_footer" title="Filiale finden" data-target_level="0" data-target_navigation="de"><span>Filiale finden</span></a>
+
+
+
+
+</div>
+
+            
+        <div class="cs-button hide100 hide500 section">
+<div>
+	
+
+
+
+
+<a class="icon-facebook" href="https://www.facebook.com/sparkassejena" target="_blank" title="Facebook" rel="noopener"><span>Facebook</span></a>
+
+
+<br>
+	
+
+
+
+
+<a class="icon-instagram" href="https://www.instagram.com/sparkasse_jena/" target="_blank" title="Instagram" rel="noopener"><span>Instagram</span></a>
+
+
+<br>
+	
+
+
+
+
+
+
+
+        
+</div>
+
+
+</div>
+
+            </div>
+        	<div class="cs-link"><a href="/de/home/toolbar/kontakt.html" data-target_level="0" data-target_navigation="de">Alle Kontaktmöglichkeiten</a>
+
+</div>
+
+    </div>
+
+</div>
+
+
+
+<div class="if6_outer if6_sitemap" role="navigation" aria-label="Seitenübersicht" aria-hidden="true">
+	<div class="if6_inner">
+     <ul>
+         <li><div class="h4">Konten &amp; Karten</div>
+            <ul>
+               <li><a href="/de/home/privatkunden/girokonto.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Girokonto</a></li>
+               <li><a href="/de/home/privatkunden/kreditkarte.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Kreditkarte</a></li>
+               <li><a href="/de/home/privatkunden/kredite-und-finanzierungen/dispositionskredit.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Dispositionskredit</a></li>
+               <li><a href="/de/home/service/online-mobile-banking.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Online-Banking</a></li>
+               <li><a href="/de/home/service/sparkassen-app.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Sparkassen-App</a></li>
+               
+               
+            </ul>
+         </li>
+         <li><div class="h4">Sparen &amp; Anlegen</div>
+            <ul>
+               <li><a href="/de/home/privatkunden/wertpapiere-und-boerse.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Wertpapiere und Börse</a></li>
+               <li><a href="/de/home/privatkunden/sparen-und-anlegen/tagesgeld.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Tagesgeld</a></li>
+               <li><a href="/de/home/privatkunden/lbs-bausparen.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">LBS-Bausparen</a></li>
+               <li><a href="/de/home/privatkunden/sparen-und-anlegen/ps-los-sparen-thueringen.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">PS-Los-Sparen</a></li>
+               <li><a href="/de/home/service/edelmetalle-helaba.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Edelmetalle</a></li>
+               
+               
+            </ul>
+         </li>
+         <li><div class="h4">Finanzieren &amp; Vorsorgen</div>
+            <ul>
+               <li><a href="/de/home/privatkunden/kredite-und-finanzierungen.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Privatkredit &amp; Autokredit</a></li>
+               <li><a href="/de/home/privatkunden/kredite-und-finanzierungen/baufinanzierung.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Baufinanzierung</a></li>
+               <li><a href="/de/home/privatkunden/altersvorsorge.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Altersvorsorge</a></li>
+               <li><a href="/de/home/privatkunden/versicherungen/alle-produkte.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Versicherungen</a></li>
+               <li><a href="/de/home/privatkunden/immobilien.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Immobilien</a></li>
+               
+               
+            </ul>
+         </li>
+         <li><div class="h4">Ihre Sparkasse</div>
+            <ul>
+               <li><a href="/de/home/ihre-sparkasse/karriere.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Karriere</a></li>
+               <li><a href="/de/home/service/sicherheit-im-internet.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Sicherheit im Internet</a></li>
+               <li><a href="/de/home/service/elektronisches-postfach.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Elektronisches Postfach</a></li>
+               <li><a href="/de/home/service/sparkassen-shop.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">SparkassenShop</a></li>
+               <li><a href="/de/home/service/mediathek.html?n=true&amp;stref=sitemap" data-target_level="0" data-target_navigation="de">Mediathek</a></li>
+               
+               
+            </ul>
+         </li>
+      </ul>
+      
+      <br class="bterm"></div>
+</div>
+
+
+
+
+
+
+
+
+    <footer class="if6_outer if6_footer" aria-label="Fußzeile" aria-hidden="true">
+    <div class="if6_inner">
+        <div class="if6_impressum no-social-icons"><ul>
+    <li>
+    <div class="if6_langselect"><div>
+    <span>Deutsch</span>
+    <div>
+        <div class="langselect">
+            <div>
+                <ul>
+                    
+                        
+                    
+                        <li><a href="/en/home.html" data-target_level="0" data-target_navigation="en">English</a></li>
+                    
+                    <li class="selected"><a href="#">Deutsch</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div></div>
+</li>
+
+    
+        <li><a href="/de/home/toolbar/cookie-einstellungen-anpassen.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">Cookie-Einstellungen anpassen</a></li>
+    
+        <li><a href="/de/home/toolbar/agb.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">AGB</a></li>
+    
+        <li><a href="/de/home/toolbar/datenschutz.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">Datenschutz</a></li>
+    
+        <li><a href="/de/home/toolbar/impressum.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">Impressum</a></li>
+    
+        <li><a href="/de/home/toolbar/preise-und-hinweise.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">Preise und Hinweise</a></li>
+    
+        <li><a href="/de/home/toolbar/kontakt.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">Kontakt</a></li>
+    
+        <li><a href="/de/home/toolbar/filialen.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">Filialen A-Z</a></li>
+    
+        <li><a href="/de/home/toolbar/geldautomaten.html?n=true&amp;stref=footer" data-target_level="0" data-target_navigation="de">Geldautomaten A-Z</a></li>
+    
+    
+</ul>
+<br class="bterm"></div>
+        <div data-slx-test="" class="if6_social is-not-empty">
+    <div class="iparys_inherited"><div class="ipar iparsys parsys "></div>
+</div>
+
+</div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+		var IF6_lightbox_closeicon_text = 'Schließen';
+	</script>
+
+<noscript><img src='https://www.s-jena.de/de/home/misc/break.html?type=counter&ckey=js-usage&cval=0' style='display:none;' alt=""/></noscript>
+
+
+
+<div class="sparkasse_de parbase">﻿
+
+<img src="https://www.sparkasse.de/frontend/setTrackingCookie.html?blz=83053030" alt="Cookie Branding" style="display:none;"></div>
+
+
+
+
+
+<img id="tdgpixel" src="https://module.s-jena.de/if/services/tdg?hs=848f77f1a1cbedb05ed81a1a5b5dea0f8dbfdb4938b9f3835b43e0d2ab7fec06" alt="keep it" style="display:none;">
+
+<div class="if6_outer if6_lightbox session-countdown" role="dialog" aria-labelledby="sesscountlabel" aria-describedby="sesscountdescr" aria-hidden="true"><div class="if6_inner"><div class="parsys">
+	
+
+
+
+
+<div class="cbox cbox-small cbox-banking">
+<div class="session-countdown">
+	<span class="offscreen" id="sesscountdescr">
+		Automatische Abmeldung in 20 Sekunden
+	</span>
+	<div aria-hidden="true">
+		Automatische Abmeldung in <span id="countdownCounter">20</span>
+	</div>
+	<div id="sesscountlabel">
+		Möchten Sie die Sitzung fortsetzen?
+	</div>
+</div>
+<div class="buttonline">
+	<div class="bgroup1">
+		<a href="#" onclick="return IF6.hideCountdownLayer(this);">Jetzt fortsetzen</a>
+	</div>
+</div></div>
+
+</div></div></div>
+	
+
+
+
+
+
+
+<div class="if6_outer if6_eprivacy if6_lightbox lightbox-visible" aria-hidden="false"><a href="#" class="fl-focus-last" aria-hidden="true"></a>
+<div class="if6_inner">
+	<div class="parsys">
+		<div class="cbox cbox-medium">
+			<div class="etext">
+				<p>Wir, als Ihre Sparkasse, verwenden Cookies, die unbedingt erforderlich sind, um Ihnen unsere Website zur Verfügung zu stellen. Wenn Sie Ihre Zustimmung erteilen, verwenden wir zusätzliche Cookies, um zum Zwecke der Statistik (z.B. Reichweitenmessung) und des Marketings (wie z.B. Anzeige personalisierter Inhalte) Informationen zu Ihrer Nutzung unserer Website zu verarbeiten. Hierzu erhalten wir teilweise von Google weitere Daten. Weiterhin ordnen wir Besucher über Cookies bestimmten Zielgruppen zu und übermitteln diese für Werbekampagnen an Google. Detaillierte Informationen zu diesen Cookies finden Sie in unserer <a href="/de/home/toolbar/datenschutz.html?n=true" data-target_level="0" data-target_navigation="de">Erklärung zum Datenschutz</a>. Ihre Zustimmung ist freiwillig und für die Nutzung der Website nicht notwendig. Durch Klick auf „Einstellungen anpassen“, können Sie im Einzelnen bestimmen, welche zusätzlichen Cookies wir auf der Grundlage Ihrer Zustimmung verwenden dürfen. Sie können auch allen zusätzlichen Cookies gleichzeitig zustimmen, indem Sie auf “Zustimmen“ klicken. Sie können Ihre Zustimmung jederzeit über den Link „Cookie-Einstellungen anpassen“ unten auf jeder Seite widerrufen oder Ihre Cookie-Einstellungen dort ändern. Klicken Sie auf „Ablehnen“, werden keine zusätzlichen Cookies gesetzt.</p>
+
+			</div>
+			<div class="ebutton">
+				<a href="#" data-form=".eprivacy_optin_accept" class="primary" title="Zustimmen">Zustimmen</a>
+				<a href="#" data-form=".eprivacy_optin_decline" class="secondary" title="Ablehnen">Ablehnen</a>
+				<form class="eprivacy_optin_accept" action="/content/myif/sk-jena-saale-holzland/work/filiale/de/home/misc/eprivacy/_jcr_content.bin" method="post">
+					
+						<input name="ePOptIn[]" value="targeting" type="hidden">
+					
+						<input name="ePOptIn[]" value="abtest" type="hidden">
+					
+					<input name="ePOptInSubmit" value="Speichern" type="hidden">
+					<input name="function" value="accept" type="hidden">
+					<input name="origin" value="erstaufruf" type="hidden">
+				</form>
+				<form class="eprivacy_optin_decline" action="/content/myif/sk-jena-saale-holzland/work/filiale/de/home/misc/eprivacy/_jcr_content.bin" method="post">
+					
+						<input name="ePOptIn[]" value="targeting" type="hidden">
+					
+						<input name="ePOptIn[]" value="abtest" type="hidden">
+					
+					<input name="ePOptInSubmit" value="Speichern" type="hidden">
+					<input name="function" value="decline" type="hidden">
+					<input name="origin" value="erstaufruf" type="hidden">
+				</form>
+			</div>
+			<div class="efooter">
+				<a href="/de/home/toolbar/datenschutz.html#optin" title="Einstellungen anpassen" data-target_level="0" data-target_navigation="de">Einstellungen anpassen</a>
+				<a href="/de/home/toolbar/datenschutz.html" title="Datenschutzerklärung" data-target_level="0" data-target_navigation="de">Datenschutzerklärung</a>
+				<a href="/de/home/toolbar/impressum.html" title="Impressum" data-target_level="0" data-target_navigation="de">Impressum</a>
+			</div>
+		</div>
+	</div>
+</div><a href="#" class="fl-focus-first" aria-hidden="true"></a></div>
+
+<div class="iconfonttest"><span class="before"></span><span>i</span></div></div>
+
+        
+        
+</body><!--home--></html>

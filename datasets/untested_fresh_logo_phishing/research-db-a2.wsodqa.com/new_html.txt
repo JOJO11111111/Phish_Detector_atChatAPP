@@ -1,0 +1,911 @@
+<html lang="en-us"><head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Register - Deutsche Bank Research</title>
+	        <!-- Google Tag Manager -->
+        <script type="text/javascript" async="" src="https://oda.markitqa.com/js/wa.js" id="wa_548845"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MCDXWSZ&amp;gtm_auth=mzg-gWam07-dW-bNUbSatw&amp;gtm_preview=env-9&amp;gtm_cookies_win=x"></script><script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=mzg-gWam07-dW-bNUbSatw&gtm_preview=env-9&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-MCDXWSZ');</script>
+        <!-- End Google Tag Manager -->
+
+
+	<link rel="icon" href="/research/Content/Images/Favicon/favicon.ico">
+
+	<!--[if lt IE 9]>
+		<script src="/research/Content/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="https://content.markitcdn.com/research.db.com/research/Content/Dist/Styles/common.min.css?dd0801f1?t=45758.2532498958"><link rel="stylesheet" type="text/css" href="https://content.markitcdn.com/research.db.com/research/Content/Dist/Styles/registerdevice.min.css?c1f646f2?t=45758.2532498958"><link rel="stylesheet" type="text/css" href="https://content.markitcdn.com/research.db.com/research/Content/Dist/Styles/frontendalertsmodule.min.css?6f100a27?t=45758.2532498958">
+</head>
+<body>
+	        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCDXWSZ&gtm_auth=mzg-gWam07-dW-bNUbSatw&gtm_preview=env-9&gtm_cookies_win=x"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+	<!-- Using two flex container to fix the min-height issue in IE10 and IE11
+		 And not using flexbox layout directly on body cause it screws up elements
+			inserted via jQuery plugins if any(autocomplete, popup, etc.).-->
+	<div class="container-one">
+		<div class="container-two">
+			<h1 class="sr-only">Deutsche Bank Research</h1>
+
+			
+<header class="navbar navbar-default" id="site-header">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-navbar-collapse">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class=" icon-burger"></span>
+			</button>
+			<div class="navbar-brand">
+				Deutsche Bank<br>
+				<span class="text-secondary">Research</span>
+			</div>
+		</div>
+		<img src="/research/Content/Images/logo.deutsche.png" alt="Deutsche Bank Logo" class="navbar-logo img-responsive">
+	</div>
+</header>
+
+			<div role="main" id="page-main">
+				
+
+
+
+
+<div class="container">
+	
+
+
+<section id="com_dbresearch_registerdevice" data-app-context="{&quot;TermsAndConditionsVersion&quot;:&quot;2021.06.03&quot;,&quot;modalTimeout&quot;:90,&quot;rewareReaction&quot;:null,&quot;rewareUrl&quot;:null}">
+	<div class="page-header">
+		<h1 style="">Register your Device for Instant Access</h1>
+	</div>
+	<div id="registration-instructions" class="row">
+		<div class="col-sm-8 m-b-1">
+			<p class="m-t-1">For fast access to Deutsche Bank Research, enter your registered email address below to receive your verification code via email.</p>
+			<p>After you enter your code, you can access Deutsche Bank Research on this device for the next 180 days or until your browser cookies are cleared.</p>
+			<p>This website is available to those who have a Deutsche Bank business relationship. If you do not have access and would like to, please contact your
+Deutsche Bank Salesperson to request access.</p>
+			<p>We also invite you to visit our Public Research Portal available at  <a href="http://www.db.com/research" target="blank">http://www.db.com/research</a> for more information.</p>
+		</div>
+		<a href="/research/ja/Register" class="btn btn-primary btn-sm m-y-1">View instructions in Japanese</a>
+	</div>
+	<ul class="list-bordered m-b-0 email-list">
+		<li>
+			<h3 class="heading-step-title">Step 1 - Enter Email</h3>
+			<span id="inputted-email" class="hide"></span>
+			<span id="email-success-icon" class="hide">
+				<span class="icon-check text-primary m-l-1" role="presentation"></span>
+				<span class="sr-only">Email successfully submitted</span>
+			</span>
+		</li>
+	</ul>
+	<section id="section-email" class="panel panel-info">
+		<div class="panel-body">
+			<form id="form-email-submit" autocomplete="off">
+				<div class="panel m-b-0">
+					<div class="panel-body p-x-1">
+						<label class="m-r-1" for="input-email">Email Address</label>
+						<input id="input-email" class="m-r-1 form-input" type="email">
+						<button type="submit" class="btn btn-primary btn-sm m-y-1 " data-webtrekk-name="Registration Page/Email Submit">Submit</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group submit-error hide">
+							    <div id="" class="alert alert-danger " role="alert">
+            <p>An error has occurred. Please try again.</p>
+
+    </div>
+
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<ul class="list-bordered m-b-0 verification-code-list">
+		<li>
+			<h3 class="heading-step-title">Step 2 - Enter Verification Code</h3>
+			<span id="verification-code-success-icon" class="hide">
+				<span class="icon-check text-primary m-l-1" role="presentation"></span>
+				<span class="sr-only">Verification code successfully submitted</span>
+			</span>
+		</li>
+	</ul>
+	<section id="section-verification-code" class="panel panel-info hide">
+		<div class="panel-body">
+			<form id="form-verification-code-submit" autocomplete="off">
+				<div class="row">
+					<div class="col-sm-8">
+						<p>If your email address is linked to a valid account, you will receive an email containing your verification code. Either copy the code into the input below, or use the 'Verify Device' button in the email to skip this step. Your code will expire in 30 minutes.</p>
+						<p>If you have used the 'Verify Device' button in the email, you will skip to step 3 automatically after a few seconds. To avoid waiting, use
+							<a id="check-code-status" href="javascript:void(0);">this link</a>.
+						</p>
+					</div>
+				</div>
+				<div class="m-y-1">
+					<div class="panel panel-sg m-b-0">
+						<div class="panel-body p-x-1">
+							<label class="m-r-1" for="input-verification-code">Verification Code</label>
+							<input id="input-verification-code" class="m-r-1 form-input" type="text">
+							<button type="submit" class="btn btn-primary btn-sm m-t-1 m-b-2" data-webtrekk-name="Registration Page/Verification Code Submit">Submit</button>
+							<div class="form-group form-group-public-device m-y-0 p-t-2">
+								<input class="checkbox" type="checkbox" id="checkbox-public-device">
+								<label class="label-checkbox" for="checkbox-public-device">This is a public computer</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group submit-error hide">
+						    <div id="" class="alert alert-danger " role="alert">
+            <p>An error has occurred. Please try again.</p>
+
+    </div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8">
+						<br>
+						<div class="form-group">
+							<div>If you do not receive the email within a few minutes of submitting your email address: <ul class="reset"><li>Check the email address used for your DB Research account</li><li>Check your spam folder and filters for messages from DoNotReply@markit.esp.db.com</li></ul></div>
+						</div>
+						<div class="form-group m-b-0">
+							<a class="link-resend-email" href="javascript:void(0);">Resend Email</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<ul class="list-bordered m-b-0 terms-conditions-list">
+		<li class="b-t-0">
+			<h3 class="heading-step-title">Step 3 - Accept Terms &amp; Conditions</h3>
+		</li>
+	</ul>
+	<section id="section-terms-conditions" class="panel panel-info hide">
+		<div class="panel-body">
+			<div class="panel">
+				<div class="panel-body terms-conditions-text">
+						<p>This Website is provided by Deutsche Bank AG, acting through its London Branch or its Frankfurt Head office (as further described in Clause 13) on its own behalf and on behalf of any members of the Deutsche Bank Group of Companies from time to time (together "Deutsche Bank") which may be responsible for the Website's content and any of the goods and services (including financial instruments) provided through it (together "the Website").</p>
+	<p>Where you ("User") use this Website on behalf of your employer or an organisation ("Client"), you represent and warrant that you are authorised by such employer or organisation to access and use the website and to agree to the following terms and conditions ("Website Terms") on their behalf. In such circumstances except where expressly provided to the contrary "Client" shall refer to User and Client jointly and severally.</p>
+	<p><strong>If you have not been authorised to use this Website you must exit immediately.</strong></p>
+	<div class="sectioned-list-container">
+	<div>
+		<h4 class="section-heading">Access and Use Obligations</h4>
+
+			<ol class="list list-ordered">
+					<li>The Website is password protected and User will be assigned user verification data which may include user names, passwords, smartcards, secure ID tokens, tokens, security slips and cryptographic keys ("User Verification Data") to permit access to and use of the Website.</li>
+					<li>User agrees and will procure that User Verification Data will be kept strictly confidential.</li>
+					<li>Client (excluding User) will develop and/or maintain adequate security procedures to (i) ensure that User Verification Data will not be disclosed to any persons (including, without limitation, those involved in the provision of aggregation services) other than such of its authorised representatives who have been authorised by Deutsche Bank to use the Website and (ii) prevent access to the Website by all other persons.</li>
+					<li>Client will not interrupt or attempt to interrupt or impair the operation of the Website in any way.</li>
+					<li>Access to the Website from any location or jurisdiction other than the locations and jurisdictions (if any) designated at the time of assignment of the relevant User Verification Data or as otherwise agreed with Deutsche Bank from time to time is prohibited.</li>
+					<li>Client is responsible for all uses of User Verification Data and for any acts or omissions during such use (including, without limitation, the entry into any transactions) and Deutsche Bank shall be entitled to treat any access to or use of the Website (including without limitation the entry into any transactions) as having been duly authorised by Client regardless of whether or not it was effected on its behalf by an authorised representative.</li>
+					<li>Client will promptly notify Deutsche Bank: (i) of any loss or theft of User Verification Data; (ii) if it believes the confidentiality of any User Verification Data has been compromised; and (iii) of any actual or threatened unauthorised use of User Verification Data or the Website.</li>
+					<li>Client will comply with any security procedures specified by Deutsche Bank and, if access to the Website is through a third party server, any security procedures specified by that third party.</li>
+					<li>Client shall be solely responsible for providing and maintaining any equipment and software and for making all appropriate arrangements with any telecommunications suppliers or, where access to the Website is provided through a third party server, any such third party, necessary in order to obtain access to the Website. Deutsche Bank makes no representation or warranty as to the suitability or otherwise of any such equipment, software or arrangements.</li>
+					<li>Client will not use, or allow the use of, the Website (i) in contravention of any laws, regulations or rules of any regulatory authorities to which Client is subject; (ii) in any way (including without limitation posting information on the Website where this facility is available) which is defamatory, obscene, abusive, indecent or menacing or which infringes any intellectual property rights or breaches obligations of confidence or which is otherwise illegal or unlawful; (iii) to introduce a software virus or other disruptive program or do any act which would cause the Website to become unavailable for use by others; (iv) to solicit or encourage other Internet websites to frame or hypertext link direct to the Website without the prior written consent of Deutsche Bank; or (v) in any way which is not authorised by Deutsche Bank or in breach of the Website Terms or other agreement with Deutsche Bank.</li>
+					<li>Client shall not extract, reutilise, use, exploit, redistribute, re-disseminate, copy or store the Research Services or the Website for any purpose not expressly permitted by these Website Terms without Deutsche Bank’s prior written consent.</li>
+					<li>Client shall not scrape, extract, download, upload, sell or offer for sale any of the material on the Website and Client agrees not to use, or cause to be used, any computerized or other manual or automated program or mechanism, tool, or process, including any scraper or spider robot, to access, extract, download, scrape, data mine, display, transmit, or publish, any of the material on the Website;</li>
+					<li>User acknowledges that the Website is provided for use only by User on terms that Client is a commercial/trade organisation and User warrants and represents that User is not acting as a consumer. Deutsche Bank and, by accepting the Website Terms, User each agrees to opt-out of the following sections of the UK Electronic Commerce Regulations 2002: Article 9 (1), 9 (2), 9 (3) and 11.</li>
+					<li>Times and dates shown on Deutsche Bank’s Research Website are 
+governed by the time zone preferences set in the My Profile section of the 
+website. To amend these, please 
+access https://research.db.com/Research/Profile, after you have logged into the website.</li>
+					<li>Research is intended only for Wholesale clients in Australia within the meaning of the Australian Corporations Act and New Zealand Financial Advisors Act.</li>
+					<li>Research is intended only for the specified classes of investors (Accredited, Institutional or Expert Investor) in Singapore as defined under Section 4A of Singapore’s Securities Futures Act.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Grant of Rights and Access to Website</h4>
+
+			<ol class="list list-ordered">
+					<li>Deutsche Bank grants Client a revocable, non-exclusive, non-transferable, limited right to access, use and display the Website in accordance with these Website Terms.</li>
+					<li>Deutsche Bank may revoke or vary such licence and/or change, suspend, terminate, restrict or discontinue the Website (or any part) or any goods, services, information, features or functions accessible by means of the Website at any time without notice or liability.</li>
+					<li>Client acknowledges that the Website may contain audit software.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Intellectual Property Rights</h4>
+
+			<ol class="list list-ordered">
+					<li>The Website may incorporate third party data, text, images, software, multi-media materials and other content ("Third Party Content") and references to the term "Website" shall be taken to include all materials, content and services made available from time to time on the Website whether viewed on screen or downloaded to another computer including without limitation Third Party Content.</li>
+					<li>The Website is protected by copyright, database rights and other intellectual property rights. Client acknowledges that Deutsche Bank and/or third parties retain all right, title and interest in and to the Website. Our provision of Research Services and their use in accordance with these terms does not infringe, misappropriate or otherwise violate any intellectual property right of any third party. Use of the Website does not confer any ownership rights in the Website. The permissions contained in these Website Terms do not necessarily apply to Third Party Content. For permitted use of Third Party Content apply to the relevant content owner.</li>
+					<li>All data, text, images, software, multi-media materials and other content provided by Client to Deutsche Bank via the Website ("Contributions") shall become the property of Deutsche Bank. Client assigns with full title guarantee all rights, title and interest (including copyright, database and other intellectual property rights) in and to the Contributions to Deutsche Bank and agrees to do all acts necessary to perfect and maintain Deutsche Bank's title in Contributions. Except where expressly provided to the contrary or as otherwise required by law Deutsche Bank shall not be subject to any obligations of confidentiality regarding Contributions.</li>
+					<li>Except as otherwise specifically agreed in writing or to the extent necessary for Client to view the Website in accordance with these Website Terms, Client shall not: (i) copy the Website in whole or in part (except to make backup copies solely for disaster recovery purposes); (ii) display, reproduce, create derivative works from, transmit, sell, distribute, rent, lease, sublicense, time-share, lend or transfer or in any way exploit the Website in whole or in part; (iii) embed the Website into other products; (iv) use the Website in any timesharing arrangement; (v) create function calls or other embedded links from any software program to the Website; (vi) remove or obscure any copyright notice of Deutsche Bank or any of its suppliers; (vii) use any trademarks, service marks, domain names, logos, or other identifiers of Deutsche Bank or any of its third party suppliers; or (viii) save to the extent permitted under by law, reverse engineer, decompile, disassemble, or access the source code of the Website.</li>
+					<li>Use of the Website may require the distribution of cryptographic technology which is subject to export controls or restrictions. Client will not re-distribute or re-export such cryptographic technology without: (i) the prior written consent of Deutsche Bank; (ii) Client's compliance with all applicable export laws; and (iii) Client's compliance with the laws of the country of destination or use.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">No Advice or Recommendations</h4>
+
+			<ol class="list list-ordered">
+					<li>The information provided herein is not directed at any investor or category of investors and is provided solely as general information and to otherwise provide general investment education. No information contained herein should be regarded as a suggestion to engage in or refrain from any investment-related course of action as Deutsche Bank is not undertaking to provide impartial investment advice, act as an impartial adviser, or give advice in a fiduciary capacity with respect to the materials presented herein. If you are an individual retirement investor, contact your financial advisor or other non- Deutsche Bank fiduciary about whether any given investment idea, strategy, product or service described herein may be appropriate for your circumstances.</li>
+					<li>Except as otherwise specifically agreed in writing or as provided in any other terms and conditions applicable to transactions conducted between Client and Deutsche Bank through the Website nothing on this Website is an offer which can be accepted by Client so as to create contractual obligations without further action by Deutsche Bank;</li>
+					<li>Opinions, estimates and projections in any research report accessed via the Website constitute the current judgment of the author as of the date of the report. They do not necessarily reflect the opinions of Deutsche Bank and are subject to change without notice.</li>
+					<li>Deutsche Bank has no obligation to update, modify or amend reports accessed via the Website or to otherwise notify Client thereof in the event that any matter stated in such reports, or any opinion, projection, forecast or estimate set forth in such reports, change or subsequently becomes inaccurate, or if research on the subject company is withdrawn.</li>
+					<li>Prices and availability of financial instruments also are subject to change without notice. The Website (including all research reports accessed via it) is provided for informational purposes only. It is not to be construed as an offer to buy or sell or a solicitation of an offer to buy or sell any financial instruments or to participate in any particular trading strategy in any jurisdiction. Any financial instruments discussed may not be suitable for all investors and Client must make their own investment decisions using their own independent advisors as they believe necessary and based upon their specific financial situations and investment objectives.</li>
+					<li>If a financial instrument is denominated in a currency other than a Client’s currency, a change in exchange rates may adversely affect the price or value of, or the income derived from, the financial instrument, and Client effectively assumes currency risk.</li>
+					<li>Income from an investment may fluctuate and the price or value of financial instruments described in this report, either directly or indirectly, may rise or fall. Past performance is not necessarily indicative of future results.</li>
+					<li>Unless governing law provides otherwise, all transactions should be executed through the Deutsche Bank entity in the investor’s home jurisdiction.</li>
+					<li>Additional information relative to any financial instruments, issuers or companies discussed in any research reports accessed via the Website is available from Deutsche Bank upon request.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Hypothetical Forecasts</h4>
+			<div>
+					<p>Some of the materials presented in the Website may allow Clients to perform calculations and carry out analysis on the basis of hypothetical results, figures and indices. Hypothetical performance results have many inherent limitations. There are frequently sharp differences between hypothetical performance results and actual results subsequently achieved by any particular trading program. Client should recognise that hypothetical trading does not involve financial risk, and no hypothetical trading record can completely account of the impact of financial risk in actual trading, for example, the ability to withstand losses or to adhere to a particular trading program in spite of losses are material points which also can adversely affect actual trading results. There are numerous other factors related to the markets in general or to the implementation of any specific trading program which cannot be fully accounted for in the preparation of hypothetical performance results and all of which can adversely affect actual trading results.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Disclosure of Potential Conflicts</h4>
+
+			<ol class="list list-ordered">
+					<li>Deutsche Bank and its respective officers and employees may from time to time deal in, be represented on the board of, hold significant long or short positions, or act as market-makers, advisors, brokers, commercial and/or investment bankers in relation to any institutions, financial instruments or derivatives thereof which may be discussed in the Website, including in a manner which may be inconsistent with the content of any research reports accessed via the Website. In addition, the disclosure of potential conflicts deemed relevant by certain regulators is accessible at <a href="https://research.db.com/Research/Disclosures/Disclaimer" target="_blank">https://research.db.com/Research/Disclosures/Disclaimer.</a></li>
+					<li>Any research analyst involved in the preparation of any research reports accessed via the Website receives compensation that is based upon, among other factors, Deutsche Bank's overall investment banking revenues.</li>
+					<li>The level and types of services provided by Deutsche Bank research analysts to Clients may vary depending on various factors such as the Client's individual preferences as to the frequency and manner of receiving communications from research analysts, the Client's risk profile and investment focus and perspective (e.g., market-wide, sector specific, long-term, short-term, etc.), the size and scope of the overall Client relationship with Deutsche Bank and legal and regulatory constraints.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Privacy</h4>
+
+			<ol class="list list-ordered">
+					<li>The data controller for the purposes of data protection legislation is Deutsche Bank AG London. Any queries about the use of personal data by Deutsche Bank should be referred to Deutsche Bank AG, London Branch at 21 Moorfields London EC2Y 9DB or alternatively Deutsche Bank, London Branch can be contacted by phone on +44 (207) 545-8000, or by e-mail to: deutsche.bank@db.com.</li>
+					<li>Deutsche Bank AG processes personal data in compliance with Data Privacy Laws and as further described in our Data Privacy Statement (as updated from time to time), available <a href="https://www.dbresearch.com/servlet/reweb2.ReWEB?rwnode=RPS_EN-PROD$RPSHOME&amp;rwobj=RPS_DATAPRIVACY.alias&amp;rwsite=RPS_EN-PROD" target="_blank">here</a> (or on such other website as notified to Client from time to time).</li>
+					<li>User is notified that, subject to any legal requirements for further notice or consent, Deutsche Bank AG may use cookies or similar technologies on the Website: (i) where strictly necessary to provide the Website service, or (ii) to personalise the Website service to the User and to track and facilitate browsing through the Website. A cookie is a small data file stored on User’s device which, in essence, enables the Website to recognise that device.  User can set their browser to reject cookies but this may affect the functionality of the Website.</li>
+					<li>To the extent that you access the Website from within Australia, or that you disclose information to Deutsche Bank AG (ABN 13 064 164 162) and its subsidiaries, including Deutsche Australia Limited (collectively, “DB Australia”), DB Australia is bound by the Privacy Act 1988 (Cth). By accessing and using the Website, you acknowledge and agree that the Website will be hosted and operated by a third party vendors of DB Australia, including Markit On Demand Inc. and Dell Marketing L.P, both which are companies registered and operating from the United States. DB Australia may disclose your personal data or personal information to entities that are located outside of Australia including our own related bodies corporate, third party service providers and business associates. This may include offshore territories including (without limitation) the United States, Germany, Hong Kong, the Philippines, Singapore and the United Kingdom. There are certain safeguards which must be met before we are allowed to transfer your personal information outside Australia, which are set out in the Privacy Act. By accessing the Website you consent to such overseas disclosure. Should any matters arise regarding the handling of your personal information by overseas recipients these should be directed to DB Australia.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Disclaimer of Warranties</h4>
+
+			<ol class="list list-ordered">
+					<li>The Website is provided "as is" and Deutsche Bank makes no representations or warranties of any kind whatsoever regarding: (1) the currency, accuracy or completeness of the website; (2) the results to be obtained by Client or anyone else from the use of the Website; and (3) any Third Party Content accessible on or through the Website.</li>
+					<li>Deutsche Bank is not under any obligation to update any content or opinions contained in any research or other report or continue to offer such reports regarding any company or financial instrument. Quotes, news, corporate actions and other market information data shown on the Website is provided as specified and may be current as at close of business the previous day, real time or delayed. Where such material is delayed it shall be delayed by at least 15 minutes.</li>
+					<li>Except to the extent required by law Deutsche Bank, including its directors, agents, employees or sub-contractors: (1) disclaims any and all express or implied warranties and conditions including without limitation warranties and conditions as to quality and fitness for a particular purpose; and (2) does not warrant that the website, any content (including any Third Party Content), goods and services offered therein will be uninterrupted or error free, that defects will be corrected or that the Website, the servers from which it is made available or any connected website is free of viruses, Trojan horses, worms, software bombs or similar items or processes or other harmful components.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Limitation of Liability</h4>
+
+			<ol class="list list-ordered">
+					<li>Use of the Website is at Client's own risk and Client assumes full responsibility and risk of loss resulting from use of or access to the website.</li>
+					<li>Except in the case of wilful misconduct, fraud or negligence resulting in death or personal injury Deutsche Bank, including its directors, agents, employees or sub-contractors, shall not be liable for any loss or damage or claim of any kind whatsoever arising directly or indirectly as a result of (1) content, accuracy, completeness or otherwise of materials, opinions or information contained on the Website, including links and Third Party Content; (2) any errors in or omissions from the Website; (3) use of or access to the website; (4) Client's inability to access or use the Website for any reason; (5) any failure by the Website to transmit, or any delay in the transmission or the receipt by Deutsche Bank of any instructions, any rejection or non-execution of any instructions or any failure of the Website to transmit, or any delay in the transmission or the receipt by the Client of any notification that any instructions have or have not been executed; (6) any breach of its contractual obligations arising under or in connection with these Website Terms; or (7) any representations, statement or tortious act or omission including negligence or any breach of statutory duty arising under or in connection with the Website Terms.</li>
+					<li>To the full extent permitted by law, Deutsche Bank shall not be liable for any (1) loss of profits or revenue or savings or other economic loss, (2) loss of business or goodwill, (3) loss of or damage to data, (4) incidental or special loss, (5) wasted or lost management time, or (6) indirect or consequential loss arising from Client's use of or access to the website, even if advised of the possibility of any such loss or damage or if such loss or damage was foreseeable.</li>
+					<li>Deutsche Bank's total liability arising out of or in connection with the Website or otherwise under these Website Terms shall be limited to the sum of £10000 (ten thousand pounds sterling).</li>
+					<li>Nothing in these Website Terms excludes or limits Deutsche Bank's liability for fraud or for personal injury or death caused by Deutsche Bank's negligence.</li>
+					<li>Deutsche Bank will not be liable for any failure to perform any obligation under these Website Terms or from any delay in the performance thereof, due to causes beyond its reasonable control, including industrial disputes of any nature, acts of god, acts of a public enemy, acts of government, failure of telecommunications, sabotage, pestilence, terrorism, lightning or electro-magnetic disturbances, earthquake, flood, fire or other casualty.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Indemnification</h4>
+			<div>
+					<p>Client will indemnify and keep indemnified Deutsche Bank, and its respective directors, officers, employees and agents, fully and effectively (to the fullest extent permitted by law) from and against any and all claims, actions, demands, proceedings, losses, liabilities, damages, costs and expenses (including legal fees, costs and expenses on a full indemnity basis) suffered or incurred by Deutsche Bank arising out of or relating to (directly or indirectly): (i) Client's actions that are inconsistent with or in breach of these Website Terms and the foregoing shall include (but not limited to) any claim of defamation, libel, slander, obscenity, invasion of privacy or any allegation thereof or infringement or alleged infringement of copyright, trade mark, moral right, database rights or patent or of obligations of confidence or any other claims anywhere in the world brought by third parties or any failure by Client to meet any third party obligations; (ii) Client's violation of any applicable national or international law, rule or regulation in connection with its use of the Website; and (iii) any third party claims arising out of or in connection with Client's use of or inability to use the Website.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Links</h4>
+			<div>
+					<p>The Website may contain links to other websites which are not controlled by Deutsche Bank and contain material produced by independent third parties. The owners of any such linked websites do not necessarily have any relationship, commercial or otherwise, with Deutsche Bank. The existence of a link from the Website to any third party website does not constitute a recommendation or other approval by Deutsche Bank of such website its content or any provider thereof. Any opinions or recommendations expressed on third party websites are those of the relevant provider and are not the opinions or recommendations of Deutsche Bank. Deutsche Bank accepts no responsibility for content provided on any website that may be accessed through links on the Website.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Termination</h4>
+
+			<ol class="list list-ordered">
+					<li>These Website Terms may be terminated by Deutsche Bank or Client for any reason at any time.</li>
+					<li>Following termination of these Website Terms Client shall, on request, promptly return to Deutsche Bank or destroy any content (including Third Party Content) or other materials provided by Deutsche Bank or made available on the Website. At Deutsche Bank's request Client will certify in writing the return or destruction of all such materials.</li>
+					<li>Unless otherwise expressly provided: (i) on termination of these Website Terms Client's permission to access the Website ceases immediately; (ii) termination of these Website Terms shall have no effect on any transactions previously executed through the Website which shall continue to be governed by these Website Terms and shall not negate any action required by any party to complete or implement any transaction which is entered into prior to such termination.</li>
+					<li>Without prejudice to clause 12.3 above, any access of the Website by Client following the termination of these Website Terms shall again be deemed to be subject to these Website Terms.</li>
+					<li>Clauses 1.10, 3.2, 3.3, 7, 8, 9, 10, 12 and 13 to 21 (inclusive) of these Website Terms shall survive the termination of these Website Terms for any reason.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Regulatory, Corporate and Contact Details</h4>
+
+			<ol class="list list-ordered">
+					<li>The Website is provided by Deutsche Bank AG London, a branch of Deutsche Bank AG, whose branch registration number in England and Wales is BR000005 and whose branch address is 21 Moorfields London EC2Y 9DB. Deutsche Bank AG London can be contacted by phone on +44 (207) 545-8000, or by e-mail to deutsche.bank@db.com. The VAT registration number for Deutsche Bank AG London is GB 243 6097 61. With respect to Clients who are transacting with Deutsche Bank’s Frankfurt Head office, this website is provided by Deutsche Bank AG, Frankfurt whose registered address is at Taunusanlage 12, 60325 Frankfurt am Main, Germany. Deutsche Bank AG is registered in the Commercial Register of the District Court of Frankfurt am Main under registration number HRB 30 000. Deutsche Bank AG, Frankfurt may be contacted by phone on +49-69-910-21330 and by email to deutsche.bank@db.com.</li>
+					<li>Deutsche Bank AG is a joint stock corporation incorporated with limited liability in the Federal Republic of Germany. It is registered in the Commercial Register of the District Court, Frankfurt am Main under number HRB 30 000. Deutsche Bank AG is authorized and regulated by the European Central Bank and the German Federal Financial Supervisory Authority (BaFin).  With respect to activities undertaken in the UK, Deutsche Bank AG is authorised by the Prudential Regulation Authority with deemed variation of permission. It is subject to regulation by the Financial Conduct Authority and limited regulation by the Prudential Regulation Authority. Details about the Temporary Permissions Regime, which allows EEA-based firms to operate in the UK for a limited period while seeking full authorisation, are available on the Financial Conduct Authority’s website. Deutsche Bank AG is a member of the London Stock Exchange and is a stock corporation domiciled in Frankfurt am Main HRB No. 30 000District of Court Frankfurt am Main.</li>
+					<li>All research reports accessed via the Website are approved and/or distributed in the United States of America by Deutsche Bank Securities Inc., a member of the NYSE, the NASD, NFA and SIPC.</li>
+					<li>All research reports accessed via the Website are distributed in Hong Kong by Deutsche Bank AG, Hong Kong Branch, in Singapore by Deutsche Bank AG, Singapore Branch, and in Japan by Deutsche Securities Inc.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Security</h4>
+			<div>
+					<p>Client acknowledges and accepts that any services provided through this Website involve transmissions over the Internet and that such transmissions are therefore subject to the Internet's inherent risks. Whilst Deutsche Bank acknowledges its responsibility to take reasonable security precautions, Client also acknowledges and accepts that, as with any network, Client may also be exposed to unauthorised invasions of privacy during, or as a result of, using the Website, system-threatening viruses and other unauthorised and invasive programs transmitted by third parties, eavesdropping and electronic trespassing, fraud and forgery and/or the failure of information and data to reach their intended destinations and/or erroneous receipt or misdirection of such information. Although Deutsche Bank and its suppliers' privacy and security features are designed to reduce these risks, Deutsche Bank cannot guarantee their elimination. Client therefore acknowledges that no transmission via the Website shall be deemed confidential and that Deutsche Bank shall not be liable for any breach of confidence arising as a result of such event.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Assignment, Subcontracting and Delegation</h4>
+			<div>
+					<p>These Website Terms are for the benefit of Deutsche Bank AG and the members of the Deutsche Bank AG Group of companies, their successors and assigns. Deutsche Bank may assign or transfer any of its rights under these Website Terms. Deutsche Bank may delegate or subcontract the performance of any obligation under these Website Terms.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Amendments</h4>
+			<div>
+					<p>Deutsche Bank may vary or amend these Website Terms at any time. Any amendments to these Website Terms will be displayed on the Website or otherwise communicated to Client and Client will be deemed to have accepted such amendment if it continues to access or use the Website.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Other Agreements</h4>
+			<div>
+					<p>In the event of any inconsistency between these Website Terms and any master or other specific agreement between Client and Deutsche Bank relating to the particular product or services traded or offered through the Website that other agreement shall prevail.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">No Waiver</h4>
+			<div>
+					<p>No failure or delay on the part of Deutsche Bank in exercising any right or remedy under these Website Terms shall operate as a waiver of, or impair, any such right or remedy. No single or partial exercise of any right or remedy shall preclude any other or further exercise thereof or the exercise of any other rights or remedies. No waiver of any right or remedy shall be deemed a waiver or modification of any other right or remedy under these Website Terms.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Partial validity</h4>
+			<div>
+					<p>If at any time any provision of these Website Terms is or becomes illegal, invalid or unenforceable, that shall not affect or impair the legality, validity or enforceability of any other provision of the Website Terms.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Contracts Rights of Third Parties</h4>
+			<div>
+					<p>Subject to the benefits of Deutsche Bank Group companies and employees, directors, agents and sub-contractors of Deutsche Bank expressly reserved in these Website Terms, a person who is not a party to this agreement has no right (including under the Contracts (Rights of Third Parties) Act 1999) to enforce any term of the Website Terms, but this does not affect any right or remedy of a third party which exists or is available apart from that Act.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Governing Law and Jurisdiction</h4>
+			<div>
+					<p>These Website Terms and any non-contractual rights arising under or in connection herewith are governed by and shall be construed in accordance with English law.  Each of the parties (i) irrevocably submits to the exclusive jurisdiction of the English courts with respect to any dispute, controversy or claim arising out of, relating to, or in connection with these Website Terms, including any question regarding its existence, validity, interpretation, breach or termination and any dispute relating to any non-contractual obligations arising out of or in connection herewith (“Proceedings”); and (ii) waives any objection which it may have at any time to the laying of venue of any Proceedings brought in any such court, waives any claim that such Proceedings have been brought in an inconvenient forum and further waives the right to object, with respect to such Proceedings, that such court does not have any jurisdiction over such party.</p>
+			</div>
+
+	</div>
+	<div>
+		<h4 class="section-heading">Addendum for Clients Unbundling Research Payments and Receiving US Originated Research Services</h4>
+			<div>
+					<p>If the Website includes research that is communicated or prepared by Deutsche Bank Securities Inc. (“DBSI”) (“U.S.-Originated Research”), Client represents, warrants, acknowledges and agree that:</p>
+			</div>
+
+			<ol class="list list-ordered">
+					<li>U.S.-Originated Research does not include information from, or access to, DBSI’s sales personnel, traders or sales-traders; such information and access has been and will continue to be delivered as part of the execution services provided by DBSI in its broker-dealer capacity and not as an investment adviser for a separate fee;</li>
+					<li>You may receive U.S.-Originated Research only in connection with your role as investment adviser and portfolio manager for other investors and investment funds that are Clients of yours (“Manager Clients”).;</li>
+					<li>Any Manager Client for whom you use U.S.-Originated Research (a) is not a pension or employee benefit plan subject to the U.S. Employee Retirement Income Security Act (“ERISA”), nor a person or entity subject to the retirement plan provisions of the U.S. Internal  Revenue Code (the “Code”) nor an entity whose underlying assets are subject to  such laws, and (b) is not a governmental, church or non-U.S. plan that is subject to any law that is substantially similar to the "prohibited transaction" rules of ERISA or the Code;</li>
+					<li>You are required under Directive 2014/65/EU of the European Parliament and of the Council of 15 May 2014 on markets in financial instruments and amending Directive 2002/92/EC and Directive 2011/61/EU, as implemented by the European Union  member states (including, where applicable, any implementation of such regulation into the laws of the United Kingdom as from 1st January 2021) ("MiFID II”) , either directly or by contractual obligation, to pay for U.S.-Originated Research from your own money, from a separate research payment account funded with your clients’ money or a combination of the two; and</li>
+					<li>Neither DBSI nor Deutsche Bank are not acting as investment advisers to you or the Manager Clients in connection with the U.S.-Originated Research.</li>
+			</ol>
+	</div>
+	<div>
+		<h4 class="section-heading">Hong Kong Licensing Restrictions on Futures</h4>
+			<div>
+					<p>Research reports on futures contracts are not intended for access by persons who 
+are located, incorporated, constituted or resident of Hong Kong.</p>
+			</div>
+
+	</div>
+	</div>
+	<p>Additional information available at <a href="https://research.db.com/Research/Disclosures/Disclaimer" target="_blank">https://research.db.com/Research/Disclosures/Disclaimer</a>.</p>
+
+
+				</div>
+			</div>
+			<div class="panel m-b-0">
+				<div class="panel-body p-x-1">
+					<div class="row">
+						<div class="col-sm-4 clearfix">
+							<div class="pull-left m-r-1 country-instruction-text">
+								<span class="m-r-1 icon icon-alert icon-xs"></span>
+								Please select your primary Geography of Residence.
+							</div>
+						</div>
+						<div class="col-sm-4 m-b-2">
+							    <div class="w3-combobox user-country-menu focus">
+        <input aria-controls="&quot;user-country-menu-listbox&quot;" aria-expanded="false" initial-value="" placeholder="Select from dropdown" role="combobox" type="text" aria-activedescendant="">
+        <span class="caret" aria-hidden="true"></span>
+        <ul id="&quot;user-country-menu-listbox&quot;" role="listbox" style="display: none;">
+                <li data-value="USA" role="option" tabindex="0">United States</li>
+                <li data-value="GBR" role="option" tabindex="0">United Kingdom</li>
+                <li data-value="JPN" role="option" tabindex="0">Japan</li>
+                <li data-value="DEU" role="option" tabindex="0">Germany</li>
+                <li data-value="HKG" role="option" tabindex="0">Hong Kong SAR</li>
+                <li data-value="SGP" role="option" tabindex="0">Singapore</li>
+                <li data-value="" role="option" tabindex="0">_______________________</li>
+                <li data-value="AGO" role="option" tabindex="0">Angola</li>
+                <li data-value="ARG" role="option" tabindex="0">Argentina</li>
+                <li data-value="AUS" role="option" tabindex="0">Australia</li>
+                <li data-value="AUT" role="option" tabindex="0">Austria</li>
+                <li data-value="AZE" role="option" tabindex="0">Azerbaijan</li>
+                <li data-value="BHR" role="option" tabindex="0">Bahrain</li>
+                <li data-value="BEL" role="option" tabindex="0">Belgium</li>
+                <li data-value="BMU" role="option" tabindex="0">Bermuda</li>
+                <li data-value="BRA" role="option" tabindex="0">Brazil</li>
+                <li data-value="VGB" role="option" tabindex="0">British Virgin Islands</li>
+                <li data-value="BGR" role="option" tabindex="0">Bulgaria</li>
+                <li data-value="CAN" role="option" tabindex="0">Canada</li>
+                <li data-value="CYM" role="option" tabindex="0">Cayman Islands</li>
+                <li data-value="CHL" role="option" tabindex="0">Chile</li>
+                <li data-value="CHN" role="option" tabindex="0">China</li>
+                <li data-value="COL" role="option" tabindex="0">Colombia</li>
+                <li data-value="HRV" role="option" tabindex="0">Croatia (local name: Hrvatska)</li>
+                <li data-value="CYP" role="option" tabindex="0">Cyprus</li>
+                <li data-value="CZE" role="option" tabindex="0">Czech Republic</li>
+                <li data-value="DNK" role="option" tabindex="0">Denmark</li>
+                <li data-value="DOM" role="option" tabindex="0">Dominican Republic</li>
+                <li data-value="ECU" role="option" tabindex="0">Ecuador</li>
+                <li data-value="EGY" role="option" tabindex="0">Egypt</li>
+                <li data-value="FIN" role="option" tabindex="0">Finland</li>
+                <li data-value="FRA" role="option" tabindex="0">France</li>
+                <li data-value="GHA" role="option" tabindex="0">Ghana</li>
+                <li data-value="GRC" role="option" tabindex="0">Greece</li>
+                <li data-value="GTM" role="option" tabindex="0">Guatemala</li>
+                <li data-value="GGY" role="option" tabindex="0">Guernsey</li>
+                <li data-value="HUN" role="option" tabindex="0">Hungary</li>
+                <li data-value="ISL" role="option" tabindex="0">Iceland</li>
+                <li data-value="IND" role="option" tabindex="0">India</li>
+                <li data-value="IDN" role="option" tabindex="0">Indonesia</li>
+                <li data-value="IRQ" role="option" tabindex="0">Iraq</li>
+                <li data-value="IRL" role="option" tabindex="0">Ireland</li>
+                <li data-value="ISR" role="option" tabindex="0">Israel</li>
+                <li data-value="ITA" role="option" tabindex="0">Italy</li>
+                <li data-value="CIV" role="option" tabindex="0">Ivory Coast</li>
+                <li data-value="JEY" role="option" tabindex="0">Jersey</li>
+                <li data-value="JOR" role="option" tabindex="0">Jordan</li>
+                <li data-value="KAZ" role="option" tabindex="0">Kazakhstan</li>
+                <li data-value="KEN" role="option" tabindex="0">Kenya</li>
+                <li data-value="XKX" role="option" tabindex="0">Kosovo</li>
+                <li data-value="KWT" role="option" tabindex="0">Kuwait</li>
+                <li data-value="LVA" role="option" tabindex="0">Latvia</li>
+                <li data-value="LBN" role="option" tabindex="0">Lebanon</li>
+                <li data-value="LIE" role="option" tabindex="0">Liechtenstein</li>
+                <li data-value="LUX" role="option" tabindex="0">Luxembourg</li>
+                <li data-value="MKD" role="option" tabindex="0">North Macedonia</li>
+                <li data-value="MYS" role="option" tabindex="0">Malaysia</li>
+                <li data-value="MLT" role="option" tabindex="0">Malta</li>
+                <li data-value="MUS" role="option" tabindex="0">Mauritius</li>
+                <li data-value="MEX" role="option" tabindex="0">Mexico</li>
+                <li data-value="MAR" role="option" tabindex="0">Morocco</li>
+                <li data-value="NLD" role="option" tabindex="0">Netherlands</li>
+                <li data-value="NZL" role="option" tabindex="0">New Zealand</li>
+                <li data-value="NGA" role="option" tabindex="0">Nigeria</li>
+                <li data-value="NOR" role="option" tabindex="0">Norway</li>
+                <li data-value="OMN" role="option" tabindex="0">Oman</li>
+                <li data-value="PAK" role="option" tabindex="0">Pakistan</li>
+                <li data-value="PAN" role="option" tabindex="0">Panama, Republic of</li>
+                <li data-value="PER" role="option" tabindex="0">Peru</li>
+                <li data-value="PHL" role="option" tabindex="0">Philippines</li>
+                <li data-value="POL" role="option" tabindex="0">Poland</li>
+                <li data-value="PRT" role="option" tabindex="0">Portugal</li>
+                <li data-value="QAT" role="option" tabindex="0">Qatar</li>
+                <li data-value="ROU" role="option" tabindex="0">Romania</li>
+                <li data-value="SAU" role="option" tabindex="0">Saudi Arabia</li>
+                <li data-value="SRB" role="option" tabindex="0">Serbia</li>
+                <li data-value="ZAF" role="option" tabindex="0">South Africa</li>
+                <li data-value="KOR" role="option" tabindex="0">South Korea</li>
+                <li data-value="ESP" role="option" tabindex="0">Spain</li>
+                <li data-value="LKA" role="option" tabindex="0">Sri Lanka</li>
+                <li data-value="SWE" role="option" tabindex="0">Sweden</li>
+                <li data-value="CHE" role="option" tabindex="0">Switzerland</li>
+                <li data-value="TWN" role="option" tabindex="0">Taiwan</li>
+                <li data-value="THA" role="option" tabindex="0">Thailand</li>
+                <li data-value="TGO" role="option" tabindex="0">Togo</li>
+                <li data-value="TTO" role="option" tabindex="0">Trinidad and Tobago</li>
+                <li data-value="TUN" role="option" tabindex="0">Tunisia</li>
+                <li data-value="TUR" role="option" tabindex="0">Turkiye</li>
+                <li data-value="TKM" role="option" tabindex="0">Turkmenistan</li>
+                <li data-value="UKR" role="option" tabindex="0">Ukraine</li>
+                <li data-value="ARE" role="option" tabindex="0">United Arab Emirates</li>
+                <li data-value="URY" role="option" tabindex="0">Uruguay</li>
+                <li data-value="UZB" role="option" tabindex="0">Uzbekistan</li>
+                <li data-value="VNM" role="option" tabindex="0">Vietnam</li>
+        </ul>
+    </div>
+
+						</div>
+						<div class="col-sm-4 m-b-2">
+				            <input class="checkbox" type="checkbox" id="checkbox-country-not-listed">
+				            <label class="label-checkbox" for="checkbox-country-not-listed">I cannot find it</label>
+			            </div>
+					</div>
+                    <div class="row">
+                        <div id="other-countries" class="col-sm-4 col-sm-offset-4 m-b-2" hidden="">
+                                <div class="w3-combobox other-country-menu focus">
+        <input aria-controls="&quot;other-country-menu-listbox&quot;" aria-expanded="false" initial-value="" placeholder="Select from dropdown" role="combobox" type="text" aria-activedescendant="">
+        <span class="caret" aria-hidden="true"></span>
+        <ul id="&quot;other-country-menu-listbox&quot;" role="listbox" style="display: none;">
+                <li data-value="ALA" role="option" tabindex="0">Aland Islands</li>
+                <li data-value="ALB" role="option" tabindex="0">Albania</li>
+                <li data-value="DZA" role="option" tabindex="0">Algeria</li>
+                <li data-value="ASM" role="option" tabindex="0">American Samoa</li>
+                <li data-value="AND" role="option" tabindex="0">Andorra</li>
+                <li data-value="AIA" role="option" tabindex="0">Anguilla</li>
+                <li data-value="ATA" role="option" tabindex="0">Antarctica</li>
+                <li data-value="ATG" role="option" tabindex="0">Antigua and Barbuda</li>
+                <li data-value="ARM" role="option" tabindex="0">Armenia</li>
+                <li data-value="ABW" role="option" tabindex="0">Aruba</li>
+                <li data-value="BHS" role="option" tabindex="0">Bahamas</li>
+                <li data-value="BGD" role="option" tabindex="0">Bangladesh</li>
+                <li data-value="BRB" role="option" tabindex="0">Barbados</li>
+                <li data-value="BLZ" role="option" tabindex="0">Belize</li>
+                <li data-value="BEN" role="option" tabindex="0">Benin</li>
+                <li data-value="BTN" role="option" tabindex="0">Bhutan</li>
+                <li data-value="BOL" role="option" tabindex="0">Bolivia</li>
+                <li data-value="BIH" role="option" tabindex="0">Bosnia and Herzegovina</li>
+                <li data-value="BWA" role="option" tabindex="0">Botswana</li>
+                <li data-value="BVT" role="option" tabindex="0">Bouvet Island</li>
+                <li data-value="IOT" role="option" tabindex="0">British Indian Ocean Territory</li>
+                <li data-value="BRN" role="option" tabindex="0">Brunei Darussalam</li>
+                <li data-value="BFA" role="option" tabindex="0">Burkina Faso</li>
+                <li data-value="BDI" role="option" tabindex="0">Burundi</li>
+                <li data-value="KHM" role="option" tabindex="0">Cambodia</li>
+                <li data-value="CMR" role="option" tabindex="0">Cameroon</li>
+                <li data-value="CPV" role="option" tabindex="0">Cape Verde</li>
+                <li data-value="CAF" role="option" tabindex="0">Central African Republic</li>
+                <li data-value="TCD" role="option" tabindex="0">Chad</li>
+                <li data-value="MAC" role="option" tabindex="0">Macao</li>
+                <li data-value="CXR" role="option" tabindex="0">Christmas Island</li>
+                <li data-value="CCK" role="option" tabindex="0">Cocos (Keeling) Islands</li>
+                <li data-value="COM" role="option" tabindex="0">Comoros</li>
+                <li data-value="COG" role="option" tabindex="0">Congo (Brazzaville)</li>
+                <li data-value="COD" role="option" tabindex="0">Congo, Democratic Republic of the</li>
+                <li data-value="COK" role="option" tabindex="0">Cook Islands</li>
+                <li data-value="CRI" role="option" tabindex="0">Costa Rica</li>
+                <li data-value="CIV" role="option" tabindex="0">Côte d'Ivoire</li>
+                <li data-value="DJI" role="option" tabindex="0">Djibouti</li>
+                <li data-value="DMA" role="option" tabindex="0">Dominica</li>
+                <li data-value="SLV" role="option" tabindex="0">El Salvador</li>
+                <li data-value="GNQ" role="option" tabindex="0">Equatorial Guinea</li>
+                <li data-value="ERI" role="option" tabindex="0">Eritrea</li>
+                <li data-value="EST" role="option" tabindex="0">Estonia</li>
+                <li data-value="SWZ" role="option" tabindex="0">Eswatini</li>
+                <li data-value="ETH" role="option" tabindex="0">Ethiopia</li>
+                <li data-value="FLK" role="option" tabindex="0">Falkland Islands (Islas Malvinas)</li>
+                <li data-value="FRO" role="option" tabindex="0">Faroe Islands</li>
+                <li data-value="FJI" role="option" tabindex="0">Fiji</li>
+                <li data-value="GUF" role="option" tabindex="0">French Guiana</li>
+                <li data-value="PYF" role="option" tabindex="0">French Polynesia</li>
+                <li data-value="ATF" role="option" tabindex="0">French Southern Territories</li>
+                <li data-value="GAB" role="option" tabindex="0">Gabon</li>
+                <li data-value="GMB" role="option" tabindex="0">Gambia</li>
+                <li data-value="GEO" role="option" tabindex="0">Georgia</li>
+                <li data-value="GIB" role="option" tabindex="0">Gibraltar</li>
+                <li data-value="GRL" role="option" tabindex="0">Greenland</li>
+                <li data-value="GRD" role="option" tabindex="0">Grenada</li>
+                <li data-value="GLP" role="option" tabindex="0">Guadeloupe</li>
+                <li data-value="GUM" role="option" tabindex="0">Guam</li>
+                <li data-value="GIN" role="option" tabindex="0">Guinea</li>
+                <li data-value="GNB" role="option" tabindex="0">Guinea-Bissau</li>
+                <li data-value="GUY" role="option" tabindex="0">Guyana</li>
+                <li data-value="HTI" role="option" tabindex="0">Haiti</li>
+                <li data-value="HMD" role="option" tabindex="0">Heard Island and McDonald Islands</li>
+                <li data-value="VAT" role="option" tabindex="0">Holy See (Vatican City State)</li>
+                <li data-value="HND" role="option" tabindex="0">Honduras</li>
+                <li data-value="IMN" role="option" tabindex="0">Isle of Man</li>
+                <li data-value="JAM" role="option" tabindex="0">Jamaica</li>
+                <li data-value="KIR" role="option" tabindex="0">Kiribati</li>
+                <li data-value="KGZ" role="option" tabindex="0">Kyrgyzstan</li>
+                <li data-value="LAO" role="option" tabindex="0">Lao PDR</li>
+                <li data-value="LSO" role="option" tabindex="0">Lesotho</li>
+                <li data-value="LBR" role="option" tabindex="0">Liberia</li>
+                <li data-value="LBY" role="option" tabindex="0">Libya</li>
+                <li data-value="LTU" role="option" tabindex="0">Lithuania</li>
+                <li data-value="MDG" role="option" tabindex="0">Madagascar</li>
+                <li data-value="MWI" role="option" tabindex="0">Malawi</li>
+                <li data-value="MDV" role="option" tabindex="0">Maldives</li>
+                <li data-value="MLI" role="option" tabindex="0">Mali</li>
+                <li data-value="MHL" role="option" tabindex="0">Marshall Islands</li>
+                <li data-value="MTQ" role="option" tabindex="0">Martinique</li>
+                <li data-value="MRT" role="option" tabindex="0">Mauritania</li>
+                <li data-value="MYT" role="option" tabindex="0">Mayotte</li>
+                <li data-value="FSM" role="option" tabindex="0">Micronesia, Federated States of</li>
+                <li data-value="MDA" role="option" tabindex="0">Moldova</li>
+                <li data-value="MCO" role="option" tabindex="0">Monaco</li>
+                <li data-value="MNG" role="option" tabindex="0">Mongolia</li>
+                <li data-value="MNE" role="option" tabindex="0">Montenegro</li>
+                <li data-value="MSR" role="option" tabindex="0">Montserrat</li>
+                <li data-value="MOZ" role="option" tabindex="0">Mozambique</li>
+                <li data-value="NAM" role="option" tabindex="0">Namibia</li>
+                <li data-value="NRU" role="option" tabindex="0">Nauru</li>
+                <li data-value="NPL" role="option" tabindex="0">Nepal</li>
+                <li data-value="ANT" role="option" tabindex="0">Netherlands Antilles</li>
+                <li data-value="NCL" role="option" tabindex="0">New Caledonia</li>
+                <li data-value="NIC" role="option" tabindex="0">Nicaragua</li>
+                <li data-value="NER" role="option" tabindex="0">Niger</li>
+                <li data-value="NIU" role="option" tabindex="0">Niue</li>
+                <li data-value="NFK" role="option" tabindex="0">Norfolk Island</li>
+                <li data-value="MNP" role="option" tabindex="0">Northern Mariana Islands</li>
+                <li data-value="PLW" role="option" tabindex="0">Palau</li>
+                <li data-value="PSE" role="option" tabindex="0">Palestinian Territory, Occupied</li>
+                <li data-value="PNG" role="option" tabindex="0">Papua New Guinea</li>
+                <li data-value="PRY" role="option" tabindex="0">Paraguay</li>
+                <li data-value="PCN" role="option" tabindex="0">Pitcairn</li>
+                <li data-value="PRI" role="option" tabindex="0">Puerto Rico</li>
+                <li data-value="REU" role="option" tabindex="0">Réunion</li>
+                <li data-value="RWA" role="option" tabindex="0">Rwanda</li>
+                <li data-value="BLM" role="option" tabindex="0">Saint-Barthélemy</li>
+                <li data-value="SHN" role="option" tabindex="0">Saint Helena</li>
+                <li data-value="KNA" role="option" tabindex="0">Saint Kitts and Nevis</li>
+                <li data-value="LCA" role="option" tabindex="0">Saint Lucia</li>
+                <li data-value="MAF" role="option" tabindex="0">Saint-Martin</li>
+                <li data-value="SPM" role="option" tabindex="0">Saint Pierre and Miquelon</li>
+                <li data-value="VCT" role="option" tabindex="0">Saint Vincent and Grenadines</li>
+                <li data-value="WSM" role="option" tabindex="0">Samoa</li>
+                <li data-value="SMR" role="option" tabindex="0">San Marino</li>
+                <li data-value="STP" role="option" tabindex="0">Sao Tome and Principe</li>
+                <li data-value="SEN" role="option" tabindex="0">Senegal</li>
+                <li data-value="SYC" role="option" tabindex="0">Seychelles</li>
+                <li data-value="SLE" role="option" tabindex="0">Sierra Leone</li>
+                <li data-value="SVK" role="option" tabindex="0">Slovakia</li>
+                <li data-value="SVN" role="option" tabindex="0">Slovenia</li>
+                <li data-value="SLB" role="option" tabindex="0">Solomon Islands</li>
+                <li data-value="SOM" role="option" tabindex="0">Somalia</li>
+                <li data-value="SGS" role="option" tabindex="0">South Georgia, South Sandwich Islands</li>
+                <li data-value="SSD" role="option" tabindex="0">South Sudan</li>
+                <li data-value="SDN" role="option" tabindex="0">Sudan</li>
+                <li data-value="SUR" role="option" tabindex="0">Suriname</li>
+                <li data-value="SJM" role="option" tabindex="0">Svalbard and Jan Mayen Islands</li>
+                <li data-value="TJK" role="option" tabindex="0">Tajikistan</li>
+                <li data-value="TZA" role="option" tabindex="0">Tanzania, United Republic of</li>
+                <li data-value="TLS" role="option" tabindex="0">Timor-Leste</li>
+                <li data-value="TKL" role="option" tabindex="0">Tokelau</li>
+                <li data-value="TON" role="option" tabindex="0">Tonga</li>
+                <li data-value="TCA" role="option" tabindex="0">Turks and Caicos Islands</li>
+                <li data-value="TUV" role="option" tabindex="0">Tuvalu</li>
+                <li data-value="UGA" role="option" tabindex="0">Uganda</li>
+                <li data-value="UMI" role="option" tabindex="0">United States Minor Outlying Islands</li>
+                <li data-value="VUT" role="option" tabindex="0">Vanuatu</li>
+                <li data-value="VIR" role="option" tabindex="0">Virgin Islands, US</li>
+                <li data-value="WLF" role="option" tabindex="0">Wallis and Futuna Islands</li>
+                <li data-value="ESH" role="option" tabindex="0">Western Sahara</li>
+                <li data-value="YEM" role="option" tabindex="0">Yemen</li>
+                <li data-value="ZMB" role="option" tabindex="0">Zambia</li>
+                <li data-value="ZWE" role="option" tabindex="0">Zimbabwe</li>
+        </ul>
+    </div>
+
+						</div>
+                    </div>
+					<div class="row m-t-1">
+						<div class="col-sm-4 clearfix">
+							<div class="pull-left m-r-1 country-instruction-text">
+								Are you bound by MiFID II Research Unbundling rules?
+							</div>
+						</div>
+						<div class="col-sm-4 clearfix">
+							<div class="row">
+								<div class="col-sm-6">
+									<label for="mifid-regulation-yes">Yes</label>
+									<input type="radio" name="mifid-regulation" id="mifid-regulation-yes" value="Yes">
+								</div>
+								<div class="col-sm-6">
+									<label for="mifid-regulation-no">No</label>
+									<input type="radio" name="mifid-regulation" id="mifid-regulation-no" value="No">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<input class="checkbox m-t-2" id="checkbox-accept-terms-conditions" tabindex="0" type="checkbox">
+							<label class="label-checkbox m-t-2" for="checkbox-accept-terms-conditions">I have read the Terms &amp; Conditions</label>
+						</div>
+						<div class="col-sm-8">
+							<button class="btn btn-primary btn-sm disabled m-y-1 m-r-2 pull-left" id="button-accept-terms-conditions" data-webtrekk-name="Registration Page/Terms Accept">Accept</button>
+							<div class="accept-button-disclaimer m-y-1">
+								By clicking 'Accept' you agree that you are able to consume Deutsche Bank Research because you
+(a) are not bound by MiFID II Research Unbundling rules ('rules') or 
+(b) have appropriate arrangements in place to comply with the rules. You also represent you will not access research 
+reports on futures contracts if you are located, incorporated or constituted in, or a resident of, Hong Kong.
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group submit-error hide">
+								    <div id="" class="alert alert-danger " role="alert">
+            <p>An error has occurred. Please try again.</p>
+
+    </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form id="form-authenticate" action="/research/Register/Authentication" method="POST">
+			<input type="hidden" id="form-authenticate-redirect-url" name="redirectUrl" value="">
+		</form>
+	</section>
+	<section id="section-support">
+		<p>If you have forgotten your registered email address or encounter any technical difficulties, please contact our <a href="/research/Help/Support">Support Team</a>.</p>
+		<p>If you are not registered for Deutsche Bank Research and would like access, please contact your local Deutsche Bank sales representative.</p>
+	</section>
+	<!-- Bootstrap Modal -->
+<div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header ">
+	<h4 id="helpModalLabel">Period of Inactivity</h4>
+</div>
+<div class="modal-body">
+	Are you experiencing a problem with your Device Registration?
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-default m-y-1" data-dismiss="modal" aria-label="Close">No</button>
+	<button id="update-modal" type="button" class="btn btn-primary m-y-1">Yes</button>
+</div>;
+		</div>
+	</div>
+</div>
+
+	
+
+
+<div class="front-end-alerts-module">
+	<div class="front-end-alerts-container">
+	</div>
+		<div class="templates-container hidden">
+	<div class="alert alert-success resend-email-success" role="alert" data-prepend-content="<span class=&quot;icon icon-check m-r-1&quot;></span>">
+		If your email address is linked to a valid account, another verification code has been sent.
+	</div>
+	<div class="alert alert-warning help-modal-failure" role="alert" data-prepend-content="<span class=&quot;icon icon-check m-r-1&quot;></span>">
+		Unable to retrieve your account data. Please try again.
+	</div>
+		</div>
+</div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+</div>
+
+			</div>
+			
+<footer>
+	<div class="navbar navbar-footer">
+		<div class="container">
+			<div class="navbar-secondary public">
+				<ul class="list-inline list-divided">
+					<li>
+						<a href="/research/Help/Support">Support</a>
+					</li>
+					<li>
+						<a href="/research/Help/TermsAndConditions">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+				    <p class="text-muted">Last Update: 2021 June 03</p>
+
+				    <p class="text-muted">Copyright © 2025 Deutsche Bank AG, Frankfurt am Main</p>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+			<script type="text/javascript">
+					window['WSOD'] = window['WSOD'] || {};
+					var MOD = {};
+					MOD.ApiBaseUrl = "/research/api/1.0";
+					MOD.AppIds = {"ResearchArticle":"com_dbresearch_researcharticle","DisclosuresRequiredByRegulators":"com_dbresearch_discolsuresrequiredbyregulators","ResearchDocument":"com_dbresearch_researchdocument","DisclosuresRatingKeys":"com_dbresearch_disclosuresratingkeys","TopicsRelatedAnalysts":"com_dbresearch_topicsrelatedanalysts","CompanyHeader":"com_dbresearch_companyheader","DisclosuresDisclaimer":"com_dbresearch_disclosuresdisclaimer","HomeSearch":"com_dbresearch_homesearch","ProfileResearchEntitlements":"com_dbresearch_profileresearchentitlements","DisclosuresHistoricalCatalystCalls":"com_dbresearch_disclosureshistoricalcatalystcalls","HelpTermsAndConditions":"com_dbresearch_helptermsandconditions","SubscriptionsExtendedLeaveHold":"com_dbresearch_subscriptionsextendedleavehold","AnalystTeamInfo":"com_dbresearch_researchanalystteaminfo","ProfileTermsAndConditions":"com_dbresearch_profiletermsandconditions","DisclosuresCompanyHeader":"com_dbresearch_disclosurescompanyheader","CompanyRelatedIssuers":"com_dbresearch_companyrelatedissuers","PageBanner":"com_dbresearch_pagebanner","CompanyTabbedContent":"com_dbresearch_tabbedcontent","SubscriptionsManagement":"com_dbresearch_subscriptionsmanagement","DisclosuresHistoricalRecommendations":"com_dbresearch_disclosureshistoricalrecommendations","RegisterVerificationCode":"com_dbresearch_registerverificationcode","CompanyState":"com_dbresearch_companystate","HeaderNavigation":"com_dbresearch_headernavigation","SharedFeaturedResearch":"com_dbresearch_sharedfeaturedresearch","SubscriptionsOneClickSubscribe":"com_dbresearch_subscriptionsoneclicksubscribe","TopicsSubtopics":"com_dbresearch_topicssubtopics","CompanyDetails":"com_dbresearch_companydetails","FrontEndAlerts":"com_dbresearch_frontendalerts","DisclosuresRatingsAndPrice":"com_dbresearch_disclosuresratingsandprice","AnalystCoverageAndResearch":"com_dbresearch_researchanalystcoverageandresearch","AnalystPageHeader":"com_dbresearch_researchanalystpageheader","AnalystProfile":"com_dbresearch_researchanalystprofile","DisclosuresEquityRatingDispersionChart":"com_dbresearch_disclosuresequityratingdispersionchart","LatestResearchModule":"com_dbresearch_latestresearchmodule","CompanyRating":"com_dbresearch_companyrating","CompanyLinks":"com_dbresearch_companylinks","Unsubscribe":"com_dbresearch_unsubscribe","HomeFeaturedResearch":"com_dbresearch_homefeaturedresearch","DisclosuresTradeIdeasChart":"com_dbresearch_disclosurestradeideaschart","SubscriptionsPreferredLanguage":"com_dbresearch_subscriptionspreferredlanguage","HelpSupport":"com_dbresearch_helpsupport","TopicsCoverageAndResearch":"com_dbresearch_topicscoverageandresearch","SharedCurrentCatalystCalls":"com_dbresearch_sharedcurrentcatalystcalls","ProfilePreferences":"com_dbresearch_profilepreferences","TopicsPeriodicalSummary":"com_dbresearch_topicsperiodicalsummary","HomeSearchResults":"com_dbresearch_homesearchresults","ProductPageHeader":"com_dbresearch_productpageheader","ResearchLatest":"com_dbresearch_researchlatest","CompanyFullFinancials":"com_dbresearch_companyfullfinancials","FooterNavigation":"com_dbresearch_footernavigation","DisclosuresCompanySearch":"com_dbresearch_disclosurescompanysearch","TopicsPeriodicals":"com_dbresearch_topicsperiodicals","EventsReleases":"com_dbresearch_eventsreleases","ResearchModel":"com_dbresearch_researchmodel","ProductCatalystCallIdeas":"com_dbresearch_catalystcallideas","RegisterDevice":"com_dbresearch_registerdevice","CompanyFinancials":"com_dbresearch_companyfinancials","AdditionalReading":"com_dbresearch_additionalreading","TopicsPageHeader":"com_dbresearch_topicspageheader","ProductIframe":"com_dbresearch_productiframe","TopicsFeaturedChart":"com_dbresearch_topicsfeaturedchart","ResearchBookmarks":"com_dbresearch_researchbookmarks"};
+					MOD.Config = JSON.parse('{\"environment\":\"Acceptance\",\"dateFormat\":\"YearMonthDay\",\"isPublicUser\":true,\"userCompany\":\"\",\"userEmail\":\"\",\"userName\":\" \",\"userId\":\"DERESEARCHPUBLIC\",\"webtrekkDomain\":\"uat.research.db.com\",\"webtrekkResearchPortalKid\":\"RP0001\",\"webtrekkTrackDomain\":\"wtk.db.com\",\"webtrekkTrackId\":\"965607891904117\",\"pageInstanceGuid\":\"caa071a6-6116-412b-b395-016d8263772b\"}');
+					MOD.Pages = {"TOPICS_GLOBAL_ECONOMICS":"TopicsGlobalEconomics","COMPANY_FINANCIALS":"CompanyFinancials","TOPICS_INDEX":"TopicsIndex","SUBSCRIPTIONS_INDEX":"SubscriptionsIndex","DISCLOSURES_DISCLAIMER":"DisclosuresDisclaimer","REGISTER_DEVICE":"RegisterDevice","PRODUCTS_FITT_REPORTS":"ProductsFittReports","PRODUCTS_EVENTS":"ProductsEvents","RESEARCH_ANALYST":"ResearchAnalyst","HELP_SUPPORT":"HelpSupport","PROFILE_INDEX":"ProfileIndex","RESEARCH_ARTICLE":"ResearchArticle","HOME_INDEX":"HomeIndex","HOME_SEARCH_RESULTS":"HomeSearchResults","ERROR_HTTP_NOT_FOUND":"ErrorHttpNotFound","DISCLOSURES_COMPANY":"DisclosuresCompany","RESEARCH_LATEST":"ResearchLatest","PRODUCTS_PODZEPT":"ProductsPodzept","TOPICS_MULTI_ASSET":"TopicsMultiAsset","RESEARCH_DOCUMENT":"ResearchDocument","PRODUCTS_DB_SUSTAINABILITY":"ProductsDbSustainability","PROFILE_TERMS_AND_CONDITIONS":"ProfileTermsAndConditions","UNSUBSCRIBE_INDEX":"UnsubscribeIndex","TOPICS_THEMES":"TopicsThemes","TOPICS_REGIONAL_ECONOMICS":"TopicsRegionalEconomics","PRODUCTS_BEHIND_HEADLINES":"ProductsBehindHeadlines","DISCLOSURES_HISTORICAL_RECOMMENDATIONS":"DisclosuresHistoricalRecommendations","RESEARCH_BOOKMARKS":"ResearchBookmarks","TOPICS_EQUITIES":"TopicsEquities","RESEARCH_MODEL":"ResearchModel","REGISTER_VERIFICATION_CODE":"RegisterVerificationCode","COMPANY_INDEX":"CompanyIndex","DISCLOSURES_COMPANY_SEARCH":"DisclosuresCompanySearch","PRODUCTS_DB_INSIGHTS":"ProductsDbInSights","PRODUCTS_CATALYST_CALLS":"ProductsCatalystCalls","TOPICS_PERIODICAL":"TopicsPeriodical","HELP_TERMS_AND_CONDITIONS":"HelpTermsAndConditions","TOPICS_FICC":"TopicsFicc","TOPICS_EQUITY":"TopicsEquity","ERROR_HTTP_DEFAULT":"ErrorHttpDefault"};
+					MOD.AppIdsOnPage = ["com_dbresearch_registerdevice"];
+			</script>
+
+			<script src="https://content.markitcdn.com/research.db.com/research/Content/Dist/Scripts/common.min.js?e3fea17d?t=45758.2532498958"></script>
+
+			<script type="text/javascript">
+				MOD.f2AppUrl = $.getF2Url(); // strange to have this here, but only place that has everything needed
+			</script>
+
+			<script data-module-name="OnDemandAnalytics">window._waq = window._waq || []; (function() {var domain = 'oda.markitqa.com'; wa_id = 'wa_548845'; _waq.push(['_setup', {reportingid: '548845', domain: domain}]); if(!document.getElementById(wa_id)){var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true; wa.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + domain + '/js/wa.js'; wa.id = wa_id;var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);}})();
+_waq.push(["_trackPageView", {"category":"Register","name":"Index"}]);</script>
+			<script type="text/javascript" data-module-name="InlineScriptModule">$(function() {
+	// Inline Scripts:
+	
+// Client Side Resolve URL (attribute)
+String.prototype.resolveCultureSpecificUrl = function() {
+	var baseUrl = '/research/';
+	var newUrl = this;
+
+	if (!!newUrl && newUrl.charAt(0) == '~') {
+		newUrl = newUrl.replace('~/', baseUrl);
+	}
+	
+	return newUrl;
+};
+			
+	
+// Client Side Resolve URL (attribute)
+String.prototype.resolveUrl = function() {
+	var baseUrl = '/research/';
+	var newUrl = this;
+
+	if (!!newUrl && newUrl.charAt(0) == '~') {
+		newUrl = newUrl.replace('~/', baseUrl);
+	}
+	
+	return newUrl;
+};
+			
+	var RouteData = {"controller":"register","action":"Index","id":""};
+	var WebId = 'DERESEARCHPUBLIC';
+
+	// PageManager Definition:
+var PageManager = function () {};
+
+PageManager.prototype.init = function () {
+    this.initF2Apps();
+
+    // Execute Webtrekk request
+    this.modWebtrekk = new ModWebtrekk();
+    this.modWebtrekk.executeRequest();
+};
+
+PageManager.prototype.initF2Apps = function () {
+	// App IDs defined in EndPointConfigs/AppIds.cs
+	// MOD.AppIds defined in DefaultLayout.cshtml
+	var appIds = [MOD.AppIds.RegisterDevice];
+	var appConfig = MOD.GetAppConfig(appIds);
+
+	F2.init({
+		UI: {
+			Mask: {
+				loadingIcon: '~/Content/Images/ajax-loader.gif'.resolveUrl()
+			}
+		}
+	});
+
+	F2.registerApps(appConfig);
+};
+
+
+	// PageManager Setup:
+	var PageManagerClass =
+			typeof(PageManager) == 'undefined'
+			? function(){}
+			: PageManager;
+
+	var wsod = window['WSOD'] || {};
+	var pm = new PageManagerClass();
+
+	if (pm.init) {
+		pm.init();
+	}
+
+	wsod.PageManager = pm;
+});
+</script>
+		</div>
+	</div>
+
+
+</body></html>

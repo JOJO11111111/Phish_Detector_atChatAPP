@@ -1,0 +1,1380 @@
+<html lang="ru-RU" class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js_active  vc_desktop  vc_transform  vc_transform "><!--<![endif]--><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="lVYHP7gNYDFXF_YD9RfwlMbZJo2CfgeFtNYOtfsyrrc">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://1academy.pro/wp-content/themes/ethic/js/html5shiv.js"></script>
+    <script src="https://1academy.pro/wp-content/themes/ethic/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400..900&amp;display=swap" rel="stylesheet">
+    <title>Академия Профессионалов #1 | Обучение продажам на маркетплейсах | Маркетинг | Реклама | 1Academy.pro</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//1academy.pro">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="alternate" type="application/rss+xml" title="1academy.pro - Академия профессионалов » Лента" href="https://1academy.pro/feed/">
+<link rel="alternate" type="application/rss+xml" title="1academy.pro - Академия профессионалов » Лента комментариев" href="https://1academy.pro/comments/feed/">
+<script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/9599b765/www-widgetapi.vflset/www-widgetapi.js" async=""></script><script src="https://www.youtube.com/iframe_api" id="sby-youtube-api"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/1academy.pro\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://1academy.pro/wp-includes/css/dist/block-library/style.min.css?ver=6.6" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="anycomment-styles-css" href="https://1academy.pro/wp-content/plugins/anycomment/static/css/main.min.css?ver=08f327e8f15679b35daf9b6716f5edb7" type="text/css" media="all">
+<link rel="stylesheet" id="anycomment-google-font-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400%2C700&amp;subset=cyrillic&amp;ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="https://1academy.pro/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.5" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+.persephone.tparrows {
+	cursor:pointer;
+	background:rgba(201,201,201,0.75);
+	width:40px;
+	height:40px;
+	position:absolute;
+	display:block;
+	z-index:100;
+    border:1px solid rgba(255, 255, 255, 1);
+}
+.persephone.tparrows:hover {
+	background:rgba(0, 0, 0, 1);
+}
+.persephone.tparrows:before {
+	font-family: "revicons";
+	font-size:15px;
+	color: rgb(255, 255, 255);
+	display:block;
+	line-height: 40px;
+	text-align: center;
+}
+.persephone.tparrows.tp-leftarrow:before {
+	content: "\e824";
+}
+.persephone.tparrows.tp-rightarrow:before {
+	content: "\e825
+";
+}
+
+
+</style>
+<link rel="stylesheet" id="child-style-css" href="https://1academy.pro/wp-content/themes/ethic-child/style.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap.min-css" href="https://1academy.pro/wp-content/themes/ethic/css/bootstrap.min.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="owl.carousel-css" href="https://1academy.pro/wp-content/themes/ethic/css/owl.carousel.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="custom-css" href="https://1academy.pro/wp-content/themes/ethic/css/customcss.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="Varela-css" href="https://fonts.googleapis.com/css?family=Varela&amp;ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="customer_ethic_css.css-css" href="https://1academy.pro/wp-content/themes/ethic/css//customer/customer_ethic_css.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://1academy.pro/wp-content/themes/ethic/css//fonts/awesome/css/font-awesome.min.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="https://1academy.pro/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=7.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_custom_css-css" href="//1academy.pro/wp-content/uploads/js_composer/custom.css?ver=7.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="tmmp-css" href="https://1academy.pro/wp-content/plugins/team-members-pro/inc/css/tmm_style.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="simplr-forms-style-css" href="https://1academy.pro/wp-content/plugins/simplr-registration-form/assets/skins/default.css?ver=6.6" type="text/css" media="all">
+<link rel="stylesheet" id="UserAccessManagerAdmin-css" href="https://1academy.pro/wp-content/plugins/user-access-manager/css/uamAdmin.css?ver=1.0" type="text/css" media="screen">
+<link rel="stylesheet" id="UserAccessManagerLoginForm-css" href="https://1academy.pro/wp-content/plugins/user-access-manager/css/uamLoginForm.css?ver=1.0" type="text/css" media="screen">
+<link rel="stylesheet" id="main-css" href="https://1academy.pro/wp-content/themes/ethic/css/main.css" type="text/css" media="all">
+<script type="text/javascript" src="https://1academy.pro/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/modernizr.min.js" id="modernizer-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.enablelog.js?ver=5.2.5' defer='defer" id="enable-logs-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/js/tmm.min.js?ver=6.6" id="tmmp-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/user-access-manager/js/jquery.browser.min.js?ver=6.6" id="UserAccessManagerJQueryBrowser-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/user-access-manager/js/jquery.tools.min.js?ver=6.6" id="UserAccessManagerJQueryTools-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/user-access-manager/js/functions.js?ver=6.6" id="UserAccessManagerFunctions-js"></script>
+<script></script><link rel="https://api.w.org/" href="https://1academy.pro/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://1academy.pro/wp-json/wp/v2/pages/14777"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://1academy.pro/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.6">
+<link rel="canonical" href="https://1academy.pro/">
+<link rel="shortlink" href="https://1academy.pro/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://1academy.pro/wp-json/oembed/1.0/embed?url=https%3A%2F%2F1academy.pro%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://1academy.pro/wp-json/oembed/1.0/embed?url=https%3A%2F%2F1academy.pro%2F&amp;format=xml">
+<meta name="framework" content="weLaunch 4.1.24">
+<!-- All in One SEO Pack - Pro Version 1.72 by Michael Torbert of Semper Fi Web Design[1269,1676] -->
+<meta name="description" content="Обучитесь продажам на популярных маркетплейсах Wildberries, Ozon, Яндекс.Маркет. Получите знания и навыки для успешного развития вашего бизнеса. Начните карьеру в продажах уже сегодня!">
+<!-- /all in one seo pack Pro Version-->
+<script type="text/javascript" src="https://1academy.pro/wp-includes/js/tw-sack.min.js?ver=1.6.1" id="sack-js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function alo_em_pubblic_form ()
+{
+//edit : added all this for
+  var alo_cf_array = new Array();
+      document.alo_easymail_widget_form.submit.value="sending...";
+  document.alo_easymail_widget_form.submit.disabled = true;
+  document.getElementById('alo_em_widget_loading').style.display = "inline";
+  document.getElementById('alo_easymail_widget_feedback').innerHTML = "";
+
+
+
+  
+  var alo_em_sack = new sack("https://1academy.pro/wp-admin/admin-ajax.php" );
+
+  alo_em_sack.execute = 1;
+  alo_em_sack.method = 'POST';
+  alo_em_sack.setVar( "action", "alo_em_pubblic_form_check" );
+  alo_em_sack.setVar( "alo_em_opt_name", document.alo_easymail_widget_form.alo_em_opt_name.value );
+  alo_em_sack.setVar( "alo_em_opt_email", document.alo_easymail_widget_form.alo_em_opt_email.value );
+    alo_em_sack.setVar( "alo_easymail_txt_generic_error", 'Error during operation.' );  
+  alo_em_sack.setVar( "alo_em_error_email_incorrect", "The e-email address is not correct");
+  alo_em_sack.setVar( "alo_em_error_name_empty", "The name field is empty");
+    alo_em_sack.setVar( "alo_em_error_email_added", "Warning: this email address has already been subscribed, but not activated. We are now sending another activation email");
+  alo_em_sack.setVar( "alo_em_error_email_activated", "Warning: this email address has already been subscribed");
+  alo_em_sack.setVar( "alo_em_error_on_sending", "Error during sending: please try again");
+  alo_em_sack.setVar( "alo_em_txt_ok", "Subscription successful. You will receive an e-mail with a link. You have to click on the link to activate your subscription.");
+  alo_em_sack.setVar( "alo_em_txt_subscribe", "Subscribe");
+  alo_em_sack.setVar( "alo_em_lang_code", "");  
+  
+  var cbs = document.getElementById('alo_easymail_widget_form').getElementsByTagName('input');
+  var length = cbs.length;
+  var lists = "";
+  for (var i=0; i < length; i++) {
+  	if (cbs[i].name == 'alo_em_form_lists' +'[]' && cbs[i].type == 'checkbox') {
+  		if ( cbs[i].checked ) lists += cbs[i].value + ",";
+  	}
+  }
+  alo_em_sack.setVar( "alo_em_form_lists", lists );
+  alo_em_sack.setVar( "alo_em_nonce", '0b505229e4' );  
+  //alo_em_sack.onError = function() { alert('Ajax error' )};
+  alo_em_sack.runAJAX();
+
+  return true;
+
+} 
+//]]>
+</script>
+    <script type="text/javascript">
+        var themeprefix = 'plazart';
+        var imgpath = 'https://1academy.pro/wp-content/themes/ethic/images/';
+    </script>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<meta name="generator" content="Powered by Slider Revolution 5.2.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>    <meta name="enot" content="6581654187040v3_B-7LyXXUIpJqYhIOgoU00k6NwSFus">
+    <meta name="yandex-verification" content="ace957c26968604f">
+<style type="text/css">undefined</style><style type="text/css">undefined</style></head>
+<body id="bd" class="home page-template page-template-template-homepage page-template-template-homepage-php page page-id-14777 wpb-js-composer js-comp-ver-7.7.2 vc_responsive">
+<div class="tz-wrapper">
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+        <defs>
+            <symbol id="logo" viewBox="0 0 5747.9 2832.6">
+                <path d="M113 2229.8H6.9l137.9-371.1h101.3l138.4 371.1h-106l-20.7-61H133.1L113 2229.8zM237 2098.8l-41.4-126.2 -41.9 126.2H237z"></path>
+                <path d="M634.2 1858.6h118.8L614 2029.9l152.2 199.9H640.5l-118.2-180.3h-2.1v180.3H418.9v-371.1h101.3v154.3h2.1L634.2 1858.6z"></path>
+                <path d="M889.2 2229.8h-106L921 1858.6h101.3l138.4 371.1h-106l-20.7-61H909.3L889.2 2229.8zM1013.3 2098.8l-41.4-126.2L930 2098.8H1013.3z"></path>
+                <path d="M1596.5 2142.8l-5.8 168.1h-87.5v-81.1h-238.6v81.1h-87.5l-5.3-168.1h38.7c9-13.8 28.1-46.7 38.7-89.6 9-35.5 10.1-70 10.1-105v-89.6H1544v284.2H1596.5zM1354.7 1941.9v42.9c0 26-2.1 55.1-8.5 84.8 -6.4 30.2-16.4 54.6-28.6 76.9h125.1v-204.7H1354.7z"></path>
+                <path d="M1918.3 2002.3v77.9h-173.4v64.2h204.1v85.4h-305.4v-371.1h300.6v84.8h-199.4v58.9H1918.3z"></path>
+                <path d="M2099.1 1977.4h-1.6v252.4h-96v-371.1h140l75.8 245h2.1l74.8-245h140v371.1h-96v-252.4h-1.6l-81.7 252.4h-74.2L2099.1 1977.4z"></path>
+                <path d="M2745.4 1858.6h101.3v371.1h-101.3v-220.6l-129.9 220.6h-101.8v-371.1h101.8v217.9L2745.4 1858.6z"></path>
+                <path d="M3099.6 2104.6l-74.8 125.1H2905l95.4-134.1c-38.7-8.5-60.4-30.2-63.1-32.9 -19.6-19.6-30.8-49.8-30.8-83.8 0-34.5 12.7-64.7 32.3-84.3 33.9-33.9 81.7-36.1 103.4-36.1H3238v371.1h-101.3v-125.1H3099.6zM3065.7 1940.8c-13.3 0-29.7 1.1-41.4 12.7 -6.4 6.4-11.1 15.9-11.1 29.2 0 10.1 3.7 22.8 10.1 29.7 9 9.5 27 13.8 42.4 13.8h71v-85.4H3065.7z"></path>
+                <path d="M153.3 2825.8H52v-371.1h318.7v371.1H269.4v-286.3H153.3V2825.8z"></path>
+                <path d="M631.5 2454.6c33.9 0 76.9 2.7 109.8 35 28.6 28.6 32.3 64.7 32.3 90.1s-3.7 64.7-32.9 93.3c-32.9 32.3-81.7 35-110.3 35H552v117.7H450.2v-371.1H631.5zM552 2626.4h59.9c15.9 0 32.9-3.2 42.9-11.7 12.2-10.1 13.8-24.4 13.8-32.9 0-14.8-4.8-25.5-11.7-31.8 -3.2-3.2-13.8-10.6-43.5-10.6H552V2626.4z"></path>
+                <path d="M861.6 2496c44-45.1 102.3-52 139.4-52 73.7 0 116.6 26.5 140.5 50.9 21.7 21.7 52 67.3 52 147.4 0 70.5-24.4 116.6-54.1 145.3 -40.8 39.8-92.8 48.8-137.3 48.8 -40.8 0-93.3-5.8-136.8-48.3 -30.2-29.2-55.1-76.9-55.1-149C810.2 2566.5 836.2 2522 861.6 2496zM944.9 2728.7c16.4 18 37.1 22.3 56.7 22.3 15.9 0 38.7-3.7 56.7-22.3 20.7-21.7 26.5-59.4 26.5-89.6 0-38.2-8.5-69.5-26.5-88 -15.9-17-36.6-21.7-56.7-21.7 -21.7 0-41.4 5.8-56.7 22.3 -24.4 26-26 70-26 89.1C918.9 2668.3 922.6 2705.4 944.9 2728.7z"></path>
+                <path d="M1424.2 2789.2h-5.8c-86.4 0-125.7-27.6-143.2-44 -20.1-19.6-41.9-54.1-41.9-108.2 0-55.1 23.3-89.1 40.8-106.6 40.8-40.3 106-46.1 142.1-46.1h8V2435h101.3v49.3h8c59.4 0 109.2 11.1 142.1 43.5 22.8 22.3 40.8 56.7 40.8 108.2 0 32.3-6.9 74.8-41.9 108.2 -34.5 33.4-88 45.1-143.2 45.1h-5.8v49.8h-101.3V2789.2zM1431.6 2563.3h-5.3c-8 0-41.4 0.5-62 14.8 -13.8 9.5-26.5 27-26.5 57.8 0 27.6 11.1 45.6 22.3 55.7 19.1 16.4 45.6 18.6 66.3 18.6h5.3V2563.3zM1523.9 2710.2c13.8 0 44.5-1.1 65.7-19.6 11.1-10.1 22.3-27.6 22.3-56.2 0-35-16.4-50.9-26.5-57.8 -12.7-8.5-31.8-13.3-61.5-13.3h-5.3v146.9H1523.9z"></path>
+                <path d="M2046.7 2598.3v77.9h-173.4v64.2h204.1v85.4H1772v-371.1h300.6v84.8h-199.4v58.9H2046.7z"></path>
+                <path d="M2474.5 2691.6c-5.3 58.3-36.6 92.3-42.9 98.6 -37.1 38.2-87.5 46.1-130.4 46.1 -45.1 0-94.9-7.4-135.2-48.8 -15.9-16.4-52-61.5-52-149 0-71 24.4-117.7 50.4-144.7 40.3-41.4 93.3-49.3 133.1-49.3 68.9 0 109.2 22.8 131.5 44.5 21.7 21.7 39.2 55.7 41.9 95.4h-99.1c-2.1-13.3-8-27-15.4-35.5 -14.3-16.4-35.5-19.1-51.4-19.1 -18 0-38.2 2.7-54.6 19.6 -26.5 27-27.6 78.5-27.6 91.7 0 44 12.7 73.7 30.2 90.1 15.4 14.3 33.4 19.1 54.1 19.1 21.2 0 36.6-6.4 46.7-15.4 12.2-10.6 19.1-27.6 20.7-43.5H2474.5z"></path>
+                <path d="M2874.8 2691.6c-5.3 58.3-36.6 92.3-42.9 98.6 -37.1 38.2-87.5 46.1-130.4 46.1 -45.1 0-94.9-7.4-135.2-48.8 -15.9-16.4-52-61.5-52-149 0-71 24.4-117.7 50.4-144.7 40.3-41.4 93.3-49.3 133.1-49.3 68.9 0 109.2 22.8 131.5 44.5 21.7 21.7 39.2 55.7 41.9 95.4H2772c-2.1-13.3-8-27-15.4-35.5 -14.3-16.4-35.5-19.1-51.4-19.1 -18 0-38.2 2.7-54.6 19.6 -26.5 27-27.6 78.5-27.6 91.7 0 44 12.7 73.7 30.2 90.1 15.4 14.3 33.4 19.1 54.1 19.1 21.2 0 36.6-6.4 46.7-15.4 12.2-10.6 19.1-27.6 20.7-43.5H2874.8z"></path>
+                <path d="M3162.2 2454.6h101.3v371.1h-101.3v-220.6l-129.9 220.6h-101.8v-371.1h101.8v217.9L3162.2 2454.6z"></path>
+                <path d="M3378.5 2496c44-45.1 102.3-52 139.4-52 73.7 0 116.6 26.5 140.5 50.9 21.7 21.7 52 67.3 52 147.4 0 70.5-24.4 116.6-54.1 145.3 -40.8 39.8-92.8 48.8-137.3 48.8 -40.8 0-93.3-5.8-136.8-48.3 -30.2-29.2-55.1-76.9-55.1-149C3327.1 2566.5 3353.1 2522 3378.5 2496zM3461.8 2728.7c16.4 18 37.1 22.3 56.7 22.3 15.9 0 38.7-3.7 56.7-22.3 20.7-21.7 26.5-59.4 26.5-89.6 0-38.2-8.5-69.5-26.5-88 -15.9-17-36.6-21.7-56.7-21.7 -21.7 0-41.4 5.8-56.7 22.3 -24.4 26-26 70-26 89.1C3435.8 2668.3 3439.5 2705.4 3461.8 2728.7z"></path>
+                <path d="M3875.9 2825.8h-101.8v-371.1h101.8v133.6h119.3v-133.6H4097v371.1h-101.8v-152.7h-119.3V2825.8z"></path>
+                <path d="M4237.5 2825.8h-106l137.9-371.1h101.3l138.4 371.1h-106l-20.7-61h-124.6L4237.5 2825.8zM4361.6 2694.8l-41.4-126.2 -41.9 126.2H4361.6z"></path>
+                <path d="M4525.4 2741.5c6.4 1.6 12.7 2.1 18.6 2.1 14.8 0 28.6-4.2 37.6-11.7 21.7-19.1 20.7-62.6 21.2-94.4l2.1-182.9h291.6v371.1h-102.3v-284.2h-93.8l-2.7 125.7c-1.1 45.6-6.4 101.3-37.6 132 -22.8 22.8-58.3 30.2-92.3 30.2 -14.8 0-29.2-1.1-42.4-3.7V2741.5z"></path>
+                <path d="M5013.7 2496c44-45.1 102.3-52 139.4-52 73.7 0 116.6 26.5 140.5 50.9 21.7 21.7 52 67.3 52 147.4 0 70.5-24.4 116.6-54.1 145.3 -40.8 39.8-92.8 48.8-137.3 48.8 -40.8 0-93.3-5.8-136.8-48.3 -30.2-29.2-55.1-76.9-55.1-149C4962.3 2566.5 4988.3 2522 5013.7 2496zM5096.9 2728.7c16.4 18 37.1 22.3 56.7 22.3 15.9 0 38.7-3.7 56.7-22.3 20.7-21.7 26.5-59.4 26.5-89.6 0-38.2-8.5-69.5-26.5-88 -15.9-17-36.6-21.7-56.7-21.7 -21.7 0-41.4 5.8-56.7 22.3 -24.4 26-26 70-26 89.1C5071 2668.3 5074.7 2705.4 5096.9 2728.7z"></path>
+                <path d="M5612.8 2455.1c24.4 0 62 3.2 85.9 26 14.8 14.3 24.9 37.1 24.9 66.3 0 20.7-4.8 39.2-20.7 55.7 -11.1 11.7-26.5 19.6-40.3 23.3v1.6c22.8 3.2 42.4 14.3 55.1 26.5 20.1 20.1 23.9 43.5 23.9 64.2 0 37.1-13.8 59.9-27 73.7 -28.6 29.2-72.6 33.4-101.8 33.4h-203.6v-371.1L5612.8 2455.1zM5511 2599.4h66.3c11.7 0 26-3.2 34.5-11.7 4.8-4.2 9.5-12.2 9.5-24.9s-5.8-19.6-10.1-22.8c-9-6.9-24.4-7.4-28.6-7.4H5511V2599.4zM5511 2747.8h80.1c12.2 0 25.5-3.7 32.9-10.1 5.3-4.8 11.7-13.8 11.7-28.1 0-17-8-25.5-12.2-28.6 -10.6-8.5-25.5-9-35-9H5511V2747.8z"></path>
+                <path d="M3399.6 536h24.3c89.1 0 182.2-18.2 247-52.6 105.3-54.7 141.7-141.7 157.9-198.4h346.1v1060.8l-201 200.9 -248.4-258.4V758.7h-325.9V536z"></path>
+                <polygon points="3439.8 1527.4 3491 1527.4 3500.2 1468.6 3449.1 1468.6 "></polygon>
+                <path d="M3976.9 1717.4l-510-519 -274.5 342.4 780 778.1L5554.8 10.5 3976.9 1717.4zM3582.4 1468.6h-51.5l-9.2 58.8h51.5l-6.9 43h-51.5l-8.8 59.6h-30.7l8.8-59.6h-51.1l-8.8 59.6h-30.7l8.8-59.6h-51.5l6.9-43h51.5l9.2-58.8h-51.5l6.5-43h51.5l9.2-58.8h30.7l-9.2 58.8h51.1l9.2-58.8h30.7l-9.2 58.8h51.5L3582.4 1468.6z"></path>
+            </symbol>
+            <symbol id="move" viewBox="0 0 379.1 378.6">
+                <path d="M357.3 2.7l-103.4 0c-5.1 0-9.4 1.7-12.9 5.2 -3.5 3.5-5.2 7.8-5.2 12.9 0 5.1 1.8 9.4 5.3 12.9l25.8 25.8 -77.5 77.5 -77.5-77.5 25.8-25.8c3.5-3.5 5.2-7.8 5.2-12.9 0-5.1-1.8-9.4-5.3-12.9 -3.5-3.5-7.8-5.3-12.9-5.3l-103.4 0c-5.1 0-9.4 1.7-12.9 5.2 -3.5 3.5-5.2 7.8-5.3 12.9l0 103.4c0 5.1 1.8 9.4 5.3 12.9 3.5 3.5 7.8 5.2 12.9 5.2 5.1 0 9.4-1.7 12.9-5.3l25.8-25.8 77.5 77.5 -77.5 77.5 -25.8-25.8c-3.5-3.5-7.8-5.3-12.9-5.2 -5.1 0-9.4 1.8-12.9 5.3 -3.5 3.5-5.2 7.8-5.2 12.9l0 103.4c0 5.1 1.7 9.4 5.2 12.9s7.8 5.2 12.9 5.2l103.4 0c5.1 0 9.4-1.7 12.9-5.2 3.5-3.5 5.2-7.8 5.2-12.9 0-5.1-1.7-9.4-5.2-12.9L111.8 318l77.5-77.5 77.5 77.5L241 343.9c-3.5 3.5-5.2 7.8-5.3 12.9 0 5.1 1.7 9.4 5.2 12.9 3.5 3.5 7.8 5.3 12.9 5.3l103.4 0c5.1 0 9.4-1.8 12.9-5.3 3.5-3.5 5.3-7.8 5.2-12.9l0-103.4c0-5.1-1.8-9.4-5.3-12.9 -3.5-3.5-7.8-5.2-12.9-5.2 -5.1 0-9.4 1.7-12.9 5.2l-25.8 25.8L241 188.8l77.5-77.5 25.8 25.8c3.5 3.5 7.8 5.3 12.9 5.3 5.1 0 9.4-1.8 12.9-5.3 3.5-3.5 5.2-7.8 5.2-12.9l0-103.4c0-5.1-1.8-9.4-5.3-12.9S362.4 2.7 357.3 2.7z"></path>
+            </symbol>
+            <symbol id="link" viewBox="0 0 466 466">
+                <path d="M442 284.4l-59.4-59.4c-16-16-35.4-24-58.2-24 -23.2 0-43 8.4-59.4 25.1l-25.1-25.1c16.8-16.4 25.1-36.3 25.1-59.7 0-22.8-7.9-42.2-23.7-58l-58.8-59.1c-15.8-16.2-35.2-24.3-58.2-24.3 -22.8 0-42.2 7.9-58 23.7L24.3 65.4C8.1 81.2 0 100.5 0 123.3c0 22.8 8 42.3 24 58.2l59.4 59.4c16 16 35.4 24 58.2 24 23.2 0 43-8.4 59.4-25.1l25.1 25.1c-16.7 16.4-25.1 36.3-25.1 59.7 0 22.8 7.9 42.2 23.7 58l58.8 59.1c15.8 16.2 35.2 24.3 58.2 24.3 22.8 0 42.2-7.9 58-23.7l42-41.7c16.2-15.8 24.3-35.1 24.3-58C465.9 319.8 458 300.4 442 284.4zM201 162.2c-0.6-0.6-2.3-2.4-5.3-5.4 -2.9-3-5-5.1-6.1-6.1 -1.1-1-3-2.5-5.4-4.3 -2.5-1.8-4.9-3-7.3-3.7 -2.4-0.7-5-1-7.9-1 -7.6 0-14.1 2.7-19.4 8 -5.3 5.3-8 11.8-8 19.4 0 2.9 0.3 5.5 1 7.9 0.7 2.4 1.9 4.8 3.7 7.3 1.8 2.5 3.2 4.3 4.3 5.4 1 1.1 3.1 3.2 6.1 6.1 3 3 4.9 4.7 5.4 5.3 -5.7 5.9-12.6 8.8-20.6 8.8 -7.8 0-14.3-2.6-19.4-7.7L62.8 142.8c-5.3-5.3-8-11.8-8-19.4 0-7.4 2.7-13.8 8-19.1l42-41.7c5.5-5.1 12-7.7 19.4-7.7 7.6 0 14.1 2.7 19.4 8l58.8 59.1c5.3 5.3 8 11.8 8 19.4C210.4 149.3 207.3 156.3 201 162.2zM403.1 361.7l-42 41.7c-5.3 4.9-11.8 7.4-19.4 7.4 -7.8 0-14.3-2.6-19.4-7.7l-58.8-59.1c-5.3-5.3-8-11.8-8-19.4 0-8 3.1-14.9 9.4-20.8 0.6 0.6 2.3 2.4 5.3 5.4 3 3 5 5.1 6.1 6.1 1.1 1.1 2.9 2.5 5.4 4.3 2.5 1.8 4.9 3 7.3 3.7 2.4 0.7 5 1 7.9 1 7.6 0 14.1-2.7 19.4-8 5.3-5.3 8-11.8 8-19.4 0-2.9-0.3-5.5-1-7.9 -0.7-2.4-1.9-4.8-3.7-7.3 -1.8-2.5-3.2-4.3-4.3-5.4 -1-1.1-3.1-3.2-6.1-6.1 -3-2.9-4.9-4.7-5.4-5.3 5.7-6.1 12.6-9.1 20.6-9.1 7.6 0 14.1 2.7 19.4 8l59.4 59.4c5.3 5.3 8 11.8 8 19.4C411.1 350 408.5 356.4 403.1 361.7z"></path>
+            </symbol>
+            <symbol id="user" viewBox="5369.9 0 5674.9 8503.9">
+                <path d="M7935.7 5168V5451h506.2V5168c-83.5 15.9-167.9 24.9-253 24.9C8103.8 5192.8 8019.2 5183.9 7935.7 5168z"></path>
+                <path d="M10561.1 4762.8l-1039.4-310c-67 83.9-137.3 160.5-209.6 231l270.5 80.8C9401.9 5484 8911.9 7448.9 8774 8150.7c-110.7 26.8-223.3 48.2-339 59.6l292.5-690.8 -281.3-1881h-509.8l-281.3 1881 292.5 690.8c-117.8-11.5-232.1-33.6-344.4-61.1 -138.2-702.4-627.1-2663-808.1-3383.1l271.9-81.1c-72.5-70.5-142.5-147-209.8-231l-1035.5 308.9c-232.4 69.2-391.4 282.6-391.4 524.9v455.2c0 1524.9 1236 2761.1 2761.1 2761.1 1525 0 2761.1-1236.2 2761.1-2761.1v-455.2C10952.5 5045.5 10793.5 4832 10561.1 4762.8z"></path>
+                <path d="M9973.4 2212.4c51.1-321.7 28.3-667-16.3-936.8 -95.3-576.7-324.1-982.5-324.1-982.5l-106.9 448.1 -10.4 44.1c-0.8-18-3.6-37.9-5.5-57.3C9484.6 483.6 9375 152.5 9375 152.5 9128.9 269.6 8725.1 258 8725.1 258c111.8-82.1 403.8-164 403.8-164 -727.3-229.2-1192.4 10.6-1418.7 191 -48.9 39.1-86.8 75-113.7 103.1l83-95.7L7851.7 94c-347.2 34.1-600.2 268.6-754 460.2 -111 138.2-171.9 254.6-171.9 254.6l29.7-152.6 64-328c-238.7 190.9-382.6 468.5-470.8 751.5 -132.9 427.3-146.7 947.5-142.2 1131.8 -138.3 57.2-242.5 186.3-288 358 -43.1 163.9-31.9 354.9 31.9 537.7 100.5 288.7 314.5 500.9 547.4 548.4 289.2 620.5 821.3 1255.8 1491.2 1255.8 669.4 0 1201.5-634.3 1490.7-1254.4 229.3-44.9 446.9-258.4 548.5-549.8C10364.3 2714.7 10252.3 2328.4 9973.4 2212.4zM9962.5 3014.9c-83.8 240.1-254.1 369.6-374.9 369.6 -67.3 8.2-109.1 32.4-131.6 84.5 -244.8 561.4-706.2 1161.3-1267.1 1161.3 -560.9 0-1022.3-599.9-1267.1-1161.3 -22.3-51.4-78.8-84.5-134.9-84.5 -117.6 0-287.6-129.5-371.1-369.6 -44.8-128.8-54.1-264.9-25.5-373.4 14-52.3 49.2-144.3 131-172.8 8.8-3 26.1-4.8 34.6-5.6 69.5-6.7 123.6-63.5 126.9-133.2 3-65 10.8-127.7 26.4-189.1 209.6-827.4 930.6-886.5 930.6-886.5 -129.7 304.8-339.2 433.6-339.2 433.6 691.3-281.3 906.7-586 906.7-586 460.1 638.8 1094 915.9 1460.2 1029.5 10.7 65.7 24.2 130.3 27.5 198.6 3.3 69.8 57.4 126.5 126.9 133.2 8.5 0.8 25.8 2.6 34.8 5.6C9981.2 2512.1 10055.4 2747.2 9962.5 3014.9z"></path>
+            </symbol>
+            <symbol id="chat" viewBox="0 0 542.7 542.7">
+                <path d="M363.2 74.1c-18.5 0-36.4 2.4-53.3 6.8 -28-11-59.3-17.2-92.3-17.2C97.6 63.6 0 145.1 0 245.3c0 53.1 27.3 102.8 75.1 137.4v96.4l99.8-55.6c14.1 2.3 28.4 3.5 42.6 3.5 59.5 0 113.4-20 152.8-52.4 9-0.3 18-1.2 26.9-2.6l84.3 46.9v-81.5c38.9-28.6 61-69.3 61-113C542.7 141.5 462.1 74.1 363.2 74.1zM217.6 397.7c-14.2 0-28.5-1.3-42.5-4l-5.2-1 -65.5 36.5v-62l-6.5-4.3c-43.6-29.1-68.6-72-68.6-117.6 0-84 84.5-152.4 188.3-152.4 16.8 0 33 1.8 48.5 5.1 -49.5 26.8-82.4 73.4-82.4 126.4 0 71.6 60.1 131.6 140.3 146.7C293.6 387.9 257 397.7 217.6 397.7zM458.9 317.6l-6.5 4.3v47.2l-50-27.8 -0.1 0 -5.1 0.9c-11.2 2.1-22.7 3.2-34 3.2 -1.2 0-2.4-0.1-3.6-0.1 -81.2-1.6-146.6-55.2-146.6-121 0-51.1 39.6-94.9 95.3-112.6 14.2-4.5 29.4-7.3 45.4-8.1 3.2-0.2 6.3-0.3 9.6-0.3 82.8 0 150.2 54.3 150.2 121.1C513.4 260.5 493.5 294.4 458.9 317.6z"></path>
+            </symbol>
+            <symbol id="study" viewBox="3966 0 8475.2 8503.9">
+                <path d="M12415.2 565.9v3396.2c0 96.7-78.2 175.2-175.2 175.2H7620.6c-96.7 0-175.2-78.5-175.2-175.2v-268.3l350.4-234.9v328h4268.6V740.8H7795.5v1281.9c-15.5 11.8-32.1 22.1-46.7 35.5l-49.1 34c-59.1-154.6-149.1-276.5-254.3-376.5V565.9c0-96.7 78.8-175.2 175.2-175.2H12240C12337 390.7 12415.2 468.9 12415.2 565.9zM8279 2867.9l209.8-140.7h-0.3c0.3-1.2 0.9-1.2 1.5-2.1 106.7-105.8 123.1-263.1 57-387.1l1697.2-1151.6 -77-113.7 -1711.5 1161c-53.7-38.8-113.7-63.4-176.7-65.5 -89.7-3-181 27.3-249.5 96.1 0 0-1.5 1.8-2.1 1.8l-41.8 29.1 -380.1 259.5v-110.3c-70.6-839.4-1043.4-826.9-1043.4-826.9h-421.3l-354.1 582.6 -355.9-582.3h-404.1c-1097.6 20.6-1058.8 826.6-1058.8 826.6v1881.2h0.6c0.3 4.9-0.6 10.6-0.6 14.6 0 179.1 144.6 323.1 323.1 323.1 177.9 0 322.5-144.6 322.5-323.1 0-3.9 0-9.7-0.6-14.6h0.6v-1740h201.9l-2.4 5481.5c0 241 195.8 436.8 435.9 436.8 241 0 436.2-195.8 436.2-436.8V4529.6h194.3v3541.4l3.6 3.9c3 236.7 195.8 428.9 434.1 428.9 239.2 0 433.8-194.9 433.8-434.1l-1.2-5493.3h210.1v572.3c0 0.6 0 2.1 0 2.7 0 177.9 144.6 322.8 322.2 322.8 52.4 0 99.4-14.9 144-37.9l1.5 2.1 557.8-374.1L8279 2867.9zM5780.3 1477.4c408 0 738.7-330.7 738.7-738.7S6188.4 0 5780.3 0s-738.7 331-738.7 738.7S5372.3 1477.4 5780.3 1477.4z"></path>
+            </symbol>
+            <symbol id="quest" viewBox="0 0 48 48">
+                <path d="M0 0h48v48h-48z" fill="none"></path>
+                <path d="M38 4h-28c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h8l6 6 6-6h8c2.21 0 4-1.79 4-4v-28c0-2.21-1.79-4-4-4zm-12 32h-4v-4h4v4zm4.13-15.49l-1.79 1.84c-1.44 1.44-2.34 2.65-2.34 5.65h-4v-1c0-2.21.9-4.21 2.34-5.66l2.49-2.52c.72-.72 1.17-1.72 1.17-2.82 0-2.21-1.79-4-4-4s-4 1.79-4 4h-4c0-4.42 3.58-8 8-8s8 3.58 8 8c0 1.76-.71 3.35-1.87 4.51z"></path>
+            </symbol>
+        </defs>
+    </svg>
+<section class="sign-in">
+	<div class="wrapper">
+					<form action="https://1academy.pro/wp-login.php" method="post">
+				<div class="sign-in__row">
+					<input type="text" name="log" id="log" value="" placeholder="Имя пользователя">
+					<input type="password" name="pwd" id="pwd" placeholder="Пароль">
+					<input type="submit" name="submit" value="Войти" class="bt_login">
+				</div>
+				<div class="sign-in__row">
+					<div>
+						<a href="https://1academy.pro/wp-login.php?action=lostpassword">Забыли пароль</a>
+						<!-- <a href="https://1academy.pro/reg">Регистрация</a> -->
+					</div>
+					<label><input name="rememberme" id="rememberme" type="checkbox" checked="checked" value="forever">&nbsp;Запомнить меня</label>
+					<input type="hidden" name="redirect_to" value="/">
+				</div>
+			</form>
+			</div>
+</section>
+<header class="header">
+		<div class="wrapper">
+			<div class="header__left">
+				<a href="/" class="header__logo"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
+				<div class="contacts">
+					<p>8-800-511-3231</p>
+					<span>(09:30-18:00 МСК)</span>
+					<a href="http://support.1academy.pro">Служба поддержки</a>
+				</div>
+			</div>
+			<div class="header__mobile">
+				<a class="header__mobile__login js-toggle-login-mobile" href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg></a>
+				<div class="header__hamburger">
+  	      <span></span>
+    	    <span></span>
+      	  <span></span>
+    		</div>
+    	</div>
+    		<ul class="header__menu">
+        <li id="menu-item-942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-942"><a href="https://1academy.pro/about/">О нас</a></li>
+<li id="menu-item-2533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2533"><a href="https://1academy.pro/learning/">Наше обучение</a></li>
+<li id="menu-item-16721" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-16721"><a href="https://1academy.pro/category/blog/">Блог</a>
+<ul class="sub-menu">
+	<li id="menu-item-19915" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19915"><a href="https://1academy.pro/category/blog/marketplace/">Маркетплейсы</a></li>
+	<li id="menu-item-16724" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16724"><a href="https://1academy.pro/category/blog/marketing/">Маркетинг и продвижение</a></li>
+	<li id="menu-item-16726" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16726"><a href="https://1academy.pro/category/blog/internet_reklama/">Реклама</a></li>
+	<li id="menu-item-16722" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16722"><a href="https://1academy.pro/category/blog/tovarnyi_biznes/">Товарный бизнес</a></li>
+	<li id="menu-item-16725" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16725"><a href="https://1academy.pro/category/blog/usability/">Дизайн и Usability</a></li>
+	<li id="menu-item-16723" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16723"><a href="https://1academy.pro/category/blog/raznoe/">Разное</a></li>
+</ul>
+</li>
+        	<li><a href="#" class="header__menu__login js-toggle-login"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg>Войти</a></li>
+      	</ul>
+		</div>
+	</header>
+<script>
+	var hamburger = document.querySelector('.header__hamburger');
+	var menu = document.querySelector('.header__menu');
+	var header = document.querySelector('.header .wrapper');
+	var login = document.querySelector('.header__mobile__login');
+	var loginDiv = document.querySelector('.sign-in');
+	var loginToggle = document.querySelector('.js-toggle-login');
+	var loginToggleMobile = document.querySelector('.js-toggle-login-mobile');
+
+	window.addEventListener('click', function(event) {
+	    if (menu.style.right === '0px') {
+	        hamburger.click();
+	    }
+	});
+
+	loginToggle.addEventListener('click', function(event) {
+		loginDiv.classList.toggle('sign-in-showed');
+		event.stopPropagation();
+	});
+
+	loginToggleMobile.addEventListener('click', function(event) {
+		loginToggle.click();
+	});
+
+	hamburger.addEventListener('click', function(event) {
+			login.classList.toggle('header__mobile__login-hidden');
+	    this.classList.toggle('header__hamburger-click');
+	    menu.style.right = menu.style.right === '0px' ? '-100%' : '0px';
+	    event.stopPropagation();
+	});
+</script>
+    <div class="tzHomePage_normal">
+        <div class="wpb-content-wrapper"><div class="vc_row wpb_row vc_row-fluid tzSpace_default"><div class="container"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			
+<div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_1_1_forcefullwidth" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin: 0px auto; background-color: transparent; padding: 0px; height: 600px; position: absolute; overflow: visible; width: 1905px; left: -398px;">
+<!-- START REVOLUTION SLIDER 5.2.5 fullwidth mode -->
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner tp-overflow-hidden revslider-initialised tp-simpleresponsive" style="max-height: 600px; margin-top: 0px; margin-bottom: 0px; height: 600px;" data-version="5.2.5" data-slideactive="rs-64">
+<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">	<!-- SLIDE  -->
+	<li data-index="rs-64" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-link="https://lp.1academy.pro/marketplace/?utm_source=1a" data-target="_blank" data-thumb="https://1academy.pro/wp-content/uploads/2024/12/site-mkp-100x50.jpg" data-rotate="0" data-saveperformance="off" data-uam="mkp,manager,proseller" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px); visibility: inherit; opacity: 1;"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img fetchpriority="high" decoding="async" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png" alt="Маркетплейсы 2025: быстрый старт на любой площадке - бесплатный онлайн мастер-класс" title="site-mkp" width="1920" height="600" data-lazyload="https://1academy.pro/wp-content/uploads/2024/12/site-mkp.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://1academy.pro/wp-content/uploads/2024/12/site-mkp.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="https://1academy.pro/wp-content/uploads/2024/12/site-mkp.jpg"></div></div>
+		<!-- LAYERS -->
+	<div class="tp-parallax-wrap" style="position: absolute; visibility: visible; width: 100% !important; height: 100% !important; left: 0px; top: 0px; z-index: 60;"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;"><div class="tp-mask-wrap" style="position: absolute; width: 100%; height: 100%; overflow: visible;"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: inherit; transition: none; line-height: 20px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;" data-x="center" data-y="center" data-basealign="slide" data-start="0"><a style="width:100%;height:100%;display:block" target="_blank" href="https://lp.1academy.pro/marketplace/?utm_source=1a"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+	<!-- SLIDE  -->
+	<li data-index="rs-65" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-link="https://lp.1academy.pro/manager/?utm_source=1a" data-target="_blank" data-thumb="https://1academy.pro/wp-content/uploads/2025/01/site-100x50.jpg" data-rotate="0" data-saveperformance="off" data-uam="mkp,manager,proseller" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img decoding="async" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png" alt="Профессия " Менеджер="" маркетплейсов""="" title="site" width="1920" height="600" data-lazyload="https://1academy.pro/wp-content/uploads/2025/01/site.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://1academy.pro/wp-content/uploads/2025/01/site.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="https://1academy.pro/wp-content/uploads/2025/01/site.jpg"></div></div>
+		<!-- LAYERS -->
+	<div class="tp-parallax-wrap" style="width:100% !important;height:100% !important;position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;"><div class="tp-mask-wrap" style="width:100% !important;height:100% !important;position:absolute"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: hidden;" data-x="center" data-y="center" data-basealign="slide" data-start="0"><a style="width:100%;height:100%;display:block" target="_blank" href="https://lp.1academy.pro/manager/?utm_source=1a"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+	<!-- SLIDE  -->
+	<li data-index="rs-91" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-link="https://lp.1academy.pro/proseller/?utm_source=1a" data-target="_blank" data-thumb="https://1academy.pro/wp-content/uploads/2025/03/proseller_site-100x50.jpg" data-rotate="0" data-saveperformance="off" data-uam="mkp,manager,proseller" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img decoding="async" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png" alt="Курс-конструктор ProSeller. Только для действующих селлеров: удвойте свою прибыль на маркетплейсах." title="proseller_site" width="1920" height="600" data-lazyload="https://1academy.pro/wp-content/uploads/2025/03/proseller_site.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png"></div></div>
+		<!-- LAYERS -->
+	<div class="tp-parallax-wrap" style="width:100% !important;height:100% !important;position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;"><div class="tp-mask-wrap" style="width:100% !important;height:100% !important;position:absolute"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: hidden;" data-x="center" data-y="center" data-basealign="slide" data-start="0"><a style="width:100%;height:100%;display:block" target="_blank" href="https://lp.1academy.pro/proseller/?utm_source=1a"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+	<!-- SLIDE  -->
+	<li data-index="rs-66" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-link="https://www.youtube.com/@aleksfedyaev?sub_confirmation=1" data-target="_blank" data-thumb="https://1academy.pro/wp-content/uploads/2022/10/1920x600-15-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img decoding="async" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png" alt="" title="Академия профессионалов #1" data-lazyload="https://1academy.pro/wp-content/uploads/2022/10/1920x600-15.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png"></div></div>
+		<!-- LAYERS -->
+	<div class="tp-parallax-wrap" style="width:100% !important;height:100% !important;position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;"><div class="tp-mask-wrap" style="width:100% !important;height:100% !important;position:absolute"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: hidden;" data-x="center" data-y="center" data-basealign="slide" data-start="0"><a style="width:100%;height:100%;display:block" target="_blank" href="https://www.youtube.com/@aleksfedyaev?sub_confirmation=1"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+	<!-- SLIDE  -->
+	<li data-index="rs-70" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-link="https://zen.yandex.ru/id/622498739ac9c64e75631830" data-target="_blank" data-thumb="https://1academy.pro/wp-content/uploads/2022/03/zen2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img decoding="async" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png" alt="" title="Академия профессионалов #1" data-lazyload="https://1academy.pro/wp-content/uploads/2022/03/zen2.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png"></div></div>
+		<!-- LAYERS -->
+	<div class="tp-parallax-wrap" style="width:100% !important;height:100% !important;position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;"><div class="tp-mask-wrap" style="width:100% !important;height:100% !important;position:absolute"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: hidden;" data-x="center" data-y="center" data-basealign="slide" data-start="0"><a style="width:100%;height:100%;display:block" target="_blank" href="https://zen.yandex.ru/id/622498739ac9c64e75631830"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+	<!-- SLIDE  -->
+	<li data-index="rs-71" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-link="https://www.youtube.com/playlist?list=PL1lBPDUj9QGVHqNB4_0iShlRvNYfZ19k4" data-target="_blank" data-thumb="https://1academy.pro/wp-content/uploads/2018/10/bef3203e87-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img decoding="async" src="https://1academy.pro/wp-content/plugins/revslider/admin/assets/images/dummy.png" alt="" title="Академия профессионалов #1" data-lazyload="https://1academy.pro/wp-content/uploads/2018/10/bef3203e87.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg" style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;https://1academy.pro/wp-content/uploads/2018/10/bef3203e87.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="https://1academy.pro/wp-content/uploads/2018/10/bef3203e87.jpg"></div></div>
+		<!-- LAYERS -->
+	<div class="tp-parallax-wrap" style="width:100% !important;height:100% !important;position:absolute;visibility:hidden"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;"><div class="tp-mask-wrap" style="width:100% !important;height:100% !important;position:absolute"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: hidden;" data-x="center" data-y="center" data-basealign="slide" data-start="0"><a style="width:100%;height:100%;display:block" target="_blank" href="https://www.youtube.com/playlist?list=PL1lBPDUj9QGVHqNB4_0iShlRvNYfZ19k4"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+</ul>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+						if(htmlDiv) {
+							htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+						}else{
+							var htmlDiv = document.createElement("div");
+							htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+							document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+						}
+					</script>
+<div class="tp-bannertimer" style="height: 5px; background-color: rgba(0, 0, 0, 0.15); width: 65.7222%; visibility: visible; transform: translate3d(0px, 0px, 0px);"></div>	<div class="tp-loader off" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-leftarrow tparrows persephone noSwipe" style="top: 50%; transform: matrix(1, 0, 0, 1, 40, -20); left: 0px;"></div><div class="tp-rightarrow tparrows persephone noSwipe" style="top: 50%; transform: matrix(1, 0, 0, 1, -80, -20); left: 100%;"></div></div>
+<script>
+					var htmlDivCss = unescape(".persephone.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3Argba%28201%2C201%2C201%2C0.75%29%3B%0A%09width%3A40px%3B%0A%09height%3A40px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A100%3B%0A%20%20%20%20border%3A1px%20solid%20rgba%28255%2C%20255%2C%20255%2C%201%29%3B%0A%7D%0A.persephone.tparrows%3Ahover%20%7B%0A%09background%3Argba%280%2C%200%2C%200%2C%201%29%3B%0A%7D%0A.persephone.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%22revicons%22%3B%0A%09font-size%3A15px%3B%0A%09color%3A%20rgb%28255%2C%20255%2C%20255%29%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2040px%3B%0A%09text-align%3A%20center%3B%0A%7D%0A.persephone.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce824%22%3B%0A%7D%0A.persephone.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce825%0A%22%3B%0A%7D%0A%0A%0A");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				</div><div class="tp-fullwidth-forcer" style="width: 100%; height: 600px;"></div></div><!-- END REVOLUTION SLIDER -->
+
+		</div>
+	</div>
+</div></div></div></div></div>
+    <div class="tz-shortcode-title1" style="background: #f6f6f6">
+        <div class="tz-icon">
+                        <img decoding="async" src="https://1academy.pro/wp-content/uploads/2018/10/check-01.png" alt="1academy.pro – Академия профессионалов">
+                    </div>
+                <h3 class="tz-content" style="color: #000000">НАШИ ПРЕИМУЩЕСТВА</h3>
+            </div>
+
+<div class="vc_row wpb_row vc_row-fluid tzSpace_default bg_grey"><div class="container"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<section class="advantages">
+<p class="advantages__text">Мы обучаем только тому, чем занимаемся сами.</p>
+<div class="advantages__items">
+<div class="advantages__item advantages__item-yellow">
+<div class="advantages__icon"></div>
+<p>Команда<br>
+профессионалов</p></div>
+<div class="advantages__item advantages__item-blue">
+<div class="advantages__icon"></div>
+<p>Более 10 000<br>
+учеников</p></div>
+<div class="advantages__item advantages__item-green">
+<div class="advantages__icon"></div>
+<p>Сотни положительных<br>
+отзывов</p></div>
+
+<div class="advantages__item advantages__item-darkblue">
+<div class="advantages__icon"></div>
+<p>Обучение<br>
+от практиков</p></div>
+<p>&nbsp;
+</p></div>
+</section>
+
+		</div>
+	</div>
+</div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid tzSpace_default"><div class="container"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+    <div class="tz-shortcode-title1" style="background: #ffffff">
+        <div class="tz-icon">
+                        <img decoding="async" src="https://1academy.pro/wp-content/uploads/2018/10/check-01.png" alt="1academy.pro – Академия профессионалов">
+                    </div>
+        <a href="/o-proekte/">        <h3 class="tz-content" style="color: #000000">НАША КОМАНДА</h3>
+        </a>    </div>
+
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			<div class="tmm tmm_vsya-komanda tmm-floating-pic"><div class="tmm_4_columns tmm_wrap tmm_theme_f"><span class="tmm_two_containers_tablet"></span><div class="tmm_container tmm-equalizer"><div class="tmm_member tmm_theme_f" style="border-top: 5px solid rgb(30, 115, 190); min-height: 418.797px;"><div class=" tmm_photo tmm_pic_vsya-komanda_0" style="background: url(https://1academy.pro/wp-content/uploads/2021/02/2020-01-01-13-48-59.jpg); margin-left: auto; margin-right:auto; background-size:cover !important;"></div><div class="tmm_textblock" style="padding-bottom: 65px;"><div class="tmm_names"><span class="tmm_fname">Артем</span> <span class="tmm_lname">Еремеевский</span></div><div class="tmm_job">Основатель проекта</div><div class="tmm_desc" style="text-align:"><p>Отвечает за развитие проекта, решает все организационные, технические и аналитические вопросы.</p></div><div class="tmm_scblock"><a target="_blank" class="tmm_sociallink" href="https://vk.com/aeremeevskiy" title="VKontakte"><img decoding="async" alt="VKontakte" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/img/links/vk.png"></a></div></div></div><div class="tmm_member tmm_theme_f" style="border-top: 5px solid rgb(30, 115, 190); min-height: 418.797px;"><div class=" tmm_photo tmm_pic_vsya-komanda_1" style="background: url(https://1academy.pro/wp-content/uploads/2020/10/267x300_2.jpg); margin-left: auto; margin-right:auto; background-size:cover !important;"></div><div class="tmm_textblock" style="padding-bottom: 65px;"><div class="tmm_names"><span class="tmm_fname">Александр</span> <span class="tmm_lname">Федяев</span></div><div class="tmm_job">Эксперт товарного бизнеса</div><div class="tmm_desc" style="text-align:"><p>Именно он сможет действительно научить заработку через одностраничные сайты и маркетплейсы!</p></div><div class="tmm_scblock"><a target="_blank" class="tmm_sociallink" href="https://vk.com/alexander_boom" title="Vkontakte"><img decoding="async" alt="Vkontakte" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/img/links/vk.png"></a></div></div></div><span class="tmm_two_containers_tablet"></span><div class="tmm_member tmm_theme_f" style="border-top: 5px solid rgb(30, 115, 190); min-height: 418.797px;"><div class=" tmm_photo tmm_pic_vsya-komanda_2" style="background: url(https://1academy.pro/wp-content/uploads/2021/02/IMG_5504-50-scaled.jpg); margin-left: auto; margin-right:auto; background-size:cover !important;"></div><div class="tmm_textblock" style="padding-bottom: 65px;"><div class="tmm_names"><span class="tmm_fname">Владимир</span> <span class="tmm_lname">Белозеров</span></div><div class="tmm_job">Сенсей онлайн рекламы</div><div class="tmm_desc" style="text-align:"><p>Если хотите научиться настраивать рекламу так, чтобы она приносила результат, то вам к Владимиру.</p></div><div class="tmm_scblock"><a target="_blank" class="tmm_sociallink" href="https://vk.com/advertvip" title="Vkontakte"><img decoding="async" alt="Vkontakte" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/img/links/vk.png"></a></div></div></div><div class="tmm_member tmm_theme_f" style="border-top: 5px solid rgb(30, 115, 190); min-height: 418.797px;"><div class=" tmm_photo tmm_pic_vsya-komanda_3" style="background: url(https://1academy.pro/wp-content/uploads/2021/02/Рисунок1-e1612381771150.png); margin-left: auto; margin-right:auto; background-size:cover !important;"></div><div class="tmm_textblock" style="padding-bottom: 65px;"><div class="tmm_names"><span class="tmm_fname">Дмитрий</span> <span class="tmm_lname">Половой</span></div><div class="tmm_job">Мастер ютуба</div><div class="tmm_desc" style="text-align:"><p>Если вы владеете популярным Youtube-каналом, то большая вероятность, что Дмитрия вы уже знаете. А если это в ваших планах - самое время познакомиться 🙂</p></div><div class="tmm_scblock"><a target="_blank" class="tmm_sociallink" href="https://vk.com/dmitrypolovoy" title="VKontakte"><img decoding="async" alt="VKontakte" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/img/links/vk.png"></a></div></div></div><span class="tmm_two_containers_tablet"></span></div><span class="tmm_columns_containers_desktop"></span><div class="tmm_container tmm-equalizer"><div class="tmm_member tmm_theme_f" style="border-top: 5px solid rgb(129, 215, 66); min-height: 370.469px;"><div class=" tmm_photo tmm_pic_vsya-komanda_4" style="background: url(https://1academy.pro/wp-content/uploads/2021/02/photo_2020-04-13_23-19-42.jpg); margin-left: auto; margin-right:auto; background-size:cover !important;"></div><div class="tmm_textblock" style="padding-bottom: 65px;"><div class="tmm_names"><span class="tmm_fname">Ирина</span> <span class="tmm_lname">Касьян</span></div><div class="tmm_job">Копирайтер от бога</div><div class="tmm_desc" style="text-align:"><p>На самом деле - это результат обучения, практики и постоянного саморазвития.</p></div><div class="tmm_scblock"><a target="_blank" class="tmm_sociallink" href="https://vk.com/id58745492" title="Vkontakte"><img decoding="async" alt="Vkontakte" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/img/links/vk.png"></a></div></div></div><div class="tmm_member tmm_theme_f" style="border-top: 5px solid rgb(129, 215, 66); min-height: 370.469px;"><div class=" tmm_photo tmm_pic_vsya-komanda_5" style="background: url(https://1academy.pro/wp-content/uploads/2021/02/alena.jpg); margin-left: auto; margin-right:auto; background-size:cover !important;"></div><div class="tmm_textblock" style="padding-bottom: 65px;"><div class="tmm_names"><span class="tmm_fname">Алена</span> </div><div class="tmm_job">Менеджер по работе с клиентами</div><div class="tmm_desc" style="text-align:"><p>Ответит на любые ваши вопросы и поможет советом.</p></div><div class="tmm_scblock"><a target="_blank" class="tmm_sociallink" href="https://vk.com/id42007454" title="Vkontakte"><img decoding="async" alt="Vkontakte" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/img/links/vk.png"></a></div></div></div><span class="tmm_two_containers_tablet"></span><div class="tmm_member tmm_theme_f" style="border-top: 5px solid rgb(129, 215, 66); min-height: 370.469px;"><div class=" tmm_photo tmm_pic_vsya-komanda_6" style="background: url(https://1academy.pro/wp-content/uploads/2021/02/veronica.jpg); margin-left: auto; margin-right:auto; background-size:cover !important;"></div><div class="tmm_textblock" style="padding-bottom: 65px;"><div class="tmm_names"><span class="tmm_fname">Вероника</span> </div><div class="tmm_job">Наша поддержка</div><div class="tmm_desc" style="text-align:"><p>Решит любые ваши проблемы,&nbsp; которые могут возникнуть по ходу обучения.</p></div><div class="tmm_scblock"><a target="_blank" class="tmm_sociallink" href="https://vk.com/shopmas2_kvv" title="Vkontakte"><img decoding="async" alt="Vkontakte" src="https://1academy.pro/wp-content/plugins/team-members-pro/inc/img/links/vk.png"></a></div></div></div><div style="clear:both;"></div></div></div></div>
+
+		</div>
+	</div>
+</div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid tzSpace_default"><div class="container"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+    <div class="tz-shortcode-title1" style="background: #ffffff">
+        <div class="tz-icon">
+                        <img decoding="async" src="https://1academy.pro/wp-content/uploads/2018/10/check-01.png" alt="1academy.pro – Академия профессионалов">
+                    </div>
+        <a href="/o-proekte/">        <h3 class="tz-content" style="color: #000000">НАШИ ВИДЕО</h3>
+        </a>    </div>
+
+
+	<div class="wpb_text_column wpb_content_element">
+		<div class="wpb_wrapper">
+			
+
+<div id="sb_youtube_sbyUCImb1KHR5U0Sxs233EhMcxQ4" class="sb_youtube sby_layout_gallery sby_col_4 sby_mob_col_1 sby_palette_inherit sby_width_resp" data-feedid="sby_UCImb1KHR5U0Sxs233EhMcxQ#4" data-shortcode-atts="{&quot;feed&quot;:&quot;2&quot;}" data-cols="4" data-colsmobile="1" data-num="4" data-nummobile="4" data-channel-subscribers="117K подписчики" data-subscribe-btn="1" data-subscribe-btn-text="Смотреть больше полезных видео" data_channel_header_colors="{&quot;channelName&quot;:&quot;&quot;,&quot;subscribeCount&quot;:&quot;&quot;,&quot;buttonBackground&quot;:&quot;&quot;,&quot;buttonText&quot;:&quot;&quot;}" data-sby-flags="resizeDisable" data-postid="14777" data-videocardlayout="vertical" data-sby-index="1">
+	    <div id="sby_player_VVVJbWIxS0hSNVUwU3hzMjMzRWhNY3hRLjZGSklmdXFoR2ZZ" class="sby_player_outer_wrap sby_player_item" style="padding: 5px;padding-bottom: 0;">
+    <div class="sby_video_thumbnail_wrap">
+        <a class="sby_video_thumbnail sby_player_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=6FJIfuqhGfY" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/6FJIfuqhGfY/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/sddefault.jpg&quot;}" data-video-id="6FJIfuqhGfY" style="background-image: url(&quot;https://i.ytimg.com/vi/6FJIfuqhGfY/sddefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 613px; overflow: hidden;">
+            <span class="sby-screenreader">Видео на YouTube VVVJbWIxS0hSNVUwU3hzMjMzRWhNY3hRLjZGSklmdXFoR2ZZ</span>
+            <img decoding="async" src="https://i.ytimg.com/vi/6FJIfuqhGfY/sddefault.jpg" alt="#александрфедяев 
+🔥 Хочешь знать, что реально работает на маркетплейсах? Жду тебя на бесплатном мастер-классе — разложим по полочкам! ► https://1academy.at/13p3
+🤝 Присоединяйся к моему Телеграм-каналу и получай пользу каждый день ► https://1academy.at/tgyt
+
+Смотри также ⤵️
+https://youtu.be/WQraoJnl6bM
+
+За прошедший месяц я получил от вас много комментариев здесь под видосами и в Телеграм-канале. Присоединяйтесь к нему https://1academy.at/tgyt 
+Я там делюсь полезной информацией каждый день и обсуждения там кипят постоянно, можно и из постов кучу пользы получать, и из комментов.
+
+А сегодня я отвечу на самые интересные ваши вопросы, причем сделаю это без подготовки, читаю вопрос и сразу отвечаю! Как всегда будет интересно и полезно, ставьте лайк прямо сейчас, а если у вас есть вопросы, пишите их в комментах обязательно, стараюсь всем ответить и помочь. Если нечего спросить, все равно пишите или смайлик ставьте, ценю вашу поддержку и обратную связь.
+
+00:00 Ответы на вопросы о бизнесе на Wildberries и Ozon
+00:48 Озон поменял индекс локализации на время доставки, как это повлияет на селлеров
+03:31 Надо ли смотреть у конкурентов пиковую цену
+04:49 Как считается СПП
+07:16 Что делать, если автоматическая рекламная кампания собрала 1000 минус-фраз
+08:38 Сколько платить менеджеру маркетплейсов и на чем можно сэкономить
+11:11 Есть смысл идти на мастер-класс, если вы ничего не понимаете в маркетплейсах
+12:47 Как делать поставки на дубликаты карточек
+13:33 Биддеры для Озона
+13:56 Можно ли запрашивать контакты покупателя в личном чате
+16:06 Резко упали продажи, что делать
+19:17 Платное размещение карточек на ВБ
+
+🚀 Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/2mah
+🔥 Освой востребованную профессию &quot;Менеджер маркетплейсов&quot; и строй карьеру без потолка в доходах! ► https://1academy.at/managermp
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://1academy.at/tgy
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://www.youtube.com/watch?v=zpOKmxAyGTc
+https://www.youtube.com/watch?v=DKzwoVjpNXU
+https://www.youtube.com/watch?v=Qf9BUEEhpls
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" onclick="return true;" style="display: none;">
+            <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+        </a>
+                    <div class="sby_play_btn">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                <span class="sby_play_btn_bg"></span>
+            </div>
+                <div class="sby_player_wrap">
+            <div id="sby_player0"></div>
+        </div>
+    </div>
+</div>    <div class="sby_items_wrap" style="padding: 5px;">
+		<div class="sby_item sby_current" id="sby_VVVJbWIxS0hSNVUwU3hzMjMzRWhNY3hRLjZGSklmdXFoR2ZZ" data-date="1744347606" data-video-id="6FJIfuqhGfY">
+    <div class="sby_inner_item">
+        <div class="sby_video_thumbnail_wrap sby_item_video_thumbnail_wrap">
+            <a class="sby_video_thumbnail sby_item_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=6FJIfuqhGfY" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/6FJIfuqhGfY/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/6FJIfuqhGfY\/sddefault.jpg&quot;}" data-video-id="6FJIfuqhGfY" data-video-title="Ответы на вопросы №4: Проблемы с индексом Ozon, авторекламой WB и минус-фразами — что делать?" style="background-image: url(&quot;https://i.ytimg.com/vi/6FJIfuqhGfY/mqdefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 149px; overflow: hidden;">
+                <img decoding="async" src="https://i.ytimg.com/vi/6FJIfuqhGfY/mqdefault.jpg" alt="#александрфедяев 
+🔥 Хочешь знать, что реально работает на маркетплейсах? Жду тебя на бесплатном мастер-классе — разложим по полочкам! ► https://1academy.at/13p3
+🤝 Присоединяйся к моему Телеграм-каналу и получай пользу каждый день ► https://1academy.at/tgyt
+
+Смотри также ⤵️
+https://youtu.be/WQraoJnl6bM
+
+За прошедший месяц я получил от вас много комментариев здесь под видосами и в Телеграм-канале. Присоединяйтесь к нему https://1academy.at/tgyt 
+Я там делюсь полезной информацией каждый день и обсуждения там кипят постоянно, можно и из постов кучу пользы получать, и из комментов.
+
+А сегодня я отвечу на самые интересные ваши вопросы, причем сделаю это без подготовки, читаю вопрос и сразу отвечаю! Как всегда будет интересно и полезно, ставьте лайк прямо сейчас, а если у вас есть вопросы, пишите их в комментах обязательно, стараюсь всем ответить и помочь. Если нечего спросить, все равно пишите или смайлик ставьте, ценю вашу поддержку и обратную связь.
+
+00:00 Ответы на вопросы о бизнесе на Wildberries и Ozon
+00:48 Озон поменял индекс локализации на время доставки, как это повлияет на селлеров
+03:31 Надо ли смотреть у конкурентов пиковую цену
+04:49 Как считается СПП
+07:16 Что делать, если автоматическая рекламная кампания собрала 1000 минус-фраз
+08:38 Сколько платить менеджеру маркетплейсов и на чем можно сэкономить
+11:11 Есть смысл идти на мастер-класс, если вы ничего не понимаете в маркетплейсах
+12:47 Как делать поставки на дубликаты карточек
+13:33 Биддеры для Озона
+13:56 Можно ли запрашивать контакты покупателя в личном чате
+16:06 Резко упали продажи, что делать
+19:17 Платное размещение карточек на ВБ
+
+🚀 Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/2mah
+🔥 Освой востребованную профессию &quot;Менеджер маркетплейсов&quot; и строй карьеру без потолка в доходах! ► https://1academy.at/managermp
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://1academy.at/tgy
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://www.youtube.com/watch?v=zpOKmxAyGTc
+https://www.youtube.com/watch?v=DKzwoVjpNXU
+https://www.youtube.com/watch?v=Qf9BUEEhpls
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" style="display: none;">
+
+                <div class="sby_thumbnail_hover sby_item_video_thumbnail_hover">
+                    <div class="sby_thumbnail_hover_inner">
+                                                    <span class="sby_video_title">Ответы на вопросы №4: Проблемы с индексом Ozon, авторекламой WB и минус-фразами — что делать?</span>
+                                            </div>
+                </div>
+
+                                    <div class="sby_play_btn">
+                        <span class="sby_play_btn_bg"></span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                    </div>
+                                <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+            </a>
+
+                    </div>
+    </div>
+</div><div class="sby_item" id="sby_VVVJbWIxS0hSNVUwU3hzMjMzRWhNY3hRLlZLMzFoOGl3LU0w" data-date="1744002021" data-video-id="VK31h8iw-M0">
+    <div class="sby_inner_item">
+        <div class="sby_video_thumbnail_wrap sby_item_video_thumbnail_wrap">
+            <a class="sby_video_thumbnail sby_item_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=VK31h8iw-M0" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/VK31h8iw-M0/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VK31h8iw-M0\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VK31h8iw-M0\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VK31h8iw-M0\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VK31h8iw-M0\/sddefault.jpg&quot;}" data-video-id="VK31h8iw-M0" data-video-title="Крадут ваши фото и тексты? Показываю, как БЫСТРО находить и блокировать нарушителей на WB и Ozon!" style="background-image: url(&quot;https://i.ytimg.com/vi/VK31h8iw-M0/mqdefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 149px; overflow: hidden;">
+                <img decoding="async" src="https://i.ytimg.com/vi/VK31h8iw-M0/mqdefault.jpg" alt="#александрфедяев 
+🔥 Маркетплейсы 2025: как продавать безопасно и прибыльно. Запишись прямо сейчас на мастер-класс! ► https://1academy.at/154s
+🤝 Присоединяйся к моему Телеграм-каналу и получай пользу каждый день ► https://1academy.at/tgyt
+
+Смотри также ⤵️
+https://youtu.be/WQraoJnl6bM
+
+Заходите на маркетплейс, и совершенно случайно узнаете, что у вас украли инфографику или кто-то торгует под вашим брендом? Такие вещи лучше проверять, а не ждать, пока вы на них случайно наткнетесь. 
+
+Сейчас расскажу, как это делать, покажу на практике, а заодно обсудим, как можно прижучить конкурентов, которые сперли ваш бренд или контент.
+
+Но сначала напомню, что у меня для вас есть 2 супер-полезных решения, которые помогут вам и стартовать эффективно и прибыльно, и рулить бизнесом успешно, так, чтобы он стабильно рос, если вы уже продаете.
+
+00:00 Как найти тех, кто крадет ваши карточки товаров на Вайлдберриз и Озон
+02:10 3 способа найти украденные фото, бренд и инфографику
+06:46 Как наказать тех, кто украл ваш контент: жалоба на нарушение авторских прав
+10:07 Куда обращаться на Озоне
+11:19 Как заблокировать нарушителей на Яндекс Маркете
+14:09 Когда есть смысл подавать на нарушителей в суд
+16:02 Подводим итоги
+
+🚀 Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/78sf
+🔥 Освой востребованную профессию &quot;Менеджер маркетплейсов&quot; и строй карьеру без потолка в доходах! ► https://1academy.at/managermp
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://1academy.at/tgy
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://www.youtube.com/watch?v=zpOKmxAyGTc
+https://www.youtube.com/watch?v=DKzwoVjpNXU
+https://www.youtube.com/watch?v=Qf9BUEEhpls
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" style="display: none;">
+
+                <div class="sby_thumbnail_hover sby_item_video_thumbnail_hover">
+                    <div class="sby_thumbnail_hover_inner">
+                                                    <span class="sby_video_title">Крадут ваши фото и тексты? Показываю, как БЫСТРО находить и блокировать нарушителей на WB и Ozon!</span>
+                                            </div>
+                </div>
+
+                                    <div class="sby_play_btn">
+                        <span class="sby_play_btn_bg"></span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                    </div>
+                                <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+            </a>
+
+                    </div>
+    </div>
+</div><div class="sby_item" id="sby_VVVJbWIxS0hSNVUwU3hzMjMzRWhNY3hRLjBxOGZBUHBXeEZB" data-date="1743656401" data-video-id="0q8fAPpWxFA">
+    <div class="sby_inner_item">
+        <div class="sby_video_thumbnail_wrap sby_item_video_thumbnail_wrap">
+            <a class="sby_video_thumbnail sby_item_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=0q8fAPpWxFA" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/0q8fAPpWxFA/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/0q8fAPpWxFA\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/0q8fAPpWxFA\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/0q8fAPpWxFA\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/0q8fAPpWxFA\/sddefault.jpg&quot;}" data-video-id="0q8fAPpWxFA" data-video-title="Без делегирования нет масштабирования! Ошибка, которая тормозит твой рост на маркетплейсах" style="background-image: url(&quot;https://i.ytimg.com/vi/0q8fAPpWxFA/mqdefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 149px; overflow: hidden;">
+                <img decoding="async" src="https://i.ytimg.com/vi/0q8fAPpWxFA/mqdefault.jpg" alt="#александрфедяев 
+🔥 Узнай как выйти и масштабироваться на маркетплейсах. Мастер-класс бесплатно: ► https://1academy.at/o6xu
+
+Смотри также ⤵️
+https://youtu.be/h-DaSpOLvUY
+
+Бизнес дорос до немаленьких размеров, а дальше - никак. Все потому что время не резиновое, и успевать заниматься развитием и масштабированием параллельно с упаковкой тонны заказов, ответами на вопросы и отзывы и отгрузкой поставок нереально.
+
+Что же теперь, так и бегать с коробками на перевес до пенсии, забив на поиск новых товаров, продвижение и выход на другие площадки?
+Нет, конечно. Решить эту проблему помогает делегирование. Вот только многим селлерам тяжело решиться на этот шаг, ведь придется передать часть ответственности за свое детище какому-то постороннему человеку, который явно меньше заинтересован в успехе бизнеса.
+
+Как же научиться делегировать, а главное как найти надежного и ответственного менеджера маркетплейсов, рассказываю в этом видео.
+
+00:00 Как научиться делегировать 
+01:19 Почему селлерам тяжело решиться на масштабирование
+02:52 Как справиться с психологическими барьерами
+06:07 Как отличить хорошего менеджера маркетплейсов от плохого
+07:42 Где искать менеджеров маркетплейсов
+08:52 Где взять деньги на делегирование
+
+🚀 Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/jf6z
+🔥 Освой востребованную профессию &quot;Менеджер маркетплейсов&quot; и строй карьеру без потолка в доходах! ► https://1academy.at/managermp
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://1academy.at/tgy
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://www.youtube.com/watch?v=zpOKmxAyGTc
+https://www.youtube.com/watch?v=DKzwoVjpNXU
+https://www.youtube.com/watch?v=Qf9BUEEhpls
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" style="display: none;">
+
+                <div class="sby_thumbnail_hover sby_item_video_thumbnail_hover">
+                    <div class="sby_thumbnail_hover_inner">
+                                                    <span class="sby_video_title">Без делегирования нет масштабирования! Ошибка, которая тормозит твой рост на маркетплейсах</span>
+                                            </div>
+                </div>
+
+                                    <div class="sby_play_btn">
+                        <span class="sby_play_btn_bg"></span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                    </div>
+                                <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+            </a>
+
+                    </div>
+    </div>
+</div><div class="sby_item" id="sby_VVVJbWIxS0hSNVUwU3hzMjMzRWhNY3hRLlpuMkNFcUlmOE5R" data-date="1743483627" data-video-id="Zn2CEqIf8NQ">
+    <div class="sby_inner_item">
+        <div class="sby_video_thumbnail_wrap sby_item_video_thumbnail_wrap">
+            <a class="sby_video_thumbnail sby_item_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=Zn2CEqIf8NQ" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/Zn2CEqIf8NQ/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/Zn2CEqIf8NQ\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/Zn2CEqIf8NQ\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/Zn2CEqIf8NQ\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/Zn2CEqIf8NQ\/sddefault.jpg&quot;}" data-video-id="Zn2CEqIf8NQ" data-video-title="ТОП-7 ловушек, которые сжирают твою прибыль на маркетплейсах Wildberries и Ozon" style="background-image: url(&quot;https://i.ytimg.com/vi/Zn2CEqIf8NQ/mqdefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 149px; overflow: hidden;">
+                <img decoding="async" src="https://i.ytimg.com/vi/Zn2CEqIf8NQ/mqdefault.jpg" alt="#александрфедяев 
+🔥 Хочешь избежать этих и других ошибок при старте на маркетплейсах. Приходи на бесплатный мастер-класс ► https://1academy.at/n1jm
+🤝 Присоединяйся к моему Телеграм-каналу и получай пользу каждый день ► https://1academy.at/tgyt
+
+Бизнес буксует на месте, продажи не растут или вовсе падают, а вы уже перепробовали все подряд, но это не помогает? Возможно, виновато не продвижение или демпинг конкурентов, а один из ступоров, которые часто сдерживают селлеров.
+
+Опытным продавцам эти факторы мешают развивать бизнес и увеличивать прибыль, а начинающим не дают даже сделать первый шаг!
+
+Что это за факторы и как с ними бороться - рассказываю в этом видео.
+
+00:00 Сдерживающие факторы селлеров маркетплейсов Вайлдберриз и Озон
+01:10 Как бороться с ленью
+03:11 Как собрать информацию для старта бизнеса
+05:07 Мешает перфекционизм, что делать
+06:55 Страх ошибок
+09:00 Прокрастинация: чем отличается от лени
+12:22 Ожидание быстрых результатов
+13:50 Страх роста
+
+🚀 Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/gqtp
+🔥 Освой востребованную профессию &quot;Менеджер маркетплейсов&quot; и строй карьеру без потолка в доходах! ► https://1academy.at/managermp
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://1academy.at/tgy
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://www.youtube.com/watch?v=zpOKmxAyGTc
+https://www.youtube.com/watch?v=DKzwoVjpNXU
+https://www.youtube.com/watch?v=Qf9BUEEhpls
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" style="display: none;">
+
+                <div class="sby_thumbnail_hover sby_item_video_thumbnail_hover">
+                    <div class="sby_thumbnail_hover_inner">
+                                                    <span class="sby_video_title">ТОП-7 ловушек, которые сжирают твою прибыль на маркетплейсах Wildberries и Ozon</span>
+                                            </div>
+                </div>
+
+                                    <div class="sby_play_btn">
+                        <span class="sby_play_btn_bg"></span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                    </div>
+                                <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+            </a>
+
+                    </div>
+    </div>
+</div>    </div>
+    
+	<div class="sby_footer">
+
+
+    <span class="sby_follow_btn sby_custom">
+        <a href="https://www.youtube.com/channel/UCImb1KHR5U0Sxs233EhMcxQ/" style="background: rgb(233,43,43);" target="_blank" rel="noopener">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>            <span>
+                Смотреть больше полезных видео            </span>
+        </a>
+    </span>
+</div>
+    
+	
+</div>
+
+<style type="text/css">#sb_youtube_sbyUCImb1KHR5U0Sxs233EhMcxQ4 .sby_caption_wrap .sby_caption { font-size: 13px !important}#sb_youtube_sbyUCImb1KHR5U0Sxs233EhMcxQ4 .sby_follow_btn a:hover { box-shadow:inset 0 0 10px 20px rgb(255, 255, 255, .25) !important}#sb_youtube_sbyUCImb1KHR5U0Sxs233EhMcxQ4[data-videostyle=boxed] .sby_items_wrap .sby_item .sby_inner_item { background-color: #ffffff !important}</style>
+
+		</div>
+	</div>
+</div></div></div></div></div>
+    <div class="tz-shortcode-title1" style="background: #ffffff">
+        <div class="tz-icon">
+                        <img decoding="async" src="https://1academy.pro/wp-content/uploads/2018/10/check-01.png" alt="1academy.pro – Академия профессионалов">
+                    </div>
+                <h3 class="tz-content" style="color: #000000">НЕДАВНИЕ ПУБЛИКАЦИИ</h3>
+            </div>
+
+            <!-- Begin section tz-portfolio-wrapper -->
+            <section class="tz-portfolio-wrapper">
+                <input type="hidden" name="item_desktop" value="4">
+                <input type="hidden" name="item_desktop_small" value="3">
+                <input type="hidden" name="item_tablet" value="2">
+                <input type="hidden" name="item_mobile" value="1">
+                <div class="tz-portfolio isotope" style="position: relative; overflow: hidden; height: 740px;">
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="667" src="https://1academy.pro/wp-content/uploads/2025/04/16604.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Как найти надежного поставщика" srcset="https://1academy.pro/wp-content/uploads/2025/04/16604.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/04/16604-300x200.jpg 300w, https://1academy.pro/wp-content/uploads/2025/04/16604-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/kak_nayti_nadegnogo_postavschika/"> Продажи на Wildberries начинаются с поставщика. Как не облажаться с выбором партнера?</a></h4>
+                                <p>Итак, вы нашли свой звездный товар: спрос бешеный, маржинальность отличная, выглядит круто, конкурентов почти нет. Мысленно вы уже закинули на […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/kak_nayti_nadegnogo_postavschika/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(476px, 0px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="667" src="https://1academy.pro/wp-content/uploads/2025/03/2149141141.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="как продавать на вайлдберриз" srcset="https://1academy.pro/wp-content/uploads/2025/03/2149141141.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/03/2149141141-300x200.jpg 300w, https://1academy.pro/wp-content/uploads/2025/03/2149141141-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/pochemu-vashi-prodazhi-na-vajldberriz-stoyat-na-meste-5-triggerov-kotorye-sposobny-kardinalno-izmenit-situaciyu/"> Почему ваши продажи на Вайлдберриз стоят на месте? 5 триггеров, которые способны кардинально изменить ситуацию</a></h4>
+                                <p>Наверняка, вы периодически задумывайтесь над тем, почему одни торгуют на Вайлдберриз прибыльно и успешно, а другие никак не могут наладить […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/pochemu-vashi-prodazhi-na-vajldberriz-stoyat-na-meste-5-triggerov-kotorye-sposobny-kardinalno-izmenit-situaciyu/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(952px, 0px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="667" src="https://1academy.pro/wp-content/uploads/2025/03/88415.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Маркетплейс работа удаленно обучение" srcset="https://1academy.pro/wp-content/uploads/2025/03/88415.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/03/88415-300x200.jpg 300w, https://1academy.pro/wp-content/uploads/2025/03/88415-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/kak-nachinayushhemu-menedzheru-marketplejsov-najti-udalennuyu-rabotu-poshagovyj-razbor/"> Как начинающему менеджеру маркетплейсов найти удаленную работу? Пошаговый разбор</a></h4>
+                                <p>Профессия «менеджер маркетплейсов» — это прекрасная возможность работать из любой точки земного шара, не привязываясь к офису и графику. Звучит […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/kak-nachinayushhemu-menedzheru-marketplejsov-najti-udalennuyu-rabotu-poshagovyj-razbor/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(1428px, 0px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="667" src="https://1academy.pro/wp-content/uploads/2025/03/34113.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="как начать продавать на вайлдберриз с нуля" srcset="https://1academy.pro/wp-content/uploads/2025/03/34113.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/03/34113-300x200.jpg 300w, https://1academy.pro/wp-content/uploads/2025/03/34113-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/kak-nachat-prodavat-na-vajldberriz-s-nulya/"> Как начать продавать на Вайлдберриз с нуля без опыта, связей и миллионного капитала?</a></h4>
+                                <p>Хочется уйти с работы и зарабатывать только для себя, но не понятно, с чего начать? Думаете, бизнес — это не […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/kak-nachat-prodavat-na-vajldberriz-s-nulya/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 370px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="667" src="https://1academy.pro/wp-content/uploads/2025/03/2149196192.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Как продавать товар на Вайлдберриз" srcset="https://1academy.pro/wp-content/uploads/2025/03/2149196192.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/03/2149196192-300x200.jpg 300w, https://1academy.pro/wp-content/uploads/2025/03/2149196192-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/tovary_dly_prodagi_na_wildberries/"> Не знаете, что продавать на Вайлдберриз? Эти 5 направлений – золотая жила для новичков</a></h4>
+                                <p>Хотите начать продавать на Wildberries, но не знаете, с чего начать? Как выбрать товар? Как сделать продажи действительно прибыльными? Я […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/tovary_dly_prodagi_na_wildberries/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(476px, 370px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="667" src="https://1academy.pro/wp-content/uploads/2025/02/24825.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="как считать юнит-экономику на маркетплейсах вайлдберриз и озон" srcset="https://1academy.pro/wp-content/uploads/2025/02/24825.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/02/24825-300x200.jpg 300w, https://1academy.pro/wp-content/uploads/2025/02/24825-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/kak-pravilno-schitat-yunit-ekonomiku-na-vajldberriz-chtoby-ne-ujti-v-minus/"> Как правильно считать юнит-экономику на Вайлдберриз, чтобы не уйти в минус</a></h4>
+                                <p>Сколько на Вайлдберриз можно заработать за месяц? Этот вопрос волнует каждого начинающего продавца. Точный ответ зависит от множества факторов. Понять, […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/kak-pravilno-schitat-yunit-ekonomiku-na-vajldberriz-chtoby-ne-ujti-v-minus/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(952px, 370px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="563" src="https://1academy.pro/wp-content/uploads/2025/02/2148851411.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Как продавать на маркетплейсах" srcset="https://1academy.pro/wp-content/uploads/2025/02/2148851411.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/02/2148851411-300x169.jpg 300w, https://1academy.pro/wp-content/uploads/2025/02/2148851411-768x432.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/kak-prodavat-na-marketplejsax-prostoj-algoritm-vybora-pribylnogo-tovara/"> Как продавать на маркетплейсах: простой алгоритм выбора прибыльного товара</a></h4>
+                                <p>Выбор удачного товара для продаж на маркетплейсах Wildberries, Ozon, Яндекс Маркет — задача непростая, но вполне выполнимая. Главное — не […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/kak-prodavat-na-marketplejsax-prostoj-algoritm-vybora-pribylnogo-tovara/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                            <div class="element tz-item-portfolio isotope-item" style="width: 476px; position: absolute; left: 0px; top: 0px; transform: translate3d(1428px, 370px, 0px);">
+                            <div class="tz-image-portfolio" style="height: 370px">
+                                <img loading="lazy" decoding="async" width="1000" height="667" src="https://1academy.pro/wp-content/uploads/2025/02/17923.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="ошибки на валберис" srcset="https://1academy.pro/wp-content/uploads/2025/02/17923.jpg 1000w, https://1academy.pro/wp-content/uploads/2025/02/17923-300x200.jpg 300w, https://1academy.pro/wp-content/uploads/2025/02/17923-768x512.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" style="top: 0px; left: 0px;">                                                                                            </div>
+                            <div class="tz-portfolio-content-style-2">
+                                <h4><a href="https://1academy.pro/pochemu-novichki-ne-mogut-uspeshno-prodavat-na-valberis/"> Почему новички не могут успешно продавать на Валберис?</a></h4>
+                                <p>Хотите запустить бизнес на Валберис, но опасаетесь рисков и потерь? В статье я разберу 7 ключевых ошибок, из-за которых новички […]</p>
+                                <span>
+                                    <a href="https://1academy.pro/pochemu-novichki-ne-mogut-uspeshno-prodavat-na-valberis/"><i class="fa fa-arrows-alt"></i>ЧИТАТЬ ДАЛЕЕ</a>
+                                </span>
+                            </div>
+                        </div>
+                                    </div><!--End class tz-portfolio-->
+            </section>
+            <!-- End section tz-portfolio-wrapper -->
+</div>    </div>
+    
+<footer class="tz-footer">
+    <div class="tz-footer-content">
+        <div class="tz-image-logo-footer"><svg><use xlink:href="#logo"></use></svg></div>
+        <div class="container">
+            <div class="row">
+                                        <div class="col-md-12 footerattr">
+                            <div class="tz-icon-footer">
+                                                            </div>
+                            <aside id="block-3" class="widget_block widget">
+<h3 class="wp-block-heading has-white-color has-text-color has-link-color wp-elements-feb1d03a86fb396f92fefa085d849ceb">Последние видео:</h3>
+</aside><aside id="block-4" class="widget_block widget"><p>
+
+</p><div id="sb_youtube_sbyUCOC7LkULFeImMtpKoUXVetQ3" class="sb_youtube sby_layout_grid sby_col_3 sby_mob_col_1 sby_palette_inherit sby_width_resp" data-feedid="sby_UCOC7LkULFeImMtpKoUXVetQ#3" data-shortcode-atts="{&quot;feed&quot;:&quot;1&quot;}" data-cols="3" data-colsmobile="1" data-num="3" data-nummobile="3" data-channel-subscribers="535 подписчики" data-subscribe-btn="1" data-subscribe-btn-text="Подписаться" data_channel_header_colors="{&quot;channelName&quot;:&quot;&quot;,&quot;subscribeCount&quot;:&quot;&quot;,&quot;buttonBackground&quot;:&quot;&quot;,&quot;buttonText&quot;:&quot;&quot;}" data-sby-flags="resizeDisable" data-postid="14777" data-videocardlayout="vertical" data-sby-index="2">
+	        <div class="sby_items_wrap" style="padding: 10px;">
+		<div class="sby_item" id="sby_VVVPQzdMa1VMRmVJbU10cEtvVVhWZXRRLlB0eklTWUZhQmxr" data-date="1744174831" data-video-id="PtzISYFaBlk">
+    <div class="sby_inner_item">
+        <div class="sby_video_thumbnail_wrap sby_item_video_thumbnail_wrap">
+            <a class="sby_video_thumbnail sby_item_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=PtzISYFaBlk" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/PtzISYFaBlk/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/PtzISYFaBlk\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/PtzISYFaBlk\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/PtzISYFaBlk\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/PtzISYFaBlk\/sddefault.jpg&quot;}" data-video-id="PtzISYFaBlk" data-video-title="WB и OZON не расскажут об этом: 3 рабочие схемы продвижения без рекламы" style="background-image: url(&quot;https://i.ytimg.com/vi/PtzISYFaBlk/hqdefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 198px; overflow: hidden;">
+                <img decoding="async" src="https://i.ytimg.com/vi/PtzISYFaBlk/hqdefault.jpg" alt="#александрфедяев 
+🔥 Это только вершина айсберга! Все фишки — на мастер-классе. Забронируй место прямо сейчас бесплатно ► https://1academy.at/lm2p
+
+Смотри также ⤵️
+https://youtu.be/WQraoJnl6bM
+https://youtu.be/fN-sz5FLd8c
+https://youtu.be/fIs265wXA64
+
+Вы только начали работать с маркетплейсами или собираетесь это сделать, и решили, как добропорядочный человек, внимательно прочитать все условия и выяснить, какие способы продвижения можно использовать, а какие нельзя. И оказалось, что вайлдберриз и озон ведут настоящий холивар против любого продвижения, кроме официальной рекламы. Желательно, внутренней. Вот только стоит она дофига и не всегда дает нужные результаты.
+
+Что же делать в таком случае? И почему маркетплейсы так яростно защищают свою внутреннюю рекламу? И можно ли это как-то обойти, чтобы получать результаты вместо бесполезных откруток? Обо всем этом поговорим в сегодняшнем видео!
+
+00:00 3 реально работающие схемы продвижения на Вайлдберриз и Озон
+01:20 Почему маркетплейсы не любят такое продвижение
+02:34 Схема №1
+13:08 Схема №2
+16:12 Сколько раздач и самовыкупов нужно делать для результата
+19:04 Схема №3
+
+✅ Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/7bgz
+🚀 Онлайн-практикум Профессия МЕНЕДЖЕР МАРКЕТПЛЕЙСОВ: получи практические навыки и начни зарабатывать без опыта ► https://1academy.at/r4p5
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://t.me/alfedyaev
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://youtu.be/lb0UnRVoEro
+https://youtu.be/QyJhJAeKGOM
+https://youtu.be/gD0KTzVMHqI 
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" style="display: none;">
+
+                <div class="sby_thumbnail_hover sby_item_video_thumbnail_hover">
+                    <div class="sby_thumbnail_hover_inner">
+                                                    <span class="sby_video_title">WB и OZON не расскажут об этом: 3 рабочие схемы продвижения без рекламы</span>
+                                            </div>
+                </div>
+
+                                    <div class="sby_play_btn">
+                        <span class="sby_play_btn_bg"></span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                    </div>
+                                <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+            </a>
+
+                    </div>
+    </div>
+</div><div class="sby_item" id="sby_VVVPQzdMa1VMRmVJbU10cEtvVVhWZXRRLlZEaDAxd3dzT0FF" data-date="1743570023" data-video-id="VDh01wwsOAE">
+    <div class="sby_inner_item">
+        <div class="sby_video_thumbnail_wrap sby_item_video_thumbnail_wrap">
+            <a class="sby_video_thumbnail sby_item_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=VDh01wwsOAE" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/VDh01wwsOAE/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VDh01wwsOAE\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VDh01wwsOAE\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VDh01wwsOAE\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/VDh01wwsOAE\/sddefault.jpg&quot;}" data-video-id="VDh01wwsOAE" data-video-title="ТОП-5 ошибок, из-за которых твои товары обречены на провал! Практический разбор на реальных примерах" style="background-image: url(&quot;https://i.ytimg.com/vi/VDh01wwsOAE/hqdefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 198px; overflow: hidden;">
+                <img decoding="async" src="https://i.ytimg.com/vi/VDh01wwsOAE/hqdefault.jpg" alt="#александрфедяев 
+🔥 Работающие стратегии подбора и продаж товаров на мастер-классе Маркетплейсы 2025. Записывайся бесплатно! ► https://1academy.at/51em
+🤝 Присоединяйся к моему Телеграм-каналу и получай пользу каждый день ► https://1academy.at/tgyt
+
+Смотри также ⤵️
+https://youtu.be/fIs265wXA64
+https://youtu.be/DC5y4DQTlJw
+https://youtu.be/DmZO8q2ClXY
+
+Смотрите на разных селлеров, читаете их рассказы о бизнесе, смотрите видео и не можете понять, почему у одних все получается круто, товары выстреливают, а другие вынуждены распродавать все по себестоимости и начинать все с начала?
+
+Давайте на конкретных примерах разберемся, почему же одни товары выходят в ТОП, а другие остаются пылиться на складах.
+
+00:00 Почему одни селлеры богатеют, а другие уходят в минус? Разбор на реальных примерах
+01:02 Ошибочный выбор товара
+02:46 Неправильное ценообразование
+04:24 Ошибки в карточке товара
+05:43 Работа с рекламой и продвижением
+07:13 Контроль качества
+
+✅ Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/s9jx
+🚀 Онлайн-практикум Профессия МЕНЕДЖЕР МАРКЕТПЛЕЙСОВ: получи практические навыки и начни зарабатывать без опыта ► https://1academy.at/r4p5
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://t.me/alfedyaev
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://youtu.be/lb0UnRVoEro
+https://youtu.be/QyJhJAeKGOM
+https://youtu.be/gD0KTzVMHqI 
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" style="display: none;">
+
+                <div class="sby_thumbnail_hover sby_item_video_thumbnail_hover">
+                    <div class="sby_thumbnail_hover_inner">
+                                                    <span class="sby_video_title">ТОП-5 ошибок, из-за которых твои товары обречены на провал! Практический разбор на реальных примерах</span>
+                                            </div>
+                </div>
+
+                                    <div class="sby_play_btn">
+                        <span class="sby_play_btn_bg"></span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                    </div>
+                                <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+            </a>
+
+                    </div>
+    </div>
+</div><div class="sby_item" id="sby_VVVPQzdMa1VMRmVJbU10cEtvVVhWZXRRLmZJczI2NXdYQTY0" data-date="1742965225" data-video-id="fIs265wXA64">
+    <div class="sby_inner_item">
+        <div class="sby_video_thumbnail_wrap sby_item_video_thumbnail_wrap">
+            <a class="sby_video_thumbnail sby_item_video_thumbnail sby_imgLiquid_bgSize sby_imgLiquid_ready" href="https://www.youtube.com/watch?v=fIs265wXA64" target="_blank" rel="noopener" data-full-res="https://i.ytimg.com/vi/fIs265wXA64/maxresdefault.jpg" data-img-src-set="{&quot;120&quot;:&quot;https:\/\/i.ytimg.com\/vi\/fIs265wXA64\/default.jpg&quot;,&quot;320&quot;:&quot;https:\/\/i.ytimg.com\/vi\/fIs265wXA64\/mqdefault.jpg&quot;,&quot;480&quot;:&quot;https:\/\/i.ytimg.com\/vi\/fIs265wXA64\/hqdefault.jpg&quot;,&quot;640&quot;:&quot;https:\/\/i.ytimg.com\/vi\/fIs265wXA64\/sddefault.jpg&quot;}" data-video-id="fIs265wXA64" data-video-title="Не делай эту SEO-ошибку! Твой товар никто не найдёт на маркетплейсах Wildberries и Ozon" style="background-image: url(&quot;https://i.ytimg.com/vi/fIs265wXA64/hqdefault.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 198px; overflow: hidden;">
+                <img decoding="async" src="https://i.ytimg.com/vi/fIs265wXA64/hqdefault.jpg" alt="#александрфедяев 
+🔥 Хотите зарабатывать от 200 000₽ в месяц на маркетплейсах? Все объясню за 2 часа на мастер-класса БЕСПЛАТНО ► https://1academy.at/nezx
+
+Смотри также ⤵️
+https://youtu.be/fN-sz5FLd8c
+
+Слышали историю о том, как один начинающий селлер вышел на маркетплейсы и его товар не купили вообще ни разу?
+
+Думаете, я вам тут байки травлю? А ведь такое реально случается. Чаще всего по одной и той же причине: если вы не заморачиваетесь с SEO-оптимизацией карточки.
+
+Почему такая, казалось бы, мелочь, настолько сильно влияет на продажи, и как сделать так, чтобы вы не остались из-за нее без денег, расскажу в этом видео. 
+
+00:00 SEO на Вайлдберриз и Озон
+01:08 Что такое SEO-оптимизация карточки товара
+02:16 Откуда берутся ключевые слова для SEO
+03:29 Как определить частотность ключевых запросов на маркетплейсах
+07:01 Что делать, если ключевых слов слишком много
+09:08 Какие бывают стратегии работы с ключевыми запросами
+12:08 Как сделать seo-оптимизацию карточки товара на маркетплейсах
+14:54 Как сделать seo-описание товара с помощью нейросетей
+18:19 Почему нужно обязательно вычищать из описания лишние ключевые запросы
+
+✅ Маркетплейсы 2.0: Личное наставничество. Выйди на прибыль от 200 000₽ даже без опыта ► https://1academy.at/puu3
+🚀 Онлайн-практикум Профессия МЕНЕДЖЕР МАРКЕТПЛЕЙСОВ: получи практические навыки и начни зарабатывать без опыта ► https://1academy.at/r4p5
+
+Если тебе понравилось видео - делись своими впечатлениями в комментариях, а так же обязательно подписывайся на канал! Тут тебя ждет еще много интересного!
+
+🔔 Подписывайтесь на канал: https://1academy.at/alfedyaev
+📲 Канал в Telegram ► https://t.me/alfedyaev
+📲 Группа ВКонтакте ► https://vk.com/alfedyaev
+📲 Александр Федяев ВКонтакте ► https://vk.com/alexander_boom
+📲 Instagram* ► https://www.instagram.com/alfedyaev/
+
+🔥 Рекомендую к просмотру: 
+https://youtu.be/lb0UnRVoEro
+https://youtu.be/QyJhJAeKGOM
+https://youtu.be/gD0KTzVMHqI 
+
+*Facebook и Instagram запрещены в России, Meta признана экстремистской организацией
+
+#александрфедяев  #товарныйбизнес #маркетплейс" style="display: none;">
+
+                <div class="sby_thumbnail_hover sby_item_video_thumbnail_hover">
+                    <div class="sby_thumbnail_hover_inner">
+                                                    <span class="sby_video_title">Не делай эту SEO-ошибку! Твой товар никто не найдёт на маркетплейсах Wildberries и Ozon</span>
+                                            </div>
+                </div>
+
+                                    <div class="sby_play_btn">
+                        <span class="sby_play_btn_bg"></span>
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-youtube fa-w-18"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" class=""></path></svg>                    </div>
+                                <span class="sby_loader sby_hidden" style="background-color: rgb(255, 255, 255);"></span>
+            </a>
+
+                    </div>
+    </div>
+</div>    </div>
+    
+	<div class="sby_footer">
+
+
+</div>
+    
+	
+</div>
+
+<style type="text/css">#sb_youtube_sbyUCOC7LkULFeImMtpKoUXVetQ3 .sby_caption_wrap .sby_caption { font-size: 13px !important}#sb_youtube_sbyUCOC7LkULFeImMtpKoUXVetQ3 .sby_follow_btn a:hover { box-shadow:inset 0 0 10px 20px rgb(255, 255, 255, .25) !important}#sb_youtube_sbyUCOC7LkULFeImMtpKoUXVetQ3[data-videostyle=boxed] .sby_items_wrap .sby_item .sby_inner_item { background-color: #ffffff !important}</style><p></p>
+</aside>                        </div><!--end class footermenu-->
+                                                <div class="col-md-4 footerattr">
+                            <div class="tz-icon-footer">
+                                                            </div>
+                            <aside id="block-21" class="widget_block widget">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained"></div></div>
+</aside><aside id="block-22" class="widget_block widget">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading">Бесплатные мастер-классы</h3>
+</div></div>
+
+
+<p>			</p><ul>
+				<li><a href="Https://lp.1academy.pro/marketplace?utm_source=1ap" target="_blank">Маркетплейсы 2025: быстрый старт</a></li><li><a href="Https://lp.1academy.pro/manager?utm_source=1ap&amp;t" target="_blank">Онлайн-практикум “Менеджер маркетплейсов”</a></li>			</ul>
+			<p></p>
+
+
+
+<h3 class="wp-block-heading">Эксклюзивные курсы</h3>
+
+
+<p>			</p><ul>
+				<li><a href="https://lp.1academy.pro/marketplace/nastavnik/ytd?utm_source=1ap" target="_blank">Маркетплейсы 2.0: Личное наставничество</a></li><li><a href="https://lp.1academy.pro/proseller?utm_source=1ap" target="_blank">ProSeller: курс конструктор</a></li><li><a href="https://lp.1academy.pro/manager/itrening/ytd?utm_source=1ap" target="_blank">Профессия “Мендежер маркетплейсов”</a></li><li><a href="https://lp.1academy.pro/prodirect/intensiv/?d=ytd&amp;utm_source=1ap" target="_blank">ProДирект для селлеров</a></li><li><a href="https://lp.1academy.pro/toptovar/pro/?utm_source=1ap" target="_blank">ТОП-ТОВАР PRO</a></li>			</ul>
+			<p></p>
+</div></div>
+</aside>                        </div><!--end class footermenu-->
+                                                <div class="col-md-4 footerattr">
+                            <div class="tz-icon-footer">
+                                                            </div>
+                            <aside id="block-13" class="widget_block widget">
+<h3 class="wp-block-heading">РУБРИКИ</h3>
+</aside><aside id="block-14" class="widget_block widget_categories widget"><ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-1"><a href="https://1academy.pro/category/blog/">Блог</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="https://1academy.pro/category/blog/usability/">Дизайн и Usability</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="https://1academy.pro/category/blog/marketing/">Маркетинг и продвижение</a>
+</li>
+	<li class="cat-item cat-item-234"><a href="https://1academy.pro/category/blog/marketplace/">Маркетплейсы</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="https://1academy.pro/category/blog/raznoe/">Разное</a>
+</li>
+	<li class="cat-item cat-item-176"><a href="https://1academy.pro/category/blog/internet_reklama/">Реклама</a>
+</li>
+	<li class="cat-item cat-item-175"><a href="https://1academy.pro/category/blog/tovarnyi_biznes/">Товарный бизнес</a>
+</li>
+</ul></aside>                        </div><!--end class footermenu-->
+                                                <div class="col-md-4 footerattr">
+                            <div class="tz-icon-footer">
+                                                            </div>
+                            <aside id="block-23" class="widget_block widget">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading">ПОСЛЕДНИЕ СТАТЬИ</h3>
+
+
+<ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="https://1academy.pro/kak_nayti_nadegnogo_postavschika/">Продажи на Wildberries начинаются с поставщика. Как не облажаться с выбором партнера?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://1academy.pro/pochemu-vashi-prodazhi-na-vajldberriz-stoyat-na-meste-5-triggerov-kotorye-sposobny-kardinalno-izmenit-situaciyu/">Почему ваши продажи на Вайлдберриз стоят на месте? 5 триггеров, которые способны кардинально изменить ситуацию</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://1academy.pro/kak-nachinayushhemu-menedzheru-marketplejsov-najti-udalennuyu-rabotu-poshagovyj-razbor/">Как начинающему менеджеру маркетплейсов найти удаленную работу? Пошаговый разбор</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://1academy.pro/kak-nachat-prodavat-na-vajldberriz-s-nulya/">Как начать продавать на Вайлдберриз с нуля без опыта, связей и миллионного капитала?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="https://1academy.pro/tovary_dly_prodagi_na_wildberries/">Не знаете, что продавать на Вайлдберриз? Эти 5 направлений – золотая жила для новичков</a></li>
+</ul></div></div>
+</aside>                        </div><!--end class footermenu-->
+                        
+            </div><!--end class row-->
+        </div><!--end class container-->
+    </div>
+    <div class="container">
+        <div class="tz-footer-address-site">
+            <address><p>Академия профессионалов © 2013-2024 ОГРНИП: 315246800010925</p>
+<p><a href="/partnerskaya-programma/">Партнерская программа</a> | <a href="/terms" target="_blank" rel="noopener">Договор оказания услуг</a> | <a href="/privacy">Обработка персональных данных</a></p>
+<p>&nbsp;</p>
+<p style="text-align: center"><img class="size-full wp-image-20839" src="https://1academy.pro/wp-content/uploads/2022/06/mir.png" alt="" width="134" height="55"> <img class="size-full wp-image-20840" src="https://1academy.pro/wp-content/uploads/2022/06/mc.png" alt="" width="99" height="35"> <img class="size-full wp-image-20841" src="https://1academy.pro/wp-content/uploads/2022/06/visa.png" alt="" width="79" height="35"></p></address>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- YouTube Feeds JS -->
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/script.js" id="th_scripts-js"></script>
+<script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; </script><script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+						/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+
+			var setREVStartSize=function(){
+				try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+					e.c = jQuery('#rev_slider_1_1');
+					e.gridwidth = [1240];
+					e.gridheight = [600];
+							
+					e.sliderLayout = "fullwidth";
+					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+					
+				}catch(d){console.log("Failure at Presize of Slider:"+d)}
+			};
+			
+			setREVStartSize();
+			
+						var tpj=jQuery;
+			
+			var revapi1;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_1_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_1_1");
+				}else{
+					revapi1 = tpj("#rev_slider_1_1").show().revolution({
+						sliderType:"standard",
+jsFileLocation:"//1academy.pro/wp-content/plugins/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+							keyboardNavigation:"off",
+							keyboard_direction: "horizontal",
+							mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+							onHoverStop:"off",
+							touch:{
+								touchenabled:"on",
+								swipe_threshold: 75,
+								swipe_min_touches: 50,
+								swipe_direction: "horizontal",
+								drag_block_vertical: false
+							}
+							,
+							arrows: {
+								style:"persephone",
+								enable:true,
+								hide_onmobile:false,
+								hide_onleave:false,
+								tmp:'',
+								left: {
+									h_align:"left",
+									v_align:"center",
+									h_offset:40,
+									v_offset:0
+								},
+								right: {
+									h_align:"right",
+									v_align:"center",
+									h_offset:40,
+									v_offset:0
+								}
+							}
+						},
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:1240,
+						gridheight:600,
+						lazyType:"smart",
+						parallax: {
+							type:"mouse",
+							origo:"slidercenter",
+							speed:2000,
+							levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
+							type:"mouse",
+						},
+						shadow:0,
+						spinner:"off",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"off",
+						hideThumbsOnMobile:"on",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						panZoomDisableOnMobile:"on",
+						}
+					});
+				}
+			});	/*ready*/
+		</script>
+				<script type="text/javascript">
+			function revslider_showDoubleJqueryError(sliderID) {
+				var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+				errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+				errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+				errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+				errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+					jQuery(sliderID).show().html(errorMessage);
+			}
+		</script>
+		<link rel="stylesheet" id="sby_styles-css" href="https://1academy.pro/wp-content/plugins/feeds-for-youtube/css/sb-youtube.min.css?ver=2.2.3" type="text/css" media="all">
+<style id="core-block-supports-inline-css" type="text/css">
+.wp-elements-feb1d03a86fb396f92fefa085d849ceb a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}
+</style>
+<script type="text/javascript" src="https://1academy.pro/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="anycomment-js-bundle-js-extra">
+/* <![CDATA[ */
+var anyCommentApiSettings = {"postId":"14777","nonce":null,"locale":"ru_RU","restUrl":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/","commentCount":"0","errors":null,"user":null,"urls":{"logout":"https:\/\/1academy.pro\/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2F1academy.pro%2F&amp;_wpnonce=79603c3171#comments","postUrl":"https:\/\/1academy.pro\/"},"post":{"id":14777,"type":"page","permalink":"https:\/\/1academy.pro\/","comments_open":false},"rating":{"value":0,"count":0,"hasRated":false},"options":{"canHide":false,"allTraining":false,"showOnlyNotAccepted":false,"limit":20,"isCopyright":false,"socials":{"vkontakte":{"slug":"vkontakte","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/vkontakte?redirect=https:\/\/1academy.pro\/","label":"VK","color":"#4a76a8","visible":true},"twitter":{"slug":"twitter","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/twitter?redirect=https:\/\/1academy.pro\/","label":"Twitter","color":"#1da1f2","visible":false},"facebook":{"slug":"facebook","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/facebook?redirect=https:\/\/1academy.pro\/","label":"Facebook","color":"#3b5998","visible":true},"google":{"slug":"google","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/google?redirect=https:\/\/1academy.pro\/","label":"Google","color":"#db4437","visible":false},"github":{"slug":"github","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/github?redirect=https:\/\/1academy.pro\/","label":"Github","color":"#24292e","visible":false},"odnoklassniki":{"slug":"odnoklassniki","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/odnoklassniki?redirect=https:\/\/1academy.pro\/","label":"\u041e\u0434\u043d\u043e\u043a\u043b\u0430\u0441\u0441\u043d\u0438\u043a\u0438","color":"#ee8208","visible":false},"instagram":{"slug":"instagram","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/instagram?redirect=https:\/\/1academy.pro\/","label":"Instagram","color":"#c32aa3","visible":false},"twitch":{"slug":"twitch","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/twitch?redirect=https:\/\/1academy.pro\/","label":"Twitch","color":"#6441a4","visible":false},"dribbble":{"slug":"dribbble","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/dribbble?redirect=https:\/\/1academy.pro\/","label":"Dribbble","color":"#ea4c89","visible":false},"yandex":{"slug":"yandex","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/yandex?redirect=https:\/\/1academy.pro\/","label":"\u042f\u043d\u0434\u0435\u043a\u0441","color":"#f90000","visible":false},"mailru":{"slug":"mailru","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/mailru?redirect=https:\/\/1academy.pro\/","label":"Mail.Ru","color":"#005ff9","visible":false},"steam":{"slug":"steam","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/steam?redirect=https:\/\/1academy.pro\/","label":"Steam","color":"#171A21","visible":false},"yahoo":{"slug":"yahoo","url":"https:\/\/1academy.pro\/wp-json\/anycomment\/v1\/auth\/yahoo?redirect=https:\/\/1academy.pro\/","label":"Yahoo","color":"#430297","visible":false},"wordpress":{"slug":"wordpress","url":"https:\/\/1academy.pro\/wp-login.php?redirect_to=https%3A%2F%2F1academy.pro%2F%23comments","label":"WordPress","visible":false}},"sort_order":"desc","guestInputs":["name","email","website"],"isShowUpdatedInfo":true,"isNotifySubscribers":false,"isShowProfileUrl":true,"isShowImageAttachments":false,"isShowVideoAttachments":false,"isShowTwitterEmbeds":false,"isModerateFirst":false,"userAgreementLink":null,"notifyOnNewComment":false,"intervalCommentsCheck":"10","isLoadOnScroll":true,"isFormTypeAll":false,"isFormTypeGuests":false,"isFormTypeSocials":true,"isFormTypeWordpress":false,"isFileUploadAllowed":true,"isGuestCanUpload":null,"fileMimeTypes":"image\/*","fileLimit":"5","fileMaxSize":"1.5","fileUploadLimit":"900","isRatingOn":false,"isReadMoreOn":true,"commentRating":"likes","dateFormat":"relative","isEditorOn":true,"editorToolbarOptions":["bold","italic","underline","blockquote","ordered","bullet","link","clean"],"reCaptchaOn":false,"reCaptchaUserAll":false,"reCaptchaUserGuest":true,"reCaptchaUserAuth":false,"reCaptchaSiteKey":null,"reCaptchaTheme":"light","reCaptchaPosition":"bottomright"},"i18":{"error_generic":"\u0423\u043f\u0441, \u0447\u0442\u043e-\u0442\u043e \u043f\u043e\u0448\u043b\u043e \u043d\u0435 \u0442\u0430\u043a. \u041f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u043f\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443.","loading":"\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430...","load_more":"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0435\u0449\u0435","waiting_moderation":"\u041e\u0436\u0438\u0434\u0430\u0435\u0442 \u043c\u043e\u0434\u0435\u0440\u0430\u0446\u0438\u044e","edited":"\u0418\u0437\u043c\u0435\u043d\u0435\u043d","button_send":"\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c","button_save":"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c","button_reply":"\u041e\u0442\u0432\u0435\u0442\u0438\u0442\u044c","sorting":"\u0421\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u043a\u0430","sort_by":"\u0421\u043d\u0430\u0447\u0430\u043b\u0430","sort_oldest":"\u0441\u0442\u0430\u0440\u044b\u0435","sort_newest":"\u043d\u043e\u0432\u044b\u0435","reply_to":"\u043e\u0442\u0432\u0435\u0442 \u0434\u043b\u044f","editing":"\u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u0435","add_comment":"\u0412\u0430\u0448 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439...","no_comments":"\u041f\u043e\u043a\u0430 \u0435\u0449\u0435 \u043d\u0435 \u0431\u044b\u043b\u043e \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0435\u0432","footer_copyright":"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c AnyComment \u043d\u0430 \u0441\u0432\u043e\u0439 \u0441\u0430\u0439\u0442","reply":"\u041e\u0442\u0432\u0435\u0442\u0438\u0442\u044c","edit":"\u0418\u0437\u043c\u0435\u043d\u0438\u0442\u044c","delete":"\u0423\u0434\u0430\u043b\u0438\u0442\u044c","comments_closed":"\u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438 \u0437\u0430\u043a\u0440\u044b\u0442\u044b.","subscribed":"\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0432\u0430\u0448\u0443 \u043f\u043e\u0447\u0442\u0443, \u0447\u0442\u043e\u0431\u044b \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044c \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0443","subscribe":"\u041f\u043e\u0434\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f","subscribe_pre_paragraph":"\u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u043f\u043e\u0434\u043f\u0438\u0441\u0430\u0442\u044c\u0441\u044f \u043d\u0430 \u043d\u043e\u0432\u044b\u0435 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438 \u043a \u044d\u0442\u043e\u043c\u0443 \u043f\u043e\u0441\u0442\u0443, \u0443\u043a\u0430\u0437\u0430\u0432 \u0441\u0432\u043e\u044e \u043f\u043e\u0447\u0442\u0443 \u0432 \u043f\u043e\u043b\u0435 \u043d\u0438\u0436\u0435:","cancel":"\u041e\u0442\u043c\u0435\u043d\u0438\u0442\u044c","quick_login":"\u0411\u044b\u0441\u0442\u0440\u044b\u0439 \u0432\u0445\u043e\u0434","guest":"\u0413\u043e\u0441\u0442\u044c","login":"\u0412\u043e\u0439\u0442\u0438","logout":"\u0412\u044b\u0439\u0442\u0438","comment_waiting_moderation":"\u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 \u0431\u0443\u0434\u0435\u0442 \u043f\u043e\u043a\u0430\u0437\u0430\u043d \u043f\u043e\u0441\u043b\u0435 \u0440\u0430\u0441\u0441\u043c\u043e\u0442\u0440\u0435\u043d\u0438\u044f \u043c\u043e\u0434\u0435\u0440\u0430\u0442\u043e\u0440\u043e\u043c.","new_comment_was_added":"\u0411\u044b\u043b \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439","author":"\u0410\u0432\u0442\u043e\u0440","name":"\u0418\u043c\u044f","email":"\u041f\u043e\u0447\u0442\u0430","website":"\u0412\u0435\u0431-\u0441\u0430\u0439\u0442","already_rated":"\u0412\u044b \u0443\u0436\u0435 \u0433\u043e\u043b\u043e\u0441\u043e\u0432\u0430\u043b\u0438","accept_user_agreement":"\u042f \u0434\u0430\u044e \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0435 \u043d\u0430 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0443 <a href=\"\" target=\"_blank\" >\u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445<\/a>","upload_file":"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0444\u0430\u0439\u043b","file_upload_in_progress":"\u0418\u0434\u0435\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430...","file_uploaded":"\u0417\u0430\u0433\u0440\u0443\u0436\u0435\u043d\u043e!","file_too_big":"\u0424\u0430\u0439\u043b %s \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0431\u043e\u043b\u044c\u0448\u043e\u0439","file_limit":"\u0412\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043c\u0430\u043a\u0441\u0438\u043c\u0443\u043c 5 \u0444\u0430\u0439\u043b(-\u043e\u0432)","file_not_selected_or_extension":"\u041d\u0435 \u0432\u044b\u0431\u0440\u0430\u043d\u044b \u0444\u0430\u0439\u043b\u044b \u0438\u043b\u0438 \u043d\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0435 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u0435","read_more":"\u0427\u0438\u0442\u0430\u0442\u044c \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e","show_less":"\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c","hide_this_message":"\u0421\u043a\u0440\u044b\u0442\u044c \u044d\u0442\u043e \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435","login_with":"\u0412\u043e\u0439\u0442\u0438 \u0441","or_as_guest":"\u0438\u043b\u0438 \u043a\u0430\u043a \u0433\u043e\u0441\u0442\u044c:","lighbox_close":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c (Esc)","lighbox_left_arrow":"\u041f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0430\u044f (\u043b\u0435\u0432\u0430\u044f \u0441\u0442\u0440\u0435\u043b\u043a\u0430)","lighbox_right_arrow":"\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0430\u044f (\u043f\u0440\u0430\u0432\u0430\u044f \u0441\u0442\u0440\u0435\u043b\u043a\u0430)","lighbox_image_count_separator":" \u0438\u0437 "}};
+/* ]]> */
+</script>
+<script type="text/javascript" async="async" src="https://1academy.pro/wp-content/plugins/anycomment/static/js/main.min.js?ver=08f327e8f15679b35daf9b6716f5edb7" id="anycomment-js-bundle-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.5' defer='defer" id="tp-tools-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.5' defer='defer" id="revmin-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/jquery.isotope.min.js?ver=6.6" id="jsisotope-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/resize.js?ver=6.6" id="resize-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/custom-portfolio.js?ver=6.6" id="custom-portfolio-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/bootstrap.min.js?ver=3.1.1" id="bootstrap.min-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/ethic.owl.carousel.js?ver=6.6" id="ethic.owl.carousel-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/customer.js?ver=6.6" id="customer-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/themes/ethic/js/off-canvas.js?ver=6.6" id="off-canvas-js"></script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=7.7.2" id="wpb_composer_front_js-js"></script>
+<script type="text/javascript" id="sby_scripts-js-extra">
+/* <![CDATA[ */
+var sbyOptions = {"isAdmin":"","adminAjaxUrl":"https:\/\/1academy.pro\/wp-admin\/admin-ajax.php","placeholder":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/placeholder.png","placeholderNarrow":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/placeholder-narrow.png","lightboxPlaceholder":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/lightbox-placeholder.png","lightboxPlaceholderNarrow":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/lightbox-placeholder-narrow.png","autoplay":"","semiEagerload":"","eagerload":"","nonce":"65e3f49171","isPro":"","isCustomizer":""};
+var sbyOptions = {"isAdmin":"","adminAjaxUrl":"https:\/\/1academy.pro\/wp-admin\/admin-ajax.php","placeholder":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/placeholder.png","placeholderNarrow":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/placeholder-narrow.png","lightboxPlaceholder":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/lightbox-placeholder.png","lightboxPlaceholderNarrow":"https:\/\/1academy.pro\/wp-content\/plugins\/feeds-for-youtube\/img\/lightbox-placeholder-narrow.png","autoplay":"","semiEagerload":"","eagerload":"","nonce":"65e3f49171","isPro":"","isCustomizer":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/feeds-for-youtube/js/sb-youtube.min.js?ver=2.2.3" id="sby_scripts-js"></script>
+<script type="text/javascript" id="sby_scripts-js-after">
+/* <![CDATA[ */
+jQuery(document).ready(function($){$(".sby_video_thumbnail").off("click")});
+jQuery(document).ready(function($){$(".sby_video_thumbnail").off("click")});
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://1academy.pro/wp-content/plugins/user-access-manager/js/training_test.js?ver=6.6" id="testscript-js"></script>
+<script></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(94213937, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/94213937" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+<script language="JavaScript">
+  jQuery(document).ready(function($){
+		$(".sby_video_thumbnail").off("click");
+		$(".sb_youtube.sby_layout_gallery").off('mouseenter');		
+  })
+</script>
+
+
+<div id="sby_lightboxOverlay" class="sby_lightboxOverlay" style="display: none;"></div>
+                <div id="sby_lightbox" class="sby_lightbox" style="display: none;">
+                 <div class="sby_lb-header"></div>
+                  <div class="sby_lb-outerContainer">
+                    <a class="sby_lb-close"></a>
+                    <div class="sby_lb-container">
+                      <div class="sby_lb_video_thumbnail_wrap">
+                        <span class="sby_lb_video_thumbnail">
+                          <img class="sby_lb-image" alt="Lightbox image placeholder" src="">
+                          <div class="sby_lb-player" id="sby_lb-player"></div>
+                        </span>
+                      </div>
+                      <div class="sby_lb-nav">
+                        <a class="sby_lb-prev" href="#">
+                          <p class="sby-screenreader">Previous Slide</p>
+                          <span></span>
+                        </a>
+                        <a class="sby_lb-next" href="#">
+                          <p class="sby-screenreader">Next Slide</p>
+                          <span></span>
+                        </a>
+                      </div>
+                      <div class="sby_lb-loader">
+                        <a class="sby_lb-cancel"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sby_lb-dataContainer">
+                    <div class="sby_lb-data">
+                      <div class="sby_lb-details">
+                        <div class="sby_lb-caption">
+                        </div>
+                        <div class="sby_lb-info">
+                          <div class="sby_lb-number"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></body></html>

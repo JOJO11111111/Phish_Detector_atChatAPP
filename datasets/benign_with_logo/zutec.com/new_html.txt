@@ -1,0 +1,1169 @@
+<html><head><style type="text/css">.mui-textfield.mui-textfield--float-label > label {-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;-o-transition:all .15s ease-out;transition:all .15s ease-out;}</style><style type="text/css">@keyframes mui-btn-inserted{from{transform:none;}to{transform:none;}}.mui-btn{animation-duration:0.0001s;animation-name:mui-btn-inserted;}@keyframes mui-dropdown-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-dropdown-inserted;}@keyframes mui-btn-inserted,mui-dropdown-inserted{from{transform:none;}to{transform:none;}}.mui-btn[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-btn-inserted,mui-dropdown-inserted;}@keyframes mui-tab-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="tab"]{animation-duration:0.0001s;animation-name:mui-tab-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > input{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > textarea{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-select-inserted{from{transform:none;}to{transform:none;}}.mui-select > select{animation-duration:0.0001s;animation-name:mui-select-inserted;}@keyframes mui-node-inserted{from{transform:none;}to{transform:none;}}.mui-select > select ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-inserted;}@keyframes mui-node-disabled{from{transform:none;}to{transform:none;}}.mui-select > select:disabled ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-disabled;}</style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Sign In - Zutec</title>
+
+    <!-- load MUI -->
+    <script type="text/javascript" src="/ruxitagentjs_ICANVfqru_10309250310100759.js" data-dtconfig="rid=RID_-308361067|rpid=1580385082|domain=zutec.com|reportUrl=/rb_bf02833teb|app=e34e0dc971acb3b4|cuc=bvsr98v1|mel=100000|featureHash=ICANVfqru|dpvc=1|lastModification=1742959834890|tp=500,50,0|rdnt=1|uxrgce=1|agentUri=/ruxitagentjs_ICANVfqru_10309250310100759.js"></script><link href="stylesheets/mui-0.10.3/css/mui.min.css?v=4" rel="stylesheet" type="text/css">
+    <script src="stylesheets/mui-0.10.3/js/mui.min.js?v=4"></script>
+
+    <link rel="stylesheet" href="stylesheets/bootstrap-4.3.1-dist/css/bootstrap.min.css?v=4">
+
+    <script type="text/Javascript" src="stylesheets/jquery/jquery-3.2.1.min.js?v=4"></script>
+
+    <script type="text/javascript" src="stylesheets/popper/popper.min.js?v=4"></script>
+
+    <script type="text/javascript" src="stylesheets/bootstrap-4.3.1-dist/js/bootstrap.min.js?v=4"></script>
+
+    <link rel="stylesheet" href="stylesheets/fontawesome-free-5.8.2-web/css/all.min.css?v=4">
+
+    <link rel="stylesheet" href="stylesheets/stylesheet.css?v=4">
+
+    <script language="JavaScript" type="text/Javascript">
+
+        function breakout_of_frame()
+		{
+			if (top.location != location) 
+			{
+				top.location.href = document.location.href ;
+			}
+		}
+
+		function changeArrowColor(enter) {
+			if (enter) {
+				document.getElementById('read-now-arrow').style.fill = 'black';
+			} else {
+				document.getElementById('read-now-arrow').style.fill = '#F4FF45';
+			}
+		}
+
+	breakout_of_frame();
+	</script>
+
+</head>
+
+<body>
+
+
+
+
+    <!--Login container-->
+    <div class="container-fluid w-100 h-100 p-0" id="login-container" style="">
+		<div class="d-flex flex-row w-100 h-100">
+
+			<div class="p-5" id="text-overlay">
+				<div id="logo-above-title" style="margin: 0% 0% 5% 0%; ">
+					<img src="stylesheets/logos/Logo-White.svg?v=1" alt="logo" style="width: 170px;">
+				</div>
+				<div id="above-title-text">
+					WE'VE HAD A MAKEOVER!				</div>
+				<div id="title-text">
+					You will see some changes in the platform, largely to the colours and logo.				</div>
+				<div id="info-text">
+					We're excited to share our new look and feel, as we've refreshed the Zutec brand, while combining with sister companies Createmsater and Creatmaster Information Management to be known as Zutec.				</div>
+				<div id="features-text">
+					We hope you like our new look and if you have any questions, please email: contact@zutec.com				</div>
+				<a id="read-now-button" onmouseover="changeArrowColor(true)" onmouseout="changeArrowColor(false)" href="https://zutec.com/all-builddata-group-brands-become-zutec?utm_campaign=Zutec%20rebrand&amp;utm_medium=email&amp;_hsmi=299880799&amp;_hsenc=p2ANqtz--6Dq2Mn5cVeLc4zO70EHx2PXBoHAkOaAc4uRHqMR9NbdJv4ZlgP9rCHKRR1BwnJCeOEJZGEfzfBnTSwFH63lX6x3o4tQ&amp;utm_content=299880799&amp;utm_source=hs_email" target="_blank">
+					Read our rebrand press release here					<svg id="read-now-arrow-container" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 1 15 20">
+						<path id="read-now-arrow" d="M9.99967 3.33325L8.82467 4.50825L13.4747 9.16658H3.33301V10.8333H13.4747L8.82467 15.4916L9.99967 16.6666L16.6663 9.99992L9.99967 3.33325Z" fill="#F4FF45"></path>
+					</svg>
+				</a>
+			</div>
+				
+			<div class="d-flex flex-column flex-grow-1" style="" id="banner-images">
+
+				<div id="banner-image1-bounds">
+					<img id="banner-image1" src="stylesheets/login-banner-image1.png?v=1" alt="screen-image1">
+				</div>
+				<div id="banner-image2-bounds">
+					<img id="banner-image2" src="stylesheets/login-banner-image4.png?v=1" alt="screen-image2">
+				</div>
+
+			</div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center" id="login-bounds">
+    
+                <div class="" id="login-header">
+    
+                    <div class="" id="logo-bounds">
+    
+                        <img src="stylesheets/logos/Icon-Colour.svg?v=1" alt="logo" class="mx-auto img-fluid d-block" style="width: 50px" id="logo-image">
+    
+                    </div>
+    
+                    <div class="text-center my-3" id="login-message">
+    
+                        <h4>Sign in to your account</h4>
+    
+                    </div>
+    
+                    <div class="" id="login-alert-bounds">
+    
+                        <!-- Alert rendered here -->
+    
+                    </div>
+    
+                </div>
+				
+				<div class="w-75" id="login-form">
+    
+                    <div class="mui-textfield mui-textfield--float-label my-4">
+                        
+                        <input type="email" class="login-form-element mui--is-empty mui--is-untouched mui--is-pristine" value="" id="email-input" required="">
+                        <label for="email-input">Email</label>
+                    
+                    </div>
+    
+                    <div class="mui-textfield mui-textfield--float-label my-4">
+    
+                        <input type="password" class="login-form-element mui--is-empty mui--is-untouched mui--is-pristine" value="" id="password-input" required="">
+                        <label for="password-input">Password</label>
+    
+                    </div>
+    
+                    <div class="my-4">
+    
+                        <button type="submit" class="btn blue-button full-width" id="login-submit-button">Sign In</button>
+    
+                    </div>
+    
+                    <div class="text-center my-4">
+    
+                        <a href="forgot_your_password.php" class="link-item">Forgot your password?</a>
+    
+                    </div>
+    
+                    <div class="d-flex flex-wrap justify-content-center my-2">
+    
+                        <ul class="list-inline">
+    
+                            <li class="list-inline-item"><a href="gdpr.php" target="_blank" class="login-bottom-link">GDPR</a></li>
+    
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/zutecgroup/" target="_blank" class="login-bottom-link">linkedin</a></li>
+    
+                            <li class="list-inline-item"><a href="https://www.zutec.com/contact/" target="_blank" class="login-bottom-link">Contact</a></li>
+    
+                            <li class="list-inline-item"><a href="https://www.zutec.com/privacy" target="_blank" class="login-bottom-link">Privacy</a></li>
+    
+                            <li class="list-inline-item"><a href="https://zutec.com/terms-conditions/" target="_blank" class="login-bottom-link">Terms</a></li>
+    
+                        </ul>
+
+                    </div>
+    
+                    <div class="text-center my-4">
+
+                        <a href="https://www.zutec.com/zutec-among-the-first-to-be-awarded-bsi-bim-kitemark/" target="_blank">
+							<img style="width:120px;" src="stylesheets/logos/bimkitemark.png">
+						</a>
+
+                    </div>
+    
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+    <!--End login container-->
+
+    <!--Zone selection container-->
+    <div class="container" id="zone-container">
+
+        <div class="row justify-content-center h-100">
+
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-12">
+
+                <div class="container-fluid">
+
+                    <div class="row justify-content-front small-spacing-top">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6">
+
+							<img src="stylesheets/logos/Logo-Colour.svg?v=1" alt="zutec-cloud" class="img-fluid">
+
+                        </div>
+
+                    </div>
+
+                    <!--Zone header bounds-->
+                    <div class="row" id="zone-header-bounds">
+
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12 small-spacing-top">
+
+                            <input type="text" class="form-control" id="search-project-input" placeholder="Search projects..">
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-12 small-spacing-top">
+
+                            <button class="btn blue-button full-width" onclick="refreshProjects()">Refresh Projects</button>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-12 small-spacing-top">
+
+                            <button class="btn blue-button full-width" onclick="changeSecurity()">Security</button>
+
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12 col-12 small-spacing-top">
+
+                            <button class="btn blue-button full-width" onclick="logOut()">Sign Out</button>
+
+                        </div>
+
+                    </div>
+                    <!--End zone header bounds-->
+
+                    <!--Zone item bounds-->
+                    <div class="row justify-content-center" id="zone-item-bounds">
+
+                        <!--Zone items rendered here-->
+
+                    </div>
+                    <!--End zone item bounds-->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--End Zone selection container-->
+
+    <!--Two factor container-->
+    <div class="container" id="two-factor-container">
+
+        <div class="row justify-content-center h-100">
+
+            <div class="col-lg-4 col-md-6 col-sm-8 col-xs-11 col-11 center-vertically" id="login-bounds">
+
+                <div class="container">
+
+                    <div class="row" id="wo-factor-header">
+
+                        <div class="col-12">
+
+                            <div class="container">
+
+                                <div class="row justify-content-center">
+
+                                    <div class="col-12 small-spacing-top" id="logo-bounds">
+
+				       <!-- <img src="stylesheets/logos/Icon-Colour.svg?v=1" alt="logo" class="mx-auto img-fluid d-block"> -->
+<img src="stylesheets/logos/Icon-Colour.svg?v=" alt="logo" class="mx-auto img-fluid d-block" style="width:120px;">
+
+                                    </div>
+
+                                    <div class="col-12 small-spacing-top" style="height:10px">
+
+                                    </div>
+
+                                    <div class="text-center col-12 small-spacing-top" id="two-factor-message">
+
+                                        <h3>Two factor Authentication</h3>
+
+                                    </div>
+
+                                    <div class="col-8 small-spacing-top" id="two-factor-alert-bounds">
+
+                                        <!-- Alert rendered here -->
+
+                                    </div>
+
+                                    <!-- <div class="text-center mx-auto col-lg-7 col-md-10 col-12 small-spacing-top forgot-password-message"> -->
+									<div class="text-center mx-auto col-12 small-spacing-top forgot-password-message" style="color: #6c757d; font-size: medium">
+                                        Your account has two factor authentication enabled.										<br>
+										Please check your mobile device for pass code.										<br>
+										                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row" id="two-factor-form">
+
+                        <div class="col-lg-12 col-12 small-spacing-top d-flex justify-content-center">
+
+                            <input type="text" class="form-control w-50" value="" id="two-factor-input" placeholder="Code" required="" autocomplete="off">
+
+                        </div>
+
+                        <div class="text-center col-lg-7 col-12 mx-auto small-spacing-top">
+
+                            <button type="submit" class="btn blue-button full-width" id="two-factor-submit-button">Validate</button>
+
+                        </div>
+
+                        <div class="text-center col-lg-7 col-12 mx-auto small-spacing-top">
+
+                            <button class="btn blue-button full-width" id="two-factor-resend-button">Resend Validation Code</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--End two factor container-->
+
+	<!-- Fix to glitch in UI - before entering in Select Zone page -->
+	
+    <script type="Text/Javascript">
+        // Empty array to hold the zones
+var zones = [];
+
+
+
+	var isLoggedIn = "";	
+
+// if org param exists, save it in a cookie
+// if the user isnt logged in and has the cookie, 
+// redirect to login through sso.
+(function ()
+{
+	var org = "";
+	var isLoggedIn = "";	
+				
+	if (org != "")
+	{
+		document.cookie = "org=" + org + "; expires=0";
+	}	
+	else	// if the cookie exists prompt the user to use sso
+	{
+		var orgCookie = getCookie ("org");
+		var triedSSOAlready = getCookie ("ssotried") == "true";
+		var justLoggedOut = getCookie("loggedout") == "true";	// shortcut to check if got here from logout
+		
+		if (orgCookie != "" && !isLoggedIn && !triedSSOAlready && !justLoggedOut)	// also need to check that the page is in the login state and not just logged out
+		{			
+			writeCookie("ssotried", "true", 0.5);	// if sso fails, dont let page retry immediately or it might end up in a redirect loop		
+			window.location.replace("/login/sso.php?sso&org=" + orgCookie);
+		}
+	}
+})();
+
+function writeCookie (name, value, minutes)
+{
+	minutes = minutes || 0;
+	var cookie = name + "=" + value;
+	if (minutes > 0)
+	{
+		var date = new Date();
+		date.setTime (date.getTime() + (minutes * 60000));
+		
+		cookie += "; expires=" + date.toGMTString();
+	}
+	
+	document.cookie = cookie;
+}
+
+function getCookie (name) 
+{
+	const value = `; ${document.cookie}`;
+	const parts = value.split(`; ${name}=`);
+	if (parts.length === 2) 
+	{
+		return parts.pop().split(';').shift();
+	}
+	else
+	{
+		return "";	// expecting empty string rather than 'undefined'
+	}
+}
+
+
+
+var sessionCheck = "";
+var opennode = "";
+var messageid = "";
+var messagezoneid = "";
+var deployment_id = "";
+var action = "";
+var redirectlink = "";
+var twoFactorRequired = "";
+
+// On document load fade in the container
+$(document).ready(function(){
+
+	// Check if user is comming from an Email Notification (can't assign this value to a variable)
+	if (!sessionCheck && opennode && messageid) {
+		displayAlert ('You need to log in to access the register', 'error', 'login');
+	}
+
+	// Check if 2fa is required
+	if(twoFactorRequired == "yes") 
+	{
+
+		if (getRequestValue().message == '6')
+		{
+			displayAlert('Two factor authentication has been enabled on your account.', 'success', '2fa-setted'); 
+
+			// Display setted two factor view
+			$("#login-container").hide();
+			$("#zone-container").hide();
+			$("#setted-two-factor-container").fadeIn();
+
+			// Adds an event listener for buttons (Return to Login & Close Tab)
+			var returnToLoginButton = document.getElementById("two-factor-to-login-page");
+			var closeTabButton = document.getElementById("two-factor-close-tab");
+
+			returnToLoginButton.addEventListener("click", function(event) {
+				logOut();
+				window.location = "global_login.php?";
+			});
+
+			closeTabButton.addEventListener("click", function(event) {
+				window.close();
+			});
+
+		}
+		else
+		{
+			// Sending Verification Code if the user is comming from a Zone/Project and need to insert the code
+			// * happens when the user decide to "close the tab" and continuing in the platform after setting up the 2FA without logging out*
+			var urlParam = window.location.search.slice(1).split('=')[0];
+
+			if (urlParam == "selectzone")
+			{
+				// Resend the verification code
+				$.ajax({
+					url: "ajax_resend_two_factor_message.php",
+					method: "POST",
+					data: { },
+					error: function(){
+						displayAlert("Please contact support", "error", "two-factor");
+						$("#two-factor-resend-button").html("Resend Validation Code");
+					},
+					success: function(returnedData){
+						var response = JSON.parse(returnedData);
+						if(response.code == 1)
+						{
+							displayAlert("Error", "error", "two-factor");
+							$("#two-factor-resend-button").html("Resend Validation Code");
+						}
+					},
+				});
+			}
+
+			// Display two factor view
+			$("#login-container").hide();
+			$("#zone-container").hide();
+			$("#setted-two-factor-container").hide();
+			$("#two-factor-container").fadeIn();
+
+			document.getElementById("two-factor-input").focus();
+
+			// Adds an event listner for the two factor element
+			var twoFactorElement = document.getElementById("two-factor-input");
+
+			twoFactorElement.addEventListener("keyup", function(event) {
+							
+				// Number 13 is the "Enter" key on the keyboard
+				if (event.keyCode === 13)
+				{
+					// Cancel the default action, if needed
+					event.preventDefault();
+					// Trigger the button element with a click
+					document.getElementById("two-factor-submit-button").click();
+				}
+			});
+
+		}
+	}
+	// If returning to select a zone
+	else if(sessionCheck != "")
+	{
+		zoneSelect();
+	}
+	else
+	{
+		// Display login
+		$("#login-alert").hide();
+		$("#login-container").fadeOut(0);
+		$("#two-factor-container").fadeOut(0);
+		$("#setted-two-factor-container").fadeOut(0);
+
+		// Fade in the form
+		setTimeout(function() {
+			$("#login-container").fadeIn(250);
+			checkForMessages();
+		}, 500);
+
+		// Adds an event listner for the login elements
+		var loginFormElements = document.getElementsByClassName("login-form-element");
+
+		for (index = 0; index < loginFormElements.length; index++)
+		{
+			// Execute a function when the user releases a key on the keyboard
+			loginFormElements[index].addEventListener("keyup", function(event) {
+
+				// Number 13 is the "Enter" key on the keyboard
+				if (event.keyCode === 13)
+				{
+				    // Cancel the default action, if needed
+					event.preventDefault();
+				    // Trigger the button element with a click
+				    document.getElementById("login-submit-button").click();
+				}
+			});
+		}
+
+		// Adds an event listner for the two factor element
+		var twoFactorElement = document.getElementById("two-factor-input");
+
+		twoFactorElement.addEventListener("keyup", function(event) {
+
+			// Number 13 is the "Enter" key on the keyboard
+			if (event.keyCode === 13)
+			{
+				// Cancel the default action, if needed
+				event.preventDefault();
+				// Trigger the button element with a click
+				document.getElementById("two-factor-submit-button").click();
+			}
+		});
+	}
+
+});
+
+// Displays the zone selection to the user
+function zoneSelect()
+{
+	$("#login-container").hide();
+	$("#two-factor-container").hide();
+	$("#setted-two-factor-container").hide();
+	$("#zone-container").fadeIn();
+	getZones(false);
+}
+
+// Checks for messages passed in the get request and displays
+function checkForMessages()
+{
+	if(getRequestValue().message)
+	{
+		var message = getRequestValue().message
+
+		if(message == 1)
+		{
+			displayAlert('Logout Successful', 'success', 'login');
+		}
+		else if(message == 2)
+		{
+			displayAlert('Account Activated', 'success', 'login');
+		}
+		else if(message == 3)
+		{
+			displayAlert('Password Changed', 'success', 'login');
+		}
+		else if (message == 4)
+		{
+			displayAlert ('SSO Login Failed', 'error', 'login');
+		}
+		else if (message == 5)
+		{
+			displayAlert ('You must already have a Zutec account', 'error', 'login');
+		}
+		else if (message == 7)
+		{
+			displayAlert ('Two-Factor Authentication Disabled', 'success', 'login');
+		}
+	}
+}
+
+// Submit button action
+$("#login-submit-button").click(function(){
+	// In the case of the button being clicked and an alert is showing just remove
+	$("#login-alert").remove();
+
+	var email = $("#email-input").val();
+	var password = $("#password-input").val();
+
+	// Guard to make sure form is filled
+	if(email.length == 0 || password.length == 0)
+	{
+		displayAlert("Please fill out credentials", "warning", "login");
+	}
+	else if(!validateEmail(email))
+	{
+		displayAlert("Email entered is not valid.", "error", "login");
+	}
+	else
+	{
+		// User has enterd there details so proceed
+		animateLogin(false, loginUser(email, password));
+	}
+});
+
+// Encodes a string
+function encode(value)
+{
+	var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+	var encodedString = Base64.encode(value);
+	return encodedString;
+}
+
+// Makes the network request to login the user
+function loginUser(email, password)
+{
+	// Make the network request to login the user
+	$.ajax({
+		url: "ajax_login_user.php",
+		method: "POST",
+		data: { username: encode(email), password: encode(password) },
+		error: function(){
+			animateLogin(false, displayAlert("Please contact Zutec support", "error", "login"));
+		},
+		success: function(returnedData){
+
+			var response = JSON.parse(returnedData);
+
+			// Two factore required
+			if(response.code == 3)
+			{
+				setTimeout(function(){
+    				// Display two factor view
+					$("#login-container").fadeOut(function(){
+						$("#two-factor-container").fadeIn();
+					});
+				}, 1500);
+			}
+			// If successful login
+			else if(response.code == 2)
+			{
+				setTimeout(function(){
+    				displayMessageInZone("Retrieving Projects From Zutec...");
+					zoneSelect();
+				}, 1500);
+			}
+			else
+			{
+				setTimeout(function() {
+					animateLogin(true, displayAlert("Email or Password incorrect", "warning", "login"));
+				}, 3000);
+			}
+		},
+		timeout: 15000 // Sets timeout to 15 seconds
+	});
+}
+
+// Action for two factor submit
+$("#two-factor-submit-button").click(function(){
+
+	var code = $("#two-factor-input").val();
+
+	if(code.length == 0)
+	{
+		displayAlert("Please enter a valid code.", "warning", "two-factor");
+	}
+	else
+	{
+		$("#two-factor-submit-button").html("Validating.. <span class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>");
+		verifyTwoFactorCode(code);
+	}
+});
+
+// Action for the two factor resend
+$("#two-factor-resend-button").click(function(){
+
+	$("#two-factor-resend-button").html("Sending <span class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>");
+
+	// Resend the verification code
+	$.ajax({
+		url: "ajax_resend_two_factor_message.php",
+		method: "POST",
+		data: { },
+		error: function(){
+			// Handle error
+			displayAlert("Please contact support", "error", "two-factor");
+			$("#two-factor-resend-button").html("Resend Validation Code");
+		},
+		success: function(returnedData){
+
+			var response = JSON.parse(returnedData);
+
+			if(response.code == 2)
+			{
+				// Sent
+				displayAlert("Verification Sent", "success", "two-factor");
+				$("#two-factor-resend-button").html("Resend Validation Code");
+
+				$("#two-factor-resend-button").prop("disabled",true);
+				setTimeout(function(){
+					$("#two-factor-resend-button").prop("disabled",false);
+				}, 90000)
+
+			}
+			else if(response.code == 1)
+			{
+				displayAlert("Error", "error", "two-factor");
+				$("#two-factor-resend-button").html("Resend Validation Code");
+			}
+		},
+		timeout: 15000 // Sets timeout to 15 seconds
+	});
+
+});
+
+// Verifys the two factor auth code with the system
+function verifyTwoFactorCode(code)
+{
+	// Make the network request to login the user
+	$.ajax({
+		url: "ajax_two_factor_auth.php",
+		method: "POST",
+		data: { pincode: code },
+		error: function(){
+			// Handle error
+			displayAlert("Please contact support", "error", "two-factor");
+			$("#two-factor-submit-button").html("Validate");
+		},
+		success: function(returnedData){
+
+			var response = JSON.parse(returnedData);
+
+			if(response.code == 1)
+			{
+				// Invalid pin
+				displayAlert("Code invalid", "error", "two-factor");
+				$("#two-factor-submit-button").html("Validate");
+			}
+			else if(response.code == 2)
+			{
+				setTimeout(function() {
+					$("#two-factor-container").fadeOut(function(){
+						displayMessageInZone("Retrieving Projects From Zutec...");
+						zoneSelect();
+					});
+				}, 2000);
+			}
+		},
+		timeout: 15000 // Sets timeout to 15 seconds
+	});
+}
+
+// Searching a project
+$('input#search-project-input').on('keyup', function () {
+  	var searchQuery = $(this).val();
+  	searchQuery = sanitizeString(searchQuery);
+
+  	$("#zone-message").remove();
+
+  	$(".zone-item").each(function(){
+
+  		var value = $(this).val();
+
+  		if(value.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0)
+		{
+			$(this).show();
+		}
+		else
+		{
+			$(this).hide();
+		}
+  	});
+
+  	var numOfVisibleProjects = $('.zone-item:visible').length;
+
+  	if(numOfVisibleProjects == 0)
+  	{
+  		displayMessageInZone("No projects found for \""+searchQuery+"\"");
+  	}
+});
+
+function displayMessageInZone(message)
+{
+	var zoneMessage = "<div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 text-center\" id=\"zone-message\">";
+
+	zoneMessage += message;
+
+	zoneMessage += "</div>";
+
+	// Append to the zone list
+	$("#zone-item-bounds").append(zoneMessage);
+}
+
+// Refresh projects button action
+function refreshProjects()
+{
+	$("#zone-item-bounds").html("");
+	displayMessageInZone("Refreshing Projects...");
+
+	setTimeout(function() {
+		getZones(true);
+	}, 2000);
+}
+
+// Change 2FA & Password button action
+function changeSecurity()
+{
+	// window.location = "change_account_security.php";
+	window.open('change_account_security.php', '_blank');
+}
+
+// Redirects to the project
+function loadProject(zoneid, deployment)
+{
+	// Make the network request to login the user
+	$.ajax({
+		url: "ajax_load_project.php",
+		method: "POST",
+		data: { deployment: deployment, zoneid: zoneid, opennode: opennode, messageid: messageid, deployment_id: deployment_id, action: action, redirectlink: redirectlink },
+		error: function(){
+			// Error
+		},
+		success: function(returnedData){
+
+			var response = JSON.parse(returnedData);
+
+			if(response.status == "success")
+			{
+				var redirectUrl = response.redirect;
+				window.location = redirectUrl;
+			}
+			else
+			{
+				// Error
+			}
+		},
+		timeout: 90000 // Sets timeout to 90 seconds
+	});
+}
+
+// Logs out the user and redirects
+function logOut()
+{
+	// Make the network request to login the user
+	$.ajax({
+		url: "ajax_logout_user.php",
+		method: "POST",
+		data: { },
+		error: function(){
+			// Error
+		},
+		success: function(returnedData){
+
+			var response = JSON.parse(returnedData);
+
+			// If successful logout
+			if(response.code == 2)
+			{
+				// Success
+				window.location = "global_login.php?message=1";
+				writeCookie("loggedout", "true", 0.25);	// keep for 15 seconds to stop page immediately trying sso
+			}
+			else
+			{
+				// Error
+			}
+		},
+		timeout: 15000 // sets timeout to 10 seconds
+	});
+}
+
+// Gets the zones for the user
+function getZones(refreshZones)
+{
+	// Make the network request to login the user
+	$.ajax({
+		url: "ajax_get_zones.php",
+		method: "POST",
+		data: { refresh: refreshZones },
+		error: function(){
+			displayMessageInZone("An error has occurred. Please contact Zutec support")
+		},
+		success: function(returnedData){
+
+			var response = JSON.parse(returnedData);
+
+			// If successful login
+			if(response.code == 1)
+			{
+				// Error
+			}
+			else
+			{
+				// If one zone redirect
+				zones = response.zones;
+
+				if(zones.length == 1)
+				{
+					loadProject(zones[0].fld_security_zoneid, zones[0].fld_deploymentid);
+				}
+				// If user is comming from an Email Notification (or from a external message link)
+				else if (!sessionCheck && opennode && messageid && messagezoneid) 
+				{
+					var userBelongsToZone = false;
+
+					/* 	Will redirect the user to the Zone, Register & Record related to "opennode" & "messageid" parameters in the URL
+					Because we are already using/checking "deployment", "zoneid", "opennode", "messageid", "deployment_id", "action" and "redirectlink" 
+					in loadProject() function */
+					zones.forEach(zone => {
+						if (zone.fld_security_zoneid == messagezoneid && zone.fld_deploymentid == deployment_id) {
+							loadProject(zone.fld_security_zoneid, zone.fld_deploymentid);
+							userBelongsToZone = true;
+						}
+					});
+
+					// If user don't belong to zone the list with zones will be displayed
+					if (userBelongsToZone == false) {
+						displayZones(zones);	
+					}
+				}
+				else
+				{
+					displayZones(zones);
+				}
+			}
+		},
+		timeout: 90000 // sets timeout to 90 seconds
+	});
+}
+
+// Displays the zones in the list
+function displayZones(zones)
+{
+	// Empty the zone bounds
+	$("#zone-item-bounds").html("");
+
+	zones.forEach(function(zone) {
+
+		var zoneItem = "<button value=\""+zone.fld_name+"\" onclick=\"loadProject("+zone.fld_security_zoneid+","+zone.fld_deploymentid+")\" class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 zone-item\" id=\"zone-item-"+zone.fld_security_zoneid+"-"+zone.fld_deploymentid+"\">";
+
+		zoneItem += "<div class=\"zone-item-overlay\">";
+
+		zoneItem += "<div class=\"container-fluid h-100\">";
+
+		zoneItem += "<div class=\"row h-100\">";
+
+		zoneItem += "<div class=\"col-12 mt-4 zone-title\">";
+
+		zoneItem += zone.fld_name;
+
+		zoneItem += "</div>";
+
+		zoneItem += "</div>";
+
+		zoneItem += "</div>";
+
+		zoneItem += "</div>";
+
+		zoneItem += "</button>";
+
+		zoneItem += "<button value=\""+zone.fld_name+"\" class=\"btn zone-item zone-deployment-item\">";
+
+		zoneItem += zone.fld_deploymentname;
+
+		zoneItem += "</button>";
+
+		// Append to the zone list
+		$("#zone-item-bounds").append(zoneItem);
+
+        if(zone.fld_image_path != null)
+        {
+            $("#zone-item-"+zone.fld_security_zoneid+"-"+zone.fld_deploymentid+"").css("background-image", "url(" + zone.fld_image_path + ")");
+        }
+        else
+        {
+            $("#zone-item-"+zone.fld_security_zoneid+"-"+zone.fld_deploymentid+"").css("background-image", "url(stylesheets/zone_default_image_purple.png?v=1)");
+        }
+
+	});
+}
+
+// Animates the login form
+function animateLogin(reverse, action)
+{
+	const logoSrc = "stylesheets/logos/Icon-Colour.svg?v=1";
+    const loadingSrc = "stylesheets/logos/Icon-Colour.svg?v=1";
+
+	if(!reverse)
+	{
+		$("#logo-image").attr("src", loadingSrc);
+		$("#logo-image").width(50);
+		$("#logo-image").addClass("logo-rotate");
+		$("#login-message").fadeTo(0,0);
+		$("#login-message").html("<h5>Signing into Zutec Cloud</h5>");
+		$('#login-message').css('margin-top', '+=35px');
+		$("#login-form").slideUp(function(){
+			/* Spinning Circle in the middle of the page ("#loader" in stylesheet.css) */
+			// $("#logo-bounds").append("<div id=\"loader\"></div>"); 
+		});
+		$("#login-message").fadeTo(100,1);
+	}
+	else
+	{
+		$("#logo-image").attr("src", logoSrc);
+		$("#logo-image").removeClass("logo-rotate");
+		$("#logo-image").width(50);
+		$('#login-message').css('margin-top', '-=35px');
+		$("#login-form").fadeIn();
+		$("#login-message").html("<h5>Sign in to your account</h5>");
+		$("#logo-bounds").show();
+
+		/* Spinning Circle in the middle of the page ("#loader" in stylesheet.css) */
+		// $("#loader").fadeTo(500, 0, function(){ 
+		//	   $("#loader").remove(); 
+		//     $("#logo-image").attr("src", logoSrc);
+		//     $("#logo-image").removeClass("logo-rotate");
+		//     $("#logo-image").width(250);
+		// 	   $('#login-message').css('margin-top', '-=35px');
+		// 	   $("#login-form").fadeIn();
+		// 	   $("#login-message").html("<h5></h5>");
+		// 	   $("#logo-bounds").show();
+		// });
+	}
+
+	if(action != null)
+	{
+		action()
+	}
+}
+
+// Displays an alert on the form
+function displayAlert(message, type, bounds)
+{
+	$("#message-alert").remove();
+
+	var alert = null;
+	switch(type)
+	{
+		case "success":
+		alert = "<div class=\"alert alert-success text-center\" role=\"alert\" id=\"message-alert\">"+sanitizeString(message)+"</div>";
+		break;
+
+		case "warning":
+		alert = "<div class=\"alert alert-warning text-center\" role=\"alert\" id=\"message-alert\">"+sanitizeString(message)+"</div>";
+		break;
+
+		case "error":
+		alert = "<div class=\"alert alert-danger text-center\" role=\"alert\" id=\"message-alert\">"+sanitizeString(message)+"</div>";
+		break;
+	}
+
+	if(bounds == "login")
+	{
+		$("#login-alert-bounds").append(alert);
+		// Dismiss the alert
+		setTimeout(function() {
+			$("#message-alert").fadeOut(function(){
+				$("#message-alert").remove();
+			});
+		}, 4000);
+	}
+	else if (bounds == "2fa-setted")
+	{
+		$("#setted-two-factor-alert-bounds").append(alert);
+	}
+	else
+	{
+		$("#two-factor-alert-bounds").append(alert);
+		// Dismiss the alert
+		setTimeout(function() {
+			$("#message-alert").fadeOut(function(){
+				$("#message-alert").remove();
+			});
+			$("#two-factor-alert-bounds").fadeOut(function(){
+				$("#two-factor-alert-bounds").remove();
+			});
+		}, 4000);
+	}
+}
+
+// Validates the email input with regex expressions
+function validateEmail(email)
+{
+	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(String(email).toLowerCase());
+}
+
+// Used to get request messages passed back
+function getRequestValue(url)
+{
+  	var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+  	var obj = {};
+
+	if (queryString)
+  	{
+    	queryString = queryString.split('#')[0];
+    	var arr = queryString.split('&');
+
+    	for (var i = 0; i < arr.length; i++)
+    	{
+
+      		var a = arr[i].split('=');
+      		var paramName = a[0];
+      		var paramValue = typeof (a[1]) === 'undefined' ? true : a[1];
+      		paramName = paramName.toLowerCase();
+
+      		if (typeof paramValue === 'string') paramValue = paramValue.toLowerCase();
+
+      		if (paramName.match(/\[(\d+)?\]$/))
+      		{
+        		var key = paramName.replace(/\[(\d+)?\]/, '');
+
+        		if (!obj[key]) obj[key] = [];
+
+
+       			if (paramName.match(/\[\d+\]$/))
+        		{
+          			var index = /\[(\d+)\]/.exec(paramName)[1];
+          			obj[key][index] = paramValue;
+        		}
+        		else
+        		{
+         	 		obj[key].push(paramValue);
+        		}
+      		}
+      		else
+      		{
+
+        		if (!obj[paramName])
+        		{
+
+         			obj[paramName] = paramValue;
+        		}
+        		else if (obj[paramName] && typeof obj[paramName] === 'string')
+        		{
+
+          			obj[paramName] = [obj[paramName]];
+          			obj[paramName].push(paramValue);
+        		}
+        		else
+        		{
+          			obj[paramName].push(paramValue);
+        		}
+      		}
+    	}
+  	}
+  	return obj;
+}
+
+// Sanitize string
+function sanitizeString(uncleanString)
+{
+	var cleanedString = uncleanString.replace(/[^a-z0-9áéíóúñü \.,_-]/gim,"");
+	return cleanedString
+}
+
+</script>
+
+
+
+
+</body></html>
