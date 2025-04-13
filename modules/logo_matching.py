@@ -479,11 +479,26 @@ def pred_brand(model, ocr_model, domain_map, logo_feat_list, file_name_list, sho
     pred_brand_list = np.array(pred_brand_list)[idx]
     sim_list = np.array(sim_list)[idx]
 
+
+ 
+
+
     # top1,2,3 candidate logos
     top3_logolist = [Image.open(x) for x in pred_brand_list]
     top3_brandlist = [brand_converter(os.path.basename(os.path.dirname(x))) for x in pred_brand_list]
-    top3_domainlist = [domain_map[x] for x in top3_brandlist]
+    
+    # Handle missing brands in domain_map
+    top3_domainlist = []
+    for brand in top3_brandlist:
+        try:
+            top3_domainlist.append(domain_map[brand])
+        except KeyError:
+            print(f"Warning: Brand '{brand}' not found in domain map. Adding empty domain list.")
+            top3_domainlist.append([])  # Add empty list as fallback
+
     top3_simlist = sim_list
+    # top3_domainlist = [domain_map[x] for x in top3_brandlist]
+    # top3_simlist = sim_list
 
     for j in range(3):
         predicted_brand, predicted_domain = None, None

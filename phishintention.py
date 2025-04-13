@@ -59,7 +59,7 @@ class PhishIntentionWrapper:
         log_print(f'Length of reference list = {len(self.LOGO_FEATS)}')
 
     '''PhishIntention'''
-    @profile
+    # @profile
 
     def test_orig_phishintention(self, url, screenshot_path, save_vectors=True, vector_file=None):
         if save_vectors and vector_file is None:
@@ -213,6 +213,7 @@ class PhishIntentionWrapper:
                 numeric_features.get("is_crp", 0.0),
                 numeric_features.get("domain_match_score", 0.0),
                 numeric_features.get("phish_score", 0.0)
+                
             ]
             
             # Write to CSV file
@@ -251,7 +252,7 @@ class PhishIntentionWrapper:
             logo_pred_boxes, _ = find_element_type(pred_boxes, pred_classes, bbox_type='logo')
             if logo_pred_boxes is None or len(logo_pred_boxes) == 0:
                 log_print('No logo is detected, reported as benign')
-                save_feature_vector()  # Add vector generation before return
+                image_feature = save_feature_vector()  # Add vector generation before return
                 return phish_category, pred_target, matched_domain, plotvis, siamese_conf, \
                             str(awl_detect_time) + '|' + str(logo_match_time) + '|' + str(crp_class_time) + '|' + str(crp_locator_time), \
                             pred_boxes, pred_classes, used_gpt, is_crp, has_login_elements, has_password_field, logo_pred_boxes,image_feature
@@ -275,7 +276,7 @@ class PhishIntentionWrapper:
             log_print(f'Siamese result: pred_target={pred_target}, siamese_conf={siamese_conf}')
 
             if pred_target is None:
-                log_print('Did not match to any brand, trying dynamic detection')
+                log_print('Did not match to any brand, trying dynamic gpt detection')
                 original_pred_target = pred_target # Store the original pred_target for logging purposes
 
                 ########### Added dynamic detection ############
