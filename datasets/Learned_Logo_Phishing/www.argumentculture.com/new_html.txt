@@ -1512,35 +1512,35 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$0396357759$-->
+          <!--?lit$5033166154$-->
             <p>Check if there is a typo in <span>www.argumentculture.com</span>.</p>
           
 
-          <!--?lit$0396357759$-->
+          <!--?lit$5033166154$-->
 
-          <div class="error-code"><!--?lit$0396357759$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$5033166154$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$0396357759$-->
+          <!--?lit$5033166154$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$0396357759$-->
+          <!--?lit$5033166154$-->
             <button id="reload-button" class="blue-button text-button" data-url="http://www.argumentculture.com/survey/sf43ee33/source=12891/subid=e:imcw5avqpcvdcy59ttdd-vtjf4nyumb3jl1gvlnkr1s&amp;subid2=morganintown.com&amp;subid3=e:yo-rq4q8weazhx5ep9r_mw&amp;subid4=freenet.de&amp;firstname=klaus&amp;surname=silbernagl&amp;city=untermeitingen&amp;email=jackdavis@eureliosollutions.com/pid=19">
-              <!--?lit$0396357759$-->Reload
+              <!--?lit$5033166154$-->Reload
             </button>
           
-          <!--?lit$0396357759$-->
+          <!--?lit$5033166154$-->
         </div>
-        <!--?lit$0396357759$-->
+        <!--?lit$5033166154$-->
       </div>
-      <!--?lit$0396357759$-->
+      <!--?lit$5033166154$-->
         <div id="details">
-          <!--?lit$0396357759$-->
+          <!--?lit$5033166154$-->
         </div>
       
     </div>
-    <!--?lit$0396357759$-->
+    <!--?lit$5033166154$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->

@@ -1512,35 +1512,35 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$550014639$-->
+          <!--?lit$88088719$-->
             <p>Check if there is a typo in <span>techvelty.com</span>.</p>
           
 
-          <!--?lit$550014639$-->
+          <!--?lit$88088719$-->
 
-          <div class="error-code"><!--?lit$550014639$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$88088719$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$550014639$-->
+          <!--?lit$88088719$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$550014639$-->
+          <!--?lit$88088719$-->
             <button id="reload-button" class="blue-button text-button" data-url="http://techvelty.com/wp-includes/widgets/contact/Login/complete.php">
-              <!--?lit$550014639$-->Reload
+              <!--?lit$88088719$-->Reload
             </button>
           
-          <!--?lit$550014639$-->
+          <!--?lit$88088719$-->
         </div>
-        <!--?lit$550014639$-->
+        <!--?lit$88088719$-->
       </div>
-      <!--?lit$550014639$-->
+      <!--?lit$88088719$-->
         <div id="details">
-          <!--?lit$550014639$-->
+          <!--?lit$88088719$-->
         </div>
       
     </div>
-    <!--?lit$550014639$-->
+    <!--?lit$88088719$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->

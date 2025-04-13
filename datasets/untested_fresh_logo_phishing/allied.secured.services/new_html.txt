@@ -1512,35 +1512,35 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$5395597683$-->
+          <!--?lit$551125018$-->
             <p>Check if there is a typo in <span>allied.secured.services</span>.</p>
           
 
-          <!--?lit$5395597683$-->
+          <!--?lit$551125018$-->
 
-          <div class="error-code"><!--?lit$5395597683$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$551125018$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$5395597683$-->
+          <!--?lit$551125018$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$5395597683$-->
+          <!--?lit$551125018$-->
             <button id="reload-button" class="blue-button text-button" data-url="http://allied.secured.services/desjardins/templates/transactions.php?lang=fre&amp;confirmed=yes&amp;customer_id=529c49f82ef11d471f961fce7a8ced5b67c8c381">
-              <!--?lit$5395597683$-->Reload
+              <!--?lit$551125018$-->Reload
             </button>
           
-          <!--?lit$5395597683$-->
+          <!--?lit$551125018$-->
         </div>
-        <!--?lit$5395597683$-->
+        <!--?lit$551125018$-->
       </div>
-      <!--?lit$5395597683$-->
+      <!--?lit$551125018$-->
         <div id="details">
-          <!--?lit$5395597683$-->
+          <!--?lit$551125018$-->
         </div>
       
     </div>
-    <!--?lit$5395597683$-->
+    <!--?lit$551125018$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->

@@ -1512,35 +1512,35 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$995955397$-->
+          <!--?lit$6615477173$-->
             <p>Check if there is a typo in <span>loreal.oh-wear.com</span>.</p>
           
 
-          <!--?lit$995955397$-->
+          <!--?lit$6615477173$-->
 
-          <div class="error-code"><!--?lit$995955397$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$6615477173$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$995955397$-->
+          <!--?lit$6615477173$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$995955397$-->
+          <!--?lit$6615477173$-->
             <button id="reload-button" class="blue-button text-button" data-url="http://loreal.oh-wear.com/law/Adobe2019">
-              <!--?lit$995955397$-->Reload
+              <!--?lit$6615477173$-->Reload
             </button>
           
-          <!--?lit$995955397$-->
+          <!--?lit$6615477173$-->
         </div>
-        <!--?lit$995955397$-->
+        <!--?lit$6615477173$-->
       </div>
-      <!--?lit$995955397$-->
+      <!--?lit$6615477173$-->
         <div id="details">
-          <!--?lit$995955397$-->
+          <!--?lit$6615477173$-->
         </div>
       
     </div>
-    <!--?lit$995955397$-->
+    <!--?lit$6615477173$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->

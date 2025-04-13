@@ -4,7 +4,7 @@
   <meta name="theme-color" content="#fff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,
                                  maximum-scale=1.0, user-scalable=no">
-  <title>app-eventdisable.serveirc.com</title>
+  <title>idgsigns.com</title>
   <style>/* Copyright 2017 The Chromium Authors
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file. */
@@ -1510,42 +1510,42 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
         <div class="icon icon-generic"></div>
         <div id="main-message">
           <h1>
-            <span>This site can’t be reached</span>
+            <span>This page isn’t working</span>
           </h1>
-          <!--?lit$917079426$-->
-            <p>Check if there is a typo in <span>app-eventdisable.serveirc.com</span>.</p>
+          <!--?lit$650955856$-->
+            <p>If the problem continues, contact the site owner.</p>
           
 
-          <!--?lit$917079426$-->
+          <!--?lit$650955856$-->
 
-          <div class="error-code"><!--?lit$917079426$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$650955856$-->HTTP ERROR 436</div>
 
-          <!--?lit$917079426$-->
+          <!--?lit$650955856$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$917079426$-->
-            <button id="reload-button" class="blue-button text-button" data-url="https://app-eventdisable.serveirc.com/_">
-              <!--?lit$917079426$-->Reload
+          <!--?lit$650955856$-->
+            <button id="reload-button" class="blue-button text-button" data-url="https://idgsigns.com/themes/eim/Emirate.htm">
+              <!--?lit$650955856$-->Reload
             </button>
           
-          <!--?lit$917079426$-->
+          <!--?lit$650955856$-->
         </div>
-        <!--?lit$917079426$-->
+        <!--?lit$650955856$-->
       </div>
-      <!--?lit$917079426$-->
+      <!--?lit$650955856$-->
         <div id="details">
-          <!--?lit$917079426$-->
+          <!--?lit$650955856$-->
         </div>
       
     </div>
-    <!--?lit$917079426$-->
+    <!--?lit$650955856$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->
         <div class="icon "></div>
-        <div id="sub-frame-error-details">Check if there is a typo in <span>app-eventdisable.serveirc.com</span>.</div>
+        <div id="sub-frame-error-details">If the problem continues, contact the site owner.</div>
       </div>
     
   </div>
@@ -1560,4 +1560,4 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
   </div>
 
 
-<script>var loadTimeDataRaw = {"details":"Details","errorCode":"DNS_PROBE_POSSIBLE","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This site can’t be reached"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadUrl":"https://app-eventdisable.serveirc.com/_"},"suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"\u003Cstrong>app-eventdisable.serveirc.com\u003C/strong>’s \u003Cabbr id=\"dnsDefinition\">DNS address\u003C/abbr> could not be found. Diagnosing the problem."},"textdirection":"ltr","title":"app-eventdisable.serveirc.com"};</script></body></html>
+<script>var loadTimeDataRaw = {"details":"Details","errorCode":"HTTP ERROR 436","fontfamily":"\"sans\", Arial, sans-serif","fontfamilyMd":"Roboto, \"sans\", Arial, sans-serif","fontsize":"75%","heading":{"msg":"This page isn’t working"},"hideDetails":"Hide details","iconClass":"icon-generic","language":"en","reloadButton":{"msg":"Reload","reloadUrl":"https://idgsigns.com/themes/eim/Emirate.htm"},"suggestionsDetails":[],"suggestionsSummaryList":[],"summary":{"msg":"If the problem continues, contact the site owner."},"textdirection":"ltr","title":"idgsigns.com"};</script></body></html>

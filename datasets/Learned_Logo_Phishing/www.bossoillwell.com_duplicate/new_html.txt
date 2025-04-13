@@ -1512,35 +1512,35 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$637628748$-->
+          <!--?lit$9675903379$-->
             <p>Check if there is a typo in <span>www.bossoillwell.com</span>.</p>
           
 
-          <!--?lit$637628748$-->
+          <!--?lit$9675903379$-->
 
-          <div class="error-code"><!--?lit$637628748$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$9675903379$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$637628748$-->
+          <!--?lit$9675903379$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$637628748$-->
+          <!--?lit$9675903379$-->
             <button id="reload-button" class="blue-button text-button" data-url="https://www.bossoillwell.com/good/showmessaget/302">
-              <!--?lit$637628748$-->Reload
+              <!--?lit$9675903379$-->Reload
             </button>
           
-          <!--?lit$637628748$-->
+          <!--?lit$9675903379$-->
         </div>
-        <!--?lit$637628748$-->
+        <!--?lit$9675903379$-->
       </div>
-      <!--?lit$637628748$-->
+      <!--?lit$9675903379$-->
         <div id="details">
-          <!--?lit$637628748$-->
+          <!--?lit$9675903379$-->
         </div>
       
     </div>
-    <!--?lit$637628748$-->
+    <!--?lit$9675903379$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->

@@ -1512,35 +1512,35 @@ let showingDetails=false;let lastData=null;function toggleHelpBox(){showingDetai
           <h1>
             <span>This site can’t be reached</span>
           </h1>
-          <!--?lit$87289411$-->
+          <!--?lit$728078462$-->
             <p>Check if there is a typo in <span>alfazzaland.com</span>.</p>
           
 
-          <!--?lit$87289411$-->
+          <!--?lit$728078462$-->
 
-          <div class="error-code"><!--?lit$87289411$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
+          <div class="error-code"><!--?lit$728078462$-->DNS_PROBE_FINISHED_NXDOMAIN</div>
 
-          <!--?lit$87289411$-->
+          <!--?lit$728078462$-->
         </div>
       </div>
       <div id="buttons" class="nav-wrapper suggested-right">
         <div id="control-buttons">
-          <!--?lit$87289411$-->
+          <!--?lit$728078462$-->
             <button id="reload-button" class="blue-button text-button" data-url="http://alfazzaland.com/wp-content/plugins/lnc/lnc/ticket/fdf4111d586f5e286279b9d66/complete.php?ip=129.232.167.211">
-              <!--?lit$87289411$-->Reload
+              <!--?lit$728078462$-->Reload
             </button>
           
-          <!--?lit$87289411$-->
+          <!--?lit$728078462$-->
         </div>
-        <!--?lit$87289411$-->
+        <!--?lit$728078462$-->
       </div>
-      <!--?lit$87289411$-->
+      <!--?lit$728078462$-->
         <div id="details">
-          <!--?lit$87289411$-->
+          <!--?lit$728078462$-->
         </div>
       
     </div>
-    <!--?lit$87289411$-->
+    <!--?lit$728078462$-->
       <div id="sub-frame-error">
         <!-- Show details when hovering over the icon, in case the details are
              hidden because they're too large. -->
