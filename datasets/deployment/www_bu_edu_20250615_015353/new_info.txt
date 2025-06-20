@@ -1,0 +1,1 @@
+https://shib.bu.edu/idp/profile/SAML2/POST-SimpleSign/SSO?execution=e1s1

@@ -48,7 +48,9 @@ def initialize_chrome_settings():
     options.add_argument('--disable-extensions')
     options.add_argument('--remote-debugging-port=9229')  # Different port than default
 
-
+    options.add_argument(
+        'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+    )
     options.add_argument("--headless") #: do not disable browser (have some issues: https://github.com/mherrmann/selenium-python-helium/issues/47)
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')

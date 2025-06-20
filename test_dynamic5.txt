@@ -1,2 +1,0 @@
-ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.96778667	0.8625950813293457|0.29317760467529297|0.45625758171081543|1.4010581970214844
-www.paypal.com	https://www.paypal.com/hk/home	0	None	None	0.77531075	1.0501186847686768|0.38236188888549805|0|0

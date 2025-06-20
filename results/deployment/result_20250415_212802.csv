@@ -1,0 +1,2 @@
+Site Folder,URL,Multimodal_Decision,Image Phish Score,Image_Decision,Text Phish Score,Text_Decision,Image Features,Text Features,Fused Features
+tiffanybao_netlify_app_20250415_212802,https://tiffanybao.netlify.app/#about,phishing,0.00,0,0.70,1,0.00|0.00|0.00|0.00|0.00|0.00|1.00|0.50|0.00|0.00|0.00|0.00|0.00|0.00|0.00,0.00|0.00|0.00|0.00|0.00|0.00|1.00|1.00|0.00|1.00|1.00|1.00|0.70,0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.2683|0.1342|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.0000|0.2988|0.2988|0.0000|0.2988|0.2988|0.2988|0.2091

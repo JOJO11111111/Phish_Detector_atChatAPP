@@ -2,6 +2,7 @@ import os
 import csv
 import numpy as np
 import sys
+import argparse
 
 from modules.HTML_Analyzer_tiff_locsl import HTML_Analyzer
 from modules.Web_Crawling_tiff_local import setup_driver
@@ -9,12 +10,11 @@ from helium import set_driver
 
 from phishintention import PhishIntentionWrapper
 import time
-# Constants
-DATASET_PATH = '/home/tiffanybao/PhishIntention/datasets/Learned_Logo_Phishing'
-OUTPUT_DIR = '/home/tiffanybao/PhishIntention/results/4.11/Multimodal'
-CRAWL_OUTPUT_DIR = '/home/tiffanybao/PhishIntention/results/crawled_sites'
 
 
+DATASET_PATH = './datasets/deployment'
+OUTPUT_DIR = './results/deployment'
+CRAWL_OUTPUT_DIR = './results/crawled_sites'
 
 # Call this at the end of process_site() after both branches complete
 
@@ -86,14 +86,26 @@ def make_decision(fused_vector, image_phish_score, text_phish_score):
 
 
 
-# def process_site(site_folder):
+def process_site(site_folder, dataset_path, output_file=None):
     """Process a single site"""
     try:
-        site_path = os.path.join(DATASET_PATH, site_folder)
-        
+        site_path = os.path.join(dataset_path, site_folder)
+        if not os.path.isdir(site_path):
+            print(f"Site folder {site_folder} does not exist at {site_path}")
+            return None
+            
+        # Get URL from info.txt
+        info_file = os.path.join(site_path, "info.txt")
+        if not os.path.exists(info_file):
+            print(f"No info.txt found in {site_folder}")
+            return None
+            
+        with open(info_file, "r") as f:
+            url = f.read().strip()
+            print(f"Processing site: {site_folder} with URL: {url}")
+            
         # Validate files
         required_files = {
-            'info': os.path.join(site_path, 'info.txt'),
             'screenshot': os.path.join(site_path, 'shot.png'),
             'html': os.path.join(site_path, 'html.txt')
         }
@@ -102,17 +114,14 @@ def make_decision(fused_vector, image_phish_score, text_phish_score):
             if not os.path.exists(path):
                 print(f"Missing {name} file in {site_folder}")
                 return None
-
-        # Read URL
-        with open(required_files['info'], 'r') as f:
-            url = f.read().strip()
         
         # Initialize analyzers
         image_analyzer = PhishIntentionWrapper()
         text_analyzer = HTML_Analyzer()
-
+        
         # 1. Image Analysis
         try:
+            print(f"Starting image analysis for {site_folder}")
             image_result = image_analyzer.test_orig_phishintention(
                 url, 
                 required_files['screenshot']
@@ -147,22 +156,25 @@ def make_decision(fused_vector, image_phish_score, text_phish_score):
                 image_decision = 1
             else:
                 image_decision = 0
+                
+            print(f"Image analysis completed for {site_folder}: phish_score={image_phish_score}, decision={image_decision}")
+            
         except Exception as img_e:
             print(f"Image analysis failed for {site_folder}: {str(img_e)}")
             image_vector = np.zeros(15)
+            image_phish_score = 0.0
+            image_decision = 0
             image_features_dict = {'phish_score': 0.0}
     
- 
-
-        # 2. Text Analysis - Modified to properly capture dynamic analysis
+        # 2. Text Analysis
         try:
+            print(f"Starting text analysis for {site_folder}")
             with open(required_files['html'], 'r', encoding='utf-8', errors='ignore') as f:
                 html_content = f.read()
             
             print(f"\n[Analyzing text for {site_folder}]")
             
             # Get both vectors from HTML analyzer with screenshot path
-            
             driver = setup_driver()
             set_driver(driver)
 
@@ -170,7 +182,7 @@ def make_decision(fused_vector, image_phish_score, text_phish_score):
                 required_files['html'],  # Pass path to html file
                 base_url=url,
                 screenshot_path=required_files['screenshot'],
-                using_dead_url=True
+                using_dead_url=False
             )
             
             # Debug print raw vectors
@@ -180,169 +192,30 @@ def make_decision(fused_vector, image_phish_score, text_phish_score):
                 txt_branch_decision = 1
             else:
                 txt_branch_decision = 0
-    
-        except Exception as text_e:
-            print(f"Text analysis failed for {site_folder}: {str(text_e)}")
-            text_vector = np.zeros(13)
-            text_phish_score = 0.0
-            txt_branch_decision = 0  # Default to 0 (benign) on error    
+                
             # Calculate text phishing score (max of both vectors' scores)
-            text_phish_score = text_vector[12]
+            text_phish_score = text_vector[12] if len(text_vector) > 12 else 0.0
             print(f"Text Phish Score: {text_phish_score}")
             
-            
         except Exception as text_e:
             print(f"Text analysis failed for {site_folder}: {str(text_e)}")
             text_vector = np.zeros(13)
             text_phish_score = 0.0
-
-
-        # 3. Feature Fusion
-        fused_vector = fuse_features(image_vector, text_vector)
-
-        # 4. Decision
-        decision = make_decision(fused_vector,image_phish_score, text_phish_score)
-
-        # Prepare result
-        result = {
-            'site_folder': site_folder,
-            'url': url,
-            'decision': 'phishing' if decision == 1 else 'benign',
-            'image_phish_score': round(image_phish_score, 2),
-            'image_decision': image_decision,
-            'text_phish_score': round(text_phish_score, 2),
-            'text_decision': txt_branch_decision,
-            'image_vector': image_vector,
-            'text_vector': text_vector,
-            'fused_vector': fused_vector
-        }
-
-        save_single_result(result)
-        return result
-
-    except Exception as e:
-        print(f"Fatal error processing {site_folder}: {str(e)}")
-        return None
-
-
-
-def process_site(site_folder):
-    """Process a single site"""
-    try:
-        # Initialize default values for all critical variables
-        image_vector = np.zeros(15)
-        image_phish_score = 0.0
-        image_decision = 0
-        text_vector = np.zeros(13)
-        text_phish_score = 0.0
-        txt_branch_decision = 0
-        
-        site_path = os.path.join(DATASET_PATH, site_folder)
-        
-        # Validate files
-        required_files = {
-            'info': os.path.join(site_path, 'info.txt'),
-            'screenshot': os.path.join(site_path, 'shot.png'),
-            'html': os.path.join(site_path, 'html.txt')
-        }
-        
-        for name, path in required_files.items():
-            if not os.path.exists(path):
-                print(f"Missing {name} file in {site_folder}")
-                return None
-
-        # Read URL
-        with open(required_files['info'], 'r') as f:
-            url = f.read().strip()
-        
-        # Initialize analyzers
-        image_analyzer = PhishIntentionWrapper()
-        text_analyzer = HTML_Analyzer()
-
-        # 1. Image Analysis
-        try:
-            image_result = image_analyzer.test_orig_phishintention(
-                url, 
-                required_files['screenshot']
-            )
-            
-            # Unpack results
-            (phish_category, pred_target, matched_domain, plotvis, siamese_conf,
-             runtime_breakdown, pred_boxes, pred_classes, used_gpt, is_crp,
-             has_login_elements, has_password_field, logo_pred_boxes,
-             image_features_dict) = image_result
-
-            # Convert features to vector
-            image_vector = np.array([
-                image_features_dict.get('has_logo', 0),
-                image_features_dict.get('brand_matched', 0),
-                image_features_dict.get('brand_confidence', 0.0),
-                image_features_dict.get('domain_brand_mismatch', 0),
-                image_features_dict.get('has_login_elements', 0),
-                image_features_dict.get('has_password_field', 0),
-                image_features_dict.get('page_has_security_indicators', 0),
-                image_features_dict.get('image_quality_score', 0.5),
-                image_features_dict.get('logo_size_proportion', 0.0),
-                image_features_dict.get('logo_position_typical', 0),
-                image_features_dict.get('used_gpt_detection', 0),
-                image_features_dict.get('gpt_confidence', 0.0),
-                image_features_dict.get('is_crp', 0),
-                image_features_dict.get('domain_match_score', 0.0),
-                image_features_dict.get('phish_score', 0.0)
-            ])
-            image_phish_score = image_features_dict.get('phish_score', 0.0)
-            if phish_category == 1:
-                image_decision = 1
-            else:
-                image_decision = 0
-        except Exception as img_e:
-            print(f"Image analysis failed for {site_folder}: {str(img_e)}")
-            # Default values are already set at the beginning
-
-        # 2. Text Analysis - Modified to properly capture dynamic analysis
-        try:
-            with open(required_files['html'], 'r', encoding='utf-8', errors='ignore') as f:
-                html_content = f.read()
-            
-            print(f"\n[Analyzing text for {site_folder}]")
-            
-            # Get both vectors from HTML analyzer with screenshot path
-            driver = setup_driver()
-            set_driver(driver)
-
-            text_vector, text_branch_decision = text_analyzer.analyze_html_pipeline(
-                required_files['html'],  # Pass path to html file
-                base_url=url,
-                screenshot_path=required_files['screenshot'],
-                using_dead_url=True
-            )
-            
-            # Debug print raw vectors
-            print(f"Raw text vector: {text_vector}")
-            print(f"Text branch decision: {text_branch_decision}")
-            if text_branch_decision == 'Phishing':
-                txt_branch_decision = 1
-            else:
-                txt_branch_decision = 0
-        except Exception as text_e:
-            print(f"Text analysis failed for {site_folder}: {str(text_e)}")
-            # Default values are already set at the beginning
-        
-        # Get phishing score from text vector (outside try/except to ensure it's always set)
-        text_phish_score = text_vector[12]
-        print(f"Text Phish Score: {text_phish_score}")
+            txt_branch_decision = 0  # Default to 0 (benign) on error
 
         # 3. Feature Fusion
         fused_vector = fuse_features(image_vector, text_vector)
 
         # 4. Decision
         decision = make_decision(fused_vector, image_phish_score, text_phish_score)
+        decision_text = 'phishing' if decision == 1 else 'benign'
+        print(f"Final decision for {site_folder}: {decision_text} (decision={decision})")
 
-        # Prepare result
+        # Create result dictionary
         result = {
             'site_folder': site_folder,
             'url': url,
-            'decision': 'phishing' if decision == 1 else 'benign',
+            'decision': decision_text,
             'image_phish_score': round(image_phish_score, 2),
             'image_decision': image_decision,
             'text_phish_score': round(text_phish_score, 2),
@@ -352,9 +225,10 @@ def process_site(site_folder):
             'fused_vector': fused_vector
         }
 
-        save_single_result(result)
+        print(f"Saving results for {site_folder} to {output_file}")
+        save_single_result(result, output_file)
         return result
-
+        
     except Exception as e:
         print(f"Fatal error processing {site_folder}: {str(e)}")
         # Create a minimal result with error information
@@ -373,21 +247,24 @@ def process_site(site_folder):
         
         # Try to save this result so we still have an entry in the CSV
         try:
-            save_single_result(result)
-        except:
-            print(f"Could not save error result for {site_folder}")
+            save_single_result(result, output_file)
+            print(f"Saved error result for {site_folder}")
+        except Exception as save_error:
+            print(f"Could not save error result for {site_folder}: {str(save_error)}")
         
         return result
 
-def save_single_result(result):
+def save_single_result(result, output_file=None):
     """Save results with simplified decimal precision"""
-    output_csv = os.path.join(OUTPUT_DIR, 'Learned_Logo_Phishing_predict.csv')
-    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    if output_file is None:
+        output_file = os.path.join(OUTPUT_DIR, 'Learned_Logo_Phishing_predict.csv')
     
-    write_header = not os.path.exists(output_csv) or os.stat(output_csv).st_size == 0
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    
+    write_header = not os.path.exists(output_file) or os.stat(output_file).st_size == 0
     
     try:
-        with open(output_csv, 'a', newline='') as f:
+        with open(output_file, 'a', newline='') as f:
             writer = csv.writer(f)
             
             if write_header:
@@ -414,15 +291,21 @@ def save_single_result(result):
     except Exception as e:
         print(f"Failed to save results for {result['site_folder']}: {str(e)}")
 
-def process_dataset():
+def process_dataset(dataset_path=None, output_file=None):
     """Process all sites in dataset"""
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    # Use provided paths or defaults
+    dataset_path = dataset_path or DATASET_PATH
+    output_dir = os.path.dirname(output_file) if output_file else OUTPUT_DIR
+    
+    os.makedirs(output_dir, exist_ok=True)
     results = []
     
-    for site_folder in os.listdir(DATASET_PATH):
-        site_path = os.path.join(DATASET_PATH, site_folder)
+    print(f"Processing dataset from: {dataset_path}")
+    
+    for site_folder in os.listdir(dataset_path):
+        site_path = os.path.join(dataset_path, site_folder)
         if os.path.isdir(site_path):
-            result = process_site(site_folder)
+            result = process_site(site_folder, dataset_path, output_file)
             if result:
                 results.append(result)
                 print(f"Processed {site_folder}: {result['decision']}")
@@ -431,4 +314,18 @@ def process_dataset():
     return results
 
 if __name__ == '__main__':
-    process_dataset()
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Process websites for phishing detection')
+    parser.add_argument('--folder', type=str, help='Path to the folder containing website data')
+    parser.add_argument('--output_txt', type=str, help='Path to save the output CSV file')
+    parser.add_argument('--dataset', type=str, help='Path to the dataset directory')
+    parser.add_argument('--output', type=str, help='Path to the output directory')
+    
+    args = parser.parse_args()
+    
+    # Use command line arguments if provided, otherwise use defaults
+    dataset_path = args.dataset or DATASET_PATH
+    output_file = args.output_txt or os.path.join(OUTPUT_DIR, 'Learned_Logo_Phishing_predict.csv')
+    
+    # Process the dataset
+    process_dataset(dataset_path, output_file)
