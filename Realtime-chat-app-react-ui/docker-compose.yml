@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  scan-web-one:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: realtime-chat-app-react-ui:v1
+    container_name: realtime-chat-app-react-ui
+    restart: always
+    ports:
+      - 3000:3000
+
