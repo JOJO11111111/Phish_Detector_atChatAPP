@@ -1,9 +1,0 @@
-slanserlaga.com	https://slanserlaga.com/chase/chase/	1	Chase Personal Banking	['chase.com']	0.9435345	0
-www.hmart.com	https://www.hmart.com/	0	H Mart	['hmart.com']	0.85	1
-arandasrestaurant.com	http://arandasrestaurant.com/wp-content/themes/generatepress/pweb/rmida/?viks=c3V6aWVAaWRlYWVuZ2luZWVycy5jby56YQ==	0	Absa Group	['absa.com']	0.93226856	0
-serv-acamai.com	http://serv-acamai.com/1und1/de/index.php	1	1&1 Ionos	['ionos.com']	0.85	1
-fecosmetics.asia	https://fecosmetics.asia/closingdocuments	1	DocuSign	['docusign.com']	0.9492501	0
-tiffanybao.netlify.app	https://tiffanybao.netlify.app/#work	0	None	None	0.67559236	1
-www2.hm.com	https://www2.hm.com/en_us/index.html	0	None	None	0.72705024	1
-www.amazon.com	https://www.amazon.com/	0	Amazon	['amazon.com', 'amazon.se', 'amazon.fr']	0.95893604	0
-account.apple.com	https://account.apple.com/	0	Apple	['apple.com', 'icloud.com']	0.85	1

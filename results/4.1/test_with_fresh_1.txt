@@ -1,6 +1,0 @@
-ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	None	None	0.7145763	0.6085939407348633|0.34855079650878906|0|0
-www.paypal.com	https://www.paypal.com/hk/home	1	PayPal	['paypal.com']	0.87307465	0.9035751819610596|0.8136603832244873|0.4834108352661133|0.11839985847473145
-apple.com	https://account.apple.com/	0	None	None	0.7212289	0.4609565734863281|0.34093761444091797|0|0
-tiffanyWebsite.app	https://tiffanybao.netlify.app/	0	None	None	0.675596	0.27964138984680176|0.40934062004089355|0|0
-kiewguide.com	http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm	0	None	None	0.7270468	0.49075746536254883|0.4273240566253662|0|0
-1&1 Ionos+2019-07-28-22`34`40	http://serv-acamai.com/1und1/de/index.php	0	None	None	0.7145763	0.21734213829040527|0.35964107513427734|0|0

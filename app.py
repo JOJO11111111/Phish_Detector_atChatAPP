@@ -130,19 +130,15 @@ def scan_website():
         with open(os.path.join(website_folder, 'info.txt'), 'w') as f:
             f.write(url)
         
-        # Save the screenshot
-        screenshot_path = os.path.join(website_folder, 'shot.png')
-        # Here you would save the screenshot to screenshot_path
-        # For now, we'll just create an empty file
-        with open(screenshot_path, 'w') as f:
-            f.write('')
+        # Crawl the website and save HTML and screenshot
+        logger.info(f"Starting website crawling for {url}")
+        crawl_success = save_website_data(url, website_folder)
         
-        # Save the HTML
-        html_path = os.path.join(website_folder, 'html.txt')
-        # Here you would save the HTML to html_path
-        # For now, we'll just create an empty file
-        with open(html_path, 'w') as f:
-            f.write('')
+        if not crawl_success:
+            logger.error(f"Failed to crawl website {url}")
+            return jsonify({'error': 'Failed to crawl website'}), 500
+        
+        logger.info(f"Website crawling completed for {url}")
         
         # Create a unique output file for this scan
         output_file = os.path.join(OUTPUT_DIR, f'result_{timestamp}.csv')

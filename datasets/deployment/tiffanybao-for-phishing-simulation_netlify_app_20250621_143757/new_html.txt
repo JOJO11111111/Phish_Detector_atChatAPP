@@ -1,0 +1,14 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tiffanybao</title>
+  <script type="module" crossorigin="" src="/assets/index-D4fB667K.js"></script>
+  <link rel="stylesheet" crossorigin="" href="/assets/index-Bq3IAXVI.css">
+</head>
+
+<body>
+  <div id="root"><div class="App"><aside class="sidebar"><h1>Tiffany Bao</h1><img src="/dio_logo.png" alt="Logo" class="login-logo"><nav><a href="/#about" data-discover="true">About</a><a href="/#projects" data-discover="true">Projects</a><a href="/#resume" data-discover="true">CV/Resume</a><a href="/#work" data-discover="true">Work</a><a href="/#contact" data-discover="true">Contact</a><a class="login-nav-button" href="/EviLlogin" data-discover="true" style="">Evil Login</a></nav><div class="contact-info"><h2>Contact me via:</h2><p><a href="mailto:tiff0207@bu.edu" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a><a href="https://www.linkedin.com/in/tiffanybao0207/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></p></div></aside><div class="main-content"><div class="login-page-container"><p>Urgent!! Your amazing DIO Account is unsafe! Please login here for authentication!</p><div class="logo-section"></div><div class="login-content-wrapper"><div class="login-form-section"><div class="login-form-container"><h2>Login</h2><form class="login-form"><div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="Enter your email"></div><div class="form-group"><label for="password">Password</label><input type="password" id="password" placeholder="Enter your password"></div><button type="submit" class="login-button">Login</button></form><p class="signup-text">Don't have an account? <a href="/">Return to home</a></p></div></div></div></div></div></div></div>
+
+
+</body></html>

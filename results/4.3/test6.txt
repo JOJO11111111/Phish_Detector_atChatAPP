@@ -1,8 +1,0 @@
-www.purepaypal.com 	https://www.paypal.com/	0	PayPal	['paypal.com']	0.8730763	1.8898444175720215|0.4878265857696533|0.4671647548675537|0.13293957710266113	0
-ru.russianmastercach-republick.xyz	https://ru.russianmastercach-republick.xyz/	0	Mastercard International	['mastercard.com']	0.96778667	0.1403496265411377|0.1420588493347168|0.1006009578704834|0.7560861110687256	0
-www.paypal.com	https://www.paypal.com/hk/home	0	PayPal	['paypal.com']	0.8730763	0.6442337036132812|0.33051013946533203|0.14901280403137207|0.12871885299682617	0
-dio'sWebsite	https://tiffanybao.netlify.app/	0	None	None	0.68604594	0.1502673625946045|0.39591097831726074|0|0	1
-apple.com	https://account.apple.com/	0	Apple	['apple.com', 'icloud.com']	0.85	0.3021857738494873|0.41567230224609375|0|0	1
-accounts.g.cdcde.com	https://accounts.g.cdcde.com/ServiceLogin?passive=1209600&osid=1&continue=https://plus.g.cdcde.com/&followup=https://plus.g.cdcde.com/	1	Google	['google.com', 'appspot.com', 'appspot.com']	0.96792525	0.4051029682159424|0.16605925559997559|0.013023853302001953|0	0
-kiewguide.com	http://kiewguide.com/umde/Absa%20Online%20-%20PROFILE.htm	1	Absa Group	['absa.com']	0.9387908	0.17192387580871582|0.1565713882446289|0.08250999450683594|0	0
-1&1 Ionos+2019-07-28-22`34`40	http://serv-acamai.com/1und1/de/index.php	1	1&1 Ionos	['ionos.com']	0.85	0.8991715908050537|0.35495734214782715|0.17453336715698242|0	1

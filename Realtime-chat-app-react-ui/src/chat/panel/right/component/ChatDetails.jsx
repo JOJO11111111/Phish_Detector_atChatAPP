@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import {
     Avatar,
@@ -7,7 +5,6 @@ import {
     List,
     Badge,
     Card,
-    Comment
 } from 'antd';
 
 import {
@@ -19,6 +16,7 @@ import { connect } from 'react-redux'
 import { actions } from '../../../redux/module/panel'
 import * as Params from '../../../common/param/Params'
 import { axiosGet } from '../../../util/Request';
+import SafeComment from './SafeComment';
 
 const CommentList = ({ comments }) => (
     <InfiniteScroll
@@ -28,7 +26,7 @@ const CommentList = ({ comments }) => (
         <List
             dataSource={comments}
             itemLayout="horizontal"
-            renderItem={props => <Comment {...props} />}
+            renderItem={props => <SafeComment {...props} />}
         />
     </InfiniteScroll>
 );
