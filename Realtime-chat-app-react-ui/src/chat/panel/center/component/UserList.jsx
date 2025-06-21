@@ -72,6 +72,8 @@ class UserList extends React.Component {
                         avatar: Params.HOST + "/file/" + data[i].avatar,
                         content: <p>{content}</p>,
                         datetime: moment(data[i].createAt).fromNow(),
+                        contentType: data[i].contentType,
+                        url: data[i].url
                     }
                     comments.push(comment)
                 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Comment, Button, Tooltip, Modal, message, Input, Radio, Space, Tag, Typography } from 'antd';
-import { SafetyOutlined, LinkOutlined, AudioOutlined, WarningOutlined, CheckCircleOutlined } from '@ant-design/icons';
+import { Comment, Button, Tooltip, Modal, message, Input, Radio, Space, Tag, Typography, Alert, Divider, Row, Col, Statistic } from 'antd';
+import { SafetyOutlined, LinkOutlined, WarningOutlined, CheckCircleOutlined, AudioOutlined } from '@ant-design/icons';
 
 const { TextArea } = Input;
 const { Text } = Typography;
@@ -12,10 +12,10 @@ class SafeComment extends React.Component {
       modalVisible: false,
       scanning: false,
       urlToScan: '',
-      detectionType: 'url', // 'url' or 'voice'
       scanMode: 'auto', // 'auto' or 'manual'
       scanResult: null,
-      resultsModalVisible: false
+      resultsModalVisible: false,
+      detectionType: 'url' // 'url' or 'voice'
     };
   }
 
@@ -79,52 +79,22 @@ class SafeComment extends React.Component {
     return urls.length > 0;
   };
 
-  // Check if message is voice/audio (you can enhance this logic)
-  isVoiceMessage = (content) => {
-    // If content is not a string, it might be a React element (like audio player)
-    if (typeof content !== 'string') {
-      // Check if it's actually an audio element or contains audio
-      if (React.isValidElement(content)) {
-        // Check if it's an audio element or contains audio-related props
-        const elementType = content.type;
-        if (elementType === 'audio' ||
-          (content.props && content.props.src && content.props.src.includes('audio')) ||
-          (content.props && content.props.children &&
-            React.Children.toArray(content.props.children).some(child =>
-              React.isValidElement(child) && child.type === 'audio'
-            ))) {
-          return true;
-        }
-      }
-      return false; // Default to false for non-string content
-    }
-
-    // For string content, only detect as voice if it contains specific audio indicators
-    const audioKeywords = ['🎵', '🎶', '🔊', '🎤', '🎧', '📻', '🎼'];
-    const hasAudioEmoji = audioKeywords.some(emoji => content.includes(emoji));
-
-    // Check for very specific voice-related patterns (not just any mention of "voice")
-    const voicePatterns = [
-      /voice message/i,
-      /audio message/i,
-      /voice recording/i,
-      /audio recording/i,
-      /voice clip/i,
-      /audio clip/i,
-      /🎤.*message/i,
-      /🎵.*message/i
-    ];
-
-    const hasVoicePattern = voicePatterns.some(pattern => pattern.test(content));
-
-    return hasAudioEmoji || hasVoicePattern;
+  // Check if message is voice/audio
+  isVoiceMessage = (contentType) => {
+    // Voice messages have contentType = 4
+    return contentType === 4;
   };
 
   // Show scan modal
   showScanModal = () => {
-    const { content } = this.props;
+    const { content, contentType, url } = this.props;
     const urls = this.extractURLs(content);
-    const isVoice = this.isVoiceMessage(content);
+    const isVoice = this.isVoiceMessage(contentType);
+
+    console.log('showScanModal - props:', this.props);
+    console.log('showScanModal - contentType:', contentType);
+    console.log('showScanModal - url:', url);
+    console.log('showScanModal - isVoice:', isVoice);
 
     let detectionType = 'url';
     let scanMode = 'auto';
@@ -140,6 +110,8 @@ class SafeComment extends React.Component {
       detectionType = 'url';
       scanMode = 'manual';
     }
+
+    console.log('showScanModal - detectionType:', detectionType);
 
     this.setState({
       modalVisible: true,
@@ -176,7 +148,7 @@ class SafeComment extends React.Component {
 
     try {
       if (detectionType === 'url') {
-        // Call the backend phishing detection service
+        // Call the Python Flask phishing detection service directly
         const response = await fetch('http://localhost:5000/scan', {
           method: 'POST',
           headers: {
@@ -207,19 +179,34 @@ class SafeComment extends React.Component {
           resultsModalVisible: true
         });
 
-      } else {
-        // Voice analysis (placeholder for now)
-        setTimeout(() => {
-          message.success('Voice analysis completed! (Frontend demo) - AI detection');
-          this.setState({
-            scanning: false,
-            modalVisible: false
-          });
-        }, 2000);
+      } else if (detectionType === 'voice') {
+        // Demo voice detection - show file path information
+        const { url } = this.props;
+        const fullFilePath = `./Realtime-chat-app-golang/web/static/file/${url}`;
+
+        // Simulate processing time
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        // Display demo results
+        this.setState({
+          scanning: false,
+          modalVisible: false,
+          scanResult: {
+            is_phishing: false, // Demo result
+            confidence: 0.85, // Demo confidence
+            details: {
+              voice_analysis: true,
+              file_path: fullFilePath,
+              file_name: url,
+              demo_message: "This is a demo showing the voice file path. In the real implementation, this would call the voice detection service."
+            }
+          },
+          resultsModalVisible: true
+        });
       }
     } catch (error) {
       console.error('Scan error:', error);
-      message.error('Failed to connect to scanning service. Make sure the backend is running.');
+      message.error('Failed to connect to detection service. Make sure the backend is running.');
       this.setState({ scanning: false });
     }
   };
@@ -230,8 +217,8 @@ class SafeComment extends React.Component {
       modalVisible: false,
       scanning: false,
       urlToScan: '',
-      detectionType: 'url',
-      scanMode: 'auto'
+      scanMode: 'auto',
+      detectionType: 'url'
     });
   };
 
@@ -246,11 +233,6 @@ class SafeComment extends React.Component {
   // Handle URL input change
   handleUrlChange = (e) => {
     this.setState({ urlToScan: e.target.value });
-  };
-
-  // Handle detection type change
-  handleDetectionTypeChange = (e) => {
-    this.setState({ detectionType: e.target.value });
   };
 
   // Handle scan mode change
@@ -364,6 +346,11 @@ class SafeComment extends React.Component {
 
   // Render voice detection content
   renderVoiceDetection = () => {
+    const { url, contentType } = this.props;
+
+    // Construct the full file path
+    const fullFilePath = `./Realtime-chat-app-golang/web/static/file/${url}`;
+
     return (
       <div>
         <div style={{ textAlign: 'center', marginBottom: 16 }}>
@@ -387,6 +374,30 @@ class SafeComment extends React.Component {
             <li>Analyze voice consistency and naturalness</li>
             <li>Check for common AI voice artifacts</li>
           </ul>
+        </div>
+
+        {/* File Path Information */}
+        <div style={{
+          marginTop: 16,
+          padding: 12,
+          backgroundColor: '#f0f8ff',
+          borderRadius: 4,
+          border: '1px solid #d6e4ff'
+        }}>
+          <p><strong>Voice File Information:</strong></p>
+          <p><strong>Content Type:</strong> {contentType} (Voice Message)</p>
+          <p><strong>File Name:</strong> {url}</p>
+          <p><strong>Full File Path:</strong></p>
+          <div style={{
+            padding: 8,
+            backgroundColor: '#f5f5f5',
+            borderRadius: 4,
+            fontFamily: 'monospace',
+            fontSize: '12px',
+            wordBreak: 'break-all'
+          }}>
+            {fullFilePath}
+          </div>
         </div>
       </div>
     );
@@ -480,21 +491,21 @@ class SafeComment extends React.Component {
               type="primary"
               loading={scanning}
               onClick={this.handleScan}
-              icon={detectionType === 'url' ? <LinkOutlined /> : <AudioOutlined />}
+              icon={this.state.detectionType === 'url' ? <LinkOutlined /> : <AudioOutlined />}
             >
               {scanning ? 'Scanning...' :
-                detectionType === 'url' ? 'Detect Phishing' : 'Analyze Voice'}
+                this.state.detectionType === 'url' ? 'Detect Phishing' : 'Analyze Voice'}
             </Button>
           ]}
           width={500}
         >
           <div>
-            {detectionType === 'url' ? this.renderUrlDetection() : this.renderVoiceDetection()}
+            {this.state.detectionType === 'url' ? this.renderUrlDetection() : this.renderVoiceDetection()}
 
             {scanning && (
               <div style={{ textAlign: 'center', marginTop: 16 }}>
                 <p>
-                  {detectionType === 'url'
+                  {this.state.detectionType === 'url'
                     ? 'Analyzing URL for phishing indicators...'
                     : 'Analyzing voice for AI generation patterns...'}
                 </p>
@@ -505,24 +516,108 @@ class SafeComment extends React.Component {
 
         {/* Results Modal */}
         <Modal
-          title={
-            <div>
-              <SafetyOutlined style={{ marginRight: 8 }} />
-              Scan Results
-            </div>
-          }
+          title="Detection Results"
           visible={resultsModalVisible}
-          onCancel={this.handleResultsClose}
+          onCancel={() => this.setState({ resultsModalVisible: false })}
           footer={[
-            <Button key="close" onClick={this.handleResultsClose}>
+            <Button key="close" onClick={() => this.setState({ resultsModalVisible: false })}>
               Close
             </Button>
           ]}
-          width={500}
+          width={600}
         >
-          <div>
-            {this.renderScanResults()}
-          </div>
+          {scanResult && (
+            <div>
+              <div style={{ marginBottom: 16 }}>
+                <Alert
+                  message={scanResult.details?.voice_analysis ?
+                    (scanResult.is_phishing ? "Synthetic Voice Detected" : "Real Voice Detected") :
+                    (scanResult.is_phishing ? "Phishing Detected" : "Safe Content")
+                  }
+                  type={scanResult.is_phishing ? "error" : "success"}
+                  showIcon
+                />
+              </div>
+
+              <div style={{ marginBottom: 16 }}>
+                <Text strong>Confidence: </Text>
+                <Text>{Math.round(scanResult.confidence * 100)}%</Text>
+              </div>
+
+              {scanResult.details?.voice_analysis ? (
+                // Voice detection results
+                <div>
+                  <Divider>Voice Analysis Details</Divider>
+
+                  <div style={{ marginBottom: 16 }}>
+                    <Text strong>File Information:</Text>
+                    <div style={{ marginLeft: 16, marginTop: 8 }}>
+                      <Text>File Name: {scanResult.details.file_name}</Text><br />
+                      <Text>Full Path: </Text>
+                      <div style={{
+                        padding: 8,
+                        backgroundColor: '#f5f5f5',
+                        borderRadius: 4,
+                        fontFamily: 'monospace',
+                        fontSize: '12px',
+                        wordBreak: 'break-all',
+                        marginTop: 4
+                      }}>
+                        {scanResult.details.file_path}
+                      </div>
+                    </div>
+                  </div>
+
+                  {scanResult.details.demo_message && (
+                    <div style={{
+                      marginTop: 16,
+                      padding: 12,
+                      backgroundColor: '#fff7e6',
+                      borderRadius: 4,
+                      border: '1px solid #ffd591'
+                    }}>
+                      <Text strong>Demo Information:</Text><br />
+                      <Text>{scanResult.details.demo_message}</Text>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                // URL phishing detection results
+                <div>
+                  <Divider>URL Analysis Details</Divider>
+
+                  {scanResult.details && (
+                    <div>
+                      <div style={{ marginBottom: 16 }}>
+                        <Text strong>Image Analysis:</Text>
+                        <div style={{ marginLeft: 16, marginTop: 8 }}>
+                          <Text>Phish Score: {(scanResult.details.image_phish_score * 100).toFixed(1)}%</Text><br />
+                          <Text>Decision: {scanResult.details.image_decision === 1 ? 'Phishing' : 'Benign'}</Text>
+                        </div>
+                      </div>
+
+                      <div style={{ marginBottom: 16 }}>
+                        <Text strong>Text Analysis:</Text>
+                        <div style={{ marginLeft: 16, marginTop: 8 }}>
+                          <Text>Phish Score: {(scanResult.details.text_phish_score * 100).toFixed(1)}%</Text><br />
+                          <Text>Decision: {scanResult.details.text_decision === 1 ? 'Phishing' : 'Benign'}</Text>
+                        </div>
+                      </div>
+
+                      {scanResult.details.url && (
+                        <div style={{ marginBottom: 16 }}>
+                          <Text strong>Analyzed URL:</Text>
+                          <div style={{ marginLeft: 16, marginTop: 8 }}>
+                            <Text code>{scanResult.details.url}</Text>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          )}
         </Modal>
       </>
     );

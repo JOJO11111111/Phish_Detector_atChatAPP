@@ -179,6 +179,8 @@ class Panel extends React.Component {
                         avatar: avatar,
                         content: <p>{content}</p>,
                         datetime: moment().fromNow(),
+                        contentType: messagePB.contentType,
+                        url: messagePB.url
                     },
                 ];
                 this.props.setMessageList(messageList);
@@ -512,7 +514,7 @@ class Panel extends React.Component {
     render() {
 
         return (
-            <> 
+            <>
                 <Row style={{ paddingTop: 35, borderBottom: '1px solid #52c41a', borderTop: '1px solid #52c41a' }}>
                     <Col span={2} style={{ borderRight: '1px solid #52c41a', textAlign: 'center', borderTop: '1px solid #52c41a' }}>
                         <Left history={this.props.history} />
