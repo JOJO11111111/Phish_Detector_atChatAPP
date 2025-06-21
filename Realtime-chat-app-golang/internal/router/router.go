@@ -43,6 +43,7 @@ func NewRouter() *gin.Engine {
 
 		// Phishing detection endpoints
 		group.POST("/phish/scan", v1.ScanURLForPhishing)
+		group.POST("/voice/detect", v1.DetectVoiceSynthetic)
 
 		group.GET("/socket.io", socket)
 	}
