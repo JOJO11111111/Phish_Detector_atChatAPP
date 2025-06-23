@@ -39,6 +39,36 @@ def fuse_features(image_vector, text_vector):
     return np.concatenate([image_weight * norm_image, text_weight * norm_text])
 
 
+def fuse_voice_features(voice_vector):
+    """
+    Weighted fusion of voice features.
+    voice_vector: [voiceAI_score, voiceAI_weight, ask_money, ask_pw, ask_info, other_sus]
+    Returns: fused score (float) in range 0-1
+    """
+    # Assign weights for each component
+    weights = np.array([
+                        6.0,  # asking_for_money
+                        5.0,  # asking_for_password
+                        3.0,  # asking_for_personal_info
+                        9.0   # other_suspicious_content
+    ])
+    # Take slice to only the last 4 features for fusion (not including AI weight)
+    main_scores = np.array(voice_vector[2:])
+
+    # Normalize (optional)
+    main_scores_norm = main_scores / (np.linalg.norm(main_scores) + 1e-8)
+
+    # Weighted sum, add AI score separately
+    fused = voice_vector[0] * voice_vector[1] + np.dot(main_scores_norm, weights)
+    
+    # For display purposes, calculate boosted AI score
+    ai_score = voice_vector[0]
+    if 0.08 <= ai_score <= 0.4:
+        ai_score_boosted = ai_score + 0.2
+    else:
+        ai_score_boosted = ai_score
+    
+    return fused, ai_score_boosted
 
 
 def make_decision(fused_vector, image_phish_score, text_phish_score):
@@ -85,6 +115,106 @@ def make_decision(fused_vector, image_phish_score, text_phish_score):
     return 0
 
 
+def make_voice_decision(fused_voice_score, voiceAI_score, content_scores):
+    """
+    Decides if the voice is phishing, using score/weights and thresholds.
+    Returns 1 (phishing) or 0 (benign)
+    """
+    # If AI-generated score is very high and content is suspicious
+    if voiceAI_score > 0.8 and fused_voice_score > 0.7:
+        return 1
+    # If content-based suspicious scores are high
+    if content_scores.get("asking_for_password", 0) >= 5 or content_scores.get("asking_for_money", 0) >= 7:
+        return 1
+    # If overall score is above a moderate threshold (30% as specified by user)
+    if fused_voice_score > 0.3:
+        return 1
+    return 0
+
+
+def process_voice_file(wav_path, output_file=None):
+    """Process a single voice file for phishing detection"""
+    try:
+        site_folder = os.path.basename(wav_path)
+        print(f"Processing voice file: {site_folder}")
+        
+        image_analyzer = PhishIntentionWrapper()
+        voice_result = image_analyzer.analyze_voice(
+            wav_path,
+            model_path="models/librifake_pretrained_lambda0.5_epoch_25.pth",
+            config_path="Synthetic_Voice_Detection_Vocoder_Artifacts/model_config_RawNet.yaml"
+        )
+        
+        voice_vector = np.array([
+            voice_result["voiceAI_score"],        # float, AI gen score
+            voice_result["voiceAI_weight"],       # float, AI gen weight (dynamic, 8/3)
+            voice_result["voice_content_scores"].get("asking_for_money", 0),
+            voice_result["voice_content_scores"].get("asking_for_password", 0),
+            voice_result["voice_content_scores"].get("asking_for_personal_info", 0),
+            voice_result["voice_content_scores"].get("other_suspicious_content", 0)
+        ])
+        
+        # FUSION & DECISION
+        fused_voice_score, ai_score_boosted = fuse_voice_features(voice_vector)
+        voice_branch_decision = make_voice_decision(
+            fused_voice_score,
+            voice_vector[0],
+            voice_result["voice_content_scores"]
+        )
+
+        print(f"[VOICE-ONLY] Voice vector: {voice_vector}, Voice fused score: {fused_voice_score}")
+
+        # Save results (the rest are zeros)
+        result = {
+            'site_folder': site_folder,
+            'url': '',  # No URL for voice-only
+            'decision': 'phishing' if voice_branch_decision == 1 else 'benign',
+            'image_phish_score': 0.0,
+            'image_decision': 0,
+            'text_phish_score': 0.0,
+            'text_decision': 0,
+            'image_vector': np.zeros(15),
+            'text_vector': np.zeros(13),
+            'voice_phish_score': round(fused_voice_score, 2),
+            'voice_decision': voice_branch_decision,
+            'voice_vector': voice_vector,
+            'fused_vector': np.zeros(28),  # or just zeros if unused
+            'voice_detail': voice_result,
+            'multimodal_final': 'phishing' if voice_branch_decision == 1 else 'benign',
+            'ai_score_boosted': ai_score_boosted
+        }
+        save_single_result(result, output_file)
+        return result
+        
+    except Exception as e:
+        print(f"Fatal error processing voice file {wav_path}: {str(e)}")
+        # Create a minimal result with error information
+        result = {
+            'site_folder': os.path.basename(wav_path),
+            'url': "Error processing voice file",
+            'decision': 'error',
+            'image_phish_score': 0.0,
+            'image_decision': 0,
+            'text_phish_score': 0.0,
+            'text_decision': 0,
+            'image_vector': np.zeros(15),
+            'text_vector': np.zeros(13),
+            'voice_phish_score': 0.0,
+            'voice_decision': 0,
+            'voice_vector': np.zeros(6),
+            'fused_vector': np.zeros(28),
+            'ai_score_boosted': 0.0
+        }
+        
+        # Try to save this result so we still have an entry in the CSV
+        try:
+            save_single_result(result, output_file)
+            print(f"Saved error result for voice file {os.path.basename(wav_path)}")
+        except Exception as save_error:
+            print(f"Could not save error result for voice file {os.path.basename(wav_path)}: {str(save_error)}")
+        
+        return result
+
 
 def process_site(site_folder, dataset_path, output_file=None):
     """Process a single site"""
@@ -93,6 +223,17 @@ def process_site(site_folder, dataset_path, output_file=None):
         if not os.path.isdir(site_path):
             print(f"Site folder {site_folder} does not exist at {site_path}")
             return None
+            
+        # Check if this is a voice-only folder (contains .wav file)
+        wav_path = None
+        for file in os.listdir(site_path):
+            if file.lower().endswith('.wav'):
+                wav_path = os.path.join(site_path, file)
+                break
+        
+        if wav_path:
+            # Process as voice-only
+            return process_voice_file(wav_path, output_file)
             
         # Get URL from info.txt
         info_file = os.path.join(site_path, "info.txt")
@@ -222,7 +363,11 @@ def process_site(site_folder, dataset_path, output_file=None):
             'text_decision': txt_branch_decision,
             'image_vector': image_vector,
             'text_vector': text_vector,
-            'fused_vector': fused_vector
+            'fused_vector': fused_vector,
+            'voice_phish_score': 0.0,
+            'voice_decision': 0,
+            'voice_vector': np.zeros(6),
+            'ai_score_boosted': 0.0
         }
 
         print(f"Saving results for {site_folder} to {output_file}")
@@ -242,7 +387,11 @@ def process_site(site_folder, dataset_path, output_file=None):
             'text_decision': 0,
             'image_vector': np.zeros(15),
             'text_vector': np.zeros(13),
-            'fused_vector': np.zeros(28)  # Adjust this size if needed
+            'fused_vector': np.zeros(28),  # Adjust this size if needed
+            'voice_phish_score': 0.0,
+            'voice_decision': 0,
+            'voice_vector': np.zeros(6),
+            'ai_score_boosted': 0.0
         }
         
         # Try to save this result so we still have an entry in the CSV
@@ -271,7 +420,8 @@ def save_single_result(result, output_file=None):
                 writer.writerow([
                     'Site Folder', 'URL', 'Multimodal_Decision',
                     'Image Phish Score','Image_Decision', 'Text Phish Score','Text_Decision',
-                    'Image Features', 'Text Features', 'Fused Features'
+                    'Voice Phish Score', 'Voice_Decision',
+                    'Image Features', 'Text Features', 'Voice Features', 'Fused Features', 'AI Score Boosted'
                 ])
             
             # Format with 2 decimal places
@@ -283,9 +433,13 @@ def save_single_result(result, output_file=None):
                 result['image_decision'],
                 f"{result['text_phish_score']:.2f}",
                 result['text_decision'],
+                f"{result.get('voice_phish_score', 0.0):.2f}",
+                result.get('voice_decision', 0),
                 '|'.join([f"{x:.2f}" for x in result['image_vector']]),
                 '|'.join([f"{x:.2f}" for x in result['text_vector']]),
-                '|'.join([f"{x:.4f}" for x in result['fused_vector']])  # Keep more precision for fused features
+                '|'.join([f"{x:.2f}" for x in result.get('voice_vector', np.zeros(6))]),
+                '|'.join([f"{x:.4f}" for x in result['fused_vector']]),  # Keep more precision for fused features
+                f"{result.get('ai_score_boosted', 0.0):.3f}"
             ])
             
     except Exception as e:
@@ -302,15 +456,25 @@ def process_dataset(dataset_path=None, output_file=None):
     
     print(f"Processing dataset from: {dataset_path}")
     
-    for site_folder in os.listdir(dataset_path):
-        site_path = os.path.join(dataset_path, site_folder)
-        if os.path.isdir(site_path):
-            result = process_site(site_folder, dataset_path, output_file)
+    for entry in os.listdir(dataset_path):
+        entry_path = os.path.join(dataset_path, entry)
+        
+        # If it's a directory, treat as site folder (html/img analysis)
+        if os.path.isdir(entry_path):
+            result = process_site(entry, dataset_path, output_file)
             if result:
                 results.append(result)
-                print(f"Processed {site_folder}: {result['decision']}")
+                print(f"Processed {entry}: {result['decision']}")
+        # If it's a .wav file, treat as voice-only analysis
+        elif entry.lower().endswith('.wav'):
+            result = process_voice_file(entry_path, output_file)
+            if result:
+                results.append(result)
+                print(f"Processed voice file {entry}: {result['decision']}")
+        else:
+            continue
     
-    print(f"Completed processing {len(results)} sites")
+    print(f"Completed processing {len(results)} entries")
     return results
 
 if __name__ == '__main__':

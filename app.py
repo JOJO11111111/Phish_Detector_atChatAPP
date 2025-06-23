@@ -17,6 +17,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from urllib.parse import urlparse
+import shutil
 
 # Import the setup_driver function from your module
 from modules.Web_Crawling_tiff_local import setup_driver
@@ -104,6 +105,153 @@ def save_website_data(url, site_folder):
         import traceback
         logger.error(traceback.format_exc())
         return False
+
+def save_voice_file(voice_filename, site_folder):
+    """Save voice file to the dataset folder"""
+    try:
+        # Source path from the Golang backend
+        source_path = f"./Realtime-chat-app-golang/web/static/file/{voice_filename}"
+        
+        if not os.path.exists(source_path):
+            logger.error(f"Voice file not found at {source_path}")
+            return False
+        
+        # Destination path in the dataset folder
+        dest_path = os.path.join(site_folder, f"{voice_filename}")
+        
+        # Copy the file
+        shutil.copy2(source_path, dest_path)
+        logger.info(f"Copied voice file from {source_path} to {dest_path}")
+        
+        return True
+        
+    except Exception as e:
+        logger.error(f"Error copying voice file: {str(e)}")
+        return False
+
+@app.route('/scan_voice', methods=['POST'])
+def scan_voice():
+    """Scan a voice file for phishing"""
+    try:
+        data = request.get_json()
+        voice_filename = data.get('voice_filename')
+        
+        if not voice_filename:
+            return jsonify({'error': 'Voice filename is required'}), 400
+        
+        logger.info(f"Received voice scan request for file: {voice_filename}")
+        
+        # Create a unique folder for this voice scan
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        voice_folder = f"voice_{timestamp}"
+        
+        # Create the voice folder
+        voice_folder_path = os.path.join(DEPLOYMENT_DATASET_PATH, voice_folder)
+        os.makedirs(voice_folder_path, exist_ok=True)
+        
+        # Save the voice file to the dataset folder
+        logger.info(f"Copying voice file {voice_filename} to dataset folder")
+        copy_success = save_voice_file(voice_filename, voice_folder_path)
+        
+        if not copy_success:
+            logger.error(f"Failed to copy voice file {voice_filename}")
+            return jsonify({'error': 'Failed to access voice file'}), 500
+        
+        logger.info(f"Voice file copied successfully for {voice_filename}")
+        
+        # Create a unique output file for this scan
+        output_file = os.path.join(OUTPUT_DIR, f'voice_result_{timestamp}.csv')
+        
+        # Run the voice analysis
+        logger.info(f"Running voice analysis for {voice_folder}")
+        try:
+            # Import the process_voice_file function from main.py
+            from main import process_voice_file
+            
+            # Get the full path to the voice file
+            voice_file_path = os.path.join(voice_folder_path, voice_filename)
+            
+            # Process the voice file
+            result = process_voice_file(voice_file_path, output_file)
+            
+            if result is None:
+                logger.error(f"Failed to process voice file {voice_filename}")
+                return jsonify({'error': 'Failed to process voice file'}), 500
+                
+            logger.info(f"Voice analysis completed for {voice_filename}")
+            
+            # Read the results
+            with open(output_file, 'r') as f:
+                content = f.read()
+                logger.info(f"CSV content: {content}")
+                
+                # Create a new StringIO object with the content
+                import io
+                csv_file = io.StringIO(content)
+                reader = csv.DictReader(csv_file)
+                
+                # Get the first row
+                row = next(reader, None)
+                if row:
+                    logger.info(f"Parsed row: {row}")
+                    
+                    # Map the CSV columns to the expected format
+                    decision = row.get("Multimodal_Decision", "").lower()
+                    
+                    # Check if there was an error in processing
+                    if decision == "error":
+                        logger.error("Error in processing detected in CSV")
+                        return jsonify({'error': 'Error in processing the voice file'}), 500
+                    
+                    is_phishing = decision == "phishing"
+                    confidence = float(row.get("Voice Phish Score", 0.0))
+                    
+                    # Get GPT response from the result object
+                    voice_detail = result.get('voice_detail', {})
+                    gpt_response = voice_detail.get('gpt_response', '')
+                    transcript = voice_detail.get('transcript', '')
+                    ai_score_boosted = result.get('ai_score_boosted', 0.0)
+                    
+                    # Create a details object with all the information
+                    details = {
+                        "voice_filename": voice_filename,
+                        "voice_phish_score": float(row.get("Voice Phish Score", 0.0)),
+                        "voice_decision": int(row.get("Voice_Decision", 0)),
+                        "voice_vector": row.get("Voice Features", ""),
+                        "image_phish_score": float(row.get("Image Phish Score", 0.0)),
+                        "image_decision": int(row.get("Image_Decision", 0)),
+                        "text_phish_score": float(row.get("Text Phish Score", 0.0)),
+                        "text_decision": int(row.get("Text_Decision", 0)),
+                        "image_vector": row.get("Image Features", ""),
+                        "text_vector": row.get("Text Features", ""),
+                        "fused_vector": row.get("Fused Features", ""),
+                        "gpt_response": gpt_response,
+                        "transcript": transcript,
+                        "ai_score_boosted": ai_score_boosted
+                    }
+                    
+                    logger.info(f"Returning voice results: is_phishing={is_phishing}, confidence={confidence}")
+                    
+                    return jsonify({
+                        'is_phishing': is_phishing,
+                        'confidence': confidence,
+                        'details': details
+                    })
+                else:
+                    logger.error("No data found in CSV file")
+                    return jsonify({'error': 'No results found'}), 500
+                    
+        except Exception as e:
+            logger.error(f"Error in voice analysis: {str(e)}")
+            import traceback
+            logger.error(traceback.format_exc())
+            return jsonify({'error': f'Error in voice analysis: {str(e)}'}), 500
+            
+    except Exception as e:
+        logger.error(f"Error in scan_voice: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return jsonify({'error': f'Server error: {str(e)}'}), 500
 
 @app.route('/scan', methods=['POST'])
 def scan_website():
@@ -198,22 +346,27 @@ def scan_website():
                     }
                     
                     logger.info(f"Returning results: is_phishing={is_phishing}, confidence={confidence}")
+                    
                     return jsonify({
                         'is_phishing': is_phishing,
                         'confidence': confidence,
                         'details': details
                     })
-            
-            logger.error("No rows found in the CSV file")
-            return jsonify({'error': 'No results found in the output file'}), 500
-            
+                else:
+                    logger.error("No data found in CSV file")
+                    return jsonify({'error': 'No results found'}), 500
+                    
         except Exception as e:
-            logger.error(f"Error running analysis: {e}")
-            return jsonify({'error': f'Error running analysis: {str(e)}'}), 500
+            logger.error(f"Error in analysis: {str(e)}")
+            import traceback
+            logger.error(traceback.format_exc())
+            return jsonify({'error': f'Error in analysis: {str(e)}'}), 500
             
     except Exception as e:
-        logger.error(f"Error processing request: {e}")
-        return jsonify({'error': f'Error processing request: {str(e)}'}), 500
+        logger.error(f"Error in scan_website: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return jsonify({'error': f'Server error: {str(e)}'}), 500
 
 @app.route('/')
 def home():

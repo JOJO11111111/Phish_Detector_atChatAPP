@@ -180,27 +180,36 @@ class SafeComment extends React.Component {
         });
 
       } else if (detectionType === 'voice') {
-        // Demo voice detection - show file path information
+        // Call the Python Flask voice detection service
         const { url } = this.props;
-        const fullFilePath = `./Realtime-chat-app-golang/web/static/file/${url}`;
 
-        // Simulate processing time
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        const response = await fetch('http://localhost:5000/scan_voice', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            voice_filename: url
+          })
+        });
 
-        // Display demo results
+        if (!response.ok) {
+          throw new Error(`Server responded with status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (data.error) {
+          message.error('Error: ' + data.error);
+          this.setState({ scanning: false });
+          return;
+        }
+
+        // Display results in a new modal
         this.setState({
           scanning: false,
           modalVisible: false,
-          scanResult: {
-            is_phishing: false, // Demo result
-            confidence: 0.85, // Demo confidence
-            details: {
-              voice_analysis: true,
-              file_path: fullFilePath,
-              file_name: url,
-              demo_message: "This is a demo showing the voice file path. In the real implementation, this would call the voice detection service."
-            }
-          },
+          scanResult: data,
           resultsModalVisible: true
         });
       }
@@ -405,60 +414,221 @@ class SafeComment extends React.Component {
 
   // Render scan results
   renderScanResults = () => {
-    const { scanResult } = this.state;
+    const { scanResult, detectionType } = this.state;
 
     if (!scanResult) return null;
 
     const isPhishing = scanResult.is_phishing;
-    const confidence = (scanResult.confidence * 100).toFixed(1);
+    const isVoiceDetection = detectionType === 'voice';
 
-    return (
-      <div style={{ marginTop: 16 }}>
-        <div style={{ textAlign: 'center', marginBottom: 16 }}>
-          {isPhishing ? (
+    if (isVoiceDetection) {
+      // Voice detection logic
+      const voicePhishScore = scanResult.details?.voice_phish_score || 0;
+      const voiceVector = scanResult.details?.voice_vector || '';
+      const voiceFeatures = voiceVector.split('|').map(Number);
+
+      // Parse voice features: [ai_score, ai_weight, ask_money, ask_pw, ask_info, other_sus]
+      const aiScore = voiceFeatures[0] || 0;
+      const aiWeight = voiceFeatures[1] || 0;
+      const askMoney = voiceFeatures[2] || 0;
+      const askPassword = voiceFeatures[3] || 0;
+      const askInfo = voiceFeatures[4] || 0;
+      const otherSuspicious = voiceFeatures[5] || 0;
+
+      // Use the boosted AI score from backend if available, otherwise use original
+      const displayAIScore = scanResult.details?.ai_score_boosted || aiScore;
+
+      // Normalize the voice phish score to 0-1 range (original fusion can be high)
+      const normalizedVoicePhishScore = Math.min(voicePhishScore / 10.0, 1.0);
+      const isHighVishingRisk = normalizedVoicePhishScore > 0.3; // 30% threshold
+      const isAIGenerated = displayAIScore > 0.08; // 8% AI threshold
+      const hasSuspiciousContent = askMoney > 0 || askPassword > 0 || askInfo > 0 || otherSuspicious > 0;
+      const isAIImpersonation = isAIGenerated && hasSuspiciousContent;
+
+      return (
+        <div style={{ marginTop: 16 }}>
+          <div style={{ textAlign: 'center', marginBottom: 16 }}>
+            {isHighVishingRisk ? (
+              <div>
+                <WarningOutlined style={{ fontSize: 48, color: '#ff4d4f' }} />
+                <h3 style={{ color: '#ff4d4f', marginTop: 8 }}>
+                  ⚠️ HIGH VISHING RISK DETECTED!
+                </h3>
+              </div>
+            ) : (
+              <div>
+                <CheckCircleOutlined style={{ fontSize: 48, color: '#52c41a' }} />
+                <h3 style={{ color: '#52c41a', marginTop: 8 }}>
+                  Voice appears to be authentic
+                </h3>
+              </div>
+            )}
+          </div>
+
+          {scanResult.details && (
             <div>
-              <WarningOutlined style={{ fontSize: 48, color: '#ff4d4f' }} />
-              <h3 style={{ color: '#ff4d4f', marginTop: 8 }}>
-                WARNING: This appears to be a phishing site!
-              </h3>
-            </div>
-          ) : (
-            <div>
-              <CheckCircleOutlined style={{ fontSize: 48, color: '#52c41a' }} />
-              <h3 style={{ color: '#52c41a', marginTop: 8 }}>
-                This site appears to be safe
-              </h3>
+              <h4>Voice Analysis Details:</h4>
+
+              <div style={{ marginBottom: 12 }}>
+                <Text strong>Voice Phish Score: </Text>
+                <Text style={{ color: isHighVishingRisk ? '#ff4d4f' : '#52c41a', fontWeight: 'bold' }}>
+                  {(normalizedVoicePhishScore * 100).toFixed(1)}%
+                </Text>
+                {isHighVishingRisk && (
+                  <Text style={{ color: '#ff4d4f', marginLeft: 8 }}>
+                    (Above 30% threshold - High vishing risk)
+                  </Text>
+                )}
+              </div>
+
+              <div style={{ marginBottom: 12 }}>
+                <Text strong>AI Generation Detection:</Text>
+                <div style={{ marginLeft: 16 }}>
+                  <Text>AI Score: {(displayAIScore * 100).toFixed(1)}%</Text><br />
+                  <Text style={{ color: isAIGenerated ? '#ff4d4f' : '#52c41a' }}>
+                    Status: {isAIGenerated ? 'LIKELY AI-GENERATED' : 'Likely Authentic'}
+                  </Text>
+                </div>
+              </div>
+
+              <div style={{ marginBottom: 12 }}>
+                <Text strong>Content Analysis:</Text>
+                <div style={{ marginLeft: 16 }}>
+                  <Text>Asking for Money: {(askMoney * 10).toFixed(1)}%</Text><br />
+                  <Text>Asking for Password: {(askPassword * 10).toFixed(1)}%</Text><br />
+                  <Text>Asking for Personal Info: {(askInfo * 10).toFixed(1)}%</Text><br />
+                  <Text>Other Suspicious Content: {(otherSuspicious * 10).toFixed(1)}%</Text>
+                </div>
+              </div>
+
+              {isAIImpersonation && (
+                <div style={{
+                  marginTop: 16,
+                  padding: 16,
+                  backgroundColor: '#fff2f0',
+                  borderRadius: 8,
+                  border: '2px solid #ff4d4f'
+                }}>
+                  <h4 style={{ color: '#ff4d4f', marginBottom: 12 }}>
+                    🚨 CRITICAL WARNING: AI-GENERATED VOICE DETECTED
+                  </h4>
+                  <p style={{ marginBottom: 8 }}>
+                    <strong>This voice appears to be AI-generated and contains suspicious content.</strong>
+                  </p>
+                  <p style={{ marginBottom: 8 }}>
+                    <strong>⚠️ Are you sure this is the real person you're talking to?</strong>
+                  </p>
+                  <p style={{ marginBottom: 8 }}>
+                    This could be an AI impersonating your friend or family member's voice.
+                    <strong>Do not provide any personal information, passwords, or money.</strong>
+                  </p>
+                  <p style={{ color: '#ff4d4f', fontWeight: 'bold' }}>
+                    🛡️ RECOMMENDATION: Contact the person through a different method to verify their identity.
+                  </p>
+                </div>
+              )}
+
+              {isHighVishingRisk && !isAIImpersonation && (
+                <div style={{
+                  marginTop: 16,
+                  padding: 16,
+                  backgroundColor: '#fff7e6',
+                  borderRadius: 8,
+                  border: '2px solid #faad14'
+                }}>
+                  <h4 style={{ color: '#faad14', marginBottom: 12 }}>
+                    ⚠️ VISHING WARNING
+                  </h4>
+                  <p style={{ marginBottom: 8 }}>
+                    <strong>This voice message shows signs of vishing (voice phishing).</strong>
+                  </p>
+                  <p style={{ marginBottom: 8 }}>
+                    Be cautious about any requests for personal information, passwords, or money.
+                  </p>
+                  <p style={{ color: '#faad14', fontWeight: 'bold' }}>
+                    🛡️ RECOMMENDATION: Verify the request through other means before responding.
+                  </p>
+                </div>
+              )}
+
+              <div style={{ marginBottom: 12 }}>
+                <Text strong>File Information:</Text>
+                <div style={{ marginLeft: 16 }}>
+                  <Text>File Name: {scanResult.details.voice_filename}</Text>
+                </div>
+              </div>
+
+              {scanResult.details.voice_vector && (
+                <div style={{ marginBottom: 12 }}>
+                  <Text strong>Voice Features (AI|Weight|Money|Password|Info|Other):</Text>
+                  <div style={{
+                    marginLeft: 16,
+                    padding: 8,
+                    backgroundColor: '#f5f5f5',
+                    borderRadius: 4,
+                    fontFamily: 'monospace',
+                    fontSize: '12px'
+                  }}>
+                    {scanResult.details.voice_vector}
+                  </div>
+                </div>
+              )}
             </div>
           )}
-
-          <Tag color={isPhishing ? 'red' : 'green'} style={{ fontSize: 14 }}>
-            Confidence: {confidence}%
-          </Tag>
         </div>
+      );
+    } else {
+      // URL detection results (unchanged)
+      const confidence = (scanResult.confidence * 100).toFixed(1);
 
-        {scanResult.details && (
-          <div>
-            <h4>Analysis Details:</h4>
-
-            <div style={{ marginBottom: 12 }}>
-              <Text strong>Image Analysis:</Text>
-              <div style={{ marginLeft: 16 }}>
-                <Text>Phish Score: {(scanResult.details.image_phish_score * 100).toFixed(1)}%</Text><br />
-                <Text>Decision: {scanResult.details.image_decision === 1 ? 'Phishing' : 'Benign'}</Text>
+      return (
+        <div style={{ marginTop: 16 }}>
+          <div style={{ textAlign: 'center', marginBottom: 16 }}>
+            {isPhishing ? (
+              <div>
+                <WarningOutlined style={{ fontSize: 48, color: '#ff4d4f' }} />
+                <h3 style={{ color: '#ff4d4f', marginTop: 8 }}>
+                  WARNING: This appears to be a phishing site!
+                </h3>
               </div>
-            </div>
-
-            <div>
-              <Text strong>Text Analysis:</Text>
-              <div style={{ marginLeft: 16 }}>
-                <Text>Phish Score: {(scanResult.details.text_phish_score * 100).toFixed(1)}%</Text><br />
-                <Text>Decision: {scanResult.details.text_decision === 1 ? 'Phishing' : 'Benign'}</Text>
+            ) : (
+              <div>
+                <CheckCircleOutlined style={{ fontSize: 48, color: '#52c41a' }} />
+                <h3 style={{ color: '#52c41a', marginTop: 8 }}>
+                  This site appears to be safe
+                </h3>
               </div>
-            </div>
+            )}
+
+            <Tag color={isPhishing ? 'red' : 'green'} style={{ fontSize: 14 }}>
+              Confidence: {confidence}%
+            </Tag>
           </div>
-        )}
-      </div>
-    );
+
+          {scanResult.details && (
+            <div>
+              <h4>Analysis Details:</h4>
+
+              <div style={{ marginBottom: 12 }}>
+                <Text strong>Image Analysis:</Text>
+                <div style={{ marginLeft: 16 }}>
+                  <Text>Phish Score: {(scanResult.details.image_phish_score * 100).toFixed(1)}%</Text><br />
+                  <Text>Decision: {scanResult.details.image_decision === 1 ? 'Phishing' : 'Benign'}</Text>
+                </div>
+              </div>
+
+              <div>
+                <Text strong>Text Analysis:</Text>
+                <div style={{ marginLeft: 16 }}>
+                  <Text>Phish Score: {(scanResult.details.text_phish_score * 100).toFixed(1)}%</Text><br />
+                  <Text>Decision: {scanResult.details.text_decision === 1 ? 'Phishing' : 'Benign'}</Text>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    }
   };
 
   render() {
@@ -526,98 +696,7 @@ class SafeComment extends React.Component {
           ]}
           width={600}
         >
-          {scanResult && (
-            <div>
-              <div style={{ marginBottom: 16 }}>
-                <Alert
-                  message={scanResult.details?.voice_analysis ?
-                    (scanResult.is_phishing ? "Synthetic Voice Detected" : "Real Voice Detected") :
-                    (scanResult.is_phishing ? "Phishing Detected" : "Safe Content")
-                  }
-                  type={scanResult.is_phishing ? "error" : "success"}
-                  showIcon
-                />
-              </div>
-
-              <div style={{ marginBottom: 16 }}>
-                <Text strong>Confidence: </Text>
-                <Text>{Math.round(scanResult.confidence * 100)}%</Text>
-              </div>
-
-              {scanResult.details?.voice_analysis ? (
-                // Voice detection results
-                <div>
-                  <Divider>Voice Analysis Details</Divider>
-
-                  <div style={{ marginBottom: 16 }}>
-                    <Text strong>File Information:</Text>
-                    <div style={{ marginLeft: 16, marginTop: 8 }}>
-                      <Text>File Name: {scanResult.details.file_name}</Text><br />
-                      <Text>Full Path: </Text>
-                      <div style={{
-                        padding: 8,
-                        backgroundColor: '#f5f5f5',
-                        borderRadius: 4,
-                        fontFamily: 'monospace',
-                        fontSize: '12px',
-                        wordBreak: 'break-all',
-                        marginTop: 4
-                      }}>
-                        {scanResult.details.file_path}
-                      </div>
-                    </div>
-                  </div>
-
-                  {scanResult.details.demo_message && (
-                    <div style={{
-                      marginTop: 16,
-                      padding: 12,
-                      backgroundColor: '#fff7e6',
-                      borderRadius: 4,
-                      border: '1px solid #ffd591'
-                    }}>
-                      <Text strong>Demo Information:</Text><br />
-                      <Text>{scanResult.details.demo_message}</Text>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                // URL phishing detection results
-                <div>
-                  <Divider>URL Analysis Details</Divider>
-
-                  {scanResult.details && (
-                    <div>
-                      <div style={{ marginBottom: 16 }}>
-                        <Text strong>Image Analysis:</Text>
-                        <div style={{ marginLeft: 16, marginTop: 8 }}>
-                          <Text>Phish Score: {(scanResult.details.image_phish_score * 100).toFixed(1)}%</Text><br />
-                          <Text>Decision: {scanResult.details.image_decision === 1 ? 'Phishing' : 'Benign'}</Text>
-                        </div>
-                      </div>
-
-                      <div style={{ marginBottom: 16 }}>
-                        <Text strong>Text Analysis:</Text>
-                        <div style={{ marginLeft: 16, marginTop: 8 }}>
-                          <Text>Phish Score: {(scanResult.details.text_phish_score * 100).toFixed(1)}%</Text><br />
-                          <Text>Decision: {scanResult.details.text_decision === 1 ? 'Phishing' : 'Benign'}</Text>
-                        </div>
-                      </div>
-
-                      {scanResult.details.url && (
-                        <div style={{ marginBottom: 16 }}>
-                          <Text strong>Analyzed URL:</Text>
-                          <div style={{ marginLeft: 16, marginTop: 8 }}>
-                            <Text code>{scanResult.details.url}</Text>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          )}
+          {scanResult && this.renderScanResults()}
         </Modal>
       </>
     );

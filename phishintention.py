@@ -16,6 +16,10 @@ import re
 from memory_profiler import profile
 from modules.dynamic_brand_detection import DynamicBrandDetector
 
+# Voice detection imports
+from Synthetic_Voice_Detection_Vocoder_Artifacts.eval import detect_ai_voice
+from modules.voice_content_analysis import analyze_voice_content
+
 # check
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
@@ -57,6 +61,60 @@ class PhishIntentionWrapper:
             self.SIAMESE_THRE, self.LOGO_FEATS, self.LOGO_FILES, self.DOMAIN_MAP_PATH = load_config()
         # ...=load_config(reload_targetlist=True)
         log_print(f'Length of reference list = {len(self.LOGO_FEATS)}')
+
+    def analyze_voice(
+        self,
+        wav_path,
+        model_path="models/librifake_pretrained_lambda0.5_epoch_25.pth",
+        config_path="Synthetic_Voice_Detection_Vocoder_Artifacts/model_config_RawNet.yaml",
+        openai_api_key=your_openai_api_key
+    ):
+        """
+        Analyze a wav file for AI-generation and phishing content.
+        Returns a dict with:
+            - voiceAI_score: float [0, 1]
+            - voiceAI_weight: int (3 or 8)
+            - voice_content_scores: dict (keys: asking_for_money, asking_for_password, etc.)
+            - transcript: str
+            - gpt_response: str
+            - final_voice_score: float
+        """
+        # ---- AI-generated detection ----
+        model_full_path = os.path.join(os.path.dirname(__file__), model_path)
+        config_full_path = os.path.join(os.path.dirname(__file__), config_path)
+
+        ai_result = detect_ai_voice(
+            wav_path,
+            model_full_path,
+            config_path=config_full_path,
+            device=self._DEVICE
+        )
+        ai_fake_score = ai_result.get('ai_fake_score', 0.0)
+        ai_weight = 8 if ai_fake_score > 0.8 else 3
+
+        # ---- Content phishing detection ----
+        content_result = analyze_voice_content(
+            wav_path,
+            openai_api_key=openai_api_key or your_openai_api_key
+        )
+        transcript = content_result.get('transcript', '')
+        voice_content_scores = content_result.get('voice_content_scores', {
+            "asking_for_money": 0,
+            "asking_for_password": 0,
+            "asking_for_personal_info": 0,
+            "other_suspicious_content": 0
+        })
+        gpt_response = content_result.get('gpt_response', '')
+
+        # ---- Calculate final score (leave fusion for main.py, just return everything) ----
+        return {
+            "voiceAI_score": ai_fake_score,
+            "voiceAI_weight": ai_weight,
+            "voice_content_scores": voice_content_scores,
+            "transcript": transcript,
+            "gpt_response": gpt_response,
+            "final_voice_score": None  # leave this for fusion in main.py!
+        }
 
     '''PhishIntention'''
     # @profile
