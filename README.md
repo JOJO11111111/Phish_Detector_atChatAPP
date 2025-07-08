@@ -51,12 +51,7 @@
 - **Real-time Processing**: Can analyze voice files uploaded through chat interface
 - **Multimodal Voice Analysis**: Combines AI detection + content analysis
 
-### 4. **Chrome Extension (Separate Project)**
-- **PhishSense Integration**: Modified Chrome extension that uses the PhishSense model
-- **Real-time Scanning**: Scans current website screenshots and HTML content
-- **Image & Text Inputs**: Uses PhishSense's image and text analysis branches
-- **Popup Interface**: User-friendly scanning interface with detailed results
-- **WSL Compatibility**: Designed to work with Windows Subsystem for Linux
+
 
 ## Architecture
 
@@ -71,10 +66,10 @@
          │                       │                       │
          ▼                       ▼                       ▼
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Chrome Ext.   │    │   MySQL DB      │    │  PhishSense     │
-│   (Separate     │    │   (User Data)   │    │  Components:    │
-│   Project)      │    │                 │    │  • Image Branch │
-└─────────────────┘    └─────────────────┘    │  • Text Branch  │
+│   React Frontend│    │  Golang Backend │    │  PhishSense     │
+│   (Chat UI)     │◄──►│  (WebSocket)    │◄──►│  Components:    │
+└─────────────────┘    └─────────────────┘    │  • Image Branch │
+                                              │  • Text Branch  │
                                               │  • Voice Branch │
                                               │  (RawNet + GPT) │
                                               └─────────────────┘
@@ -158,15 +153,7 @@ npm install
 npm start
 ```
 
-#### 3. Chrome Extension (Separate Project)
 
-```bash
-# Load the modified Chrome extension that integrates PhishSense
-# Navigate to chrome://extensions/
-# Enable Developer mode
-# Load unpacked → Select chrome_extension folder
-# Note: This extension uses the PhishSense model for image and text analysis
-```
 
 ## Usage
 
@@ -185,13 +172,9 @@ npm start
 3. **Content analysis** for phishing indicators
 4. **Combined scoring** for final decision
 
-### Chrome Extension (Separate Project)
+### Additional Implementation
 
-1. **Install** the modified Chrome extension that integrates PhishSense
-2. **Browse normally** - extension runs in background
-3. **Click extension icon** to scan current website using PhishSense model
-4. **View results** in popup interface with detailed analysis
-5. **Real-time protection** using image and text analysis branches
+I have also created a Chrome extension that integrates the PhishSense model for real-time website scanning, providing browser-based phishing protection using the image and text analysis capabilities.
 
 ## API Endpoints
 
@@ -224,29 +207,23 @@ This project builds upon the **PhishIntention** framework from the USENIX Securi
 
 **Repository:** [https://github.com/lindsey98/PhishIntention](https://github.com/lindsey98/PhishIntention)
 
-### Voice Detection Foundation
 
-Voice phishing detection is based on the **Synthetic Voice Detection** research:
-
-**Citation:**
-```bibtex
-@inproceedings{sun2023ai,
-  title={AI-Synthesized Voice Detection Using Neural Vocoder Artifacts},
-  author={Sun, Yuxuan and others},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
-  year={2023}
-}
-```
-
-**Repository:** [https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts](https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts)
 
 ### Chat Application Foundation
 
-The chat application is built upon:
+The chat application is built upon the **Realtime Chat Application** project:
+
+**Features from Original:**
+- Real-time messaging with WebSockets
+- Media support (text, images, voice, video messages)
+- Screen sharing and video chat using WebRTC
+- User management (register, login, profile management)
 
 **Frontend Repository:** [https://github.com/Joakim-animate90/Realtime-chat-app-react-ui](https://github.com/Joakim-animate90/Realtime-chat-app-react-ui)
 
 **Backend Repository:** [https://github.com/Joakim-animate90/Realtime-chat-app-golang](https://github.com/Joakim-animate90/Realtime-chat-app-golang)
+
+**Demo Video:** [https://www.loom.com/share/e29f600a5bdb421f9c082ff4d86ae4aa](https://www.loom.com/share/e29f600a5bdb421f9c082ff4d86ae4aa)
 
 ## Key Technologies Used
 
