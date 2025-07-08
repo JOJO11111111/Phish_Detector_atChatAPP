@@ -45,11 +45,7 @@
 - **One-click Scanning**: Instant phishing analysis with detailed results
 - **Group Protection**: Protects entire chat groups from malicious links
 
-### 3. **Voice Phishing Detection**
-- **AI Voice Detection**: Uses RawNet model to detect synthetic/AI-generated voices
-- **Content Analysis**: GPT-4 integration to analyze voice content for phishing indicators
-- **Real-time Processing**: Can analyze voice files uploaded through chat interface
-- **Multimodal Voice Analysis**: Combines AI detection + content analysis
+
 
 
 
@@ -77,41 +73,19 @@
 
 ### Detection Pipeline
 
+<img src="big_pic/Multimodal workflow.png" alt="PhishSense Multimodal Workflow" style="width:100%;max-width:800px"/>
+
+**Brief Workflow of PhishSense:**
+
 1. **Input Processing**: URL, screenshot, or voice file
 2. **PhishSense Multimodal Analysis**:
    - **Image Branch**: Logo detection → Brand matching → CRP classification
    - **Text Branch**: HTML analysis → Suspicious pattern detection
-   - **Voice Branch**: AI synthesis detection → Content analysis
+   - **Voice Branch**: AI synthesis detection + Content analysis (added for chat app)
 3. **Feature Fusion**: Advanced decision-making algorithm combining all three modalities
 4. **Result Output**: Phishing/Benign classification with confidence scores
 
-## Technology Stack
 
-### Frontend Technologies
-- **React**: Modern UI framework for chat interface
-- **Redux**: State management for application state
-- **Ant Design**: UI component library
-- **WebSockets**: Real-time communication
-- **Axios**: HTTP client for API requests
-
-### Backend Technologies
-- **Go 1.16 or later**: High-performance backend server
-- **Gin Framework**: HTTP web framework
-- **MySQL**: Database for user data and chat history
-
-### AI/ML Technologies (PhishSense Core)
-- **PyTorch**: Deep learning framework for detection models
-- **RawNet**: Voice synthesis detection model (Voice Branch)
-- **Siamese Networks**: Logo/brand matching (Image Branch)
-- **CRP Classifier**: Credential page detection (Image Branch)
-- **GPT-4**: Dynamic content analysis and brand recognition (All Branches)
-- **OpenAI Whisper**: Voice transcription (Voice Branch)
-
-### Infrastructure
-- **Docker**: Containerized deployment
-- **Docker Compose**: Multi-service orchestration
-- **Nginx**: Reverse proxy and load balancing
-- **WSL**: Windows Subsystem for Linux support
 
 ## Installation
 
@@ -170,10 +144,29 @@ I have also created a Chrome extension that integrates the PhishSense model for 
 - `GET /health` - Service health check
 
 ### Chat Backend
-- `POST /user/register` - User registration
-- `POST /user/login` - User authentication
-- `GET /message` - Get chat messages
-- `WebSocket /socket.io` - Real-time messaging
+
+**User Management**
+- `POST /user/register` - Register a new user
+- `POST /user/login` - Login with existing credentials
+- `PUT /user` - Modify user information
+- `GET /user/:uuid` - Get user details by UUID
+- `GET /user/name` - Get user or group by name
+
+**Friend Management**
+- `POST /friend` - Add a friend
+
+**Group Management**
+- `POST /group/:uuid` - Save group details
+- `POST /group/join/:userUuid/:groupUuid` - Join a group
+
+**File Management**
+- `POST /file` - Upload a file (e.g., avatar)
+
+**Messaging**
+- `GET /message` - Get messages
+
+**WebSocket**
+- `/socket.io` - WebSocket connection for real-time communication
 
 ## Research Foundation
 
@@ -211,48 +204,26 @@ The chat application is built upon the **Realtime Chat Application** project:
 
 **Demo Video:** [https://www.loom.com/share/e29f600a5bdb421f9c082ff4d86ae4aa](https://www.loom.com/share/e29f600a5bdb421f9c082ff4d86ae4aa)
 
-## Key Technologies Used
+## Key Technologies
 
-### AI/ML Libraries
+### Core Technologies
+- **React & Redux**: Frontend framework and state management
+- **Go & Gin**: Backend server and web framework
+- **MySQL**: Database for user and chat data
+- **WebSockets**: Real-time communication
+
+### AI/ML (PhishSense)
 - **PyTorch**: Deep learning framework
-- **OpenCV**: Computer vision processing
-- **Transformers**: GPT-4 integration
+- **RawNet**: Voice synthesis detection
+- **Siamese Networks**: Logo/brand matching
+- **GPT-4**: Dynamic content analysis
 - **Whisper**: Speech recognition
 
-### Web Technologies
-- **React**: Frontend framework
-- **Gin**: Go web framework
-- **WebSocket**: Real-time communication
-- **REST API**: Service communication
-
-### Database & Messaging
-- **MySQL**: Relational database
-- **Kafka**: Message queuing
-- **GORM**: ORM for Go
-
-### DevOps & Deployment
-- **Docker**: Containerization
+### Infrastructure
+- **Docker**: Containerized deployment
 - **Nginx**: Reverse proxy
-- **Docker Compose**: Orchestration
+- **WSL**: Windows Subsystem for Linux support
 
 ## Contributing
 
 We welcome contributions! Please see our contributing guidelines for details.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions or issues:
-- **Technical Issues**: Open an issue on GitHub
-- **Research Questions**: Contact the original PhishIntention authors
-- **Voice Detection**: Contact the Synthetic Voice Detection team
-
-## Acknowledgments
-
-- **PhishIntention Team**: For the foundational phishing detection framework
-- **Synthetic Voice Detection Team**: For voice synthesis detection technology
-- **Chat Application Developers**: For the real-time chat infrastructure
-- **OpenAI**: For GPT-4 and Whisper integration
