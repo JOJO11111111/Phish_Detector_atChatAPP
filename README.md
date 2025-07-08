@@ -40,10 +40,9 @@
 - **Feature Fusion**: Advanced decision-making combining multiple detection signals
 
 ### 2. **Real-time Chat Protection**
-- **URL Auto-detection**: Automatically finds URLs in chat messages
-- **Security Icons**: Visual indicators for suspicious links
+- **URL/Voice Auto-detection**: Automatically finds URLs/voice in chat messages
+- **Security Icons**: Click on a visual indicator and start detecting suspicious content
 - **One-click Scanning**: Instant phishing analysis with detailed results
-- **Group Protection**: Protects entire chat groups from malicious links
 
 
 
@@ -186,7 +185,21 @@ This project builds upon the **PhishIntention** framework from the USENIX Securi
 
 **Repository:** [https://github.com/lindsey98/PhishIntention](https://github.com/lindsey98/PhishIntention)
 
+### Voice Detection Foundation
 
+For the AI-generated voice detection model, I used the **Synthetic Voice Detection** research:
+
+**Citation:**
+```bibtex
+@inproceedings{sun2023ai,
+  title={AI-Synthesized Voice Detection Using Neural Vocoder Artifacts},
+  author={Sun, Yuxuan and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  year={2023}
+}
+```
+
+**Repository:** [https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts](https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts)
 
 ### Chat Application Foundation
 
@@ -202,15 +215,16 @@ The chat application is built upon the **Realtime Chat Application** project:
 
 **Backend Repository:** [https://github.com/Joakim-animate90/Realtime-chat-app-golang](https://github.com/Joakim-animate90/Realtime-chat-app-golang)
 
-**Demo Video:** [https://www.loom.com/share/e29f600a5bdb421f9c082ff4d86ae4aa](https://www.loom.com/share/e29f600a5bdb421f9c082ff4d86ae4aa)
+
 
 ## Key Technologies
 
-### Core Technologies
-- **React & Redux**: Frontend framework and state management
-- **Go & Gin**: Backend server and web framework
-- **MySQL**: Database for user and chat data
-- **WebSockets**: Real-time communication
+### Chat Application Stack
+- **Front-end**: React, Redux, Ant Design
+- **Back-end**: WebSockets, WebRTC
+- **State Management**: Redux
+- **Networking**: Axios for HTTP requests
+- **Database**: MySQL for user and chat data
 
 ### AI/ML (PhishSense)
 - **PyTorch**: Deep learning framework
@@ -219,11 +233,3 @@ The chat application is built upon the **Realtime Chat Application** project:
 - **GPT-4**: Dynamic content analysis
 - **Whisper**: Speech recognition
 
-### Infrastructure
-- **Docker**: Containerized deployment
-- **Nginx**: Reverse proxy
-- **WSL**: Windows Subsystem for Linux support
-
-## Contributing
-
-We welcome contributions! Please see our contributing guidelines for details.
