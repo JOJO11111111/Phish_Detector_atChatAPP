@@ -58,16 +58,16 @@
 ### System Components
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend│    │  Golang Backend │    │ Python Detection│
-│   (Chat UI)     │◄──►│  (WebSocket)    │◄──►│  (PhishSense)   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌─────────────────┐    ┌──────────────────┐
+│   React Frontend│    │  Golang Backend │    │Phishing Detection│
+│   (Chat UI)     │◄──►│  (WebSocket)    │◄──►│  (PhishSense)    │
+└─────────────────┘    └─────────────────┘    └──────────────────┘
          │                       │                       │
          │                       │                       │
          ▼                       ▼                       ▼
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React Frontend│    │  Golang Backend │    │  PhishSense     │
-│   (Chat UI)     │◄──►│  (WebSocket)    │◄──►│  Components:    │
+│   MySQL DB      │    │   MySQL DB      │    │  PhishSense     │
+│   (User Data)   │    │   (Chat Data)   │    │  Components:    │
 └─────────────────┘    └─────────────────┘    │  • Image Branch │
                                               │  • Text Branch  │
                                               │  • Voice Branch │
@@ -88,21 +88,16 @@
 ## Technology Stack
 
 ### Frontend Technologies
-- **React 18.3.1**: Modern UI framework for chat interface
-- **Redux 7.2.6**: State management for application state
-- **Ant Design 4.16.13**: UI component library
-- **Socket.io-client 4.3.2**: Real-time WebSocket communication
-- **Axios 0.24.0**: HTTP client for API requests
-- **React Router DOM 5.3.0**: Client-side routing
-- **js-audio-recorder 1.0.7**: Voice recording capabilities
+- **React**: Modern UI framework for chat interface
+- **Redux**: State management for application state
+- **Ant Design**: UI component library
+- **WebSockets**: Real-time communication
+- **Axios**: HTTP client for API requests
 
 ### Backend Technologies
-- **Golang 1.23**: High-performance backend server
+- **Go 1.16 or later**: High-performance backend server
 - **Gin Framework**: HTTP web framework
-- **GORM**: Object-relational mapping for database operations
-- **Gorilla WebSocket**: Real-time WebSocket support
-- **Kafka (IBM Sarama)**: Message queuing for real-time features
-- **MySQL 8.0**: Database for user data and chat history
+- **MySQL**: Database for user data and chat history
 
 ### AI/ML Technologies (PhishSense Core)
 - **PyTorch**: Deep learning framework for detection models
@@ -120,17 +115,6 @@
 
 ## Installation
 
-### Quick Start with Docker
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/ChromeEx_Phish_Detector.git
-cd ChromeEx_Phish_Detector
-
-# Start all services
-docker-compose -f docker-compose-integrated.yml up --build
-```
-
 ### Manual Installation
 
 #### 1. Backend Services
@@ -144,7 +128,14 @@ cd Realtime-chat-app-golang
 go run cmd/main.go
 ```
 
-#### 2. Frontend
+#### 2. PhishSense Model
+
+```bash
+# Start the PhishSense multimodal detection model
+python main.py
+```
+
+#### 3. Frontend
 
 ```bash
 # Start React chat application
@@ -161,16 +152,11 @@ npm start
 
 1. **Login** to the chat application at `http://localhost:3000`
 2. **Send messages** containing URLs or voice messages
-3. **Look for security icons** (🛡️) next to messages with links
-4. **Click the icon** to scan for phishing
+3. **Look for security icons** (🛡️) next to messages with links or voice content
+4. **Click the icon** to trigger PhishSense detection:
+   - **For URLs**: Automatically detects the link and uses PhishSense image/text analysis
+   - **For Voice Messages**: Triggers PhishSense voice branch for AI synthesis and content analysis
 5. **Review results** with detailed analysis breakdown
-
-### Voice Analysis
-
-1. **Record or upload** voice messages in the chat
-2. **Automatic detection** of AI-generated voices
-3. **Content analysis** for phishing indicators
-4. **Combined scoring** for final decision
 
 ### Additional Implementation
 
