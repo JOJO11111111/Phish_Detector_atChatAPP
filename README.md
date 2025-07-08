@@ -25,10 +25,9 @@
 ### Key Innovations
 
 - **🔍 Multimodal Detection**: Combines visual (screenshots), textual (HTML), and audio (voice messages) analysis
-- **🎤 Voice Phishing Detection**: First implementation combining AI voice synthesis detection with content analysis
-- **💬 Real-time Chat Integration**: Seamless phishing protection in messaging applications
-- **🤖 Dynamic Brand Recognition**: GPT-4 powered brand detection for unknown brands
-- **🛡️ Browser Extension**: Direct browser integration for real-time protection
+- **🎤 Voice Phishing Detection**: Implementation combining AI voice synthesis detection with content analysis
+- **💬 Real-time Chat Integration**: V/Phishing protection in messaging applications
+- **🤖 Dynamic Brand Recognition**: GPT-4 powered brand detection for content understanding and updated logo recognition
 - **🐳 Microservices Architecture**: Scalable, containerized deployment
 
 ## Features
@@ -123,7 +122,7 @@ npm start
 
 ### Chat Application
 
-1. **Login** to the chat application at `http://localhost:3000`
+1. **Login** to the chat application at `http://localhost:5000`
 2. **Send messages** containing URLs or voice messages
 3. **Look for security icons** (🛡️) next to messages with links or voice content
 4. **Click the icon** to trigger PhishSense detection:
@@ -140,7 +139,6 @@ I have also created a Chrome extension that integrates the PhishSense model for 
 ### Phishing Detection
 - `POST /scan` - Scan website for phishing
 - `POST /scan_voice` - Analyze voice file for phishing
-- `GET /health` - Service health check
 
 ### Chat Backend
 
