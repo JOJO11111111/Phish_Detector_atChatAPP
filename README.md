@@ -20,14 +20,14 @@
 
 ## Overview
 
-**PhishSense** is an advanced multimodal phishing detection system that integrates seamlessly into real-time chat applications. Built on top of the original PhishIntention framework, PhishSense extends phishing detection capabilities to include **voice message analysis** and **real-time chat protection**, making it the first comprehensive solution for detecting both traditional phishing websites and modern vishing (voice phishing) attacks.
+**PhishSense** is a multimodal phishing detection model i made for a LLM + security challenge, it extends phishing detection capabilities to include two branches: image and html branches. In this project, I added one more branch: **voice message analysis**, and integrated this model as a demo about **real-time chat protection**, making it a comprehensive solution for detecting both traditional phishing websites and modern vishing (voice phishing) attacks.
 
 ### Key Innovations
 
-- **🔍 Multimodal Detection**: Combines visual (screenshots), textual (HTML), and audio (voice messages) analysis
-- **🎤 Voice Phishing Detection**: Implementation combining AI voice synthesis detection with content analysis
+- **🔍 Multimodal Detection**: Visual (screenshots) + Textual (HTML) analysis: GPT-4 powered brand detection for content understanding and updated logo recognition.
+And additionally with audio (voice messages) analysis(**Voice Phishing Detection**): combined AI voice synthesis detection with content analysis provided by LLM
+
 - **💬 Real-time Chat Integration**: V/Phishing protection in messaging applications
-- **🤖 Dynamic Brand Recognition**: GPT-4 powered brand detection for content understanding and updated logo recognition
 - **🐳 Microservices Architecture**: Scalable, containerized deployment
 
 ## Features
@@ -36,7 +36,7 @@
 - **Visual Analysis**: Screenshot-based logo detection and brand matching
 - **Textual Analysis**: HTML structure analysis and suspicious pattern detection
 - **Voice Analysis**: AI-generated voice detection + content phishing analysis
-- **Feature Fusion**: Advanced decision-making combining multiple detection signals
+- **Feature Fusion**: Decision-making by combining multiple detection signals
 
 ### 2. **Real-time Chat Protection**
 - **URL/Voice Auto-detection**: Automatically finds URLs/voice in chat messages
@@ -80,8 +80,7 @@
    - **Image Branch**: Logo detection → Brand matching → CRP classification
    - **Text Branch**: HTML analysis → Suspicious pattern detection
    - **Voice Branch**: AI synthesis detection + Content analysis (added for chat app)
-3. **Feature Fusion**: Advanced decision-making algorithm combining all three modalities
-4. **Result Output**: Phishing/Benign classification with confidence scores
+3. **Feature Fusion & Result Output**: Combine all three modalities and output a phishing score that decides Phishing/Benign 
 
 
 
