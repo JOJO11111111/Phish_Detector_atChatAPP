@@ -24,3 +24,4 @@ webdriver-manager
 gdown
 memory-profiler
 psutil
+python-dotenv

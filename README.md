@@ -91,6 +91,17 @@ And additionally with audio (voice messages) analysis(**Voice Phishing Detection
 
 ### Manual Installation
 
+#### 0. Environment Setup
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Copy environment template and add your OpenAI API key
+cp .env.example .env
+# Edit .env file and add your OpenAI API key
+```
+
 #### 1. Backend Services
 
 ```bash

@@ -16,9 +16,11 @@ import re
 from memory_profiler import profile
 from modules.dynamic_brand_detection import DynamicBrandDetector
 
-# Voice detection imports
+
+
 from Synthetic_Voice_Detection_Vocoder_Artifacts.eval import detect_ai_voice
 from modules.voice_content_analysis import analyze_voice_content
+
 
 # check
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
@@ -28,7 +30,8 @@ from config import OPENAI_API_KEY
 your_openai_api_key = OPENAI_API_KEY
 
 # Create a custom print function that logs to file
-log_file_path = '/home/tiffanybao/PhishIntention/results/prompts_printed.txt'
+# log_file_path = '/home/tiffanybao/PhishIntention/results/prompts_printed.txt'
+log_file_path = os.path.join(os.path.dirname(__file__), 'results', 'prompts_printed.txt')
 os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
 
 def log_print(*args, **kwargs):
@@ -49,6 +52,7 @@ def log_print(*args, **kwargs):
         f.write(output)
 
 
+
 class PhishIntentionWrapper:
     _caller_prefix = "PhishIntentionWrapper"
     _DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
@@ -62,6 +66,11 @@ class PhishIntentionWrapper:
             self.SIAMESE_THRE, self.LOGO_FEATS, self.LOGO_FILES, self.DOMAIN_MAP_PATH = load_config()
         # ...=load_config(reload_targetlist=True)
         log_print(f'Length of reference list = {len(self.LOGO_FEATS)}')
+
+    '''PhishIntention'''
+    # @profile
+
+
 
     def analyze_voice(
         self,
@@ -77,7 +86,6 @@ class PhishIntentionWrapper:
             - voiceAI_weight: int (3 or 8)
             - voice_content_scores: dict (keys: asking_for_money, asking_for_password, etc.)
             - transcript: str
-            - gpt_response: str
             - final_voice_score: float
         """
         # ---- AI-generated detection ----
@@ -99,13 +107,12 @@ class PhishIntentionWrapper:
             openai_api_key=openai_api_key or your_openai_api_key
         )
         transcript = content_result.get('transcript', '')
-        voice_content_scores = content_result.get('voice_content_scores', {
+        voice_content_scores = content_result.get('scores', {
             "asking_for_money": 0,
             "asking_for_password": 0,
             "asking_for_personal_info": 0,
             "other_suspicious_content": 0
         })
-        gpt_response = content_result.get('gpt_response', '')
 
         # ---- Calculate final score (leave fusion for main.py, just return everything) ----
         return {
@@ -113,16 +120,17 @@ class PhishIntentionWrapper:
             "voiceAI_weight": ai_weight,
             "voice_content_scores": voice_content_scores,
             "transcript": transcript,
-            "gpt_response": gpt_response,
             "final_voice_score": None  # leave this for fusion in main.py!
         }
 
-    '''PhishIntention'''
-    # @profile
 
     def test_orig_phishintention(self, url, screenshot_path, save_vectors=True, vector_file=None):
+        
         if save_vectors and vector_file is None:
-            vector_file = os.path.join('/home/tiffanybao/PhishIntention/results', 'image_num_vector.csv')
+            BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+            vector_file = os.path.join(BASE_DIR, 'results', 'image_num_vector.csv')
+
+            # vector_file = os.path.join('/home/tiffanybao/PhishIntention/results', 'image_num_vector.csv')
     
         waive_crp_classifier = False
         phish_category = 0  # 0 for benign, 1 for phish, default is benign
@@ -591,7 +599,9 @@ if __name__ == '__main__':
         result_txt_basename = os.path.basename(result_txt)
         result_txt_name = os.path.splitext(result_txt_basename)[0]  # This gives you "testNum1" from "testNum1.txt"
         # Create the directory for storing vector files
-        vector_dir = os.path.join('/home/tiffanybao/PhishIntention/results', 'image_vec')
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        vector_dir = os.path.join(BASE_DIR, 'results', 'image_vec')
+        # vector_dir = os.path.join('/home/tiffanybao/PhishIntention/results', 'image_vec')
         os.makedirs(vector_dir, exist_ok=True)
         # Set the vector filename to match the result_txt name but with .csv extension
         vector_file = os.path.join(vector_dir, f"{result_txt_name}.csv")
@@ -629,4 +639,5 @@ if __name__ == '__main__':
         elif  pred_target is not None:
             os.makedirs(os.path.join(request_dir, folder), exist_ok=True)
             cv2.imwrite(os.path.join(request_dir, folder, "Logo_matched_but_benign.png"), plotvis)
+
 

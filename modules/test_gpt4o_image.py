@@ -4,7 +4,8 @@ from PIL import Image
 from openai import OpenAI
 
 # Initialize the OpenAI client
-client = OpenAI(api_key="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")  # Replace with your OpenAI API key
+from config import OPENAI_API_KEY
+client = OpenAI(api_key=OPENAI_API_KEY)  # API key loaded from configey
 
 def encode_image_to_base64(image_path):
     """Convert an image to a base64-encoded string."""

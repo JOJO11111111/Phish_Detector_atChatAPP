@@ -8,3 +8,8 @@ discovery_results/
 models/*
 *.DS_Store
 *.pyc
+
+# Environment variables
+.env
+.env.local
+.env.*.local

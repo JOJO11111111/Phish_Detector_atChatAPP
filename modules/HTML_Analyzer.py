@@ -13,7 +13,8 @@ from modules import crp_classifier
 from modules.HTML_crp_locator import static_crp_locator
 from utils.web_utils import get_page_text, visit_url
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY", "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"))
+from config import OPENAI_API_KEY
+client = OpenAI(api_key=OPENAI_API_KEY)
 from crp_locator import keyword_heuristic
 import requests
 from bs4 import BeautifulSoup
@@ -206,7 +207,6 @@ class HTML_Analyzer:
         return text_vector, verdict
 
 
-# Open AI API key: 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
 
 def analyze_html_with_openai(html_content, model="gpt-4"):
     """
