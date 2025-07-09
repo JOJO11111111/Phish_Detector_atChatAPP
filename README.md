@@ -24,11 +24,10 @@
 
 ### Key Innovations
 
-- **🔍 Multimodal Detection**: Visual (screenshots) + Textual (HTML) analysis: GPT-4 powered brand detection for content understanding and updated logo recognition.
+- **Multimodal Detection**: Visual (screenshots) + Textual (HTML) analysis: GPT-4 powered brand detection for content understanding and updated logo recognition.
 And additionally with audio (voice messages) analysis(**Voice Phishing Detection**): combined AI voice synthesis detection with content analysis provided by LLM
-
-- **💬 Real-time Chat Integration**: V/Phishing protection in messaging applications
-- **🐳 Microservices Architecture**: Scalable, containerized deployment
+- **Real-time Chat Integration**: V/Phishing protection in messaging applications
+- **Microservices Architecture**: Scalable, containerized deployment
 
 ## Features
 
@@ -132,6 +131,10 @@ npm start
 ### Additional Implementation
 
 I have also created a Chrome extension that integrates the PhishSense model for real-time website scanning, providing browser-based phishing protection using the image and text analysis capabilities.
+
+## Demo
+
+[Demo link will be added here]
 
 ## API Endpoints
 
