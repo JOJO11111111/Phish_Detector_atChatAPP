@@ -95,14 +95,15 @@ python start_backend.py
 
 # Start Golang chat backend
 cd Realtime-chat-app-golang
-go run cmd/main.go
+make build
+./bin/chat
 ```
 
 #### 2. PhishSense Model
 
 ```bash
 # Start the PhishSense multimodal detection model
-python main.py
+python app.py
 ```
 
 #### 3. Frontend
@@ -120,7 +121,7 @@ npm start
 
 ### Chat Application
 
-1. **Login** to the chat application at `http://localhost:5000`
+1. **Login** to the chat application at `http://localhost:3000`
 2. **Send messages** containing URLs or voice messages
 3. **Look for security icons** (🛡️) next to messages with links or voice content
 4. **Click the icon** to trigger PhishSense detection:
