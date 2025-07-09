@@ -90,9 +90,6 @@ And additionally with audio (voice messages) analysis(**Voice Phishing Detection
 #### 1. Backend Services
 
 ```bash
-# Start Python phishing detection service
-python start_backend.py
-
 # Start Golang chat backend
 cd Realtime-chat-app-golang
 make build
