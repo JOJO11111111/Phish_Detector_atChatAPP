@@ -43,6 +43,10 @@ And additionally with audio (voice messages) analysis(**Voice Phishing Detection
 - **One-click Scanning**: Instant phishing analysis with detailed results
 
 
+## See the Demo
+
+[Demo link will be added here]
+
 
 
 
@@ -130,9 +134,6 @@ npm start
 
 I have also created a Chrome extension that integrates the PhishSense model for real-time website scanning, providing browser-based phishing protection using the image and text analysis capabilities.
 
-## Demo
-
-[Demo link will be added here]
 
 ## API Endpoints
 
