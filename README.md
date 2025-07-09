@@ -165,7 +165,7 @@ I have also created a Chrome extension that integrates the PhishSense model for 
 **WebSocket**
 - `/socket.io` - WebSocket connection for real-time communication
 
-## Research Foundation
+## References
 
 ### Original PhishIntention Framework
 
@@ -183,9 +183,9 @@ This project builds upon the **PhishIntention** framework from the USENIX Securi
 
 **Repository:** [https://github.com/lindsey98/PhishIntention](https://github.com/lindsey98/PhishIntention)
 
-### Voice Detection Foundation
+### Voice Detection model
 
-For the AI-generated voice detection model, I used the **Synthetic Voice Detection** research:
+For the AI-generated voice detection model, I used the **Synthetic Voice Detection**:
 
 **Citation:**
 ```bibtex
@@ -199,7 +199,7 @@ For the AI-generated voice detection model, I used the **Synthetic Voice Detecti
 
 **Repository:** [https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts](https://github.com/csun22/Synthetic-Voice-Detection-Vocoder-Artifacts)
 
-### Chat Application Foundation
+### Chat Application
 
 The chat application is built upon the **Realtime Chat Application** project:
 
