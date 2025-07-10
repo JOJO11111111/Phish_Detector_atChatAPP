@@ -147,7 +147,28 @@ npm start
 
 ### Additional Implementation
 
-I have also created a Chrome extension that integrates the PhishSense model for real-time website scanning, providing browser-based phishing protection using the image and text analysis capabilities.
+I have also created a Chrome extension that integrates the PhishSense model for real-time website scanning, providing browser-based phishing protection using the image and text analysis capabilities. (will upload the repo once i have time)
+
+
+
+## Key Tech we used
+
+### Chat Application Stack
+- **Front-end**: React, Redux, Ant Design
+- **Back-end**: WebSockets, WebRTC
+- **State Management**: Redux
+- **Networking**: Axios for HTTP requests
+- **Database**: MySQL for user and chat data
+
+### AI/ML (PhishSense)
+- **PyTorch**: Deep learning framework
+- **RawNet**: Voice synthesis detection
+- **Siamese Networks**: Logo/brand matching
+- **GPT-4**: Dynamic content analysis
+- **Whisper**: Speech recognition
+
+
+
 
 
 ## API Endpoints
@@ -229,21 +250,4 @@ The chat application is built upon the **Realtime Chat Application** project:
 
 **Backend Repository:** [https://github.com/Joakim-animate90/Realtime-chat-app-golang](https://github.com/Joakim-animate90/Realtime-chat-app-golang)
 
-
-
-## Key Technologies
-
-### Chat Application Stack
-- **Front-end**: React, Redux, Ant Design
-- **Back-end**: WebSockets, WebRTC
-- **State Management**: Redux
-- **Networking**: Axios for HTTP requests
-- **Database**: MySQL for user and chat data
-
-### AI/ML (PhishSense)
-- **PyTorch**: Deep learning framework
-- **RawNet**: Voice synthesis detection
-- **Siamese Networks**: Logo/brand matching
-- **GPT-4**: Dynamic content analysis
-- **Whisper**: Speech recognition
 
