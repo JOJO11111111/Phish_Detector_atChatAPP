@@ -45,12 +45,11 @@ And additionally with audio (voice messages) analysis(**Voice Phishing Detection
 
 ## See the Demo
 
-
-
-
-https://github.com/user-attachments/assets/adcb41d2-3397-45f8-a7c0-51139ac6e660
-
 *Note: The video shows a live demo of the PhishSense chat protection system in action.*
+
+https://github.com/user-attachments/assets/38245e62-2ff6-4bcb-8ee4-37b385618475
+
+
 
 
 
