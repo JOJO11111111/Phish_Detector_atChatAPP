@@ -467,6 +467,30 @@ class SafeComment extends React.Component {
 
           {scanResult.details && (
             <div>
+              {scanResult.details.transcript && (
+                <div style={{ marginBottom: 20 }}>
+                  <h4>📝 Transcribed Message:</h4>
+                  <div style={{
+                    padding: 16,
+                    backgroundColor: '#f8f9fa',
+                    borderRadius: 8,
+                    border: '2px solid #e9ecef',
+                    marginTop: 8,
+                    maxHeight: '150px',
+                    overflowY: 'auto'
+                  }}>
+                    <Text style={{
+                      fontSize: '14px',
+                      lineHeight: '1.5',
+                      color: '#495057',
+                      fontFamily: 'inherit'
+                    }}>
+                      "{scanResult.details.transcript}"
+                    </Text>
+                  </div>
+                </div>
+              )}
+
               <h4>Voice Analysis Details:</h4>
 
               <div style={{ marginBottom: 12 }}>
@@ -557,6 +581,26 @@ class SafeComment extends React.Component {
                   <Text>File Name: {scanResult.details.voice_filename}</Text>
                 </div>
               </div>
+
+              {scanResult.details.transcript && (
+                <div style={{ marginBottom: 12 }}>
+                  <Text strong>Transcribed Message:</Text>
+                  <div style={{
+                    marginLeft: 16,
+                    marginTop: 8,
+                    padding: 12,
+                    backgroundColor: '#f0f8ff',
+                    borderRadius: 8,
+                    border: '1px solid #d9d9d9',
+                    maxHeight: '200px',
+                    overflowY: 'auto'
+                  }}>
+                    <Text style={{ fontStyle: 'italic', color: '#666' }}>
+                      "{scanResult.details.transcript}"
+                    </Text>
+                  </div>
+                </div>
+              )}
 
               {scanResult.details.voice_vector && (
                 <div style={{ marginBottom: 12 }}>

@@ -64,7 +64,7 @@ def fuse_voice_features(voice_vector):
     # For display purposes, calculate boosted AI score
     ai_score = voice_vector[0]
     if 0.08 <= ai_score <= 0.4:
-        ai_score_boosted = ai_score + 0.2
+        ai_score_boosted = ai_score + 0.2 #because the ai detection model for the latest synthetic voice is not good, so we need to boost the score
     else:
         ai_score_boosted = ai_score
     
