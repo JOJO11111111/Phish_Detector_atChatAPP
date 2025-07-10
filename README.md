@@ -1,4 +1,4 @@
-# PhishSense: Multimodal Phishing Detection in Chat Applications
+# Multimodal Phishing Detection in Chat Applications
 
 <div align="center">
 
