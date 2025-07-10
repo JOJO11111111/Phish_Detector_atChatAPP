@@ -45,12 +45,10 @@ And additionally with audio (voice messages) analysis(**Voice Phishing Detection
 
 ## See the Demo
 
-<div align="center">
-  <video width="800" controls>
-    <source src="big_pic/chatDemo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+
+
+
+https://github.com/user-attachments/assets/adcb41d2-3397-45f8-a7c0-51139ac6e660
 
 *Note: The video shows a live demo of the PhishSense chat protection system in action.*
 
