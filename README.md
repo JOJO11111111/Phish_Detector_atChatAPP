@@ -20,7 +20,7 @@
 
 ## Overview
 
-**PhishSense** is a multimodal phishing detection model i made for a LLM + security challenge, it extends phishing detection capabilities to include two branches: image and html branches. In this project, I added one more branch: **voice message analysis**, and integrated this model as a demo about **real-time chat protection**, making it a comprehensive solution for detecting both traditional phishing websites and modern vishing (voice phishing) attacks.
+**PhishSense** is a multimodal phishing detection model made for a LLM + security challenge at SVCSI (https://www.svcc-svcsi.org/cyberwarrior). It extends phishing detection capabilities to include two branches: image and html branches. In this project, I added one more branch: **voice message analysis**, and integrated this model as a demo about **real-time chat protection**, making it a comprehensive solution for detecting both traditional phishing websites and modern vishing (voice phishing) attacks.
 
 ### Key Innovations
 
